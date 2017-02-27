@@ -49,3 +49,16 @@ Esencialmente la mayor parte de los objetivos anterioremente expresados se corre
 
 **No tendra**: Son aquellos que no van a ser entregados durante el periodo considerado. Se mantienen en esta lista de alcance para clarificar el alcance de la solución. Esto evita que informalmente sean introducidos ms tarde. El objetivo es ayudar a mantener el foto en la solución.
 
+
+
+## Requisitos de alto nivel
+
+{| 
+| Celda 1, Fila 1 
+| Celda 2, Fila 1 
+|- 
+| Celda 1, Fila 2 
+| Celda 2, Fila 2 
+|}
+
+
