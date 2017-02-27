@@ -53,12 +53,13 @@ Esencialmente la mayor parte de los objetivos anterioremente expresados se corre
 
 ## Requisitos de alto nivel
 
-{| 
-| Celda 1, Fila 1 
-| Celda 2, Fila 1 
-|- 
-| Celda 1, Fila 2 
-| Celda 2, Fila 2 
-|}
+| Nº | Requisito |
+|---------|-----|
+| RF_1 | El sistema deberá recolectar periódicamente los datos de los productos fitosanitarios de portales como [mapama](http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/menu.asp) y los datos sobre los pesticidas almacenados en la [base de datos europea](http://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/public/?event=homepage&language=EN). Para esto se hará uso de algún tipo de crawler web. |
+| RF_2 | El sistema deberá almacenar la última versión de los datos recolectados en el RF_1 en su formato original. Para esto se usará [Hadoop](http://hadoop.apache.org/) en conjunto con [Spring XD](http://projects.spring.io/spring-xd/). |
+| RF_3 | El sistema deberá monitorizar, almacenar y mostrar los procesos de recolección de los datos de entrada, así como las rutas de su procesado. Para esto se usará Spring XD. | 
+| RF_4 | El sistema deberá ofrecer la infraestructura y herramientas de configuración necesarias para que futuros desarrolladores puedan integrar otras fuentes de datos de manera rápida y eficiente. Para esto se hará Spring XD en conjunto con [HIVE](https://hive.apache.org/). |
+| RF_5 | El sistema deberá implementar un modelo de aplicación consistente, ejemplificando un ciclo de vida típico de los datos, desde su recogida, su procesamiento, su posterior integración en un modelo más completo y su presentación en un Frontend de ejemplo, en este caso una página web implementada con [JHipster](https://jhipster.github.io/). |
+
 
 
