@@ -2,5 +2,5 @@
 build/
 node_modules/
 gulp/
-gradle/
+bower_components/
 .idea/
