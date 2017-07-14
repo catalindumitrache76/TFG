@@ -1016,3 +1016,74 @@ Caused by: java.sql.SQLException: Method not supported
 	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:221)
 	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68)
 	... 73 common frames omitted
+2017-07-14 16:14:17,145 DEBUG [Thread-1] User: Close successful.
+2017-07-14 16:14:17,201 DEBUG [Thread-1] Authority: Close successful.
+2017-07-14 16:14:17,222 DEBUG [Thread-1] PersistentToken: Close successful.
+2017-07-14 16:14:17,234 DEBUG [Thread-1] authorities: Close successful.
+2017-07-14 16:14:17,248 DEBUG [Thread-1] persistentTokens: Close successful.
+2017-07-14 16:14:17,431 INFO  [Thread-1] servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2017-07-14 16:14:22,876 INFO  [restartedMain] TfgJHipsterApp: Starting TfgJHipsterApp on catalin-GL552VW with PID 29513 (/home/catalin/Escritorio/TFG/TFG/build/classes/java/main started by catalin in /home/catalin/Escritorio/TFG/TFG)
+2017-07-14 16:14:22,877 DEBUG [restartedMain] TfgJHipsterApp: Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2017-07-14 16:14:22,877 INFO  [restartedMain] TfgJHipsterApp: The following profiles are active: no-liquibase,hive
+2017-07-14 16:14:26,425 DEBUG [restartedMain] AsyncConfiguration: Creating Async Task Executor
+2017-07-14 16:14:26,577 DEBUG [restartedMain] User: Initialize successful.
+2017-07-14 16:14:26,580 DEBUG [restartedMain] Authority: Initialize successful.
+2017-07-14 16:14:26,582 DEBUG [restartedMain] authorities: Initialize successful.
+2017-07-14 16:14:26,584 DEBUG [restartedMain] PersistentToken: Initialize successful.
+2017-07-14 16:14:26,586 DEBUG [restartedMain] persistentTokens: Initialize successful.
+2017-07-14 16:14:26,820 DEBUG [restartedMain] MetricsConfiguration: Registering JVM gauges
+2017-07-14 16:14:26,822 DEBUG [restartedMain] MetricsConfiguration: Initializing Metrics JMX reporting
+2017-07-14 16:14:29,644 WARN  [restartedMain] jsr: UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 16:14:29,653 WARN  [restartedMain] jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 16:14:29,654 INFO  [restartedMain] servlet: Initializing Spring embedded WebApplicationContext
+2017-07-14 16:14:29,757 DEBUG [restartedMain] WebConfigurer: Registering CORS filter
+2017-07-14 16:14:29,819 INFO  [restartedMain] WebConfigurer: Web application configuration, using profiles: no-liquibase
+2017-07-14 16:14:29,819 DEBUG [restartedMain] WebConfigurer: Initializing Metrics registries
+2017-07-14 16:14:29,819 DEBUG [restartedMain] WebConfigurer: Registering Metrics Filter
+2017-07-14 16:14:29,819 DEBUG [restartedMain] WebConfigurer: Registering Metrics Servlet
+2017-07-14 16:14:29,819 INFO  [restartedMain] WebConfigurer: Web application fully configured
+2017-07-14 16:14:30,180 DEBUG [restartedMain] AsyncSpringLiquibase: Liquibase is disabled
+2017-07-14 16:14:32,187 WARN  [restartedMain] JdbcEnvironmentInitiator: HHH000341: Could not obtain connection metadata : Method not supported
+2017-07-14 16:14:34,841 INFO  [restartedMain] TfgJHipsterApp: Started TfgJHipsterApp in 15.198 seconds (JVM running for 3589.57)
+2017-07-14 16:14:34,842 INFO  [restartedMain] TfgJHipsterApp: 
+----------------------------------------------------------
+	Application 'TfgJHipsterApp' is running! Access URLs:
+	Local: 		http://localhost:8080
+	External: 	http://127.0.1.1:8080
+	Profile(s): 	[no-liquibase, hive]
+----------------------------------------------------------
+2017-07-14 16:15:36,375 DEBUG [Thread-7] User: Close successful.
+2017-07-14 16:15:36,379 DEBUG [Thread-7] Authority: Close successful.
+2017-07-14 16:15:36,381 DEBUG [Thread-7] PersistentToken: Close successful.
+2017-07-14 16:15:36,383 DEBUG [Thread-7] authorities: Close successful.
+2017-07-14 16:15:36,385 DEBUG [Thread-7] persistentTokens: Close successful.
+2017-07-14 16:15:37,295 INFO  [restartedMain] TfgJHipsterApp: Starting TfgJHipsterApp on catalin-GL552VW with PID 29513 (/home/catalin/Escritorio/TFG/TFG/build/classes/java/main started by catalin in /home/catalin/Escritorio/TFG/TFG)
+2017-07-14 16:15:37,296 DEBUG [restartedMain] TfgJHipsterApp: Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2017-07-14 16:15:37,302 INFO  [restartedMain] TfgJHipsterApp: The following profiles are active: no-liquibase,hive
+2017-07-14 16:15:38,156 DEBUG [restartedMain] AsyncConfiguration: Creating Async Task Executor
+2017-07-14 16:15:38,246 DEBUG [restartedMain] User: Initialize successful.
+2017-07-14 16:15:38,248 DEBUG [restartedMain] Authority: Initialize successful.
+2017-07-14 16:15:38,250 DEBUG [restartedMain] authorities: Initialize successful.
+2017-07-14 16:15:38,252 DEBUG [restartedMain] PersistentToken: Initialize successful.
+2017-07-14 16:15:38,254 DEBUG [restartedMain] persistentTokens: Initialize successful.
+2017-07-14 16:15:38,267 DEBUG [restartedMain] MetricsConfiguration: Registering JVM gauges
+2017-07-14 16:15:38,268 DEBUG [restartedMain] MetricsConfiguration: Initializing Metrics JMX reporting
+2017-07-14 16:15:38,561 WARN  [restartedMain] jsr: UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 16:15:38,561 WARN  [restartedMain] jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 16:15:38,564 INFO  [restartedMain] servlet: Initializing Spring embedded WebApplicationContext
+2017-07-14 16:15:38,672 DEBUG [restartedMain] WebConfigurer: Registering CORS filter
+2017-07-14 16:15:38,727 INFO  [restartedMain] WebConfigurer: Web application configuration, using profiles: no-liquibase
+2017-07-14 16:15:38,727 DEBUG [restartedMain] WebConfigurer: Initializing Metrics registries
+2017-07-14 16:15:38,727 DEBUG [restartedMain] WebConfigurer: Registering Metrics Filter
+2017-07-14 16:15:38,728 DEBUG [restartedMain] WebConfigurer: Registering Metrics Servlet
+2017-07-14 16:15:38,728 INFO  [restartedMain] WebConfigurer: Web application fully configured
+2017-07-14 16:15:38,903 DEBUG [restartedMain] AsyncSpringLiquibase: Liquibase is disabled
+2017-07-14 16:15:39,488 WARN  [restartedMain] JdbcEnvironmentInitiator: HHH000341: Could not obtain connection metadata : Method not supported
+2017-07-14 16:15:41,202 INFO  [restartedMain] TfgJHipsterApp: Started TfgJHipsterApp in 4.462 seconds (JVM running for 3655.931)
+2017-07-14 16:15:41,203 INFO  [restartedMain] TfgJHipsterApp: 
+----------------------------------------------------------
+	Application 'TfgJHipsterApp' is running! Access URLs:
+	Local: 		http://localhost:8080
+	External: 	http://127.0.1.1:8080
+	Profile(s): 	[no-liquibase, hive]
+----------------------------------------------------------
