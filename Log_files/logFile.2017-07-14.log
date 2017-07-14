@@ -1,0 +1,352 @@
+2017-07-14 13:56:14,258 INFO  [restartedMain] TfgJHipsterApp: Starting TfgJHipsterApp on catalin-GL552VW with PID 26017 (/home/catalin/Escritorio/TFG/TFG/build/classes/java/main started by catalin in /home/catalin/Escritorio/TFG/TFG)
+2017-07-14 13:56:14,259 DEBUG [restartedMain] TfgJHipsterApp: Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2017-07-14 13:56:14,259 INFO  [restartedMain] TfgJHipsterApp: The following profiles are active: no-liquibase,hive
+2017-07-14 13:56:14,426 DEBUG [background-preinit] logging: Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-07-14 13:56:15,878 DEBUG [restartedMain] AsyncConfiguration: Creating Async Task Executor
+2017-07-14 13:56:16,311 DEBUG [restartedMain] User: Initialize successful.
+2017-07-14 13:56:16,320 DEBUG [restartedMain] Authority: Initialize successful.
+2017-07-14 13:56:16,323 DEBUG [restartedMain] authorities: Initialize successful.
+2017-07-14 13:56:16,327 DEBUG [restartedMain] PersistentToken: Initialize successful.
+2017-07-14 13:56:16,329 DEBUG [restartedMain] persistentTokens: Initialize successful.
+2017-07-14 13:56:16,366 DEBUG [restartedMain] MetricsConfiguration: Registering JVM gauges
+2017-07-14 13:56:16,376 DEBUG [restartedMain] MetricsConfiguration: Initializing Metrics JMX reporting
+2017-07-14 13:56:16,722 WARN  [restartedMain] jsr: UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 13:56:16,723 WARN  [restartedMain] jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 13:56:16,742 INFO  [restartedMain] servlet: Initializing Spring embedded WebApplicationContext
+2017-07-14 13:56:16,893 DEBUG [restartedMain] WebConfigurer: Registering CORS filter
+2017-07-14 13:56:17,092 INFO  [restartedMain] WebConfigurer: Web application configuration, using profiles: no-liquibase
+2017-07-14 13:56:17,092 DEBUG [restartedMain] WebConfigurer: Initializing Metrics registries
+2017-07-14 13:56:17,094 DEBUG [restartedMain] WebConfigurer: Registering Metrics Filter
+2017-07-14 13:56:17,094 DEBUG [restartedMain] WebConfigurer: Registering Metrics Servlet
+2017-07-14 13:56:17,098 INFO  [restartedMain] WebConfigurer: Web application fully configured
+2017-07-14 13:56:17,338 DEBUG [restartedMain] AsyncSpringLiquibase: Liquibase is disabled
+2017-07-14 13:56:17,980 WARN  [restartedMain] JdbcEnvironmentInitiator: HHH000341: Could not obtain connection metadata : Method not supported
+2017-07-14 13:56:21,585 INFO  [restartedMain] TfgJHipsterApp: Started TfgJHipsterApp in 8.201 seconds (JVM running for 8.622)
+2017-07-14 13:56:21,586 INFO  [restartedMain] TfgJHipsterApp: 
+----------------------------------------------------------
+	Application 'TfgJHipsterApp' is running! Access URLs:
+	Local: 		http://localhost:8080
+	External: 	http://127.0.1.1:8080
+	Profile(s): 	[no-liquibase, hive]
+----------------------------------------------------------
+2017-07-14 13:56:25,644 INFO  [XNIO-2 task-1] servlet: Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-14 13:56:27,014 WARN  [XNIO-2 task-49] HiveConnection: Request to set autoCommit to false; Hive does not support autoCommit=false.
+2017-07-14 13:56:27,074 ERROR [XNIO-2 task-49] request: UT005023: Exception handling request to /api/account
+org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:526)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy144.add(Unknown Source)
+	at org.springframework.boot.actuate.audit.listener.AuditListener.onAuditEvent(AuditListener.java:48)
+	at org.springframework.boot.actuate.audit.listener.AbstractAuditListener.onApplicationEvent(AbstractAuditListener.java:33)
+	at org.springframework.boot.actuate.audit.listener.AbstractAuditListener.onApplicationEvent(AbstractAuditListener.java:28)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.boot.actuate.security.AbstractAuthorizationAuditListener.publish(AbstractAuthorizationAuditListener.java:50)
+	at org.springframework.boot.actuate.security.AuthorizationAuditListener.onAuthorizationFailureEvent(AuthorizationAuditListener.java:67)
+	at org.springframework.boot.actuate.security.AuthorizationAuditListener.onApplicationEvent(AuthorizationAuditListener.java:47)
+	at org.springframework.boot.actuate.security.AuthorizationAuditListener.onApplicationEvent(AuthorizationAuditListener.java:33)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.publishEvent(AbstractSecurityInterceptor.java:504)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:236)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:211)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:75)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:71)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517)
+	... 108 common frames omitted
+Caused by: java.sql.SQLException: Method not supported
+	at org.apache.hive.jdbc.HiveConnection.commit(HiveConnection.java:747)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:79)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:221)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68)
+	... 109 common frames omitted
+2017-07-14 13:56:56,202 DEBUG [Thread-6] User: Close successful.
+2017-07-14 13:56:56,203 DEBUG [Thread-6] Authority: Close successful.
+2017-07-14 13:56:56,203 DEBUG [Thread-6] PersistentToken: Close successful.
+2017-07-14 13:56:56,204 DEBUG [Thread-6] authorities: Close successful.
+2017-07-14 13:56:56,204 DEBUG [Thread-6] persistentTokens: Close successful.
+2017-07-14 13:56:56,209 INFO  [Thread-6] servlet: Destroying Spring FrameworkServlet 'dispatcherServlet'
+2017-07-14 13:56:58,630 INFO  [restartedMain] TfgJHipsterApp: Starting TfgJHipsterApp on catalin-GL552VW with PID 26323 (/home/catalin/Escritorio/TFG/TFG/build/classes/java/main started by catalin in /home/catalin/Escritorio/TFG/TFG)
+2017-07-14 13:56:58,631 DEBUG [restartedMain] TfgJHipsterApp: Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2017-07-14 13:56:58,632 INFO  [restartedMain] TfgJHipsterApp: The following profiles are active: no-liquibase,hive
+2017-07-14 13:56:58,760 DEBUG [background-preinit] logging: Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-07-14 13:57:00,535 DEBUG [restartedMain] AsyncConfiguration: Creating Async Task Executor
+2017-07-14 13:57:00,936 DEBUG [restartedMain] User: Initialize successful.
+2017-07-14 13:57:00,945 DEBUG [restartedMain] Authority: Initialize successful.
+2017-07-14 13:57:00,948 DEBUG [restartedMain] authorities: Initialize successful.
+2017-07-14 13:57:00,951 DEBUG [restartedMain] PersistentToken: Initialize successful.
+2017-07-14 13:57:00,953 DEBUG [restartedMain] persistentTokens: Initialize successful.
+2017-07-14 13:57:00,991 DEBUG [restartedMain] MetricsConfiguration: Registering JVM gauges
+2017-07-14 13:57:01,001 DEBUG [restartedMain] MetricsConfiguration: Initializing Metrics JMX reporting
+2017-07-14 13:57:01,327 WARN  [restartedMain] jsr: UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 13:57:01,327 WARN  [restartedMain] jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 13:57:01,345 INFO  [restartedMain] servlet: Initializing Spring embedded WebApplicationContext
+2017-07-14 13:57:01,572 DEBUG [restartedMain] WebConfigurer: Registering CORS filter
+2017-07-14 13:57:01,689 INFO  [restartedMain] WebConfigurer: Web application configuration, using profiles: no-liquibase
+2017-07-14 13:57:01,690 DEBUG [restartedMain] WebConfigurer: Initializing Metrics registries
+2017-07-14 13:57:01,691 DEBUG [restartedMain] WebConfigurer: Registering Metrics Filter
+2017-07-14 13:57:01,692 DEBUG [restartedMain] WebConfigurer: Registering Metrics Servlet
+2017-07-14 13:57:01,693 INFO  [restartedMain] WebConfigurer: Web application fully configured
+2017-07-14 13:57:01,960 DEBUG [restartedMain] AsyncSpringLiquibase: Liquibase is disabled
+2017-07-14 13:57:02,815 WARN  [restartedMain] JdbcEnvironmentInitiator: HHH000341: Could not obtain connection metadata : Method not supported
+2017-07-14 13:57:06,820 INFO  [restartedMain] TfgJHipsterApp: Started TfgJHipsterApp in 9.105 seconds (JVM running for 9.604)
+2017-07-14 13:57:06,820 INFO  [restartedMain] TfgJHipsterApp: 
+----------------------------------------------------------
+	Application 'TfgJHipsterApp' is running! Access URLs:
+	Local: 		http://localhost:8080
+	External: 	http://127.0.1.1:8080
+	Profile(s): 	[no-liquibase, hive]
+----------------------------------------------------------
+2017-07-14 13:57:24,974 DEBUG [Thread-6] User: Close successful.
+2017-07-14 13:57:24,975 DEBUG [Thread-6] Authority: Close successful.
+2017-07-14 13:57:24,976 DEBUG [Thread-6] PersistentToken: Close successful.
+2017-07-14 13:57:24,976 DEBUG [Thread-6] authorities: Close successful.
+2017-07-14 13:57:24,976 DEBUG [Thread-6] persistentTokens: Close successful.
+2017-07-14 13:57:26,958 INFO  [restartedMain] TfgJHipsterApp: Starting TfgJHipsterApp on catalin-GL552VW with PID 26419 (/home/catalin/Escritorio/TFG/TFG/build/classes/java/main started by catalin in /home/catalin/Escritorio/TFG/TFG)
+2017-07-14 13:57:26,959 DEBUG [restartedMain] TfgJHipsterApp: Running with Spring Boot v1.5.4.RELEASE, Spring v4.3.9.RELEASE
+2017-07-14 13:57:26,960 INFO  [restartedMain] TfgJHipsterApp: The following profiles are active: no-liquibase,hive
+2017-07-14 13:57:27,074 DEBUG [background-preinit] logging: Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2017-07-14 13:57:28,532 DEBUG [restartedMain] AsyncConfiguration: Creating Async Task Executor
+2017-07-14 13:57:28,976 DEBUG [restartedMain] User: Initialize successful.
+2017-07-14 13:57:28,986 DEBUG [restartedMain] Authority: Initialize successful.
+2017-07-14 13:57:28,989 DEBUG [restartedMain] authorities: Initialize successful.
+2017-07-14 13:57:28,992 DEBUG [restartedMain] PersistentToken: Initialize successful.
+2017-07-14 13:57:28,994 DEBUG [restartedMain] persistentTokens: Initialize successful.
+2017-07-14 13:57:29,030 DEBUG [restartedMain] MetricsConfiguration: Registering JVM gauges
+2017-07-14 13:57:29,040 DEBUG [restartedMain] MetricsConfiguration: Initializing Metrics JMX reporting
+2017-07-14 13:57:29,380 WARN  [restartedMain] jsr: UT026009: XNIO worker was not set on WebSocketDeploymentInfo, the default worker will be used
+2017-07-14 13:57:29,381 WARN  [restartedMain] jsr: UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2017-07-14 13:57:29,397 INFO  [restartedMain] servlet: Initializing Spring embedded WebApplicationContext
+2017-07-14 13:57:29,552 DEBUG [restartedMain] WebConfigurer: Registering CORS filter
+2017-07-14 13:57:29,753 INFO  [restartedMain] WebConfigurer: Web application configuration, using profiles: no-liquibase
+2017-07-14 13:57:29,753 DEBUG [restartedMain] WebConfigurer: Initializing Metrics registries
+2017-07-14 13:57:29,754 DEBUG [restartedMain] WebConfigurer: Registering Metrics Filter
+2017-07-14 13:57:29,755 DEBUG [restartedMain] WebConfigurer: Registering Metrics Servlet
+2017-07-14 13:57:29,757 INFO  [restartedMain] WebConfigurer: Web application fully configured
+2017-07-14 13:57:29,992 DEBUG [restartedMain] AsyncSpringLiquibase: Liquibase is disabled
+2017-07-14 13:57:30,680 WARN  [restartedMain] JdbcEnvironmentInitiator: HHH000341: Could not obtain connection metadata : Method not supported
+2017-07-14 13:57:34,468 INFO  [restartedMain] TfgJHipsterApp: Started TfgJHipsterApp in 8.399 seconds (JVM running for 8.838)
+2017-07-14 13:57:34,469 INFO  [restartedMain] TfgJHipsterApp: 
+----------------------------------------------------------
+	Application 'TfgJHipsterApp' is running! Access URLs:
+	Local: 		http://localhost:8080
+	External: 	http://127.0.1.1:8080
+	Profile(s): 	[no-liquibase, hive]
+----------------------------------------------------------
+2017-07-14 13:57:51,728 INFO  [XNIO-2 task-1] servlet: Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-14 13:57:53,330 WARN  [XNIO-2 task-52] HiveConnection: Request to set autoCommit to false; Hive does not support autoCommit=false.
+2017-07-14 13:57:53,367 ERROR [XNIO-2 task-52] request: UT005023: Exception handling request to /api/account
+org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Error while committing the transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:526)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:761)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:730)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:504)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:292)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy144.add(Unknown Source)
+	at org.springframework.boot.actuate.audit.listener.AuditListener.onAuditEvent(AuditListener.java:48)
+	at org.springframework.boot.actuate.audit.listener.AbstractAuditListener.onApplicationEvent(AbstractAuditListener.java:33)
+	at org.springframework.boot.actuate.audit.listener.AbstractAuditListener.onApplicationEvent(AbstractAuditListener.java:28)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.boot.actuate.security.AbstractAuthorizationAuditListener.publish(AbstractAuthorizationAuditListener.java:50)
+	at org.springframework.boot.actuate.security.AuthorizationAuditListener.onAuthorizationFailureEvent(AuthorizationAuditListener.java:67)
+	at org.springframework.boot.actuate.security.AuthorizationAuditListener.onApplicationEvent(AuthorizationAuditListener.java:47)
+	at org.springframework.boot.actuate.security.AuthorizationAuditListener.onApplicationEvent(AuthorizationAuditListener.java:33)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:167)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.publishEvent(AbstractSecurityInterceptor.java:504)
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:236)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:124)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:150)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SessionRestoringHandler.handleRequest(SessionRestoringHandler.java:119)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:292)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:138)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:272)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:104)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:211)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: javax.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:75)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:71)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:517)
+	... 108 common frames omitted
+Caused by: java.sql.SQLException: Method not supported
+	at org.apache.hive.jdbc.HiveConnection.commit(HiveConnection.java:747)
+	at org.hibernate.resource.jdbc.internal.AbstractLogicalConnectionImplementor.commit(AbstractLogicalConnectionImplementor.java:79)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:221)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68)
+	... 109 common frames omitted
