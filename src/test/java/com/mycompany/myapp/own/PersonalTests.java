@@ -14,8 +14,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = TfgJHipsterApp.class)
 @ContextConfiguration()
-//        "classpath:config/application-dev.yml",
-//        "classpath:config/application-hive.yml"
 
 @ActiveProfiles("hive")
 //@Transactional
