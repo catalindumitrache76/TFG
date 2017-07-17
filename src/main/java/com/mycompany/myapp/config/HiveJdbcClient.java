@@ -42,15 +42,12 @@ public class HiveJdbcClient {
         // load data into table
         // NOTE: filepath has to be local to the hive server
         // NOTE: /tmp/a.txt is a ctrl-A separated file with two fields per line
-        String filepath = "/tmp/a.txt";
+        String filepath = System.getProperty("user.dir") + "/Hive_Tables_Scripts/create_jhi_user_authority.sql";
         sql = "load data local inpath '" + filepath + "' into table " + tableName;
         System.out.println("> Ejecutando: " + sql);
         executed = stmt.execute(sql);
-        if (executed) {
-            System.out.println ("> Se ha cargado el fichero "+ filepath + " en HIVE SERVER");
-        } else {
-            System.out.println("> Error. No se ha cargado el fichero "+ filepath + " en HIVE SERVER");
-        }
+        System.out.println ("> Cargando el fichero "+ filepath + " en HIVE SERVER");
+
 
         // select * query
         sql = "select * from " + tableName;

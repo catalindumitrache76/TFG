@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- basic Hive driver bean -->
+    <bean id="hive-driver" class="org.apache.hive.jdbc.HiveDriver"/>
+
+    <!-- wrapping a basic datasource around the driver -->
+    <!-- notice the 'c:' namespace (available in Spring 3.1+) for inlining constructor arguments,
+         in this case the url (default is 'jdbc:hive://localhost:10000/default') -->
+    <bean id="hive-ds" class="org.springframework.jdbc.datasource.SimpleDriverDataSource"
+          c:driver-ref="hive-driver" c:url="jdbc:hive2://localhost:10000/default"/>
+
+    <!-- standard JdbcTemplate declaration -->
+    <bean id="template" class="org.springframework.jdbc.core.JdbcTemplate" c:data-source-ref="hive-ds"/>
+
+    <!--<context:property-placeholder location="/config/application-hive.yml"/>-->
+</beans>
