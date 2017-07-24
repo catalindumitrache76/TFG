@@ -4,3 +4,5 @@ gulp/
 bower_components/
 .idea/
 .gradle/
+gradle/
+	
