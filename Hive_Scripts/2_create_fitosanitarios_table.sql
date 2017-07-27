@@ -1,4 +1,4 @@
-CREATE TABLE tfghivedb.Fitosanitario
+CREATE EXTERNAL TABLE tfghivedb.Fitosanitario
 (
   id int,
   numregistro string,
@@ -7,4 +7,4 @@ CREATE TABLE tfghivedb.Fitosanitario
   formulado string
 )
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
-STORED AS TEXTFILE;
+LOCATION '/user/data/prueba_concepto';
