@@ -1,8 +1,10 @@
 CREATE TABLE tfghivedb.Fitosanitario
 (
+  id int,
   numregistro string,
   nombrecomercial string,
   titular string,
   formulado string
-) ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE;
