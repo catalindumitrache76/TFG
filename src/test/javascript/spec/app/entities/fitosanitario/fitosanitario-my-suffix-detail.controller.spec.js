@@ -4,7 +4,7 @@ describe('Controller Tests', function() {
 
     describe('Fitosanitario Management Detail Controller', function() {
         var $scope, $rootScope;
-        var MockEntity, MockPreviousState, MockFitosanitario;
+        var MockEntity, MockPreviousState, MockFitosanitario, MockEditorial;
         var createController;
 
         beforeEach(inject(function($injector) {
@@ -13,6 +13,7 @@ describe('Controller Tests', function() {
             MockEntity = jasmine.createSpy('MockEntity');
             MockPreviousState = jasmine.createSpy('MockPreviousState');
             MockFitosanitario = jasmine.createSpy('MockFitosanitario');
+            MockEditorial = jasmine.createSpy('MockEditorial');
             
 
             var locals = {
@@ -20,7 +21,8 @@ describe('Controller Tests', function() {
                 '$rootScope': $rootScope,
                 'entity': MockEntity,
                 'previousState': MockPreviousState,
-                'Fitosanitario': MockFitosanitario
+                'Fitosanitario': MockFitosanitario,
+                'Editorial': MockEditorial
             };
             createController = function() {
                 $injector.get('$controller')("FitosanitarioMySuffixDetailController", locals);

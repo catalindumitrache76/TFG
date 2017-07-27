@@ -5,9 +5,9 @@
         .module('tfgJHipsterApp')
         .controller('FitosanitarioMySuffixDetailController', FitosanitarioMySuffixDetailController);
 
-    FitosanitarioMySuffixDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Fitosanitario'];
+    FitosanitarioMySuffixDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Fitosanitario', 'Editorial'];
 
-    function FitosanitarioMySuffixDetailController($scope, $rootScope, $stateParams, previousState, entity, Fitosanitario) {
+    function FitosanitarioMySuffixDetailController($scope, $rootScope, $stateParams, previousState, entity, Fitosanitario, Editorial) {
         var vm = this;
 
         vm.fitosanitario = entity;

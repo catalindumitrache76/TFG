@@ -5,14 +5,15 @@
         .module('tfgJHipsterApp')
         .controller('FitosanitarioMySuffixDialogController', FitosanitarioMySuffixDialogController);
 
-    FitosanitarioMySuffixDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Fitosanitario'];
+    FitosanitarioMySuffixDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Fitosanitario', 'Editorial'];
 
-    function FitosanitarioMySuffixDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Fitosanitario) {
+    function FitosanitarioMySuffixDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Fitosanitario, Editorial) {
         var vm = this;
 
         vm.fitosanitario = entity;
         vm.clear = clear;
         vm.save = save;
+        vm.editorials = Editorial.query();
 
         $timeout(function (){
             angular.element('.form-group:eq(1)>input').focus();

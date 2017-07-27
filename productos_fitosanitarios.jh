@@ -1,3 +1,6 @@
+entity Editorial {
+	nombreEditorial String required
+}
 entity Fitosanitario {
 	num_registro String required,
 	nombre_comercial String,
@@ -5,6 +8,9 @@ entity Fitosanitario {
 	formulado String
 }
 
+relationship OneToMany {
+    Fitosanitario{pertenece} to Editorial
+}
 
 // Set pagination options
 paginate Fitosanitario with pagination
