@@ -10,9 +10,8 @@ import org.mapstruct.*;
  */
 @Mapper(componentModel = "spring", uses = {})
 public interface FitosanitarioMapper extends EntityMapper <FitosanitarioDTO, Fitosanitario> {
-    
-    @Mapping(target = "perteneces", ignore = true)
-    Fitosanitario toEntity(FitosanitarioDTO fitosanitarioDTO); 
+
+
     default Fitosanitario fromId(Long id) {
         if (id == null) {
             return null;

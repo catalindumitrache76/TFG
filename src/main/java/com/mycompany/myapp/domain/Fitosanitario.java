@@ -1,12 +1,9 @@
 package com.mycompany.myapp.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.Objects;
 
 /**
@@ -34,10 +31,6 @@ public class Fitosanitario implements Serializable {
 
     @Column(name = "formulado")
     private String formulado;
-
-    @OneToMany(mappedBy = "fitosanitario")
-    @JsonIgnore
-    private Set<Editorial> perteneces = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -97,31 +90,6 @@ public class Fitosanitario implements Serializable {
 
     public void setFormulado(String formulado) {
         this.formulado = formulado;
-    }
-
-    public Set<Editorial> getPerteneces() {
-        return perteneces;
-    }
-
-    public Fitosanitario perteneces(Set<Editorial> editorials) {
-        this.perteneces = editorials;
-        return this;
-    }
-
-    public Fitosanitario addPertenece(Editorial editorial) {
-        this.perteneces.add(editorial);
-        editorial.setFitosanitario(this);
-        return this;
-    }
-
-    public Fitosanitario removePertenece(Editorial editorial) {
-        this.perteneces.remove(editorial);
-        editorial.setFitosanitario(null);
-        return this;
-    }
-
-    public void setPerteneces(Set<Editorial> editorials) {
-        this.perteneces = editorials;
     }
 
     @Override

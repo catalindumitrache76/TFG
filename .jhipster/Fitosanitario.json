@@ -1,13 +1,6 @@
 {
     "fluentMethods": true,
-    "relationships": [
-        {
-            "relationshipType": "one-to-many",
-            "relationshipName": "pertenece",
-            "otherEntityName": "editorial",
-            "otherEntityRelationshipName": "fitosanitario"
-        }
-    ],
+    "relationships": [],
     "fields": [
         {
             "fieldName": "numregistro",
