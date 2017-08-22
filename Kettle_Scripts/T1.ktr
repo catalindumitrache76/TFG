@@ -448,6 +448,40 @@
     </hop>
   </order>
   <step>
+    <name>Añadir secuencia</name>
+    <type>Sequence</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <valuename>Id</valuename>
+    <use_database>N</use_database>
+    <connection />
+    <schema />
+    <seqname>SEQ_</seqname>
+    <use_counter>Y</use_counter>
+    <counter_name />
+    <start_at>1</start_at>
+    <increment_by>1</increment_by>
+    <max_value>2169</max_value>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
     <name>Entrada Excel</name>
     <type>ExcelInput</type>
     <description />
@@ -569,40 +603,6 @@
     </GUI>
   </step>
   <step>
-    <name>Añadir secuencia</name>
-    <type>Sequence</type>
-    <description />
-    <distribute>N</distribute>
-    <custom_distribution />
-    <copies>1</copies>
-    <partitioning>
-      <method>none</method>
-      <schema_name />
-    </partitioning>
-    <valuename>Id</valuename>
-    <use_database>N</use_database>
-    <connection />
-    <schema />
-    <seqname>SEQ_</seqname>
-    <use_counter>Y</use_counter>
-    <counter_name />
-    <start_at>1</start_at>
-    <increment_by>1</increment_by>
-    <max_value>2169</max_value>
-    <cluster_schema />
-    <remotesteps>
-      <input>
-      </input>
-      <output>
-      </output>
-    </remotesteps>
-    <GUI>
-      <xloc>288</xloc>
-      <yloc>32</yloc>
-      <draw>Y</draw>
-    </GUI>
-  </step>
-  <step>
     <name>Hadoop File Output</name>
     <type>HadoopFileOutputPlugin</type>
     <description />
@@ -707,6 +707,78 @@
         <precision>0</precision>
       </field>
     </fields>
+    <NamedCluster>
+      <child>
+        <id>hdfsPassword</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>lastModifiedDate</id>
+        <value>1502808649815</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>mapr</id>
+        <value>false</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>oozieUrl</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>jobTrackerHost</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>zooKeeperHost</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>shimIdentifier</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>jobTrackerPort</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>zooKeeperPort</id>
+        <value />
+        <type>String</type>
+      </child>
+      <child>
+        <id>hdfsPort</id>
+        <value>9001</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>name</id>
+        <value>Hadoop</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>hdfsUsername</id>
+        <value>catalin</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>storageScheme</id>
+        <value>hdfs</value>
+        <type>String</type>
+      </child>
+      <child>
+        <id>hdfsHost</id>
+        <value>localhost</value>
+        <type>String</type>
+      </child>
+    </NamedCluster>
     <cluster_schema />
     <remotesteps>
       <input>

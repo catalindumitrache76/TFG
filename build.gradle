@@ -124,14 +124,13 @@ repositories {
     mavenLocal()
     mavenCentral()
     jcenter()
+    maven { url 'http://nexus.pentaho.org/content/groups/omni' }
     maven { url 'http://repo.spring.io/milestone' }
     maven { url 'http://repo.spring.io/snapshot' }
     maven { url 'https://repository.jboss.org/nexus/content/repositories/releases' }
     maven { url 'https://oss.sonatype.org/content/repositories/releases' }
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url 'http://repo.maven.apache.org/maven2' }
-    maven { url 'http://nexus.pentaho.org/content/groups/omni' }
-//    maven { url 'http://repo.pentaho.org/artifactory' }
 }
 
 dependencies {
@@ -144,17 +143,13 @@ dependencies {
     compile ("net.logstash.logback:logstash-logback-encoder:${logstash_logback_encoder_version}") {
         exclude(group: 'ch.qos.logback')
     }
+
+
+    // PENTAHO
     compile "pentaho-kettle:kettle-core:7.1.0.0-12"
     compile "pentaho-kettle:kettle-engine:7.1.0.0-12"
-//    compile "pentaho:pentaho-big-data-plugin:7.1.0.0-12"
     compile "pentaho:pentaho-big-data-kettle-plugins-hdfs:7.1.0.0-12"
-
-//    compile "pentaho-kettle:kettle-db:7.1.0.0-12"
-//    compile group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
-//    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.8.2'
-//    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.8.2'
-//    compile group: 'org.slf4j', name: 'slf4j-log4j12'
-
+//    compile "pentaho:pentaho-big-data-plugin:7.1.0.0-12"
 
     compile "com.fasterxml.jackson.datatype:jackson-datatype-json-org"
     compile "com.fasterxml.jackson.datatype:jackson-datatype-hppc"
