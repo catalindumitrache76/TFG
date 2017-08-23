@@ -152,16 +152,14 @@ dependencies {
     compile group: 'pentaho-kettle', name: 'kettle-core', version: '7.1.0.0-12'
     compile group: 'pentaho-kettle', name: 'kettle-dbdialog', version: '7.1.0.0-12'
     compile group: 'pentaho-kettle', name: 'kettle-engine', version: '7.1.0.0-12'
-    compile group: 'pentaho', name: 'pentaho-big-data-api', version: '7.1.0.0-12'
-    compile group: 'pentaho', name: 'pentaho-big-data-api-cluster', version: '7.1.0.0-12'
-    compile group: 'pentaho', name: 'pentaho-big-data-impl', version: '7.1.0.0-12'
-    compile group: 'pentaho', name: 'pentaho-big-data-kettle-plugins', version: '7.1.0.0-12'
-
+//    compile group: 'pentaho', name: 'pentaho-big-data-api', version: '7.1.0.0-12'
+//    compile group: 'pentaho', name: 'pentaho-big-data-api-cluster', version: '7.1.0.0-12'
+//    compile group: 'pentaho', name: 'pentaho-big-data-impl', version: '7.1.0.0-12'
+//    compile group: 'pentaho', name: 'pentaho-big-data-kettle-plugins', version: '7.1.0.0-12'
 
 //    compile 'pentaho:pentaho-big-data-plugin:7.1.0.0-12' // - Este falla porque no tiene jsf.api
 //    compile files('/home/catalin/Escritorio/TFG/Kettle/plugins/pentaho-big-data-plugin/pentaho-big-data-legacy-7.1.0.0-12.jar')
 
-    compile files('/home/catalin/Escritorio/TFG/Plugins_Kettle/new-big-data-plugin/api/cluster/target/pentaho-big-data-api-cluster-8.0-SNAPSHOT.jar')
     compile group: 'org.odftoolkit', name: 'odfdom-java', version: '0.8.7'
 
 

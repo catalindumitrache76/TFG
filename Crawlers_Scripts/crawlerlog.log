@@ -291,3 +291,54 @@ mié ago 23 14:01:01 CEST 2017: Se ha descargado el fichero con los productos au
 mié ago 23 14:01:08 CEST 2017: Se ha convertido el fichero viejo
 mié ago 23 14:01:08 CEST 2017: Se ha borrado el fichero viejo
 mié ago 23 14:01:22 CEST 2017: Se ha copiado el fichero en Hadoop. 
+--2017-08-23 16:01:01--  http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/productos/ListadoProductos.asp
+Resolviendo www.mapama.gob.es (www.mapama.gob.es)... 130.206.192.15, 130.206.192.8
+Conectando con www.mapama.gob.es (www.mapama.gob.es)[130.206.192.15]:80... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 514557 (502K) [application/vnd.ms-excel]
+Grabando a: “/home/catalin/Escritorio/TFG/Productos_fitosanitarios/España/Productos_autorizados/ListadoProductos_2017_08_23-16_01.xls”
+
+     0K .......... .......... .......... .......... ..........  9% 1015K 0s
+    50K .......... .......... .......... .......... .......... 19% 1,55M 0s
+   100K .......... .......... .......... .......... .......... 29% 1,99M 0s
+   150K .......... .......... .......... .......... .......... 39% 9,76M 0s
+   200K .......... .......... .......... .......... .......... 49% 2,18M 0s
+   250K .......... .......... .......... .......... .......... 59% 4,15M 0s
+   300K .......... .......... .......... .......... .......... 69% 4,65M 0s
+   350K .......... .......... .......... .......... .......... 79% 8,14M 0s
+   400K .......... .......... .......... .......... .......... 89% 7,45M 0s
+   450K .......... .......... .......... .......... .......... 99% 4,93M 0s
+   500K ..                                                    100% 13,1M=0,2s
+
+2017-08-23 16:01:01 (2,76 MB/s) - “/home/catalin/Escritorio/TFG/Productos_fitosanitarios/España/Productos_autorizados/ListadoProductos_2017_08_23-16_01.xls” guardado [514557/514557]
+
+mié ago 23 16:01:01 CEST 2017: Se ha descargado el fichero con los productos autorizados
+mié ago 23 16:01:01 CEST 2017: Se ha convertido el fichero viejo
+mié ago 23 16:01:01 CEST 2017: Se ha borrado el fichero viejo
+put: `/home/catalin/Escritorio/TFG/Productos_fitosanitarios/España/Productos_autorizados/ListadoProductos_2017_08_23-16_01.ods': No such file or directory
+mié ago 23 16:01:01 CEST 2017: ERROR: No se ha copiado el fichero en Hadoop. Código: 1
+--2017-08-23 17:01:01--  http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/productos/ListadoProductos.asp
+Resolviendo www.mapama.gob.es (www.mapama.gob.es)... 130.206.192.8, 130.206.192.15
+Conectando con www.mapama.gob.es (www.mapama.gob.es)[130.206.192.8]:80... conectado.
+Petición HTTP enviada, esperando respuesta... 200 OK
+Longitud: 514557 (502K) [application/vnd.ms-excel]
+Grabando a: “/home/catalin/Escritorio/TFG/Productos_fitosanitarios/España/Productos_autorizados/ListadoProductos_2017_08_23-17_01.xls”
+
+     0K .......... .......... .......... .......... ..........  9% 3,00M 0s
+    50K .......... .......... .......... .......... .......... 19% 3,15M 0s
+   100K .......... .......... .......... .......... .......... 29% 9,57M 0s
+   150K .......... .......... .......... .......... .......... 39% 2,44M 0s
+   200K .......... .......... .......... .......... .......... 49% 11,3M 0s
+   250K .......... .......... .......... .......... .......... 59% 11,0M 0s
+   300K .......... .......... .......... .......... .......... 69% 8,82M 0s
+   350K .......... .......... .......... .......... .......... 79% 9,81M 0s
+   400K .......... .......... .......... .......... .......... 89% 11,5M 0s
+   450K .......... .......... .......... .......... .......... 99% 12,3M 0s
+   500K ..                                                    100% 20,1M=0,08s
+
+2017-08-23 17:01:01 (5,81 MB/s) - “/home/catalin/Escritorio/TFG/Productos_fitosanitarios/España/Productos_autorizados/ListadoProductos_2017_08_23-17_01.xls” guardado [514557/514557]
+
+mié ago 23 17:01:01 CEST 2017: Se ha descargado el fichero con los productos autorizados
+mié ago 23 17:01:08 CEST 2017: Se ha convertido el fichero viejo
+mié ago 23 17:01:08 CEST 2017: Se ha borrado el fichero viejo
+mié ago 23 17:01:18 CEST 2017: Se ha copiado el fichero en Hadoop. 
