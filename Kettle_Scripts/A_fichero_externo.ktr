@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>T1</name>
+    <name>A_fichero_externo</name>
     <description />
     <extended_description />
     <trans_version />
     <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
     <directory>/</directory>
     <parameters>
     </parameters>
@@ -443,7 +444,7 @@
     </hop>
     <hop>
       <from>Añadir secuencia</from>
-      <to>Hadoop File Output</to>
+      <to>Salida Fichero de Texto</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -603,8 +604,8 @@
     </GUI>
   </step>
   <step>
-    <name>Hadoop File Output</name>
-    <type>HadoopFileOutputPlugin</type>
+    <name>Salida Fichero de Texto</name>
+    <type>TextFileOutput</type>
     <description />
     <distribute>Y</distribute>
     <custom_distribution />
@@ -627,12 +628,11 @@
     <fileNameField />
     <create_parent_folder>Y</create_parent_folder>
     <file>
-      <name>hdfs://catalin@localhost:9001/user/data/prueba_concepto/Output</name>
-      <source_configuration_name>Hadoop</source_configuration_name>
+      <name>/home/catalin/Escritorio/TFG/TFG/Kettle_Scripts/salida_a_fichero_externo</name>
       <is_command>N</is_command>
       <servlet_output>N</servlet_output>
       <do_not_open_new_file_init>N</do_not_open_new_file_init>
-      <extention>csv</extention>
+      <extention>txt</extention>
       <append>N</append>
       <split>N</split>
       <haspartno>N</haspartno>
@@ -646,18 +646,6 @@
       <splitevery>0</splitevery>
     </file>
     <fields>
-      <field>
-        <name>Id</name>
-        <type>String</type>
-        <format />
-        <currency />
-        <decimal />
-        <group />
-        <nullif />
-        <trim_type>none</trim_type>
-        <length>-1</length>
-        <precision>-1</precision>
-      </field>
       <field>
         <name>Nº Registro</name>
         <type>String</type>
@@ -696,7 +684,7 @@
       </field>
       <field>
         <name>Formulado</name>
-        <type>Integer</type>
+        <type>String</type>
         <format />
         <currency />
         <decimal />
@@ -704,81 +692,21 @@
         <nullif />
         <trim_type>none</trim_type>
         <length>-1</length>
+        <precision>-1</precision>
+      </field>
+      <field>
+        <name>Id</name>
+        <type>Integer</type>
+        <format>####0;-####0</format>
+        <currency />
+        <decimal>,</decimal>
+        <group>.</group>
+        <nullif />
+        <trim_type>none</trim_type>
+        <length>-1</length>
         <precision>0</precision>
       </field>
     </fields>
-    <NamedCluster>
-      <child>
-        <id>hdfsPassword</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>lastModifiedDate</id>
-        <value>1502808649815</value>
-        <type>String</type>
-      </child>
-      <child>
-        <id>mapr</id>
-        <value>false</value>
-        <type>String</type>
-      </child>
-      <child>
-        <id>oozieUrl</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>jobTrackerHost</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>zooKeeperHost</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>shimIdentifier</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>jobTrackerPort</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>zooKeeperPort</id>
-        <value />
-        <type>String</type>
-      </child>
-      <child>
-        <id>hdfsPort</id>
-        <value>9001</value>
-        <type>String</type>
-      </child>
-      <child>
-        <id>name</id>
-        <value>Hadoop</value>
-        <type>String</type>
-      </child>
-      <child>
-        <id>hdfsUsername</id>
-        <value>catalin</value>
-        <type>String</type>
-      </child>
-      <child>
-        <id>storageScheme</id>
-        <value>hdfs</value>
-        <type>String</type>
-      </child>
-      <child>
-        <id>hdfsHost</id>
-        <value>localhost</value>
-        <type>String</type>
-      </child>
-    </NamedCluster>
     <cluster_schema />
     <remotesteps>
       <input>
@@ -787,7 +715,7 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>496</xloc>
+      <xloc>464</xloc>
       <yloc>32</yloc>
       <draw>Y</draw>
     </GUI>

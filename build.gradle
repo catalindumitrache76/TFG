@@ -124,13 +124,16 @@ repositories {
     mavenLocal()
     mavenCentral()
     jcenter()
-    maven { url 'http://nexus.pentaho.org/content/groups/omni' }
     maven { url 'http://repo.spring.io/milestone' }
     maven { url 'http://repo.spring.io/snapshot' }
     maven { url 'https://repository.jboss.org/nexus/content/repositories/releases' }
     maven { url 'https://oss.sonatype.org/content/repositories/releases' }
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     maven { url 'http://repo.maven.apache.org/maven2' }
+
+    // My repositories
+    maven { url 'http://nexus.pentaho.org/content/groups/omni' }
+//    maven { url 'http://repository.pentaho.org/artifactory/repo'}
 }
 
 dependencies {
@@ -145,11 +148,22 @@ dependencies {
     }
 
 
-    // PENTAHO
-    compile "pentaho-kettle:kettle-core:7.1.0.0-12"
-    compile "pentaho-kettle:kettle-engine:7.1.0.0-12"
-    compile "pentaho:pentaho-big-data-kettle-plugins-hdfs:7.1.0.0-12"
-//    compile "pentaho:pentaho-big-data-plugin:7.1.0.0-12"
+    // TODO: PENTAHO
+    compile group: 'pentaho-kettle', name: 'kettle-core', version: '7.1.0.0-12'
+    compile group: 'pentaho-kettle', name: 'kettle-dbdialog', version: '7.1.0.0-12'
+    compile group: 'pentaho-kettle', name: 'kettle-engine', version: '7.1.0.0-12'
+    compile group: 'pentaho', name: 'pentaho-big-data-api', version: '7.1.0.0-12'
+    compile group: 'pentaho', name: 'pentaho-big-data-api-cluster', version: '7.1.0.0-12'
+    compile group: 'pentaho', name: 'pentaho-big-data-impl', version: '7.1.0.0-12'
+    compile group: 'pentaho', name: 'pentaho-big-data-kettle-plugins', version: '7.1.0.0-12'
+
+
+//    compile 'pentaho:pentaho-big-data-plugin:7.1.0.0-12' // - Este falla porque no tiene jsf.api
+//    compile files('/home/catalin/Escritorio/TFG/Kettle/plugins/pentaho-big-data-plugin/pentaho-big-data-legacy-7.1.0.0-12.jar')
+
+    compile files('/home/catalin/Escritorio/TFG/Plugins_Kettle/new-big-data-plugin/api/cluster/target/pentaho-big-data-api-cluster-8.0-SNAPSHOT.jar')
+    compile group: 'org.odftoolkit', name: 'odfdom-java', version: '0.8.7'
+
 
     compile "com.fasterxml.jackson.datatype:jackson-datatype-json-org"
     compile "com.fasterxml.jackson.datatype:jackson-datatype-hppc"
