@@ -94,6 +94,15 @@
 
 
     <dependencies>
+        <!--&lt;!&ndash;TODO: Dependencia con el jar de Talend &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>TalendCrawlerProject</groupId>-->
+            <!--<artifactId>TalendCrawlerProject</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>/home/catalin/Escritorio/TFG/TFG/Talend/TalendCrawlerProject-1.0-SNAPSHOT.one-jar.jar</systemPath>-->
+        <!--</dependency>-->
+
         <dependency>
             <groupId>io.github.jhipster</groupId>
             <artifactId>jhipster</artifactId>
