@@ -2,6 +2,41 @@
 \section{Prueba de concepto}
 Explicar que una fase inicial del proyecto fue la prueba de concepto donde se demostró que las herramientas integradas funcionan en conjunto. Introducir brevemente el hecho de que inicialmente hubo problemas con algunas tecnologías, pero no entrar en detalles. Explicar las decisiones que se han tenido que tomar en resumidas cuentas.
 \section{Prototipo real}
-Explicar en detalle el funcionamiento típico de la aplicación y la presentación de los datos. Hacer una especie de manual del usuario resumido y si hay algún aspecto interesante de la aplicación, hacer hincapié en el.
+\textbf{Integración de Talend con JHipster: }\par
+Lo primero que se hizo fue implementar un simple proceso mediante la interfaz gráfica de Talend. Este proceso realiza las siguientes operaciones: 
+\begin{enumerate}
+\item Descarga desde la web del \textit{Mapama} el fichero excel de los productos fitosanitarios autorizados.
+\item Convierte dicho excel a un formato openoffice para poder ser procesado desde Talend con los componentes excel correspondientes. 
+\item Sube a Hadoop una versión sin procesar del fichero
+\item Procesa el fichero añadiendole una columna llamada ID al principio y lo sube como versión procesada a Hadoop. 
+\end{enumerate} 
+
+A continuación se exportó el proceso desde Talend: 
+\textit{Archivo $\rightarrow$ Export $\rightarrow$ Java $\rightarrow$ JAR file}. Esto exporta las clases y librerias que Talend necesita para lanzar el job en un archivo comprimido llamado <nombre\_job>.jar
+El siguiente paso fue descomprimir el JAR en cuestión, analizar su contenido y ver cómo se podría importar en un proyecto Java. El JAR contenía varias carpetas y ficheros pero lo que interesa es lo siguiente:
+\dirtree{%
+.1 Nombre\_del\_jar.
+.2 lib.
+.3 \textit{librerias jar}.
+.2 Nombre\_del\_proyecto.
+.3 Nombre\_del\_job.
+.4 \textit{clase java principal del job}.
+.2 routines.
+.3 system.
+.4 api.
+.5 \textit{clases java}.
+.4 xml.
+.5 sax.
+.6 \textit{clases java}.
+.4 \textit{clases java}.
+.3 \textit{clases java}.
+}
+\par
+Así pues, a continuación se creó un nuevo proyecto Java con IntelliJ y Maven (TalendCrawler) y se copiaron todas las clases Java con su correspondiente estructura de carpetas. Dentro del fichero pom.xml del proyecto TalendCrawler donde se importaron todas las dependencias de Talend que figuraban como librerías locales en la carpeta lib. Para ello se tuvo que definir el \textit{repositorio de Cloudera} \cite{cloudera}, que es desde donde Maven buscaría la mayoría de librerías. Tras comprobar que la aplicación arrancaba y se comportaba correctamente, el próximo paso fue encapsular y exportar la aplicación como un Jar, en conjunto con sus librerías. Para ello se hizo uso del plugin \textit{one-jar} de Maven que recoge las dependencias del proyecto y las empaqueta junto a las otras clases en un único jar.\par 
+
+En el proyecto de JHipster lo que se hizo fue crear una clase llamada Talend, desde la que periódicamente (mediante @Scheduled) se ejecutaba el Jar anterior a través del comando Runnable. 
+
+
+\textit{Explicar en detalle el funcionamiento típico de la aplicación y la presentación de los datos. Hacer una especie de manual del usuario resumido y si hay algún aspecto interesante de la aplicación, hacer hincapié en el.}
 \section{Problemas técnicos detectados}
 Mencionar los problemas confrontados durante la realización del proyecto y la manera en la que se han solucionado.
