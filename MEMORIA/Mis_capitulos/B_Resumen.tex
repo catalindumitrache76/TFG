@@ -1,0 +1,14 @@
+\begin{center}
+
+{\Large \bfseries RESUMEN EJECUTIVO}
+
+\vspace{1.5cm}
+\end{center}
+
+
+Este proyecto se centra en presentar un modelo de integración de información relativa a productos fitosanitarios y su aplicación en diferentes productos agrícolas provenientes de fuentes heterogéneas en un esquema único. \par
+Para lograr esto, se han seleccionado diferentes fuentes de datos sobre productos fitosanitarios, presentes en distintos formatos y se han analizado varias tecnologías de integración para elegir el stack tecnológico que más se adecue al problema en cuestión.\par
+Así pues, en este proyecto se ha usado \textit{Apache Hadoop} \cite{hadoop} como sistema responsable del almacenamiento y escalabilidad de la solución y \textit{Apache Hive} \cite{hive} para facilitar el acceso y tratamiento de los datos mediante una aproximación relacional.\par
+Para demostrar la viabilidad del sistema, se ha desarrollado un prototipo funcional que recoge datos de los productos fitosanitarios de España y Europa y complementa la información de ambas fuentes, constituyendo un primer paso hacia ese modelo compartido donde varias fuentes heterogéneas concuerdan en un mismo esquema congruente. Los datos se pueden ver mediante una aplicación web desarrollada con \textit{JHipster} \cite{jhipster}, un generador de proyectos ligero sobre Java capaz de desplegar rápidamente una aplicación con una cuidada GUI. JHipster a su vez se nutre de la información de Hadoop mediante unos procesos ETL conseguidos a través de varias herramientas: Hive en el lado de Hadoop como antes se había mencionado, \textit{MySQL} \cite{mysql} como base de datos en el lado de JHipster y la herramienta Talend, que permite hacer transformaciones sobre ficheros y transferir los datos de manera sencilla entre Hive y MySQL. \\\par
+
+\textbf{Palabras clave:}  Productos fitosanitarios, Hadoop, Hive, Integración, ETL, Base de datos, JHipster, MySQL, Modelo único, BigData, Escalabilidad, Sqoop, Fuentes heterogéneas.

@@ -1,0 +1,235 @@
+\chapter{Análisis}
+\section{Análisis del problema}
+Como ya se ha aclarado varias veces a lo largo de este documento, actualmente hay una necesidad real en el mundo agrícola; la de disponer de la información sobre productos fitosanitarios de una manera centralizada, actualizada y de fácil acceso. Hoy en día esta necesidad se ha intentado abordar de varias maneras, y por ello hay disponibles varias aplicaciones que intentan apoyar al consumidor en las tareas agrícolas que involucran productos fitosanitarios. Algunos ejemplos son los productos que ofrecen empresas como aGROSLab, Cuaderno de Campo Agronev, o Agricolum. No obstante, estas aplicaciones se enfrentan al mismo problema; la inexistencia de una base de datos estandarizada cuya información sea congruente a través de los diferentes países de la Unión Europea. Por eso mismo, estas aplicaciones tienen que implementar, desarrollar y mantener ellas mismas las bases de datos que permitan acceder a la información deseada. Nuestra solución ofrecería un sistema dotado de una base de datos estandarizada, congruente en su información y completa, de código abierto y altamente escalable, por lo tanto todas las aplicaciones mencionadas arriba podrían convertirse en potenciales clientes consumidores de nuestro sistema, sustituyendo sus bases de datos por nuestra solución, con costes de integración mínimos.
+
+\section{Modelo de negocio}
+El modelo de negocio es el que se puede observar en la figura de la derecha. Se trata de una plantilla estándar para definir los aliados, las actividades y los recursos clave que intervienen en el proyecto, al igual que la propuesta de valor, la relación con los clientes, los canales de comunicación y los diferentes segmentos de clientes que tiene el proyecto. \par
+Por otra parte también se pueden observar los costes que presenta el proyecto y también los ingresos o beneficios esperados tras su finalización por parte del alumno. \par
+A continuación se explica cada uno de los apartados que incluye, en un orden que convenga más que el definido por la propia plantilla: 
+\begin{itemize}
+\item \textbf{Segmentos de clientes:} Aquí se mencionan los clientes a los que se distribuiría el resultado del producto, o a aquellos a los que sería dirigido. En este caso, por una parte existen tres tipos de clientes que recibirían el producto final (Agricultores que comercializan productos, Instituciones encargadas de validar la importación / exportación  de productos agrícolas, Importadores / Exportadores de productos agrícolas, pesqueros y alimentarios) que serían los que se beneficiarían directamente de los resultados del proyecto. Es a ellos a quien va dirigida la aplicación puesto que haría más simple el proceso de comprobación de los requisitos fitosanitarios sobre los productos agrícolas / pesqueros / alimentarios. Por otra parte están los clientes a los que va dirigido el proyecto dentro de la Universidad de Zaragoza. Estos son el tribunal de defensa del proyecto y el director del proyecto, que estará en constante contacto con el alumno. 
+\item \textbf{Propuesta de valor:}Se mencionan qué cosas aporta el proyecto a los clientes mencionados en el apartado anterior. Estas son:
+\begin{itemize}
+\item Análisis de las técnicas actuales involucradas en la comprobación de aplicación de los productos fitosanitarios a un determinado producto - puesto que para determinar qué problemas se pretenden solucionar, primero se debe entender bien el proceso actual.
+\item Diseño de una solución de integración que recoge datos sobre productos fitosanitarios de varios países y los integra en un esquema único - que pretende solucionar algunos de los problemas actuales.
+\item Desarrollo de una aplicación que muestre los resultados de manera gráfica - para demostrar los resultados tanto al tribunal como a los potenciales clientes.
+\item Redacción de un documento explicativo del proceso anterior - la memoria, que servirá para que el tribunal comprenda la dedicación y el esfuerzo invertido en el proyecto y los avances y logros obtenidos.
+\end{itemize}
+\item \textbf{Relación con los clientes:} Si bien es cierto que habrá una relación con los clientes finales de la aplicación, como ese aspecto no le corresponde al alumno sino a la Universidad de Zaragoza, no se mencionan dicho tipo de relaciones en este apartado. No obstante, si se mencionan los dos tipos de relaciones que tienen que ver con los resultados que el alumno debe presentar ante el tribunal de defensa, es decir, la memoria del proyecto y una breve presentación formal donde se expondrán los puntos de interés del desarrollo del proyecto. De igual manera, en la relación del alumno con el director del proyecto, periódica y frecuentemente habrá revisiones del trabajo realizado y se hará un seguimiento continuo para observar la evolución del mismo.
+\item \textbf{Aliados clave:} Dada la naturaleza del proyecto, los principales aliados son la Universidad de Zaragoza y el director del proyecto, en este caso Javier López Pellicer.
+\item \textbf{Actividades clave} que se han realizado en el proyecto:
+\begin{itemize}
+\item Desarrollo prototipo de integración
+\item Recogida y procesado de los datos desde sus formatos originales
+\item Presentación de los datos
+\end{itemize}
+\item \textbf{Recursos clave} con los que ha contado el alumno para desarrollar el proyecto 
+\begin{itemize}
+\item Equipo de trabajo (portátil propio)
+\item Laboratorio de investigación - provisto por el director del proyecto, ubicado en el laboratorio L2.09 del edificio Ada Byron, en la Escuela de Ingeniería y Arquitectura de Zaragoza.
+\item Herramientas open source - Todo el stack tecnológico, debido a un presupuesto nulo ha tenido que ser gratuito.
+\item 300 horas contables de trabajo, las recomendadas para proyectos de este tipo.
+\end{itemize}
+\item \textbf{Estructura de costes:} Costes económicos o temporales que el alumno ha invertido en el proyecto:
+\begin{itemize}
+\item Primera matrícula del proyecto: 259,92
+\item Segunda matrícula del proyecto: 408,96
+\item Transporte mediante bus: Bono bus 90 días x 3 = 104,90 x 3 = 314,70
+\item 300 horas invertidas en el trabajo
+\begin{itemize}
+\item TOTAL: 983,58 más las 300h de trabajo
+\end{itemize}
+\end{itemize}
+\item \textbf{Estructura de ingresos:} Ingresos o partes de las que el alumno se beneficiaría tras la realización de este proyecto:
+\begin{itemize}
+\item Requisito de tener el proyecto finalizado - Por normativa cualquier estudiante matriculado en el Grado en Ingeniería Informática debe realizar y aprobar el trabajo de fin de grado.
+\item Potencialmente el título universitario - Gracias al hecho de aprobar el proyecto, al encontrarse en una situación en la que al alumno lo único que le resta para acabar el grado es la realización del proyecto, posteriormente a su consecución podría obtener el título universitario. 
+\end{itemize}
+\end{itemize}
+
+\section{Contexto tecnológico}
+Dado que se trata de un escenario caracterizado por la heterogeneidad en contenidos y formatos de los datos, la necesidad de su procesamiento y de una escalabilidad futura, el proyecto está situado en un círculo de tecnologías Big Data, que presenta los siguientes retos:
+\begin{itemize}
+\item \textbf{Datos.} La información sobre los productos fitosanitarios no está habitualmente disponible en un formato estructurado. Es decir, la solución debe poder trabajar con datos en formatos no estructurados y ser capaz de procesarlos, idealmente convirtiéndolos a un formato relacional.
+\item \textbf{Esquema.} No existe un esquema de referencia compartido para integrar la información de productos fitosanitarios de diferentes países, pudiendo darse el caso de la existencia de varios esquemas distintos en función del caso de uso. Es decir, la solución debe poder reconfigurar el esquema de integración con facilidad.
+\item \textbf{Procesado.} Derivado del reto anterior, los datos no se pueden procesar y almacenar directamente en el esquema de integración sino que  deben guardarse en el formato original y ser procesados bajo demanda teniendo en cuenta las características específicas de cada fuente.
+\item \textbf{Almacenamiento.} No se dispone de un presupuesto para invertir en un gran sistema de almacenamiento que permita almacenar los datos en formato original. Por ello, toda solución deberá ser de código abierto y poder ejecutarse sobre hardware de bajo coste.
+Presentación de los datos. Es necesario desarrollar una interfaz visual para presentar los datos una vez integrados en un modelo único. 
+\item  \textbf{Agilidad.} La solución debe poder evolucionar con facilidad. Cualquier desarrollador que utilice la solución debe poder reconfigurar rápidamente el esquema común y los servicios que exponen dicho esquema para su uso.
+\item \textbf{Plazos.} Las limitaciones temporales y la priorización de tareas son influyentes en la elección del stack tecnológico, aunque en menor medida que los puntos anteriores. 
+\end{itemize}
+
+\section{Glosario del Stack Tecnológico}
+Habiendo mencionado los factores anteriores, a continuación se presentan las tecnologías a las que se va a hacer referencia en el siguiente apartado con el objetivo de familiarizar al lector con las herramientas utilizadas:
+\begin{itemize}
+\item \textbf{\textit{Hadoop}.} \cite{hadoop} La librería software Apache Hadoop es un framework que permite el procesamiento distribuido de múltiples conjuntos de datos a través de clusters de ordenadores mediante modelos de programación sencillos. Está diseñado para escalar desde servidores únicos hasta miles de máquinas, donde cada una ofrece computación y almacenamiento local. Más que depender del hardware para prestar una alta disponibilidad, la librería en sí está diseñada para detectar y gestionar fallos en la capa de aplicación y así permitir una alta disponibilidad a pesar de que los equipos individuales fallen. 
+\item \textbf{\textit{Hive}.} \cite{hive}  El software de data warehouse Apache Hive facilita la lectura, escritura y gestión de grandes conjuntos de datos residentes en almacenes distribuidos de datos mediante SQL. La estructura de datos puede ser proyectada sobre los datos que ya existen en almacenamiento. Apache Hive provee una herramienta de línea de comandos y un driver JDBC para que los usuarios se puedan conectar a Hive. 
+\item \textbf{\textit{Sqoop}.} \cite{sqoop} Apache Sqoop es una herramienta diseñada para transferir bloques de datos entre Apache Hadoop y almacenes de datos estructurados como las bases de datos relacionales.
+\item \textbf{\textit{JHipster}.} \cite{jhipster} JHipster es una plataforma de desarrollo para generar, desarrollar y lanzar aplicaciones con tecnología Spring Boot, AngularJS y Spring microservices. 
+\item \textbf{\textit{Spring Framework}.} \cite{springframework} El framework Spring provee un modelo de programación y configuración sencillo para aplicaciones Java. Un punto clave de Spring es el soporte infraestructural a nivel de aplicación. 
+\item \textbf{\textit{Spring Boot}.} \cite{springboot} Spring Boot es un framework ligero que tiene la intención de simplificar el proceso de configuración de una aplicación hecha con Spring. 
+\item \textbf{\textit{AngularJS}.} \cite{angularjs} AngularJS es un framework de JavaScript de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Su objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.
+\item \textbf{\textit{Talend}.} \cite{talend} Talend es un software open-source de integración, procesado y transformación de datos. Permite trabajar con paradigmas Big Data y ofrece una interfaz gráfica para diseñar y programar cómodamente procesos ETL. 
+\end{itemize}
+
+\section{Elección del Stack Tecnológico}
+Debido a los factores mencionados en el apartado anterior, el stack tecnológico se vio restringido a las herramientas mencionadas anteriormente; tal como se ha dicho, la solución necesitaba almacenar la información en crudo hasta el momento de su procesamiento y es por ello que una aproximación relacional habría sido inviable. Por lo tanto, viendo las diferentes opciones noSQL disponibles (MongoDB, Cassandra, DynamoDB, HBase, etc) y por recomendación del director del proyecto, la elección más clara fue elegir Hadoop como sistema de almacenamiento. Hadoop es una gran herramienta para el escalado de aplicaciones y lo utilizan grandes empresas para Big Data. Se adapta perfectamente a las necesidades de este proyecto y el software es gratuito. Además, hay una gran comunidad de personas capaces de ayudar con cualquier proyecto y la documentación disponible es lo suficientemente extensa como para salir de cualquier situación problemática. \par
+No obstante, Hadoop por sí mismo no era capaz de solucionar todos los problemas del proyecto; Hadoop es capaz de almacenar los datos y, si bien es cierto que las operaciones de mapreduce permiten transformar dichos datos, dada la necesidad del desarrollo ágil del proyecto, lo mejor fue disponer de algún mecanismo más sencillo para el procesado de los mismos. Por ello, se decidió emplear Hive como herramienta de traducción de los datos almacenados en Hadoop, tanto en crudo como procesados, a una estructura relacional, sobre la que se podían hacer preguntas SQL. \par
+El otro reto planteado fue la presentación de los datos integrados mediante una interfaz web, lo que vendría siendo el lado del cliente de la solución. Indudablemente hay casi infinidad de posibilidades para el desarrollo de esta parte. No obstante, realmente la parte de visualización no fue una parte crítica del proyecto, ni el objetivo del mismo. Es por ello que se adoptó una postura de desarrollo rápido del lado del cliente. JHipster (generador de aplicaciones sobre Spring) resultó la herramienta indicada, puesto que facilmente, en unos cuantos pasos era capaz de generar una aplicación sobre un esquema de base de datos (en este caso MySQL) y con una interfaz gráfica cuidada que satisfacía las necesidades del proyecto. No obstante, para poder conectar la base de datos de Hadoop con la base de datos MySQL necesaria para JHipster, el paso intermedio fue conectar Hadoop con Hive y realizar operaciones ETL de Hive a JHipster mediante Sqoop, una herramienta de transformación y carga de datos entre distintas bases de datos.\par
+Teniendo en cuenta que los anteriores puntos constituyen el core tecnológico del proyecto, conforme se avanzaba se veía que no eran suficientes para conseguir los resultados deseados. Se tuvieron que emplear otras herramientas adicionales para diferentes tareas como el procesado de los datos previo a su exposición en Hive pero posterior a su almacenamiento en Hadoop, o la traducción de los datos y estructuras de Hive a la base de datos que emplea JHipster. Las elegidas fueron Talend Big Data (herramienta de procesado de ficheros capaz de conectarse a Hadoop,  extraer la información contenida en sus nodos, procesarla y volver a guardarla con los cambios efectuados, tal como se le indique) y Sqoop (herramienta diseñada para transferir bloques de datos entre Apache Hadoop o Hive y almacenes de datos estructurados como las bases de datos relacionales). 
+
+\section{Análisis de riesgos}
+En la fase inicial del proyecto se abordó el proceso de gestión de riesgos, para determinar los diferentes riesgos que podrían afectar a un proyecto de esta envergadura. Dicho proceso consta de varios pasos que en conjunto permiten tener una visión clara de aquello que puede entorpecer, frenar o incluso imposibilitar la finalización del proyecto. A continuación se listan dichos pasos y se presentan las conclusiones principales extraídas de cada una de ellas, dejando para los anexos la versión completa donde se puede apreciar detalladamente en cada paso todos los riesgos considerados con sus correspondientes valoraciones: 
+\begin{enumerate}
+\item En primer lugar, la identificación de riesgos permite determinar la lista de riesgos capaces de romper la planificación del proyecto. Durante esta fase se estudió qué factores podrían influenciar, en mayor o menor medida el flujo de trabajo normal del proyecto. Se agruparon en diferentes categorías para delimitar las zonas a las que afectaría cada riesgo. Así pues, aparecen 31 riesgos divididos en 4 clases:
+\begin{enumerate}
+\item Riesgos globales (referentes a todo el proyecto)
+\item Riesgos tecnológicos (referentes a los aspectos más técnicos y tecnológicos del proyecto)
+\item Riesgos de alcance (referentes al tamaño y alcance de la solución)
+\item Riesgos de entorno de desarrollo (referentes tanto a la gestión como a las diferentes partes del entorno del desarrollador)
+\end{enumerate}
+\item El análisis de riesgo ofrece una medición de la probabilidad y el impacto de cada riesgo. Maneja tres valores que determinan la gravedad de un riesgo: 
+\begin{enumerate}
+\item la probabilidad con la que se puede dar un riesgo (rango entre 1 y 3, donde 1 es baja probabilidad y 3 es alta probabilidad)
+\item el impacto que tendría en el resultado final un riesgo (rango entre 1 y 3, donde 1 es bajo impacto y 3 es alto impacto)
+\item la aceptación del riesgo, una medida delimitadora que define aquellos riesgos que son considerados aceptables y aquellos ante los que se deben tomar medidas. Para esta medida se ha establecido un criterio de aceptación de 4. Cualquier riesgo cuyo valor sea menor que 4 se considera aceptable y por tanto un riesgo poco reseñable, mientras que aquellos que se encuentran por encima de 4 se consideran reseñables y se debe proceder a su tratamiento. 
+\end{enumerate}
+El cálculo de la gravedad del riesgo y su aceptación se realiza de la siguiente manera: se multiplica la probabilidad por el impacto, y si dicho valor excede el límite del criterio de aceptación, el riesgo se considera reseñable. En esta fase se detectaron un total de 6 riesgos reseñables, que se presentan en el siguiente punto.
+\item La priorización de riesgos, fase donde se puede ver la lista de todos los riesgos anteriores ordenados por su gravedad. No obstante, a continuación se mencionan aquellos que han tenido un factor de gravedad superior a 4, límite del criterio de aceptación: 
+\begin{enumerate}
+\item RG\_1. Riesgo global “Plazos”. Tiene que ver con el hecho de no acabar el proyecto dentro de los plazos establecidos para su defensa. Hay 2 fechas recomendables para su defensa, la primera en Junio de 2017 y la segunda en Septiembre de 2017. No obstante, se dispone de otra oportunidad en Diciembre de 2017, aunque sería la menos recomendable dado que supondría el retraso de la defensa y con ello la dificultad del estudiante de realizar otras actividades mientras tanto. A partir de Diciembre, la consecuencia sería volver a matricularse en el proyecto y aportar las tasas de la matrícula por segunda vez.
+\item RT\_2. Riesgo de tecnologías “Software no probado”. Tiene que ver con la probabilidad de usar en el proyecto software que previamente no ha sido probado y pueda fallar. Obtuvo una valoración de gravedad de 6/6 puesto que si bien es cierto que todas las tecnologías han sido probadas individualmente y se sabe que funcionan bien, el proceso en su conjunto no ha sido probado. No se sabe si es viable o no.  
+\item RT\_6. Riesgo de tecnologías “Inalcanzable”. Relacionado con el hecho de que el proyecto puede tener como conclusión un resultado negativo; Al tratarse de un trabajo de investigación, el resultado puede ser que no se ha logrado la integración deseada.
+\item RA\_1. Riesgo de alcance “Tamaño estimado”. Tiene que ver con el hecho de que el proyecto resulte mucho más grande de lo estimado inicialmente, y por diferentes circunstancias no se llegue a finalizar.
+\item RA\_6. Riesgo de alcance “Número de cambios”. Otro riesgo es el hecho de que los requisitos cambien constantemente, bien porque los clientes lo solicitan bien porque las propias tecnologías lo imponen. 
+\item RE\_9. Riesgo de entorno de desarrollo “Formación”. Este riesgo trata con el hecho de que el alumno disponga de la formación necesaria y suficiente para lograr los objetivos propuestos.
+\end{enumerate}
+\item Finalmente, la planificación de la gestión de riesgos, relativa al plan para tratar cada riesgo significativo.\\
+En este apartado se recogieron los seis riesgos anteriores y se propuso para cada uno una solución mitigadora: 
+\begin{enumerate}
+\item RG\_1: Plazos - Como medida mitigante, el alumno deberá dedicar un horario de jornada completa a la realización del proyecto durante el verano del año 2017. 
+\item RT\_2: Software no probado - La contrapartida y defensa de este riesgo es desarrollar o experimentar primero con una prueba de concepto para validar que las tecnologías en su conjunto funcionen correctamente. 
+\item RT\_6: Inalcanzable - La mitigación este riesgo está ligada al anterior. Por lo tanto, primero se hará una prueba de concepto para demostrar si las tecnologías empleadas se pueden usar en conjunto.
+\item RA\_1: Tamaño estimado - La solución desde un principio debe definir bien el alcance y determinar aquellas cosas que formarán parte de la solución y aquellas que no lo harán. 
+\item RA\_6: Número de cambios - El alumno y el profesor deben acordar al principio unos requisitos fijos que no podrán ser modificables, en conjunto con el hecho de definir claramente el alcance de la solución.
+\item RE\_9: Formación - Para mitigar este riesgo, el alumno debe estar en constante aprendizaje, utilizando los manuales y tutoriales de las diferentes herramientas de las que va a hacer uso durante el proyecto. Además, el alumno tendrá a su disposición al director del proyecto para consultar dudas y a los diferentes foros tecnológicos de Internet. 
+\end{enumerate}
+\end{enumerate}
+
+\section{Captura de requisitos}
+En una fase temprana del proyecto se realizó un análisis amplio y genérico del problema en conjunto con el director del proyecto. Se observaron y entendieron los retos a los que se enfrenta y se definieron los objetivos que se pretendía conseguir y por lo tanto los requisitos que se debían cumplir. A continuación se recogen en una tabla los requisitos, tanto funcionales como no funcionales divididos en sistema y proyecto, siendo los de sistema los referentes al propio producto tecnológico en sí, y los de proyecto los referentes a la gestión del mismo: \par
+\begin{table}[!h]
+\centering
+\bgroup
+\def\arraystretch{1.3}
+\begin{tabular}{l p{13cm}}
+\toprule
+\textbf{Nombre} & \textbf{Descripción} \\
+ \midrule
+RFS\_1 & 
+El sistema deberá recolectar los datos oficiales tanto de productos fitosanitarios como de pesticidas.
+ \\
+RFS\_2 & 
+El sistema deberá almacenar la última versión de los datos recolectados en el RF\_1 en su formato original y además mantener todas las versiones del documento. 
+ \\
+RFS\_3 & 
+El sistema deberá monitorizar, almacenar y mostrar los procesos de recolección de los datos de entrada, así como las rutas de su procesado. 
+ \\
+RFS\_4 & 
+El sistema deberá ofrecer la infraestructura y herramientas de configuración necesarias para que futuros desarrolladores puedan integrar otras fuentes de datos de manera rápida y eficiente. 
+ \\
+RFS\_5 & 
+El sistema deberá implementar un modelo de aplicación consistente, ejemplificando un ciclo de vida típico de los datos, desde su recogida, su procesamiento, su posterior integración en un modelo más completo y su presentación en un Front-End de ejemplo.
+ \\
+\bottomrule
+\end{tabular}
+\egroup
+\caption{Requisitos Funcionales del Sistema}
+\label{tab:req_func_sist}
+\end{table}
+\begin{table}[!h]
+\centering
+\bgroup
+\def\arraystretch{1.3}
+\begin{tabular}{l p{13cm}}
+\toprule
+\textbf{Nombre} & \textbf{Descripción} \\
+ \midrule
+RNFS\_1 & 
+Los información de los productos fitosanitarios deberá ser recogida de portales como mapama y los datos sobre los pesticidas de la base de datos europea.
+ \\
+RNFS\_2 & 
+Se hará uso de algún tipo de crawler web para la descarga periódica de los datos sobre fitos y pesticidas.
+ \\
+RNFS\_3 & 
+Como sistema de almacenamiento de los datos recogidos sobre fitos y pesticidas se usará Hadoop.
+ \\
+RNFS\_4 & 
+Para monitorizar, almacenar y mostrar los procesos de recolección de los datos de entrada se usará Talend Big Data. 
+ \\
+RNFS\_5 & 
+Para conseguir unos desarrollos posteriores más ágiles se hará uso de la herramienta HIVE, que permite una aproximación relacional directamente sobre Hadoop.
+ \\
+RNFS\_6 & 
+La presentación de los datos en su formato final se hará mediante una aplicación con GUI, desarrollada mediante la herramienta JHipster.
+ \\
+\bottomrule
+\end{tabular}
+\egroup
+\caption{Requisitos No Funcionales del Sistema}
+\label{tab:req_no_func_sist}
+\end{table}
+\begin{table}[!h]
+\centering
+\bgroup
+\def\arraystretch{1.3}
+\begin{tabular}{l p{13cm}}
+\toprule
+\textbf{Nombre} & \textbf{Descripción} \\
+ \midrule
+RFP\_1 & 
+El proyecto deberá incluir una memoria en la que se documentan todos los pasos y procesos involucrados en su construcción.
+ \\
+RFP\_2 & 
+Se deberá mantener constancia del esfuerzo dedicado durante el proyecto.
+ \\
+RFP\_3 &
+El proyecto deberá mantener un control de versiones actualizado en todo momento. 
+ \\
+\bottomrule
+\end{tabular}
+\egroup
+\caption{Requisitos Funcionales del Proyecto}
+\label{tab:req_func_proy}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

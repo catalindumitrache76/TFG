@@ -1,0 +1,205 @@
+\documentclass[a4paper,12pt,twoside,hidelinks,openright,openany]{report}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphics}
+\usepackage{appendix}
+\usepackage[nottoc,numbib]{tocbibind}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{subcaption}
+\usepackage{amsmath,amsthm,amssymb,mathrsfs} 
+\usepackage[final]{pdfpages}
+\usepackage[]{placeins,flafter}
+\usepackage[none]{hyphenat} \sloppy
+\usepackage{xcolor}
+\usepackage{adjustbox}
+
+% My imports
+\usepackage{longtable}
+\usepackage{float}
+\usepackage[toc,nonumberlist]{glossaries}
+\makeglossaries
+\input{Mis_capitulos/D_Glosary}
+
+%	CONFIGURACIÓN DE PÁGINA
+
+\setlength{\paperwidth}{21cm}          % Ancho de página
+\setlength{\paperheight}{29,7cm}       % Alto de página
+\setlength{\textwidth}{15.5cm}         % Ancho de zona con texto
+\setlength{\textheight}{24.6cm}        % Ancho de zona con texto
+\setlength{\topmargin}{-1.0cm}         % Margen superior
+                                      
+\setlength{\oddsidemargin}{0.46cm}     % Margen izquierdo 
+\setlength{\evensidemargin}{0.46cm}    
+
+\usepackage{makeidx}
+\makeindex
+\index{key}
+\newcommand{\myref}[1]{\color{red}\bf(\ref{#1})}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		PORTADA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+
+\vspace*{-4mm}
+\begin{figure}[!h]
+  \centering
+	\includegraphics[width=69.62mm]{Imagenes/UnizarLogo}
+\end{figure}
+
+\vspace*{17mm}
+
+\fontsize{28pt}{28pt}\selectfont
+\begin{center}
+\setlength{\fboxsep}{3.4mm}
+\adjustbox{minipage=14.4cm,cfbox=blue,center}{\begin{center} Trabajo Fin de Grado \end{center}}
+\end{center}
+
+\vspace*{18.7mm}
+
+
+\fontsize{20pt}{20pt}\selectfont
+\begin{center}
+Sistema para la integración  
+\end{center}
+\baselineskip 20pt
+\begin{center}
+de productos fitosanitarios
+\end{center}
+
+\vspace*{0cm} 
+\baselineskip 36pt
+\begin{center}
+\fontsize{12pt}{12pt}\selectfont
+\center{\rm  Autor}
+
+\vspace*{3.65mm} 
+\fontsize{18pt}{18pt}\selectfont
+\center{Catalin Dumitrache}
+\vspace*{1cm}
+\baselineskip 36pt
+\fontsize{12pt}{12pt}\selectfont
+\center{\rm  Director}
+\vspace*{3.56mm}
+\fontsize{14pt}{14pt}\selectfont
+\center{Francisco Javier López Pellicer}
+\end{center}
+
+\setcounter{footnote}{1}
+
+\vspace*{16.45mm}
+\fontsize{12pt}{12pt}\selectfont
+\begin{center}
+ESCUELA DE INGENIERÍA Y ARQUITECTURA\\
+2017\\
+\end{center}
+
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\pagenumbering{gobble}
+\end{titlepage}
+\newpage
+
+
+\title{Título del trabajo final de máster}
+\author{Autor Apellido Apellido}
+
+\pagebreak
+\cleardoublepage
+\baselineskip 19pt
+
+\renewcommand{\labelitemi}{$-$}
+\renewcommand{\tablename}{Tabla}
+
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+
+\pagenumbering{Roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Declaración de autoría y originalidad
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\includepdf[pagecommand={}]{Impreso}
+\cleardoublepage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Resumen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+
+\input{Mis_capitulos/A_Agradecimientos}
+\newpage
+\input{Mis_capitulos/B_Resumen}
+\newpage
+% Quita los "Capítulo X" de cada capítulo. 
+%\renewcommand{\chaptername}{}
+%\renewcommand{\thechapter}{}
+
+%\cleardoublepage
+\renewcommand{\contentsname}{Tabla de contenidos}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Capítulos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{Mis_capitulos/C_Introduccion}
+
+\printglossaries
+\input{Mis_capitulos/E_Phytoscheme}
+\input{Mis_capitulos/F_Analisis}
+\input{Mis_capitulos/G_Disenio}
+\input{Mis_capitulos/H_Implementacion}
+\input{Mis_capitulos/I_Gestion}
+\input{Mis_capitulos/J_Conclusiones}
+
+%Puedes añadir más capítulos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		BIBLIOGRAFÍA Y REFERENCIAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{unsrt} %plaindin
+\bibliography{Bibliografia_TFG}
+\nocite{*} 
+
+\newpage
+\renewcommand\listfigurename{Lista de Figuras}
+\listoffigures
+
+\newpage
+\renewcommand\listtablename{Lista de Tablas}
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		ANEXOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\appendix
+\clearpage
+\addappheadtotoc
+\appendixpage
+\input{Anexos/Anexo1.tex}
+\input{Anexos/Anexo2.tex}
+\input{Anexos/Anexo3.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}

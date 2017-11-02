@@ -1,0 +1,83 @@
+\begin{thebibliography}{10}
+
+\bibitem{hadoop}
+{\em Apache\textsuperscript{TM} Hadoop\textregistered}.
+\newblock Version XXXXXX.
+
+\bibitem{hive}
+{\em Apache Hive\textsuperscript{TM}}.
+\newblock Version XXXXXX.
+
+\bibitem{jhipster}
+{\em JHipster}.
+\newblock Version XXXXXX.
+
+\bibitem{mysql}
+{\em MySQL}.
+\newblock Version XXXXXX.
+
+\bibitem{glosarioterminosmapama}
+{\em Glosario de términos del Mapama}.
+
+\bibitem{glosarioterminosfito}
+{\em Glosario de términos fitosanitarios}.
+
+\bibitem{cricyt}
+{\em Centro Científico Tecnológico (CCT) Mendoza}.
+
+\bibitem{farmacowiki}
+{\em Fármaco, Wikipedia}.
+
+\bibitem{mapama}
+{\em Página web del ministerio de agricultura y pesca, alimentación y medio
+  ambiente de España}.
+
+\bibitem{directiva128}
+{\em Directiva 2009/128/CE}.
+
+\bibitem{cuadernoexplotacion}
+{\em Cuaderno de explotación}.
+
+\bibitem{agroslab}
+{\em Cuaderno de Explotación Agrícola Campo aGROSLab}.
+
+\bibitem{agricolum}
+{\em Cuaderno de campo agrícola Agricolum}.
+
+\bibitem{agronev}
+{\em Cuaderno de campo Agronev}.
+
+\bibitem{pesticidesdb}
+{\em Base de datos de pesticidas a nivel Europeo}.
+
+\bibitem{reglamento}
+{\em Reglamento (CE) nº 1107/2009 del Parlamento Europeo y del Consejo, de 21
+  de octubre de 2009, relativo a la comercialización de productos
+  fitosanitarios y por el que se derogan las Directivas 79/117/CEE y 91/414/CEE
+  del Consejo.}
+
+\bibitem{solicitud}
+{\em Formulario para solicitudes relativas al registro oficial de productos y
+  material fitosanitario}.
+
+\bibitem{faqmapama}
+{\em Preguntas y respuestas frecuentes sobre el registro de productos
+  fitosanitarios del Ministerio de Agricultura, Alimentación y Medio
+  Ambiente}.
+
+\bibitem{sqoop}
+{\em Apache Sqoop\textsuperscript{TM}}.
+
+\bibitem{springframework}
+{\em Spring Framework}.
+
+\bibitem{springboot}
+{\em Spring Boot}.
+
+\bibitem{angularjs}
+{\em AngularJS}.
+
+\bibitem{talend}
+{\em Talend}.
+
+\end{thebibliography}
