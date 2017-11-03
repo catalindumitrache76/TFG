@@ -3,10 +3,8 @@ package com.unizar.phytoscheme.talend;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
+import java.util.Properties;
 
 
 /**
@@ -17,12 +15,44 @@ public class Talend {
 
     // cada 30 min
     @Scheduled(initialDelay=1000, fixedRate=1800000)
-    public static void launchTalendJob () {
+    public static void programTalendJob () {
+
+        Properties prop = new Properties();
+        InputStream input = null;
+
+        try {
+
+            input = new FileInputStream("fichero_configuracion.properties");
+
+            // load a properties file
+            prop.load(input);
+
+            // get the property value and print it out
+            System.out.println(prop.getProperty("database"));
+            System.out.println(prop.getProperty("dbuser"));
+            System.out.println(prop.getProperty("dbpassword"));
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            if (input != null) {
+                try {
+                    input.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
         // Run a java app in a separate system process
         System.out.println("Lanzando Job TalendCrawler cada 1800 segundos ... 30 min");
+        launchTalendJob ();
+    }
+
+    // Lanza el trabajo de Talend
+    private static void launchTalendJob() {
         Process proc = null;
         try {
-            proc = Runtime.getRuntime().exec("java -jar Talend/TalendCrawlerProject-1.0-SNAPSHOT.one-jar.jar");
+            proc = Runtime.getRuntime().exec("java -jar Talend_Jars/TalendCrawlerProject-1.0-SNAPSHOT.one-jar.jar");
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -58,6 +58,7 @@ local.properties
 *.ids
 *.orig
 classes/
+prueba.sh
 
 ######################
 # Visual Studio Code
