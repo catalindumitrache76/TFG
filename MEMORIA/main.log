@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  5 NOV 2017 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  5 NOV 2017 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1520,44 +1520,41 @@ Cap\'{\i }tulo 3.
 [8
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
- [9]
-Underfull \hbox (badness 1122) in paragraph at lines 30--31
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+
+Underfull \hbox (badness 1122) in paragraph at lines 13--14
 []\OT1/cmr/m/n/12 Herramientas open sour-ce - To-do el stack tec-nol^^Sogi-co, 
 de-bi-do a un
  []
 
-
-Underfull \hbox (badness 1454) in paragraph at lines 45--46
-[]\OT1/cmr/m/n/12 Requisito de te-ner el pro-yec-to fi-na-li-za-do - Por nor-ma
--ti-va cual-quier
- []
-
-[10] [11] [12]
-Underfull \hbox (badness 2662) in paragraph at lines 81--82
+[9] [10] [11]
+Underfull \hbox (badness 2662) in paragraph at lines 68--69
 []\OT1/cmr/bx/n/12 Agilidad. \OT1/cmr/m/n/12 La so-lu-ci^^Son de-be po-der evo-
 lu-cio-nar con fa-ci-li-dad. Cual-quier
  []
 
-
-Underfull \hbox (badness 2065) in paragraph at lines 90--91
+[12]
+Underfull \hbox (badness 2065) in paragraph at lines 77--78
 []\OT1/cmr/bx/it/12 JHipster\OT1/cmr/bx/n/12 . \OT1/cmr/m/n/12 [[]] JHips-ter e
 s una pla-ta-for-ma de desa-rro-llo pa-ra ge-ne-rar,
  []
 
-[13]
-Underfull \hbox (badness 2846) in paragraph at lines 91--92
+
+Underfull \hbox (badness 2846) in paragraph at lines 78--79
 []\OT1/cmr/bx/it/12 Spring Fra-me-work\OT1/cmr/bx/n/12 . \OT1/cmr/m/n/12 [[]] E
 l fra-me-work Spring pro-vee un mo-de-lo de
  []
 
-[14]
-Underfull \hbox (badness 3492) in paragraph at lines 123--125
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \hbox (badness 3492) in paragraph at lines 110--112
 []\OT1/cmr/m/n/12 El sis-te-ma de-ber^^Sa ofre-cer la in-fra-es-truc-tu-ra y he
 -rra-mien-tas de
  []
@@ -1568,24 +1565,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./Mis_capitulos/G_Disenio.tex [15] [16] [17]
+) (./Mis_capitulos/G_Disenio.tex [15] [16]
 Cap\'{\i }tulo 4.
-) (./Mis_capitulos/H_Implementacion.tex [18
+) (./Mis_capitulos/H_Implementacion.tex [17
 
 ]
 Cap\'{\i }tulo 5.
-[19
+[18
 
-]) (./Mis_capitulos/I_Gestion.tex [20]
+]) (./Mis_capitulos/I_Gestion.tex [19]
 Cap\'{\i }tulo 6.
-) (./Mis_capitulos/J_Conclusiones.tex [21
+) (./Mis_capitulos/J_Conclusiones.tex [20
 
 ]
 Cap\'{\i }tulo 7.
-) (./main.bbl [22
+) (./main.bbl [21
 
 ]
 Cap\'{\i }tulo 8.
@@ -1599,9 +1593,9 @@ anitarios--/tcm7-311275-16.
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
-[23
+[22
 
-]) (./main.gls [24]
+]) (./main.gls [23]
 Underfull \hbox (badness 1509) in paragraph at lines 8--8
 []\OT1/cmr/m/n/12 Leyes b^^Sasi-cas que con-ce-den la au-to-ri-dad le-gal a la
  []
@@ -1612,7 +1606,7 @@ Underfull \hbox (badness 1178) in paragraph at lines 14--14
 iagn^^Sosti-co, tra-ta-mien-to,
  []
 
-) [25
+) [24
 
 
 ] (./main.lof
@@ -1622,7 +1616,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [26
+ [25
 
 ] (./main.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1631,14 +1625,14 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [27
+ [26
 
-] [28
+] [27
 
 
 ] (./Anexos/Anexo1.tex
 Anexos A.
-) (./Anexos/Anexo2.tex [29
+) (./Anexos/Anexo2.tex [28
 
 ]
 Anexos B.
@@ -1648,15 +1642,15 @@ Underfull \hbox (badness 1237) in paragraph at lines 10--11
 ta el re-gis-tro de la
  []
 
-[30
+[29
 
-] [31]
+] [30]
 Underfull \hbox (badness 2205) in paragraph at lines 46--47
 []\OT1/cmr/m/n/12 Otros tra-ta-mien-tos - Apli-ca-ci^^Son de otros tra-ta-mien-
 tos fi-to-sa-ni-ta-rios
  []
 
-) (./Anexos/Anexo3.tex [32]
+) (./Anexos/Anexo3.tex [31]
 Anexos C.
 
 Overfull \hbox (20.96588pt too wide) in alignment at lines 18--23
@@ -1693,7 +1687,7 @@ Overfull \hbox (19.57977pt too wide) in alignment at lines 52--79
  [] [] [] 
  []
 
-[33
+[32
 
 ]
 Overfull \hbox (20.88115pt too wide) in alignment at lines 82--87
@@ -1745,7 +1739,7 @@ Overfull \hbox (25.94221pt too wide) in alignment at lines 128--187
  [] [] [] 
  []
 
-[34]
+[33]
 Overfull \hbox (3.4537pt too wide) in alignment at lines 203--208
  [] [] 
  []
@@ -1796,31 +1790,31 @@ Overfull \hbox (9.42738pt too wide) in alignment at lines 253--262
  [] [] 
  []
 
-[35] [36] [37]
+[34] [35] [36]
 Underfull \vbox (badness 5161) has occurred while \output is active []
 
- [38]
-[39] <Imagenes/Dis_Fig_1.png, id=196, 1198.4775pt x 366.36874pt>
+ [37]
+[38] <Imagenes/Dis_Fig_1.png, id=193, 1198.4775pt x 366.36874pt>
 File: Imagenes/Dis_Fig_1.png Graphic file (type png)
 
 <use Imagenes/Dis_Fig_1.png>
 Package pdftex.def Info: Imagenes/Dis_Fig_1.png used on input line 676.
 (pdftex.def)             Requested size: 441.01581pt x 156.4901pt.
- [40 <./Imagenes/Dis_Fig_1.png>]
-<Imagenes/Dis_Fig_2.png, id=201, 1136.245pt x 570.13pt>
+ [39 <./Imagenes/Dis_Fig_1.png>]
+<Imagenes/Dis_Fig_2.png, id=198, 1136.245pt x 570.13pt>
 File: Imagenes/Dis_Fig_2.png Graphic file (type png)
 
 <use Imagenes/Dis_Fig_2.png>
 Package pdftex.def Info: Imagenes/Dis_Fig_2.png used on input line 688.
 (pdftex.def)             Requested size: 441.01857pt x 227.62169pt.
- [41 <./Imagenes/Dis_Fig_2.png>]
-<Imagenes/Dis_Fig_3.png, id=207, 1315.91624pt x 556.0775pt>
+ [40 <./Imagenes/Dis_Fig_2.png>]
+<Imagenes/Dis_Fig_3.png, id=203, 1315.91624pt x 556.0775pt>
 File: Imagenes/Dis_Fig_3.png Graphic file (type png)
 
 <use Imagenes/Dis_Fig_3.png>
 Package pdftex.def Info: Imagenes/Dis_Fig_3.png used on input line 701.
 (pdftex.def)             Requested size: 441.00034pt x 199.16954pt.
-) [42 <./Imagenes/Dis_Fig_3.png>] (./main.aux
+) [41 <./Imagenes/Dis_Fig_3.png>] (./main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
@@ -1850,10 +1844,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt12.pfb>
-Output written on main.pdf (50 pages, 837717 bytes).
+Output written on main.pdf (49 pages, 836154 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
+ 244 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

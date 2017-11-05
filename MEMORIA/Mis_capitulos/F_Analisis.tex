@@ -2,35 +2,27 @@
 \section{Análisis del problema}
 Como ya se ha aclarado varias veces a lo largo de este documento, actualmente hay una necesidad real en el mundo agrícola; la de disponer de la información sobre productos fitosanitarios de una manera centralizada, actualizada y de fácil acceso. Hoy en día esta necesidad se ha intentado abordar de varias maneras, y por ello hay disponibles varias aplicaciones que intentan apoyar al consumidor en las tareas agrícolas que involucran productos fitosanitarios. Algunos ejemplos son los productos que ofrecen empresas como aGROSLab, Cuaderno de Campo Agronev, o Agricolum. No obstante, estas aplicaciones se enfrentan al mismo problema; la inexistencia de una base de datos estandarizada cuya información sea congruente a través de los diferentes países de la Unión Europea. Por eso mismo, estas aplicaciones tienen que implementar, desarrollar y mantener ellas mismas las bases de datos que permitan acceder a la información deseada. Nuestra solución ofrecería un sistema dotado de una base de datos estandarizada, congruente en su información y completa, de código abierto y altamente escalable, por lo tanto todas las aplicaciones mencionadas arriba podrían convertirse en potenciales clientes consumidores de nuestro sistema, sustituyendo sus bases de datos por nuestra solución, con costes de integración mínimos.
 
-\section{Modelo de negocio}
-El modelo de negocio es el que se puede observar en la figura de la derecha. Se trata de una plantilla estándar para definir los aliados, las actividades y los recursos clave que intervienen en el proyecto, al igual que la propuesta de valor, la relación con los clientes, los canales de comunicación y los diferentes segmentos de clientes que tiene el proyecto. \par
-Por otra parte también se pueden observar los costes que presenta el proyecto y también los ingresos o beneficios esperados tras su finalización por parte del alumno. \par
-A continuación se explica cada uno de los apartados que incluye, en un orden que convenga más que el definido por la propia plantilla: 
+\section{Análisis del marco conceptual}
+En este apartado se van a presentar los diferentes factores que van a intermediar en el proyecto: los proveedores de los datos, los recursos de los que se dispone, la propuesta de valor, los diferentes clientes del proyecto y los costes del mismo. \par
 \begin{itemize}
-\item \textbf{Segmentos de clientes:} Aquí se mencionan los clientes a los que se distribuiría el resultado del producto, o a aquellos a los que sería dirigido. En este caso, por una parte existen tres tipos de clientes que recibirían el producto final (Agricultores que comercializan productos, Instituciones encargadas de validar la importación / exportación  de productos agrícolas, Importadores / Exportadores de productos agrícolas, pesqueros y alimentarios) que serían los que se beneficiarían directamente de los resultados del proyecto. Es a ellos a quien va dirigida la aplicación puesto que haría más simple el proceso de comprobación de los requisitos fitosanitarios sobre los productos agrícolas / pesqueros / alimentarios. Por otra parte están los clientes a los que va dirigido el proyecto dentro de la Universidad de Zaragoza. Estos son el tribunal de defensa del proyecto y el director del proyecto, que estará en constante contacto con el alumno. 
-\item \textbf{Propuesta de valor:}Se mencionan qué cosas aporta el proyecto a los clientes mencionados en el apartado anterior. Estas son:
-\begin{itemize}
-\item Análisis de las técnicas actuales involucradas en la comprobación de aplicación de los productos fitosanitarios a un determinado producto - puesto que para determinar qué problemas se pretenden solucionar, primero se debe entender bien el proceso actual.
-\item Diseño de una solución de integración que recoge datos sobre productos fitosanitarios de varios países y los integra en un esquema único - que pretende solucionar algunos de los problemas actuales.
-\item Desarrollo de una aplicación que muestre los resultados de manera gráfica - para demostrar los resultados tanto al tribunal como a los potenciales clientes.
-\item Redacción de un documento explicativo del proceso anterior - la memoria, que servirá para que el tribunal comprenda la dedicación y el esfuerzo invertido en el proyecto y los avances y logros obtenidos.
-\end{itemize}
-\item \textbf{Relación con los clientes:} Si bien es cierto que habrá una relación con los clientes finales de la aplicación, como ese aspecto no le corresponde al alumno sino a la Universidad de Zaragoza, no se mencionan dicho tipo de relaciones en este apartado. No obstante, si se mencionan los dos tipos de relaciones que tienen que ver con los resultados que el alumno debe presentar ante el tribunal de defensa, es decir, la memoria del proyecto y una breve presentación formal donde se expondrán los puntos de interés del desarrollo del proyecto. De igual manera, en la relación del alumno con el director del proyecto, periódica y frecuentemente habrá revisiones del trabajo realizado y se hará un seguimiento continuo para observar la evolución del mismo.
-\item \textbf{Aliados clave:} Dada la naturaleza del proyecto, los principales aliados son la Universidad de Zaragoza y el director del proyecto, en este caso Javier López Pellicer.
-\item \textbf{Actividades clave} que se han realizado en el proyecto:
-\begin{itemize}
-\item Desarrollo prototipo de integración
-\item Recogida y procesado de los datos desde sus formatos originales
-\item Presentación de los datos
-\end{itemize}
-\item \textbf{Recursos clave} con los que ha contado el alumno para desarrollar el proyecto 
+\item \textbf{Proveedores:} Terceros de los que el proyecto se nutre para obtener los datos a emplear en la aplicación: \par Cada fuente de datos proviene de algún portal web (nacional o internacional). En el proyecto se monta una infraestructura alrededor de dichos portales y por lo tanto la desaparición de alguno de estos sitios web significaría el cese de aprovisionamiento de los datos provenientes de dicha fuente. Actualmente, el proyecto se nutre de dos fuentes distintas: los productos autorizados recogidos del portal del \textit{Mapama} \cite{mapama} y los datos provenientes de la \textit{base de datos de pesticidas a nivel Europeo} \cite{pesticidesdb}.
+\item \textbf{Recursos:} Elementos con los que el alumno ha contado para desarrollar el proyecto. 
 \begin{itemize}
 \item Equipo de trabajo (portátil propio)
 \item Laboratorio de investigación - provisto por el director del proyecto, ubicado en el laboratorio L2.09 del edificio Ada Byron, en la Escuela de Ingeniería y Arquitectura de Zaragoza.
 \item Herramientas open source - Todo el stack tecnológico, debido a un presupuesto nulo ha tenido que ser gratuito.
 \item 300 horas contables de trabajo, las recomendadas para proyectos de este tipo.
 \end{itemize}
-\item \textbf{Estructura de costes:} Costes económicos o temporales que el alumno ha invertido en el proyecto:
+\item \textbf{Propuesta de valor:} Beneficios que aporta el proyecto respecto a la situación actual:
+\begin{itemize}
+\item Diseño de una solución de integración que recoge datos sobre productos fitosanitarios de fuentes heterogéneas y los integra en un esquema único - que pretende solucionar algunos de los problemas actuales.
+\item Desarrollo de una aplicación que muestre los resultados de manera gráfica - para demostrar los resultados tanto al tribunal como a los potenciales clientes.
+\item Redacción de un documento explicativo del proceso anterior - la memoria, que servirá para que el tribunal comprenda la dedicación y el esfuerzo invertido en el proyecto y los avances y logros obtenidos.
+\end{itemize}
+\item \textbf{Segmentos de clientes:} Los diferentes tipos de clientes objetivos a los que está dirigida la aplicación final: \par Por una parte están los  agricultores que comercializan sus productos, las instituciones encargadas de validar y certificar la importación / exportación  de productos agrícolas o las empresas importadoras / exportadoras de productos agrícolas. Este segmento se beneficiaría diréctamente de los resultados del proyecto puesto que el proceso de comprobación de los requisitos fitosanitarios sobre los productos agrícolas / pesqueros / alimentarios se conseguiría de manera mucho más sencilla. Por otro lado también se podrían beneficiar de la infraestructura conseguida en este proyecto empresas que ya implementan sus propias aplicaciones fitosanitarias, pero carezcan de ese esquema y datos estandarizados que este proyecto propone.
+
+
+\item \textbf{Costes del proyecto:} Costes económicos o temporales que el alumno ha invertido en el proyecto:
 \begin{itemize}
 \item Primera matrícula del proyecto: 259,92
 \item Segunda matrícula del proyecto: 408,96
@@ -39,11 +31,6 @@ A continuación se explica cada uno de los apartados que incluye, en un orden qu
 \begin{itemize}
 \item TOTAL: 983,58 más las 300h de trabajo
 \end{itemize}
-\end{itemize}
-\item \textbf{Estructura de ingresos:} Ingresos o partes de las que el alumno se beneficiaría tras la realización de este proyecto:
-\begin{itemize}
-\item Requisito de tener el proyecto finalizado - Por normativa cualquier estudiante matriculado en el Grado en Ingeniería Informática debe realizar y aprobar el TFG.
-\item Potencialmente el título universitario - Gracias al hecho de aprobar el proyecto, al encontrarse en una situación en la que al alumno lo único que le resta para acabar el grado es la realización del proyecto, posteriormente a su consecución podría obtener el título universitario. 
 \end{itemize}
 \end{itemize}
 
