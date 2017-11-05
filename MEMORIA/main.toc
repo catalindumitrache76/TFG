@@ -1,43 +1,42 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}
 \contentsline {section}{\numberline {1.1}Estructura del documento}{2}
-\contentsline {chapter}{Glosario}{3}
-\contentsline {chapter}{\numberline {2}Phytoscheme}{4}
-\contentsline {section}{\numberline {2.1}Contexto y necesidades reales}{4}
-\contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n y objetivos}{6}
-\contentsline {section}{\numberline {2.3}Restricciones}{8}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{9}
-\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{9}
-\contentsline {section}{\numberline {3.2}Modelo de negocio}{9}
-\contentsline {section}{\numberline {3.3}Contexto tecnol\IeC {\'o}gico}{12}
-\contentsline {section}{\numberline {3.4}Glosario del Stack Tecnol\IeC {\'o}gico}{13}
+\contentsline {chapter}{\numberline {2}Phytoscheme}{3}
+\contentsline {section}{\numberline {2.1}Contexto y necesidades reales}{3}
+\contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n y objetivos}{5}
+\contentsline {section}{\numberline {2.3}Restricciones}{7}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{8}
+\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{8}
+\contentsline {section}{\numberline {3.2}Modelo de negocio}{8}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de riesgos}{11}
+\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{12}
 \contentsline {section}{\numberline {3.5}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{14}
-\contentsline {section}{\numberline {3.6}An\IeC {\'a}lisis de riesgos}{15}
-\contentsline {section}{\numberline {3.7}Captura de requisitos}{18}
-\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{20}
-\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o conceptual}{20}
-\contentsline {section}{\numberline {4.2}Arquitectura final del sistema}{20}
-\contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{21}
-\contentsline {section}{\numberline {5.1}Prueba de concepto}{21}
-\contentsline {section}{\numberline {5.2}Prototipo real}{21}
-\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{22}
-\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{23}
-\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{23}
-\contentsline {section}{\numberline {6.2}Control de versiones}{23}
-\contentsline {section}{\numberline {6.3}Pautas e imposiciones}{23}
-\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{23}
-\contentsline {chapter}{\numberline {7}Conclusiones}{24}
-\contentsline {section}{\numberline {7.1}Resultados y objetivos}{24}
-\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{24}
-\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{25}
-\contentsline {chapter}{Lista de Figuras}{27}
-\contentsline {chapter}{Lista de Tablas}{28}
-\contentsline {chapter}{Anexos}{29}
-\contentsline {chapter}{\numberline {A}Datos}{30}
-\contentsline {section}{\numberline {A.1}Modelo de datos}{30}
-\contentsline {section}{\numberline {A.2}Flujo de datos}{30}
-\contentsline {chapter}{\numberline {B}Clientes}{31}
-\contentsline {section}{\numberline {B.1}Clientes potenciales}{31}
-\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{34}
-\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{34}
-\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{39}
+\contentsline {section}{\numberline {3.6}Captura de requisitos}{15}
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{18}
+\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o conceptual}{18}
+\contentsline {section}{\numberline {4.2}Arquitectura final del sistema}{18}
+\contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{19}
+\contentsline {section}{\numberline {5.1}Prueba de concepto}{19}
+\contentsline {section}{\numberline {5.2}Prototipo real}{19}
+\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{20}
+\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{21}
+\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{21}
+\contentsline {section}{\numberline {6.2}Control de versiones}{21}
+\contentsline {section}{\numberline {6.3}Pautas e imposiciones}{21}
+\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{21}
+\contentsline {chapter}{\numberline {7}Conclusiones}{22}
+\contentsline {section}{\numberline {7.1}Resultados y objetivos}{22}
+\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{22}
+\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{23}
+\contentsline {chapter}{Glosario}{25}
+\contentsline {chapter}{Lista de Figuras}{26}
+\contentsline {chapter}{Lista de Tablas}{27}
+\contentsline {chapter}{Anexos}{28}
+\contentsline {chapter}{\numberline {A}Datos}{29}
+\contentsline {section}{\numberline {A.1}Modelo de datos}{29}
+\contentsline {section}{\numberline {A.2}Flujo de datos}{29}
+\contentsline {chapter}{\numberline {B}Clientes}{30}
+\contentsline {section}{\numberline {B.1}Clientes potenciales}{30}
+\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{33}
+\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{33}
+\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{40}

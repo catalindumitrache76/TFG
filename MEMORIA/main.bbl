@@ -1,33 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{hadoop}
-{\em Apache\textsuperscript{TM} Hadoop\textregistered}.
-\newblock Version XXXXXX.
-
-\bibitem{hive}
-{\em Apache Hive\textsuperscript{TM}}.
-\newblock Version XXXXXX.
-
-\bibitem{jhipster}
-{\em JHipster}.
-\newblock Version XXXXXX.
-
-\bibitem{mysql}
-{\em MySQL}.
-\newblock Version XXXXXX.
-
-\bibitem{glosarioterminosmapama}
-{\em Glosario de términos del Mapama}.
-
-\bibitem{glosarioterminosfito}
-{\em Glosario de términos fitosanitarios}.
-
-\bibitem{cricyt}
-{\em Centro Científico Tecnológico (CCT) Mendoza}.
-
-\bibitem{farmacowiki}
-{\em Fármaco, Wikipedia}.
-
 \bibitem{mapama}
 {\em Página web del ministerio de agricultura y pesca, alimentación y medio
   ambiente de España}.
@@ -68,8 +40,20 @@ Cuaderno de explotación.
   fitosanitarios del Ministerio de Agricultura, Alimentación y Medio
   Ambiente}.
 
+\bibitem{hadoop}
+{\em Apache\textsuperscript{TM} Hadoop\textregistered}.
+\newblock Version XXXXXX.
+
+\bibitem{hive}
+{\em Apache Hive\textsuperscript{TM}}.
+\newblock Version XXXXXX.
+
 \bibitem{sqoop}
 {\em Apache Sqoop\textsuperscript{TM}}.
+
+\bibitem{jhipster}
+{\em JHipster}.
+\newblock Version XXXXXX.
 
 \bibitem{springframework}
 {\em Spring Framework}.
@@ -85,5 +69,21 @@ Cuaderno de explotación.
 
 \bibitem{cloudera}
 {\em Repositorio de cloudera}.
+
+\bibitem{cricyt}
+{\em Centro Científico Tecnológico (CCT) Mendoza}.
+
+\bibitem{farmacowiki}
+{\em Fármaco, Wikipedia}.
+
+\bibitem{glosarioterminosfito}
+{\em Glosario de términos fitosanitarios}.
+
+\bibitem{glosarioterminosmapama}
+{\em Glosario de términos del Mapama}.
+
+\bibitem{mysql}
+{\em MySQL}.
+\newblock Version XXXXXX.
 
 \end{thebibliography}

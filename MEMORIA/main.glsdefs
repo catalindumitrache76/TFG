@@ -1,0 +1,180 @@
+\ifglsentryexists{fito}{}%
+{%
+\gls@defglossaryentry{fito}%
+{%
+name={Producto fitosanitario},%
+sort={Producto fitosanitario},%
+type={main},%
+first={producto fitosanitario},%
+firstplural={producto fitosanitarios},%
+text={producto fitosanitario},%
+plural={producto fitosanitarios},%
+description={De acuerdo con la Organización Mundial de la Salud (OMS), se define al producto fitosanitario como la \gls {sustancia} o mezcla de sustancias destinadas a prevenir la acción de, o destruir directamente, insectos, ácaros, moluscos, roedores, hongos, malas hierbas, bacterias y otras formas de vida animal o vegetal perjudiciales para la salud pública y también para la agricultura. Inclúyase en este ítem los plaguicidas, defoliantes, desecantes y las sustancias reguladoras del crecimiento vegetal o fitorreguladores - \textit {CCT Mendoza} \cite {cricyt}},%
+descriptionplural={De acuerdo con la Organización Mundial de la Salud (OMS), se define al producto fitosanitario como la \gls {sustancia} o mezcla de sustancias destinadas a prevenir la acción de, o destruir directamente, insectos, ácaros, moluscos, roedores, hongos, malas hierbas, bacterias y otras formas de vida animal o vegetal perjudiciales para la salud pública y también para la agricultura. Inclúyase en este ítem los plaguicidas, defoliantes, desecantes y las sustancias reguladoras del crecimiento vegetal o fitorreguladores - \textit {CCT Mendoza} \cite {cricyt}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sustancia}{}%
+{%
+\gls@defglossaryentry{sustancia}%
+{%
+name={Sustancia, Sustancia activa, Fármaco},%
+sort={Sustancia, Sustancia activa, Fármaco},%
+type={main},%
+first={sustancia},%
+firstplural={sustancias},%
+text={sustancia},%
+plural={sustancias},%
+description={Un fármaco (o sustancia activa) es toda sustancia química purificada utilizada en la prevención, diagnóstico, tratamiento, mitigación y cura de una enfermedad, para evitar la aparición de un proceso fisiológico no deseado o bien para modificar condiciones fisiológicas con fines específicos. En el dominio de aplicación actual, nos referiremos en concreto a aquellos fármacos utilizados en la prevención, diagnóstico, tratamiento, mitigación y cura de enfermedades relacionadas con los productos agrícolas, marinos o alimenticios - \textit {Fármaco, Wikipedia} \cite {farmacowiki}},%
+descriptionplural={Un fármaco (o sustancia activa) es toda sustancia química purificada utilizada en la prevención, diagnóstico, tratamiento, mitigación y cura de una enfermedad, para evitar la aparición de un proceso fisiológico no deseado o bien para modificar condiciones fisiológicas con fines específicos. En el dominio de aplicación actual, nos referiremos en concreto a aquellos fármacos utilizados en la prevención, diagnóstico, tratamiento, mitigación y cura de enfermedades relacionadas con los productos agrícolas, marinos o alimenticios - \textit {Fármaco, Wikipedia} \cite {farmacowiki}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{certifsanit}{}%
+{%
+\gls@defglossaryentry{certifsanit}%
+{%
+name={Certificación fitosanitaria},%
+sort={Certificación fitosanitaria},%
+type={main},%
+first={Certificaci\IeC {\'o}n fitosanitaria},%
+firstplural={Certificaci\IeC {\'o}n fitosanitarias},%
+text={Certificaci\IeC {\'o}n fitosanitaria},%
+plural={Certificaci\IeC {\'o}n fitosanitarias},%
+description={Uso de procedimientos fitosanitarios conducentes a la expedición de un certificado fitosanitario [revisado, 1995] - \textit {Glosario de términos fitosanitarios} \cite {glosarioterminosfito}},%
+descriptionplural={Uso de procedimientos fitosanitarios conducentes a la expedición de un certificado fitosanitario [revisado, 1995] - \textit {Glosario de términos fitosanitarios} \cite {glosarioterminosfito}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{certificado}{}%
+{%
+\gls@defglossaryentry{certificado}%
+{%
+name={Certificado fitosanitario},%
+sort={Certificado fitosanitario},%
+type={main},%
+first={certificado},%
+firstplural={certificados},%
+text={certificado},%
+plural={certificados},%
+description={Documento oficial que atestigua el estatus fitosanitario de cualquier envío sujeto a reglamentaciones fitosanitarias [FAO, 1990] - \textit {Glosario de términos Mapama} \cite {glosarioterminosmapama}},%
+descriptionplural={Documento oficial que atestigua el estatus fitosanitario de cualquier envío sujeto a reglamentaciones fitosanitarias [FAO, 1990] - \textit {Glosario de términos Mapama} \cite {glosarioterminosmapama}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{legisfito}{}%
+{%
+\gls@defglossaryentry{legisfito}%
+{%
+name={Legislación fitosanitaria},%
+sort={Legislación fitosanitaria},%
+type={main},%
+first={legislaci\IeC {\'o}n fitosanitaria},%
+firstplural={legislaci\IeC {\'o}n fitosanitarias},%
+text={legislaci\IeC {\'o}n fitosanitaria},%
+plural={legislaci\IeC {\'o}n fitosanitarias},%
+description={Leyes básicas que conceden la autoridad legal a la organización nacional de protección fitosanitaria a partir de las cuales podrán elaborarse las reglamentaciones fitosanitarias [FAO, 1990; revisado FAO, 1995] - \textit {Glosario de términos fitosanitarios} \cite {glosarioterminosfito}},%
+descriptionplural={Leyes básicas que conceden la autoridad legal a la organización nacional de protección fitosanitaria a partir de las cuales podrán elaborarse las reglamentaciones fitosanitarias [FAO, 1990; revisado FAO, 1995] - \textit {Glosario de términos fitosanitarios} \cite {glosarioterminosfito}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tratamiento}{}%
+{%
+\gls@defglossaryentry{tratamiento}%
+{%
+name={Tratamiento fitosanitario},%
+sort={Tratamiento fitosanitario},%
+type={main},%
+first={Tratamientos Fitosanitarios},%
+firstplural={Tratamientos Fitosanitarioss},%
+text={Tratamientos Fitosanitarios},%
+plural={Tratamientos Fitosanitarioss},%
+description={Procedimiento oficial para matar, inactivar o eliminar plagas o para esterilizarlas o desvitalizarlas [FAO 1990; revisado FAO, 1995; NIMF 15, 2002; NIMF 18, 2003; CIMF, 2005] - \textit {Glosario de términos fitosanitarios} \cite {glosarioterminosfito}},%
+descriptionplural={Procedimiento oficial para matar, inactivar o eliminar plagas o para esterilizarlas o desvitalizarlas [FAO 1990; revisado FAO, 1995; NIMF 15, 2002; NIMF 18, 2003; CIMF, 2005] - \textit {Glosario de términos fitosanitarios} \cite {glosarioterminosfito}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
