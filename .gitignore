@@ -140,3 +140,5 @@ Desktop.ini
 # ESLint
 ######################
 .eslintcache
+
+!Talend_Jars/TalendCrawlerEspanya.one-jar.jar
