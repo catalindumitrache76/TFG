@@ -14,6 +14,8 @@ Lo primero que se hizo fue implementar un simple proceso mediante la interfaz gr
 A continuación se exportó el proceso desde Talend: 
 \textit{Archivo $\rightarrow$ Export $\rightarrow$ Java $\rightarrow$ JAR file}. Esto exporta las clases y librerias que Talend necesita para lanzar el job en un archivo comprimido llamado <nombre\_job>.jar
 El siguiente paso fue descomprimir el JAR en cuestión, analizar su contenido y ver cómo se podría importar en un proyecto Java. El JAR contenía varias carpetas y ficheros pero lo que interesa es lo siguiente:
+\bigskip
+\par 
 \dirtree{%
 .1 Nombre\_del\_jar.
 .2 lib.
@@ -31,12 +33,19 @@ El siguiente paso fue descomprimir el JAR en cuestión, analizar su contenido y 
 .4 \textit{clases java}.
 .3 \textit{clases java}.
 }
+\bigskip
 \par
 Así pues, a continuación se creó un nuevo proyecto Java con IntelliJ y Maven (TalendCrawler) y se copiaron todas las clases Java con su correspondiente estructura de carpetas. Dentro del fichero pom.xml del proyecto TalendCrawler donde se importaron todas las dependencias de Talend que figuraban como librerías locales en la carpeta lib. Para ello se tuvo que definir el \textit{repositorio de Cloudera} \cite{cloudera}, que es desde donde Maven buscaría la mayoría de librerías. Tras comprobar que la aplicación arrancaba y se comportaba correctamente, el próximo paso fue encapsular y exportar la aplicación como un Jar, en conjunto con sus librerías. Para ello se hizo uso del plugin \textit{one-jar} de Maven que recoge las dependencias del proyecto y las empaqueta junto a las otras clases en un único jar.\par 
 
 En el proyecto de JHipster lo que se hizo fue crear una clase llamada Talend, desde la que periódicamente (mediante @Scheduled) se ejecutaba el Jar anterior a través del comando Runnable. 
-
-
+\bigskip
+\par 
+\textbf{Fichero de configuración}
+\par
+Para simplificar el acceso a los recursos se ha hecho uso de un fichero de configuración a los que acceden varios componentes: En primer lugar, el script bash que descarga los datos de los productos autorizados del \textit{Mapama} \cite{mapama}. Este Script usa una función bash para solicitar los valores del fichero de propiedades de la web del \textit{Mapama}, y saber la ruta en el sistema donde guardar dicho fichero. Si en cualquier momento se quiere modificar dicha localización, gracias al fichero de configuración, el único sitio que se debería modificar sería en el propio fichero. 
+\par En segundo lugar, la aplicación Java del Job de Talend también accede a dicho fichero de configuración, puesto que en él se han establecido tanto rutas de almacenamiento dentro del HDFS de Hadoop, como el nombre del nodo o del usuario. No obstante, tal como se ha comentado en el apartado anterior, esta aplicación Java ha tenido que ser empaquetada en un Jar único y conjunto con todas sus librerías. Entonces ... ¿cómo accede a dicho fichero de configuración?. La solución ha sido hacer que el Jar reciba la ruta a dicho fichero mediante un argumento, de forma robusta, tal que si no recibe argumentos, o si el fichero que se le pasa no es un fichero de propiedades, el proceso alerta del error y se detiene. 
+\bigskip
+\par
 \textit{Explicar en detalle el funcionamiento típico de la aplicación y la presentación de los datos. Hacer una especie de manual del usuario resumido y si hay algún aspecto interesante de la aplicación, hacer hincapié en el.}
 \section{Problemas técnicos detectados}
 Mencionar los problemas confrontados durante la realización del proyecto y la manera en la que se han solucionado.
