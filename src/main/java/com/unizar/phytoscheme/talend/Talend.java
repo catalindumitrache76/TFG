@@ -28,9 +28,8 @@ public class Talend {
             prop.load(input);
 
             // get the property value and print it out
-            System.out.println(prop.getProperty("database"));
-            System.out.println(prop.getProperty("dbuser"));
-            System.out.println(prop.getProperty("dbpassword"));
+            System.out.println(prop.getProperty("dir_proyecto_1"));
+            System.out.println(prop.getProperty("autorizados_mapama_6"));
 
         } catch (IOException ex) {
             ex.printStackTrace();
