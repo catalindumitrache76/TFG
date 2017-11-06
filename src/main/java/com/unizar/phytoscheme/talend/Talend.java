@@ -13,6 +13,7 @@ import java.util.Properties;
 @Component
 public class Talend {
 
+    public static final String fichero_configuracion = "Scripts/fichero_configuracion.properties";
     // cada 30 min
     @Scheduled(initialDelay=1000, fixedRate=1800000)
     public static void programTalendJob () {
@@ -22,7 +23,7 @@ public class Talend {
 
         try {
 
-            input = new FileInputStream("fichero_configuracion.properties");
+            input = new FileInputStream(fichero_configuracion);
 
             // load a properties file
             prop.load(input);
@@ -31,16 +32,9 @@ public class Talend {
             System.out.println(prop.getProperty("dir_proyecto_1"));
             System.out.println(prop.getProperty("autorizados_mapama_6"));
 
+            input.close();
         } catch (IOException ex) {
             ex.printStackTrace();
-        } finally {
-            if (input != null) {
-                try {
-                    input.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
         // Run a java app in a separate system process
         System.out.println("Lanzando Job TalendCrawler cada 1800 segundos ... 30 min");
@@ -51,7 +45,8 @@ public class Talend {
     private static void launchTalendJob() {
         Process proc = null;
         try {
-            proc = Runtime.getRuntime().exec("java -jar Talend_Jars/TalendCrawlerProject-1.0-SNAPSHOT.one-jar.jar");
+            proc = Runtime.getRuntime().exec("java -jar Talend_Jars/TalendCrawlerEspanya.one-jar.jar " +
+                fichero_configuracion);
         } catch (IOException e) {
             e.printStackTrace();
         }
