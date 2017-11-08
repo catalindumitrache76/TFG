@@ -18,27 +18,9 @@ public class Talend {
     @Scheduled(initialDelay=1000, fixedRate=1800000)
     public static void programTalendJob () {
 
-        Properties prop = new Properties();
-        InputStream input = null;
-
-        try {
-
-            input = new FileInputStream(fichero_configuracion);
-
-            // load a properties file
-            prop.load(input);
-
-            // get the property value and print it out
-            System.out.println(prop.getProperty("dir_proyecto_1"));
-            System.out.println(prop.getProperty("autorizados_mapama_6"));
-
-            input.close();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
         // Run a java app in a separate system process
-        System.out.println("Lanzando Job TalendCrawler cada 1800 segundos ... 30 min");
-        launchTalendJob ();
+        //System.out.println("Lanzando Job TalendCrawler cada 1800 segundos ... 30 min");
+        //launchTalendJob ();
     }
 
     // Lanza el trabajo de Talend
