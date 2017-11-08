@@ -15,24 +15,24 @@ import static com.unizar.phytoscheme.processes.talend.Talend.*;
 public class Schedule {
 
     // cada 30 min
-    @Scheduled(initialDelay=1000, fixedRate=1800000)
+    @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void programTalendJob () {
 //        System.out.println("Lanzando Job TalendCrawler cada 1800 segundos ... 30 min");
 //        launchTalendJob ();
     }
 
     // cada 30 min
-    @Scheduled(initialDelay=1000, fixedRate=1800000)
+    @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void programSqoopJob () {
-        System.out.println("Lanzando Job de Sqoop cada 1800 segundos ... 30 min");
-        exportFromHiveToMySQL("fitosanitario","fitosanitario");
+//        System.out.println("Lanzando Job de Sqoop cada 1800 segundos ... 30 min");
+//        exportFromHiveToMySQL("fitosanitario","fitosanitario");
     }
 
     // cada 30 min
-    @Scheduled(initialDelay=1000, fixedRate=1800000)
+    @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void mySQLQuery () {
-//        System.out.println("Query a MYSQL: cada 1800 segundos ... 30 min");
-//        selectAllFitosanitario();
+        System.out.println("Query a MYSQL: cada 1800 segundos ... 30 min");
+        selectAllFitosanitario();
 //        dropFitosanitario();
 //        createFitosanitario();
 //        truncateFitosanitario();

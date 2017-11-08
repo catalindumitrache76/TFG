@@ -39,7 +39,7 @@ public class MySQL {
                 // print the results
                 System.out.format("%s, %s, %s, %s\n", numregistro, nombrecomercial, titular, formulado);
             }
-            System.out.println("Registros en la tabla: "+registros);
+            System.out.println("Registros en la tabla fitosanitario: "+registros);
             st.close();
             conn.close();
 

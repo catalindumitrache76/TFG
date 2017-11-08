@@ -1,0 +1,13 @@
+entity Fitosanitario {
+	num_registro String required,
+	nombre_comercial String,
+	titular String,
+	formulado String
+}
+
+
+// Set pagination options
+paginate Fitosanitario with pagination
+
+dto * with mapstruct
+

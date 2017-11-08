@@ -3,6 +3,7 @@
 ######################
 /target/www/**
 /src/test/javascript/coverage/
+fitosanitario.java
 
 ######################
 # Node
