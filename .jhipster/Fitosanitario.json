@@ -1,0 +1,27 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "num_registro",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nombre_comercial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "titular",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "formulado",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171108181814",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "fitosanitario",
+    "pagination": "pager"
+}

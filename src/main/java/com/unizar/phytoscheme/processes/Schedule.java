@@ -24,15 +24,19 @@ public class Schedule {
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void programSqoopJob () {
-//        System.out.println("Lanzando Job de Sqoop cada 1800 segundos ... 30 min");
-//        exportFromHiveToMySQL("fitosanitario","fitosanitario");
+        String hiveTable = "fitosanitario_con_id" ;
+        String mysqlTable = "fitosanitario";
+        System.out.println("Lanzando Job de Sqoop cada 1800 segundos ... 30 min");
+
+        truncateFitosanitario();
+        exportFromHiveToMySQL(hiveTable,mysqlTable);
     }
 
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void mySQLQuery () {
         System.out.println("Query a MYSQL: cada 1800 segundos ... 30 min");
-        selectAllFitosanitario();
+//        selectAllFitosanitario();
 //        dropFitosanitario();
 //        createFitosanitario();
 //        truncateFitosanitario();
