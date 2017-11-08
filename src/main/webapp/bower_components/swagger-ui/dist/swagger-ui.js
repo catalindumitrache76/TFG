@@ -700,7 +700,7 @@ window.Docs = {
     // V8 are regular expression literals permitted as
     // reduce parameters, so it is desirable in the
     // general case for the shim to match the more
-    // strict and common behavior of rejecting regular
+    // strict and com.unizar.phytoscheme.processes.common_methods behavior of rejecting regular
     // expressions.
 
     // ES5 15.4.4.18
@@ -4793,7 +4793,7 @@ Resolver.prototype.finish = function (spec, root, resolutionTable, resolvedRefs,
 
         for (key in resolvedTo.obj) {
           var abs = resolvedTo.obj[key];
-          
+
           if (localResolve !== true) {
             // don't retain root for local definitions
             abs = this.retainRoot(key, resolvedTo.obj[key], item.root);
@@ -7719,7 +7719,7 @@ function kMaxLength () {
  */
 function Buffer (arg) {
   if (!(this instanceof Buffer)) {
-    // Avoid going through an ArgumentsAdaptorTrampoline in the common case.
+    // Avoid going through an ArgumentsAdaptorTrampoline in the com.unizar.phytoscheme.processes.common_methods case.
     if (arguments.length > 1) return new Buffer(arg, arguments[1])
     return new Buffer(arg)
   }
@@ -7732,7 +7732,7 @@ function Buffer (arg) {
     return fromNumber(this, arg)
   }
 
-  // Slightly less common case.
+  // Slightly less com.unizar.phytoscheme.processes.common_methods case.
   if (typeof arg === 'string') {
     return fromString(this, arg, arguments.length > 1 ? arguments[1] : 'utf8')
   }
@@ -9799,7 +9799,7 @@ module.exports.extend         = extend;
 
 /*eslint-disable no-use-before-define*/
 
-var common              = require('./common');
+var common              = require('./com.unizar.phytoscheme.processes.common_methods');
 var YAMLException       = require('./exception');
 var DEFAULT_FULL_SCHEMA = require('./schema/default_full');
 var DEFAULT_SAFE_SCHEMA = require('./schema/default_safe');
@@ -10648,7 +10648,7 @@ module.exports = YAMLException;
 
 /*eslint-disable max-len,no-use-before-define*/
 
-var common              = require('./common');
+var common              = require('./com.unizar.phytoscheme.processes.common_methods');
 var YAMLException       = require('./exception');
 var Mark                = require('./mark');
 var DEFAULT_SAFE_SCHEMA = require('./schema/default_safe');
@@ -12235,7 +12235,7 @@ module.exports.safeLoad    = safeLoad;
 'use strict';
 
 
-var common = require('./common');
+var common = require('./com.unizar.phytoscheme.processes.common_methods');
 
 
 function Mark(name, buffer, position, line, column) {
@@ -12314,7 +12314,7 @@ module.exports = Mark;
 
 /*eslint-disable max-len*/
 
-var common        = require('./common');
+var common        = require('./com.unizar.phytoscheme.processes.common_methods');
 var YAMLException = require('./exception');
 var Type          = require('./type');
 
@@ -12778,7 +12778,7 @@ module.exports = new Type('tag:yaml.org,2002:bool', {
 },{"../type":32}],35:[function(require,module,exports){
 'use strict';
 
-var common = require('../common');
+var common = require('../com.unizar.phytoscheme.processes.common_methods');
 var Type   = require('../type');
 
 var YAML_FLOAT_PATTERN = new RegExp(
@@ -12885,7 +12885,7 @@ module.exports = new Type('tag:yaml.org,2002:float', {
 },{"../common":21,"../type":32}],36:[function(require,module,exports){
 'use strict';
 
-var common = require('../common');
+var common = require('../com.unizar.phytoscheme.processes.common_methods');
 var Type   = require('../type');
 
 function isHexCode(c) {
@@ -16455,7 +16455,7 @@ var nativeMin = Math.min;
  * may be applied regardless of execution order. Methods like `_.ary` and `_.rearg`
  * augment function arguments, making the order in which they are executed important,
  * preventing the merging of metadata. However, we make an exception for a safe
- * common case where curried functions have `_.ary` and or `_.rearg` applied.
+ * com.unizar.phytoscheme.processes.common_methods case where curried functions have `_.ary` and or `_.rearg` applied.
  *
  * @private
  * @param {Array} data The destination metadata.
@@ -19032,7 +19032,7 @@ function async(makeGenerator) {
  * The spawn function is a small wrapper around async that immediately
  * calls the generator and also ends the promise chain, so that any
  * unhandled errors are thrown instead of forwarded to the error
- * handler. This is useful because it's extremely common to run
+ * handler. This is useful because it's extremely com.unizar.phytoscheme.processes.common_methods to run
  * generators at the top-level to work with libraries.
  */
 Q.spawn = spawn;
@@ -20181,7 +20181,7 @@ Response.prototype.parseBody = function(str){
  * specific, and `.statusType` is the class of error ranging from 1..5
  * sometimes useful for mapping respond colors etc.
  *
- * "sugar" properties are also defined for common cases. Currently providing:
+ * "sugar" properties are also defined for com.unizar.phytoscheme.processes.common_methods cases. Currently providing:
  *
  *   - .noContent
  *   - .badRequest
@@ -20355,7 +20355,7 @@ Request.prototype.type = function(type){
 };
 
 /**
- * Set responseType to `val`. Presently valid responseTypes are 'blob' and 
+ * Set responseType to `val`. Presently valid responseTypes are 'blob' and
  * 'arraybuffer'.
  *
  * Examples:
@@ -21244,7 +21244,7 @@ Emitter.prototype.hasListeners = function(event){
  * TODO: combatible error handling?
  */
 
-module.exports = function(arr, fn, initial){  
+module.exports = function(arr, fn, initial){
   var idx = 0;
   var len = arr.length;
   var curr = arguments.length == 3
@@ -21254,7 +21254,7 @@ module.exports = function(arr, fn, initial){
   while (idx < len) {
     curr = fn.call(null, curr, arr[idx], ++idx, arr);
   }
-  
+
   return curr;
 };
 },{}]},{},[1])(1)

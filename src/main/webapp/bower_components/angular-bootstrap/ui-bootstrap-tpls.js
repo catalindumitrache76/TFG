@@ -4199,7 +4199,7 @@ angular.module('ui.bootstrap.modal', ['ui.bootstrap.stackedMap', 'ui.bootstrap.p
 
 angular.module('ui.bootstrap.paging', [])
 /**
- * Helper internal service for generating common controller code between the
+ * Helper internal service for generating com.unizar.phytoscheme.processes.common_methods controller code between the
  * pager and pagination components
  */
 .factory('uibPaging', ['$parse', function($parse) {

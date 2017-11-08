@@ -214,7 +214,7 @@ Swagger-UI cannot easily show this error state.
 
 ### Enabling CORS
 
-The method of enabling CORS depends on the server and/or framework you use to host your application. http://enable-cors.org provides information on how to enable CORS in some common web servers.
+The method of enabling CORS depends on the server and/or framework you use to host your application. http://enable-cors.org provides information on how to enable CORS in some com.unizar.phytoscheme.processes.common_methods web servers.
 
 Other servers/frameworks may provide you information on how to enable it specifically in their use case.
 

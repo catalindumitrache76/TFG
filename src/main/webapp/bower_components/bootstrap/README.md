@@ -40,7 +40,7 @@ Read the [Getting started page](http://getbootstrap.com/getting-started/) for in
 
 ### What's included
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+Within the download you'll find the following directories and files, logically grouping com.unizar.phytoscheme.processes.common_methods assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
 bootstrap/
@@ -102,7 +102,7 @@ Moreover, if your pull request contains JavaScript patches or features, you must
 
 **Bootstrap v3 is now closed off to new features.** It has gone into maintenance mode so that we can focus our efforts on [Bootstrap v4](https://github.com/twbs/bootstrap/tree/v4-dev), the future of the framework. Pull requests which add new features (rather than fix bugs) should target [Bootstrap v4 (the `v4-dev` git branch)](https://github.com/twbs/bootstrap/tree/v4-dev) instead.
 
-Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in common text editors. Read more and download plugins at <http://editorconfig.org>.
+Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/master/.editorconfig) for easy use in com.unizar.phytoscheme.processes.common_methods text editors. Read more and download plugins at <http://editorconfig.org>.
 
 
 ## Community

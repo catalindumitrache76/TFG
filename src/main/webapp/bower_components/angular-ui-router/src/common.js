@@ -28,7 +28,7 @@ function merge(dst) {
 }
 
 /**
- * Finds the common ancestor path between two states.
+ * Finds the com.unizar.phytoscheme.processes.common_methods ancestor path between two states.
  *
  * @param {Object} first The first state.
  * @param {Object} second The second state.
@@ -85,7 +85,7 @@ function indexOf(array, value) {
 }
 
 /**
- * Merges a set of parameters with all parameters inherited between the common parents of the
+ * Merges a set of parameters with all parameters inherited between the com.unizar.phytoscheme.processes.common_methods parents of the
  * current state and a given destination state.
  *
  * @param {Object} currentParams The value of the current state parameters ($stateParams).
@@ -225,7 +225,7 @@ angular.module('ui.router.util', ['ng']);
 /**
  * @ngdoc overview
  * @name ui.router.router
- * 
+ *
  * @requires ui.router.util
  *
  * @description
@@ -239,7 +239,7 @@ angular.module('ui.router.router', ['ui.router.util']);
 /**
  * @ngdoc overview
  * @name ui.router.state
- * 
+ *
  * @requires ui.router.router
  * @requires ui.router.util
  *
@@ -248,7 +248,7 @@ angular.module('ui.router.router', ['ui.router.util']);
  *
  * This module is a dependency of the main ui.router module. Do not include this module as a dependency
  * in your angular app (use {@link ui.router} module instead).
- * 
+ *
  */
 angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
 
@@ -260,17 +260,17 @@ angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
  *
  * @description
  * # ui.router
- * 
- * ## The main module for ui.router 
+ *
+ * ## The main module for ui.router
  * There are several sub-modules included with the ui.router module, however only this module is needed
- * as a dependency within your angular app. The other modules are for organization purposes. 
+ * as a dependency within your angular app. The other modules are for organization purposes.
  *
  * The modules are:
  * * ui.router - the main "umbrella" module
- * * ui.router.router - 
- * 
+ * * ui.router.router -
+ *
  * *You'll need to include **only** this module as the dependency within your angular app.*
- * 
+ *
  * <pre>
  * <!doctype html>
  * <html ng-app="myApp">

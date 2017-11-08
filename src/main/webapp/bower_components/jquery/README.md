@@ -7,7 +7,7 @@ For source files and issues, please visit the [jQuery repo](https://github.com/j
 
 ## Including jQuery
 
-Below are some of the most common ways to include jQuery.
+Below are some of the most com.unizar.phytoscheme.processes.common_methods ways to include jQuery.
 
 ### Browser
 

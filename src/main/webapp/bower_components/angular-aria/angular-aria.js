@@ -10,7 +10,7 @@
  * @name ngAria
  * @description
  *
- * The `ngAria` module provides support for common
+ * The `ngAria` module provides support for com.unizar.phytoscheme.processes.common_methods
  * [<abbr title="Accessible Rich Internet Applications">ARIA</abbr>](http://www.w3.org/TR/wai-aria/)
  * attributes that convey state or semantic information about the application for users
  * of assistive technologies, such as screen readers.
@@ -152,10 +152,10 @@ function $AriaProvider() {
    * @description
    * @priority 200
    *
-   * The $aria service contains helper methods for applying common
+   * The $aria service contains helper methods for applying com.unizar.phytoscheme.processes.common_methods
    * [ARIA](http://www.w3.org/TR/wai-aria/) attributes to HTML directives.
    *
-   * ngAria injects common accessibility attributes that tell assistive technologies when HTML
+   * ngAria injects com.unizar.phytoscheme.processes.common_methods accessibility attributes that tell assistive technologies when HTML
    * elements are enabled, selected, hidden, and more. To see how this is performed with ngAria,
    * let's review a code snippet from ngAria itself:
    *

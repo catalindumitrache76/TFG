@@ -905,7 +905,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		}
 
 		return i ?
-			// Do a sibling check if the nodes have a common ancestor
+			// Do a sibling check if the nodes have a com.unizar.phytoscheme.processes.common_methods ancestor
 			siblingCheck( ap[i], bp[i] ) :
 
 			// Otherwise nodes in our document sort first
