@@ -1,9 +1,9 @@
-package com.unizar.phytoscheme.mysql;
+package com.unizar.phytoscheme.processes.mysql;
 
 import java.sql.*;
 
-import static common.Common.connect;
-import static common.Common.getProperty;
+import static com.unizar.phytoscheme.processes.common_methods.Common.connect;
+import static com.unizar.phytoscheme.processes.common_methods.Common.getProperty;
 
 
 /**
