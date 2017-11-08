@@ -31,7 +31,7 @@ Package: babel 2016/02/24 3.9q The Babel package
 Language: spanish.ldf 2016/01/15 v5.0o Spanish support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/02/24 3.9q Babel common definitions
+File: babel.def 2016/02/24 3.9q Babel com.unizar.phytoscheme.processes.common_methods definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
@@ -430,12 +430,12 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-com.unizar.phytoscheme.processes.common_methods.tex
 \pgfutil@everybye=\toks19
 \pgfutil@tempdima=\dimen120
 \pgfutil@tempdimb=\dimen121
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-com.unizar.phytoscheme.processes.common_methods-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box26
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
@@ -484,9 +484,9 @@ Driver file for pgf: pgfsys-dvips.def
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvips.def
 File: pgfsys-dvips.def 2014/07/09  (rcs-revision 1.25)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-postsc
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-com.unizar.phytoscheme.processes.common_methods-postsc
 ript.def
-File: pgfsys-common-postscript.def 2008/10/01  (rcs-revision 1.22)
+File: pgfsys-com.unizar.phytoscheme.processes.common_methods-postscript.def 2008/10/01  (rcs-revision 1.22)
 \pgf@objectcount=\count101
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
@@ -1198,13 +1198,13 @@ Package glossaries Info: Writing glossary file main.glo on input line 27.
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
-Enter file name: 
+Enter file name:
 ! Interruption.
-<to be read again> 
+<to be read again>
                    }
 l.28 \input{Mis_capitulos/D_Glosary}
                                     ^^M
-? 
+?
 (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
 )
@@ -1262,17 +1262,17 @@ Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
- ...                                              
-                                                  
+ ...
+
 l.57 ...aphics[width=69.62mm]{Imagenes/UnizarLogo}
-                                                  
-? 
+
+?
 ! Interruption.
-\GenericError  ...                                
-                                                  \endgroup 
+\GenericError  ...
+                                                  \endgroup
 l.57 ...aphics[width=69.62mm]{Imagenes/UnizarLogo}
-                                                  
-? 
+
+?
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <28> not available
 (Font)              size <24.88> substituted on input line 62.
