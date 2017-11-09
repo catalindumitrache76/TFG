@@ -1,6 +1,8 @@
 \chapter{Implementación}
 \section{Prueba de concepto}
 Explicar que una fase inicial del proyecto fue la prueba de concepto donde se demostró que las herramientas integradas funcionan en conjunto. Introducir brevemente el hecho de que inicialmente hubo problemas con algunas tecnologías, pero no entrar en detalles. Explicar las decisiones que se han tenido que tomar en resumidas cuentas.
+
+
 \section{Prototipo real}
 \textbf{Integración de Talend con JHipster: }\par
 Lo primero que se hizo fue implementar un simple proceso mediante la interfaz gráfica de Talend. Este proceso realiza las siguientes operaciones: 
@@ -38,6 +40,26 @@ El siguiente paso fue descomprimir el JAR en cuestión, analizar su contenido y 
 Así pues, a continuación se creó un nuevo proyecto Java con IntelliJ y Maven (TalendCrawler) y se copiaron todas las clases Java con su correspondiente estructura de carpetas. Dentro del fichero pom.xml del proyecto TalendCrawler donde se importaron todas las dependencias de Talend que figuraban como librerías locales en la carpeta lib. Para ello se tuvo que definir el \textit{repositorio de Cloudera} \cite{cloudera}, que es desde donde Maven buscaría la mayoría de librerías. Tras comprobar que la aplicación arrancaba y se comportaba correctamente, el próximo paso fue encapsular y exportar la aplicación como un Jar, en conjunto con sus librerías. Para ello se hizo uso del plugin \textit{one-jar} de Maven que recoge las dependencias del proyecto y las empaqueta junto a las otras clases en un único jar.\par 
 
 En el proyecto de JHipster lo que se hizo fue crear una clase llamada Talend, desde la que periódicamente (mediante @Scheduled) se ejecutaba el Jar anterior a través del comando Runnable. 
+\bigskip
+
+
+
+\par 
+\textbf{Primera versión de una integración completa}
+\par
+Teniendo ya el proceso de Talend integrado en la aplicación de JHipster, el siguiente problema a abordar fue el de la automatización de su ejecución. Se sabe que los productos fitosanitarios autorizados son actualizados periódicamente en la web de \textit{Mapama}. Por eso mismo, nuestra aplicación requería también de una descarga periódica de dichos datos, para asegurarse de que en todo momento el programa tiene la versión actualizada de los fitosanitarios autorizados de España. Esto se consiguió gracias al \textit{módulo de scheduling}\cite{spring_scheduling} de \textit{Spring} que permite programar la ejecución de un método de manera periódica. Como decisión estratégica se propuso lanzar el proceso de Talend cada media hora. Resuelto este problema también, el siguiente objetivo fue automatizar toda la ejecución del proceso; desde la descarga del fichero de los productos autorizados hasta la visualización de los datos mediante JHipster. Aprovechandose del mismo módulo anterior de scheduling, el desarrollo tendría que seguir el siguiente esquema: Primero, los datos deberían descargarse y procesarse mediante el módulo TalendJob. A continuación, se debería implementar otro módulo encargado de la carga de dichos datos procesados a una tabla de Hive. Después de eso, se deberían transferir los datos de Hive a la base de datos MySQL que emplea JHipster. Así pues, para cada uno de los módulos mencionados se creó un paquete con una clase que contenía los métodos necesarios para lograr sus tareas particulares. A continuación se adjunta un diagrama de clases para ilustrar de una mejor forma los módulos anteriores.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Imagenes/Paquete_processes}
+    \caption{Diagrama de clases}
+    \label{fig:diag_clases}
+\end{figure}
+\par
+
+\textbf{INCOMPLETO}
+
 \bigskip
 \par 
 \textbf{Fichero de configuración}
