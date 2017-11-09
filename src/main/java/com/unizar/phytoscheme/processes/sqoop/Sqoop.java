@@ -15,10 +15,12 @@ public class Sqoop {
             getProperty("database_password_18") + " --table " +
             MySQLTable + " --export-dir " +
             getProperty("hive_database_22") +
-            HiveTable + "/ -m 1 --direct\n";
+            HiveTable + "/ -m 1 --fields-terminated-by \";\" --direct \n";
         System.out.println("Lanzando comando de Sqoop para importar la tabla "+HiveTable +" desde " +
             "Hive a la tabla "+MySQLTable + " de MySQL.");
         System.out.println("Comando: " + command);
+
         executeExternalProcess(command);
     }
+
 }
