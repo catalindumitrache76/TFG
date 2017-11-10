@@ -45,20 +45,37 @@ En el proyecto de JHipster lo que se hizo fue crear una clase llamada Talend, de
 
 
 \par 
-\textbf{Primera versión de una integración completa}
+\textbf{Primera versión de una integración y automatización completa}
 \par
-Teniendo ya el proceso de Talend integrado en la aplicación de JHipster, el siguiente problema a abordar fue el de la automatización de su ejecución. Se sabe que los productos fitosanitarios autorizados son actualizados periódicamente en la web de \textit{Mapama}. Por eso mismo, nuestra aplicación requería también de una descarga periódica de dichos datos, para asegurarse de que en todo momento el programa tiene la versión actualizada de los fitosanitarios autorizados de España. Esto se consiguió gracias al \textit{módulo de scheduling}\cite{spring_scheduling} de \textit{Spring} que permite programar la ejecución de un método de manera periódica. Como decisión estratégica se propuso lanzar el proceso de Talend cada media hora. Resuelto este problema también, el siguiente objetivo fue automatizar toda la ejecución del proceso; desde la descarga del fichero de los productos autorizados hasta la visualización de los datos mediante JHipster. Aprovechandose del mismo módulo anterior de scheduling, el desarrollo tendría que seguir el siguiente esquema: Primero, los datos deberían descargarse y procesarse mediante el módulo TalendJob. A continuación, se debería implementar otro módulo encargado de la carga de dichos datos procesados a una tabla de Hive. Después de eso, se deberían transferir los datos de Hive a la base de datos MySQL que emplea JHipster. Así pues, para cada uno de los módulos mencionados se creó un paquete con una clase que contenía los métodos necesarios para lograr sus tareas particulares. A continuación se adjunta un diagrama de clases para ilustrar de una mejor forma los módulos anteriores.
+Teniendo ya el proceso de \textit{Talend} integrado en la aplicación de \textit{JHipster}, el siguiente problema a abordar fue el de la automatización de su ejecución. Se sabe que los productos fitosanitarios autorizados son actualizados periódicamente en la web de \textit{Mapama}. Por eso mismo, nuestra aplicación requería también de una descarga periódica de dichos datos, para asegurarse de que en todo momento el programa tiene la versión actualizada de los fitosanitarios autorizados de España. Esto se consiguió gracias al \textit{módulo de scheduling}\cite{spring_scheduling} de \textit{Spring} que permite programar la ejecución de un método de manera periódica. Como decisión estratégica se propuso lanzar el proceso de \textit{Talend} cada media hora. Resuelto este problema también, el siguiente objetivo fue automatizar toda la ejecución del proceso, desde la descarga del fichero de los productos autorizados hasta la visualización de los datos mediante \textit{JHipster}. Aprovechandose del mismo módulo anterior de scheduling, el desarrollo tendría que seguir el siguiente esquema: 
+\begin{itemize}
+\item Primero, los datos deberían descargarse y procesarse y almacenarse en \textit{Hadoop} mediante el módulo de \textit{Talend}.
+\item A continuación, se debería implementar otro módulo encargado de la carga de dichos datos procesados a una tabla de \textit{Hive}.
+\item Después de eso, se deberían transferir los datos de \textit{Hive} a la base de datos \textit{MySQL} que emplea \textit{JHipster}.
+\end{itemize}
+  \par Así pues, para cada uno de los módulos mencionados se creó un paquete con una clase que contenía los métodos necesarios para lograr sus tareas particulares. A continuación se adjunta un diagrama de clases para ilustrar de una mejor forma la infraestructura que se construyó para soportar el comportamiento mencionado en los puntos anteriores.
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{Imagenes/Paquete_processes}
-    \caption{Diagrama de clases}
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Imagenes/Paquete_processes}
+    \caption{Diagrama de clases y paquetes para soportar la automatización del \textit{workflow}}
     \label{fig:diag_clases}
 \end{figure}
-\par
 
-\textbf{INCOMPLETO}
+\par Una vez vista la estructura del diagrama anterior, a continuación se presenta un diagrama de secuencia para ilustrar la interacción de los diferentes componentes y el rol que juegan en el \textit{workflow} desde que los datos se descargan hasta que pasan a visualizarse mediante \textit{JHipster}.
+
+\begin{landscape}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Imagenes/processes_sequence}
+    \caption{Diagrama de secuencia del \textit{workflow} implementado}
+    \label{fig:diag_clases}
+\end{figure}
+
+\end{landscape}
+
 
 \bigskip
 \par 
