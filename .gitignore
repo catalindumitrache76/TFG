@@ -142,4 +142,4 @@ Desktop.ini
 ######################
 .eslintcache
 
-!Talend_Jars/TalendCrawlerEspanya.one-jar.jar
+!Talend_Jars/*

@@ -16,6 +16,7 @@ public class MySQL {
 
     // Lanza la query SELECT * FROM fitosanitario;
     public static void selectAllFitosanitario() {
+        System.out.println("MySQL: SELECT * FROM fitosanitario");
         Connection conn = connect();
         try {
             // create the java statement
@@ -53,6 +54,7 @@ public class MySQL {
     // Lanza la query DROP TABLE fitosanitario;
     public static void dropFitosanitario() {
 
+        System.out.println("MySQL: DROP TABLE fitosanitario");
         Connection conn = connect();
 
         try {
@@ -79,6 +81,7 @@ public class MySQL {
     // Lanza la query TRUNCATE TABLE fitosanitario;
     public static void truncateFitosanitario() {
 
+        System.out.println("MySQL: TRUNCATE TABLE fitosanitario;");
         Connection conn = connect();
 
         try {
@@ -105,6 +108,7 @@ public class MySQL {
     // Lanza la query CREATE TABLE fitosanitario;
     public static void createFitosanitario() {
 
+        System.out.println("MySQL: CREATE TABLE fitosanitario;");
         Connection conn = connect();
 
         try {

@@ -1,12 +1,11 @@
 package com.unizar.phytoscheme.processes;
 
+import com.unizar.phytoscheme.processes.hive.Hive;
+import com.unizar.phytoscheme.processes.talend.Talend;
+import com.unizar.phytoscheme.processes.mysql.MySQL;
+import com.unizar.phytoscheme.processes.sqoop.Sqoop;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import static com.unizar.phytoscheme.processes.hive.Hive.updateHiveTable;
-import static com.unizar.phytoscheme.processes.mysql.MySQL.*;
-import static com.unizar.phytoscheme.processes.sqoop.Sqoop.*;
-import static com.unizar.phytoscheme.processes.talend.Talend.*;
 
 /**
  * Created by catalin on 8/11/17.
@@ -15,34 +14,50 @@ import static com.unizar.phytoscheme.processes.talend.Talend.*;
 @Component
 public class Schedule {
 
-    // cada 30 min
+//     cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void programHadoop_JHipster() {
-
-        System.out.println("Lanzando Job TalendCrawler.");
-
-        launchTalendJob ();
-
-        System.out.println("Lanzando Job de Hive.");
+    public static void program_Workflow_Fitosanitario_Hadoop_JHipster() {
 
         String hadoop_dir = "'/user/TFG/Datos_procesados/Espanya/Productos_autorizados'";
-        String hive_table = "tfghivedb.fitosanitario_con_id";
+        String hive_database = "tfghivedb";
+        String hive_table = "fitosanitario_con_id";
+        String mysql_table = "fitosanitario";
 
-        updateHiveTable (hadoop_dir, hive_table);
+        Hive.createFitosanitarioSpainHiveTable();
 
-        String hiveTable = "fitosanitario_con_id" ;
-        String mysqlTable = "fitosanitario";
+        Talend.launchTalendJobEspanya ();
 
-        System.out.println("Lanzando Job de Sqoop.");
+        Hive.insertIntoHiveTable (hadoop_dir, hive_database, hive_table);
 
-        truncateFitosanitario();
+        MySQL.truncateFitosanitario();
 
-        exportFromHiveToMySQL(hiveTable,mysqlTable);
+        Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
     }
+
+
+    @Scheduled(initialDelay=1, fixedRate=1800000)
+    public static void program_Workflow_SustanciActiva_Hadoop_JHipster () {
+
+        String hadoop_dir = "'/user/TFG/Datos_procesados/Europa/ActiveSubstances'";
+        String hive_database = "tfghivedb";
+        String hive_table = "sustancia_activa_europa";
+
+        Talend.launchTalendJobEuropa ();
+
+        Hive.createActiveSubstanceEuropeHiveTable();
+
+//        Hive.insertIntoHiveTable(hadoop_dir, hive_database, hive_table);
+
+    }
+
 /*
+
     @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void programTalendJob () {
-        System.out.println("Lanzando Job TalendCrawler cada 1800 segundos ... 30 min");
+        launchTalendJobEuropa();
+    }
+    @Scheduled(initialDelay=1, fixedRate=1800000)
+    public static void programTalendJob () {
         launchTalendJob ();
     }
 
@@ -60,7 +75,6 @@ public class Schedule {
     public static void programSqoopJob () {
         String hiveTable = "fitosanitario_con_id" ;
         String mysqlTable = "fitosanitario";
-        System.out.println("Lanzando Job de Sqoop cada 1800 segundos ... 30 min");
 
         truncateFitosanitario();
         exportFromHiveToMySQL(hiveTable,mysqlTable);
@@ -69,7 +83,6 @@ public class Schedule {
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void mySQLQuery () {
-        System.out.println("Query a MYSQL: cada 1800 segundos ... 30 min");
         selectAllFitosanitario();
         dropFitosanitario();
         createFitosanitario();
