@@ -29,7 +29,7 @@ public class Schedule {
 
         Hive.insertIntoHiveTable (hadoop_dir, hive_database, hive_table);
 
-        MySQL.truncateFitosanitario();
+        MySQL.truncateMySQLTable(mysql_table);
 
         Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
     }
@@ -41,12 +41,17 @@ public class Schedule {
         String hadoop_dir = "'/user/TFG/Datos_procesados/Europa/ActiveSubstances'";
         String hive_database = "tfghivedb";
         String hive_table = "sustancia_activa_europa";
+        String mysql_table = "sustancia_activa_europa";
 
         Talend.launchTalendJobEuropa ();
 
         Hive.createActiveSubstanceEuropeHiveTable();
 
-//        Hive.insertIntoHiveTable(hadoop_dir, hive_database, hive_table);
+        Hive.insertIntoHiveTable(hadoop_dir, hive_database, hive_table);
+
+        MySQL.truncateMySQLTable(mysql_table);
+
+        Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
 
     }
 

@@ -52,9 +52,9 @@ public class MySQL {
 
 
     // Lanza la query DROP TABLE fitosanitario;
-    public static void dropFitosanitario() {
+    public static void dropMySQLTable(String table) {
 
-        System.out.println("MySQL: DROP TABLE fitosanitario");
+        System.out.println("MySQL: DROP TABLE " + table);
         Connection conn = connect();
 
         try {
@@ -62,10 +62,10 @@ public class MySQL {
             // create the java statement
             Statement st = conn.createStatement();
 
-            String query = "DROP TABLE fitosanitario";
+            String query = "DROP TABLE "+table;
 
             st.executeUpdate(query);
-            System.out.println("Table fitosanitario dropped in database " + getProperty("database_in_use_19"));
+            System.out.println("Table "+table+" dropped in database " + getProperty("database_in_use_19"));
 
             st.close();
             conn.close();
@@ -79,9 +79,9 @@ public class MySQL {
 
 
     // Lanza la query TRUNCATE TABLE fitosanitario;
-    public static void truncateFitosanitario() {
+    public static void truncateMySQLTable(String table) {
 
-        System.out.println("MySQL: TRUNCATE TABLE fitosanitario;");
+        System.out.println("MySQL: TRUNCATE TABLE " + table + ";");
         Connection conn = connect();
 
         try {
@@ -89,10 +89,10 @@ public class MySQL {
             // create the java statement
             Statement st = conn.createStatement();
 
-            String query = "TRUNCATE TABLE fitosanitario";
+            String query = "TRUNCATE TABLE " + table;
 
             st.executeUpdate(query);
-            System.out.println("Table fitosanitario truncated in database " + getProperty("database_in_use_19"));
+            System.out.println("Table "+ table +" truncated in database " + getProperty("database_in_use_19"));
 
             st.close();
             conn.close();
@@ -103,6 +103,7 @@ public class MySQL {
         }
 
     }
+
 
 
     // Lanza la query CREATE TABLE fitosanitario;
