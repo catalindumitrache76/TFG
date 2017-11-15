@@ -3,9 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: Bibliografia_TFG.bib
+Warning--I didn't find a database entry for "pesticides_eu"
 You've used 25 entries,
             1791 wiz_defined-function locations,
-            499 strings with 5194 characters,
+            500 strings with 5207 characters,
 and the built_in function-call counts, 2060 in all, are:
 = -- 141
 > -- 25
@@ -44,3 +45,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 27
 write$ -- 141
+(There was 1 warning)

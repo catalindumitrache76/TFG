@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  10 NOV 2017 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  15 NOV 2017 21:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1591,15 +1591,34 @@ Package pdftex.def Info: Imagenes/processes_sequence.png used on input line 72.
 (pdftex.def)             Requested size: 699.93796pt x 253.92891pt.
  [21
 
- <./Imagenes/processes_sequence.png>]) (./Mis_capitulos/I_Gestion.tex [22
+ <./Imagenes/processes_sequence.png>]
+Underfull \hbox (badness 4429) in paragraph at lines 86--87
+[]\OT1/cmr/m/n/12 La pri-me-ra ite-ra-ci^^Son su-pu-so los ma-yo-res pro-ble-ma
+s de-bi-do no so-lo al
+ []
 
-]
+
+Underfull \hbox (badness 1221) in paragraph at lines 86--87
+\OT1/cmr/m/n/12 des-co-no-ci-mien-to pre-vio de las tec-no-log^^S^^Pas sino tam
+-bi^^Sen al he-cho de no sa-ber
+ []
+
+
+LaTeX Warning: Citation `pesticides_eu' on page 22 undefined on input line 88.
+
+
+Underfull \vbox (badness 2042) has occurred while \output is active []
+
+ [22
+
+])
+(./Mis_capitulos/I_Gestion.tex [23]
 Cap\'{\i }tulo 6.
-) (./Mis_capitulos/J_Conclusiones.tex [23
+) (./Mis_capitulos/J_Conclusiones.tex [24
 
 ]
 Cap\'{\i }tulo 7.
-) (./main.bbl [24
+) (./main.bbl [25
 
 ]
 Cap\'{\i }tulo 8.
@@ -1613,9 +1632,9 @@ anitarios--/tcm7-311275-16.
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
-[25
+[26
 
-]) (./main.gls [26]
+]) (./main.gls [27]
 Underfull \hbox (badness 1509) in paragraph at lines 8--8
 []\OT1/cmr/m/n/12 Leyes b^^Sasi-cas que con-ce-den la au-to-ri-dad le-gal a la
  []
@@ -1626,7 +1645,7 @@ Underfull \hbox (badness 1178) in paragraph at lines 14--14
 iagn^^Sosti-co, tra-ta-mien-to,
  []
 
-) [27
+) [28
 
 
 ] (./main.lof
@@ -1636,7 +1655,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write8
 \openout8 = `main.lof'.
 
- [28
+ [29
 
 ] (./main.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1645,14 +1664,14 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [29
+ [30
 
-] [30
+] [31
 
 
 ] (./Anexos/Anexo1.tex
 Anexos A.
-) (./Anexos/Anexo2.tex [31
+) (./Anexos/Anexo2.tex [32
 
 ]
 Anexos B.
@@ -1662,15 +1681,15 @@ Underfull \hbox (badness 1237) in paragraph at lines 10--11
 ta el re-gis-tro de la
  []
 
-[32
+[33
 
-] [33]
+] [34]
 Underfull \hbox (badness 2205) in paragraph at lines 46--47
 []\OT1/cmr/m/n/12 Otros tra-ta-mien-tos - Apli-ca-ci^^Son de otros tra-ta-mien-
 tos fi-to-sa-ni-ta-rios
  []
 
-) (./Anexos/Anexo3.tex [34]
+) (./Anexos/Anexo3.tex [35]
 Anexos C.
 
 Overfull \hbox (20.96588pt too wide) in alignment at lines 18--23
@@ -1707,7 +1726,7 @@ Overfull \hbox (19.57977pt too wide) in alignment at lines 52--79
  [] [] [] 
  []
 
-[35
+[36
 
 ]
 Overfull \hbox (20.88115pt too wide) in alignment at lines 82--87
@@ -1759,7 +1778,7 @@ Overfull \hbox (25.94221pt too wide) in alignment at lines 128--187
  [] [] [] 
  []
 
-[36]
+[37]
 Overfull \hbox (3.4537pt too wide) in alignment at lines 203--208
  [] [] 
  []
@@ -1810,31 +1829,31 @@ Overfull \hbox (9.42738pt too wide) in alignment at lines 253--262
  [] [] 
  []
 
-[37] [38] [39]
+[38] [39] [40]
 Underfull \vbox (badness 5161) has occurred while \output is active []
 
- [40]
-[41] <Imagenes/Dis_Fig_1.png, id=207, 1198.4775pt x 366.36874pt>
+ [41]
+[42] <Imagenes/Dis_Fig_1.png, id=210, 1198.4775pt x 366.36874pt>
 File: Imagenes/Dis_Fig_1.png Graphic file (type png)
 
 <use Imagenes/Dis_Fig_1.png>
 Package pdftex.def Info: Imagenes/Dis_Fig_1.png used on input line 676.
 (pdftex.def)             Requested size: 441.01581pt x 156.4901pt.
- [42 <./Imagenes/Dis_Fig_1.png>]
-<Imagenes/Dis_Fig_2.png, id=212, 1136.245pt x 570.13pt>
+ [43 <./Imagenes/Dis_Fig_1.png>]
+<Imagenes/Dis_Fig_2.png, id=215, 1136.245pt x 570.13pt>
 File: Imagenes/Dis_Fig_2.png Graphic file (type png)
 
 <use Imagenes/Dis_Fig_2.png>
 Package pdftex.def Info: Imagenes/Dis_Fig_2.png used on input line 688.
 (pdftex.def)             Requested size: 441.01857pt x 227.62169pt.
- [43 <./Imagenes/Dis_Fig_2.png>]
-<Imagenes/Dis_Fig_3.png, id=217, 1315.91624pt x 556.0775pt>
+ [44 <./Imagenes/Dis_Fig_2.png>]
+<Imagenes/Dis_Fig_3.png, id=220, 1315.91624pt x 556.0775pt>
 File: Imagenes/Dis_Fig_3.png Graphic file (type png)
 
 <use Imagenes/Dis_Fig_3.png>
 Package pdftex.def Info: Imagenes/Dis_Fig_3.png used on input line 701.
 (pdftex.def)             Requested size: 441.00034pt x 199.16954pt.
-) [44 <./Imagenes/Dis_Fig_3.png>] (./main.aux
+) [45 <./Imagenes/Dis_Fig_3.png>] (./main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
@@ -1843,14 +1862,17 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.12pt have occurred.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23706 strings out of 494850
- 453830 string characters out of 6178023
+ 23707 strings out of 494850
+ 453845 string characters out of 6178023
  600791 words of memory out of 5000000
- 26358 multiletter control sequences out of 15000+600000
+ 26359 multiletter control sequences out of 15000+600000
  16526 words of font info for 65 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  55i,18n,84p,1932b,575s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1864,10 +1886,10 @@ s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmtt12.pfb>
-Output written on main.pdf (52 pages, 1016645 bytes).
+Output written on main.pdf (53 pages, 1020166 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
+ 260 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

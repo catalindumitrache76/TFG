@@ -18,25 +18,25 @@
 \contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{18}
 \contentsline {section}{\numberline {5.1}Prueba de concepto}{18}
 \contentsline {section}{\numberline {5.2}Prototipo real}{18}
-\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{22}
-\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{23}
-\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{23}
-\contentsline {section}{\numberline {6.2}Control de versiones}{23}
-\contentsline {section}{\numberline {6.3}Pautas e imposiciones}{23}
-\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{23}
-\contentsline {chapter}{\numberline {7}Conclusiones}{24}
-\contentsline {section}{\numberline {7.1}Resultados y objetivos}{24}
-\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{24}
-\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{25}
-\contentsline {chapter}{Glosario}{27}
-\contentsline {chapter}{Lista de Figuras}{28}
-\contentsline {chapter}{Lista de Tablas}{29}
-\contentsline {chapter}{Anexos}{30}
-\contentsline {chapter}{\numberline {A}Datos}{31}
-\contentsline {section}{\numberline {A.1}Modelo de datos}{31}
-\contentsline {section}{\numberline {A.2}Flujo de datos}{31}
-\contentsline {chapter}{\numberline {B}Clientes}{32}
-\contentsline {section}{\numberline {B.1}Clientes potenciales}{32}
-\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{35}
-\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{35}
-\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{42}
+\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{23}
+\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{24}
+\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{24}
+\contentsline {section}{\numberline {6.2}Control de versiones}{24}
+\contentsline {section}{\numberline {6.3}Pautas e imposiciones}{24}
+\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{24}
+\contentsline {chapter}{\numberline {7}Conclusiones}{25}
+\contentsline {section}{\numberline {7.1}Resultados y objetivos}{25}
+\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{25}
+\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{26}
+\contentsline {chapter}{Glosario}{28}
+\contentsline {chapter}{Lista de Figuras}{29}
+\contentsline {chapter}{Lista de Tablas}{30}
+\contentsline {chapter}{Anexos}{31}
+\contentsline {chapter}{\numberline {A}Datos}{32}
+\contentsline {section}{\numberline {A.1}Modelo de datos}{32}
+\contentsline {section}{\numberline {A.2}Flujo de datos}{32}
+\contentsline {chapter}{\numberline {B}Clientes}{33}
+\contentsline {section}{\numberline {B.1}Clientes potenciales}{33}
+\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{36}
+\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{36}
+\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{43}
