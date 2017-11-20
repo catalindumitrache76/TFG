@@ -1,0 +1,31 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "numregistro",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nombrecomercial",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "titular",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "formulado",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "activeSubstanceID",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20171120124956",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "fitosanitario_sustancia_activa_europa",
+    "pagination": "pager"
+}

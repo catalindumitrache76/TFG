@@ -4,6 +4,7 @@
 /target/www/**
 /src/test/javascript/coverage/
 fitosanitario.java
+fitosanitario_sustancia_activa_europa.java
 
 ######################
 # Node

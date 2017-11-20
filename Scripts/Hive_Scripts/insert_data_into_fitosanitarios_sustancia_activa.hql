@@ -10,8 +10,8 @@
 -- que generalmente se corresponde con el la sustancia activa.
 
 WITH form_split AS (SELECT UPPER(SPLIT(fci.formulado,'[\(1234567890 ]')[0]) formuladosplitted, fci.id, fci.numregistro,
-fci.nombrecomercial, fci.titular, fci.formulado FROM fitosanitario_con_id fci), name_full AS
-(SELECT UPPER(sae.name) name, sae.real_id FROM sustancia_activa_europa sae)
+fci.nombrecomercial, fci.titular, fci.formulado FROM tfghivedb.fitosanitario_con_id fci), name_full AS
+(SELECT UPPER(sae.name) name, sae.real_id FROM tfghivedb.sustancia_activa_europa sae)
 INSERT INTO TABLE tfghivedb.fitosanitario_sustancia_activa_europa
 SELECT form_split.id, form_split.numregistro, form_split.nombrecomercial, form_split.titular, form_split.formulado,
 name_full.real_id FROM form_split, name_full WHERE form_split.formuladosplitted=name_full.name;
