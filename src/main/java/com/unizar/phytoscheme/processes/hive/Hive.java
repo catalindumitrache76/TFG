@@ -9,7 +9,6 @@ import static com.unizar.phytoscheme.processes.common_methods.Common.getProperty
  */
 public class Hive {
 
-
     // Actualiza la base de datos Hive
     public static void insertIntoHiveTable(String hadoop_dir, String hive_database, String hive_table) {
         System.out.println("Insertando datos de " + hadoop_dir + " a la tabla de Hive " + hive_table + ".");
@@ -40,4 +39,28 @@ public class Hive {
         executeExternalProcess(getProperty("hive_executable_23") +
             " -f Scripts/Hive_Scripts/create_fitosanitarios_table.hql");
     }
+
+    // Crea la tabla de Hive fitosanitario_sustancia_activa_europa
+    public static void createFitosanitarioSustanciaActivaEuropaHiveTable() {
+        System.out.println("Creando la tabla fitosanitario_sustancia_activa_europa en Hive");
+        executeExternalProcess(getProperty("hive_executable_23") +
+            " -f Scripts/Hive_Scripts/create_fitosanitarios_sustancia_activa_europa.hql");
+    }
+
+    // Crea la tabla de Hive fitosanitario_con_id
+    public static void truncateHiveTable(String hiveDB, String hiveTable) {
+        System.out.println("Truncando la tabla "+hiveDB+"."+hiveTable+" en Hive");
+        executeExternalProcess(getProperty("hive_executable_23") +
+            " -hiveconf DB_NAME=" + hiveDB +
+            " -hiveconf TABLE_NAME=" + hiveTable +
+            " -f Scripts/Hive_Scripts/truncate_hive_table.hql");
+    }
+
+    // Crea la tabla de Hive sustancia_activa_europa
+    public static void insertIntoFitosanitarioSustanciaActivaEuropaHiveTable() {
+        System.out.println("Insertando datos en la tabla fitosanitario_sustancia_activa_europa en Hive");
+        executeExternalProcess(getProperty("hive_executable_23") +
+            " -f Scripts/Hive_Scripts/insert_data_into_fitosanitarios_sustancia_activa.hql");
+    }
+
 }

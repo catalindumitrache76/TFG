@@ -14,7 +14,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class Schedule {
 
-//     cada 30 min
+    public static void program_Join_Fito_SustanciaActiva () {
+        String hive_database = "tfghivedb";
+        String hive_table = "fitosanitario_sustancia_activa_europa";
+
+        Hive.createFitosanitarioSustanciaActivaEuropaHiveTable();
+
+        Hive.truncateHiveTable(hive_database, hive_table);
+
+        Hive.insertIntoFitosanitarioSustanciaActivaEuropaHiveTable();
+
+    }
+
+    //     cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
     public static void program_Workflow_Fitosanitario_Hadoop_JHipster() {
 
@@ -54,45 +66,5 @@ public class Schedule {
         Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
 
     }
-
-/*
-
-    @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void programTalendJob () {
-        launchTalendJobEuropa();
-    }
-    @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void programTalendJob () {
-        launchTalendJob ();
-    }
-
-    // cada 30 min
-    @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void programHiveJob () {
-        System.out.println("Lanzando Job de Hive cada 1800 segundos ... 30 min");
-        String hadoop_dir = "'/user/TFG/Datos_procesados/Espanya/Productos_autorizados'";
-        String hive_table = "tfghivedb.fitosanitario_con_id";
-        updateHiveTable (hadoop_dir, hive_table);
-    }
-
-    // cada 30 min
-    @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void programSqoopJob () {
-        String hiveTable = "fitosanitario_con_id" ;
-        String mysqlTable = "fitosanitario";
-
-        truncateFitosanitario();
-        exportFromHiveToMySQL(hiveTable,mysqlTable);
-    }
-
-    // cada 30 min
-    @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void mySQLQuery () {
-        selectAllFitosanitario();
-        dropFitosanitario();
-        createFitosanitario();
-        truncateFitosanitario();
-    }
-    */
 
 }
