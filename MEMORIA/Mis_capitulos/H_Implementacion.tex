@@ -1,5 +1,5 @@
-\chapter{Implementación}
-\section{Prueba de concepto}
+\chapter{Implementación} \label{implementacion}
+\section{Prueba de concepto} \label{implementacion.prueba}
 
 En la fase inicial del proyecto lo primero que se hizo fue demostrar si las herramientas elegidas en el stack tecnológico son viables, si funcionan en conjunto, determinar los problemas que presentan y los retos a los que se enfrenta desde una aproximación tecnológica. Para ello se instalaron independientemente todas las herramientas, empezando por \textit{Hadoop}.
 
@@ -85,7 +85,7 @@ Tras la privatización de \textit{Kettle} y las tantas horas dedicadas a su inte
 Una vez conseguidos los pilares fundamentales de la integración dentro del proyecto (\textit{Hadoop}, \textit{Hive}, \textit{JHipster}, \textit{Sqoop}, \textit{Talend}) realmente las únicas preocupaciones que quedaban eran la automatización íntegra del proceso y la ejecución periódica del mismo para disponer de los datos en su versión actualizada. No obstante, para estas tareas no fue necesaria una prueba de concepto puesto que todo esto se podía conseguir desde el propio proyecto de \textit{JHipster}, mediante \textit{Spring} y código \textit{Java}, cosas con las que el alumno ya estaba familiarizado. Dándo por finalizada la prueba de concepto, se empezó a diseñar y construir el prototipo real que quedaría como solución real del proyecto.
 
 
-\section{Prototipo real}
+\section{Prototipo real} \label{implementacion.prototipo}
 \par 
 \textbf{Primera iteración para conseguir una integración y automatización completa - Productos fitosanitarios autorizados de España}
 \bigskip
@@ -195,5 +195,58 @@ Mientras que las dos primeras iteraciones se centraron en recoger datos periódi
 Para simplificar el acceso a los recursos se ha hecho uso de un fichero de configuración a los que acceden varios componentes: En primer lugar, el script bash que descarga los datos de los productos autorizados del \textit{Mapama} \cite{mapama}. Este Script usa una función bash para solicitar los valores del fichero de propiedades de la web del \textit{Mapama}, y saber la ruta en el sistema donde guardar dicho fichero. Si en cualquier momento se quiere modificar dicha localización, gracias al fichero de configuración, el único sitio que se debería modificar sería en el propio fichero. 
 \par En segundo lugar, la aplicación Java del Job de Talend también accede a dicho fichero de configuración, puesto que en él se han establecido tanto rutas de almacenamiento dentro del HDFS de Hadoop, como el nombre del nodo o del usuario. No obstante, tal como se ha comentado en el apartado anterior, esta aplicación Java ha tenido que ser empaquetada en un Jar único y conjunto con todas sus librerías. Entonces ... ¿cómo accede a dicho fichero de configuración?. La solución ha sido hacer que el Jar reciba la ruta a dicho fichero mediante un argumento, de forma robusta, tal que si no recibe argumentos, o si el fichero que se le pasa no es un fichero de propiedades, el proceso alerta del error y se detiene. 
 \bigskip
-\section{Problemas técnicos detectados}
-Mencionar los problemas confrontados durante la realización del proyecto y la manera en la que se han solucionado.
+
+
+\section{Problemas técnicos detectados} \label{implementacion.problemas}
+\par
+Tal como se ha explicado a lo largo del desarrollo de esta memoria, tanto en la fase de la prueba de concepto como en la fase de desarrollo del prototipo se han encontrado diversos problemas de naturaleza técnica o tecnológica:
+
+\begin{itemize}
+\item \textbf{Sistema operativo} 
+\par
+Si bien es cierto que el sistema operativo donde se desarrollase el proyecto no era un requisito, se contempló desde los inicios del proyecto como un pre-requisito recomendado por el director del proyecto. Se propuso un sistema operativo \textit{LINUX} \cite{wikilinux} sobre el que llevar a cabo la implementación de la solución debido a las restricciones presupuestarias mencionadas en la fase de análisis. 
+La propia instalación del sistema resultó inicialmente problemática en el portátil del alumno debido a la inexistencia de los drivers de \textit{LINUX} necesarios para la tarjeta gráfica \textit{Nvidia} \cite{wikinvidia} presente en el equipo, que resultaba en el no arranque del sistema. Tras unos días de consultas y búsquedas en páginas y foros de Internet, la solución al problema fue añadir la línea \textit{nouveau.modeset=0} que desactiva los drivers libres de \textit{Nvidia} en el menú \textit{GRUB} \cite{grub} durante el arranque del sistema.
+\item \textbf{Hadoop} 
+\par
+Algo
+\item \textbf{Hive} 
+\par
+Algo
+\item \textbf{Hive y JHipster} 
+\par
+Algo
+\item \textbf{Kettle} 
+\par
+Algo
+\item \textbf{Talend y JHipster} 
+\par
+Algo
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

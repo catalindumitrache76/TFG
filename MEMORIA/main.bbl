@@ -87,6 +87,15 @@ Angularjs.
 Talend.
 \newblock https://www.talend.com.
 
+\bibitem{pesticides_eu}
+Base de datos europea sobre pesticidas.
+\newblock
+  \seqsplit{https://data.europa.eu/euodp/es/data/dataset/s8QJJ4blyMdeI2AM1TtmXA/resource/ce5c6843-eb27-4168-9c28-b0f13b4ccbb8}.
+
+\bibitem{wikicrawler}
+Wikipedia - crawler web.
+\newblock https://en.wikipedia.org/wiki/Web\_crawler.
+
 \bibitem{hadoop_installation_bad}
 Tutorial de instalación de hadoop incorrecto para la versión ubuntu (16.04)
   del alumno.
@@ -133,7 +142,7 @@ Hitachi.
 
 \bibitem{hitachivantara}
 Hitachi vantara.
-\newblock hitachivantara.
+\newblock http://www.pentaho.com/product/data-integration.
 
 \bibitem{knime}
 Knime.
@@ -149,10 +158,17 @@ Spring scheduling module.
 \newblock https://spring.io/guides/gs/scheduling-tasks/.
 \newblock Online; Ultimo acceso: asiqwjf.
 
-\bibitem{pesticides_eu}
-Base de datos europea sobre pesticidas.
-\newblock
-  \seqsplit{https://data.europa.eu/euodp/es/data/dataset/s8QJJ4blyMdeI2AM1TtmXA/resource/ce5c6843-eb27-4168-9c28-b0f13b4ccbb8}.
+\bibitem{wikilinux}
+Wikipedia - linux.
+\newblock https://en.wikipedia.org/wiki/Linux.
+
+\bibitem{wikinvidia}
+Wikipedia - nvidia.
+\newblock https://en.wikipedia.org/wiki/Nvidia.
+
+\bibitem{grub}
+Grub.
+\newblock https://www.gnu.org/software/grub/.
 
 \bibitem{cricyt}
 Centro científico tecnológico (cct) mendoza.
@@ -205,6 +221,10 @@ Wikipedia - mariadb.
 \bibitem{wikimongodb}
 Wikipedia - mongodb.
 \newblock https://en.wikipedia.org/wiki/MongoDB.
+
+\bibitem{wikimoscow}
+Método \gls{moscow}.
+\newblock https://en.wikipedia.org/wiki/MoSCoW\_method.
 
 \bibitem{wikimssql}
 Wikipedia - microsoft sql server.

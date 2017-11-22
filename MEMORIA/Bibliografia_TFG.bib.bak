@@ -120,6 +120,15 @@
   Url                      = {https://www.gnu.org/licenses/gpl.html}
 }
 
+@Misc{grub,
+  Title                    = {GRUB},
+  HowPublished             = {https://www.gnu.org/software/grub/},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22},
+  Url                      = {https://www.gnu.org/software/grub/}
+}
+
 @Misc{hadoop,
   Title                    = {Apache\textsuperscript{TM} Hadoop\textregistered},
   HowPublished             = {http://hadoop.apache.org},
@@ -159,11 +168,11 @@
 
 @Misc{hitachivantara,
   Title                    = {Hitachi Vantara},
-  HowPublished             = {https://www.hitachivantara.com/en-us/home.html},
+  HowPublished             = {http://www.pentaho.com/product/data-integration},
 
   Owner                    = {catalin},
   Timestamp                = {2017.11.21},
-  Url                      = {https://www.hitachivantara.com/en-us/home.html}
+  Url                      = {http://www.pentaho.com/product/data-integration}
 }
 
 @Misc{hive,
@@ -377,6 +386,15 @@
   Url                      = {https://en.wikipedia.org/wiki/Apache\_Cassandra}
 }
 
+@Misc{wikicrawler,
+  Title                    = {Wikipedia - Crawler web},
+  HowPublished             = {https://en.wikipedia.org/wiki/Web\_crawler},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22},
+  Url                      = {https://en.wikipedia.org/wiki/Web\_crawler}
+}
+
 @Misc{wikih2,
   Title                    = {Wikipedia - H2 (DBMS)},
   HowPublished             = {https://en.wikipedia.org/wiki/H2\_(DBMS)},
@@ -384,6 +402,15 @@
   Owner                    = {catalin},
   Timestamp                = {2017.11.20},
   Url                      = {https://en.wikipedia.org/wiki/H2\_(DBMS)}
+}
+
+@Misc{wikilinux,
+  Title                    = {Wikipedia - Linux},
+  HowPublished             = {https://en.wikipedia.org/wiki/Linux},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22},
+  Url                      = {https://en.wikipedia.org/wiki/Linux}
 }
 
 @Misc{wikimariadb,
@@ -404,6 +431,15 @@
   Url                      = {https://en.wikipedia.org/wiki/MongoDB}
 }
 
+@Misc{wikimoscow,
+  Title                    = {Método \gls{moscow}},
+  HowPublished             = {https://en.wikipedia.org/wiki/MoSCoW\_method},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22},
+  Url                      = {https://en.wikipedia.org/wiki/MoSCoW\_method}
+}
+
 @Misc{wikimssql,
   Title                    = {Wikipedia - Microsoft SQL Server},
   HowPublished             = {\seqsplit{https://en.wikipedia.org/wiki/Microsoft\_SQL\_Server}},
@@ -420,6 +456,15 @@
   Owner                    = {catalin},
   Timestamp                = {2017.11.20},
   Url                      = {https://en.wikipedia.org/wiki/MySQL}
+}
+
+@Misc{wikinvidia,
+  Title                    = {Wikipedia - Nvidia},
+  HowPublished             = {https://en.wikipedia.org/wiki/Nvidia},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22},
+  Url                      = {https://en.wikipedia.org/wiki/Nvidia}
 }
 
 @Misc{wikioracle,

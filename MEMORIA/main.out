@@ -4,38 +4,39 @@
 \BOOKMARK [1][-]{section.2.1}{Contexto y necesidades reales}{chapter.2}% 4
 \BOOKMARK [1][-]{section.2.2}{Motivaci\363n y objetivos}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.3}{Restricciones}{chapter.2}% 6
-\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 7
-\BOOKMARK [1][-]{section.3.1}{An\341lisis del problema}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{An\341lisis del marco conceptual}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.3}{An\341lisis de riesgos}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.4}{An\341lisis del contexto tecnol\363gico}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.5}{Elecci\363n del Stack Tecnol\363gico}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.6}{Captura de requisitos}{chapter.3}% 13
-\BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 14
-\BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.2}{Arquitectura final del sistema}{chapter.4}% 16
-\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 17
-\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.2}{Prototipo real}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.3}{Problemas t\351cnicos detectados}{chapter.5}% 20
-\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 21
-\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.2}{Control de versiones}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.3}{Pautas e imposiciones}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.4}{Estimaci\363n del coste}{chapter.6}% 25
-\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 26
-\BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 27
-\BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 28
-\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 29
-\BOOKMARK [0][-]{section*.10}{Glosario}{}% 30
-\BOOKMARK [0][-]{chapter*.12}{Lista de Figuras}{}% 31
-\BOOKMARK [0][-]{chapter*.13}{Lista de Tablas}{}% 32
-\BOOKMARK [0][-]{section*.14}{Anexos}{}% 33
-\BOOKMARK [0][-]{appendix.Alph1}{Datos}{}% 34
-\BOOKMARK [1][-]{section.Alph1.1}{Modelo de datos}{appendix.Alph1}% 35
-\BOOKMARK [1][-]{section.Alph1.2}{Flujo de datos}{appendix.Alph1}% 36
-\BOOKMARK [0][-]{appendix.Alph2}{Clientes}{}% 37
-\BOOKMARK [1][-]{section.Alph2.1}{Clientes potenciales}{appendix.Alph2}% 38
-\BOOKMARK [0][-]{appendix.Alph3}{An\341lisis}{}% 39
-\BOOKMARK [1][-]{section.Alph3.1}{An\341lisis de riesgos completos}{appendix.Alph3}% 40
-\BOOKMARK [1][-]{section.Alph3.2}{An\341lisis de dise\361os alternativos}{appendix.Alph3}% 41
+\BOOKMARK [1][-]{section.2.4}{Requisitos - T\351cnica moscow}{chapter.2}% 7
+\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 8
+\BOOKMARK [1][-]{section.3.1}{An\341lisis del problema}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.2}{An\341lisis del marco conceptual}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{An\341lisis de riesgos}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.4}{An\341lisis del contexto tecnol\363gico}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.5}{Elecci\363n del Stack Tecnol\363gico}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.6}{Captura de requisitos finales}{chapter.3}% 14
+\BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 15
+\BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.2}{Arquitectura del sistema}{chapter.4}% 17
+\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 18
+\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Prototipo real}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.3}{Problemas t\351cnicos detectados}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 22
+\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.2}{Control de versiones}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.3}{Pautas e imposiciones}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.4}{Estimaci\363n del coste}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 27
+\BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 28
+\BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 29
+\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 30
+\BOOKMARK [0][-]{section*.10}{Glosario}{}% 31
+\BOOKMARK [0][-]{chapter*.12}{Lista de Figuras}{}% 32
+\BOOKMARK [0][-]{chapter*.13}{Lista de Tablas}{}% 33
+\BOOKMARK [0][-]{section*.14}{Anexos}{}% 34
+\BOOKMARK [0][-]{appendix.Alph1}{Datos}{}% 35
+\BOOKMARK [1][-]{section.Alph1.1}{Modelo de datos}{appendix.Alph1}% 36
+\BOOKMARK [1][-]{section.Alph1.2}{Flujo de datos}{appendix.Alph1}% 37
+\BOOKMARK [0][-]{appendix.Alph2}{Clientes}{}% 38
+\BOOKMARK [1][-]{section.Alph2.1}{Clientes potenciales}{appendix.Alph2}% 39
+\BOOKMARK [0][-]{appendix.Alph3}{An\341lisis}{}% 40
+\BOOKMARK [1][-]{section.Alph3.1}{An\341lisis de riesgos completos}{appendix.Alph3}% 41
+\BOOKMARK [1][-]{section.Alph3.2}{An\341lisis de dise\361os alternativos}{appendix.Alph3}% 42

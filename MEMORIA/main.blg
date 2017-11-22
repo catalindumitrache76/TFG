@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: Bibliografia_TFG.bib
-You've used 49 entries,
+You've used 54 entries,
             1791 wiz_defined-function locations,
-            594 strings with 8559 characters,
-and the built_in function-call counts, 4976 in all, are:
-= -- 404
-> -- 49
+            609 strings with 8876 characters,
+and the built_in function-call counts, 5476 in all, are:
+= -- 444
+> -- 54
 < -- 0
-+ -- 49
++ -- 54
 - -- 0
 * -- 2
-:= -- 464
-add.period$ -- 104
-call.type$ -- 49
-change.case$ -- 49
+:= -- 509
+add.period$ -- 114
+call.type$ -- 54
+change.case$ -- 54
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 245
-empty$ -- 883
+cite$ -- 54
+duplicate$ -- 270
+empty$ -- 973
 format.name$ -- 0
-if$ -- 1336
+if$ -- 1471
 int.to.chr$ -- 0
-int.to.str$ -- 49
+int.to.str$ -- 54
 missing$ -- 0
-newline$ -- 205
+newline$ -- 225
 num.names$ -- 0
-pop$ -- 306
+pop$ -- 336
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 275
+skip$ -- 305
 stack$ -- 0
 substring$ -- 0
-swap$ -- 49
+swap$ -- 54
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 0
-width$ -- 51
-write$ -- 357
+width$ -- 56
+write$ -- 392

@@ -1,5 +1,5 @@
-\chapter{Phytoscheme}
-\section{Contexto y necesidades reales}
+\chapter{Phytoscheme} \label{phytoscheme}
+\section{Contexto y necesidades reales} \label{phytoscheme.contexto}
 Los productos fitosanitarios son un elemento imprescindible en la producción agrícola, tanto en los sistemas convencionales de agricultura como en los sistemas de agricultura integrada o ecológica. Sin su existencia, muchos cultivos de las zonas de producción de mayor interés económico y social serían inviables hoy en día debido a los estragos potenciales de las diferentes clases de plagas.\par
 No obstante, el uso de dichos productos fitosanitarios debe estar regulado ya que una aplicación indebida de los mismos puede tener otros efectos no deseables. Dichos efectos de ninguna manera deben suponer un peligro para la salud humana y tampoco riesgos inaceptables para el medio ambiente. \par
 Por ello el Estado sólo aprueba la comercialización de aquellos productos fitosanitarios que sean útiles para combatir las plagas pero no impliquen otros riesgos colaterales. Para que un \gls{fito} pueda comercializarse debe estar inscrito necesariamente en el Registro Oficial de Productos Fitosanitarios - \textit{Página web del ministerio de agricultura y pesca, alimentación y medio ambiente de España} \cite{mapama}\par
@@ -19,7 +19,7 @@ Los principales problemas actuales de este proceso vienen por una parte en el la
 *SGHVF = Subdirección General de Higiene Vegetal y Forestal\\\par
 Es razonable desarrollar un sistema que provea un esquema único donde los datos estuvieran integrados y congruentes entre los diferentes países de la unión europea para facilitar un consumo posterior por las aplicaciones, e, incluso, directamente por los agricultores. 
 
-\section{Motivación y objetivos}
+\section{Motivación y objetivos} \label{phytoscheme.motivacion}
 Habiendo visto el panorama descubierto en el apartado anterior, era evidente que se podían introducir mejoras al proceso actual que pueden beneficiar a las partes involucradas (tanto a agricultores y empresas como a las instituciones reguladoras). Con ese objetivo en mente, se propone desarrollar una aplicación prototipo que valide el proceso de integración de la información de diferentes países en un esquema único que recogiese los datos que de otra manera tendrían que ser recopilados manualmente, con largos tiempos de espera y con una incertidumbre por parte de los agricultores/empresas en lo que a datos sobre productos fitosanitarios respecta.\par 
 El siguiente diagrama muestra el potencial proceso que tendría que seguir una persona interesada en realizar una importación y los problemas que sería capaz de solucionar el desarrollo de la aplicación planteada en este proyecto:
 
@@ -31,14 +31,64 @@ El siguiente diagrama muestra el potencial proceso que tendría que seguir una p
 \end{figure}
 \par
 
-Se puede apreciar que con este desarrollo se conseguiría no solo reducir los plazos de respuesta al agricultor/empresa sino también una mayor transparencia en la consulta de los datos, puesto que al estar integrados en un modelo único, el agricultor/empresa o los interesados podrían tener acceso a toda la información y consultar cualquier aspecto que de otra manera habría sido prácticamente inaccesible. No solo eso, sino que además, al conseguir un modelo potencialmente estandarizado, no haría falta del trabajo manual y tedioso de comprobación de los requisitos por parte de la Subdirección General de Higiene Forestal y Vegetal sino que sería el propio sistema el encargado de comprobar si la petición del solicitante cumple con la \gls{legisfito} vigentede cada país. \par
-Uno de los aspectos a tener en cuenta al comienzo del proyecto fue el hecho de que para que la solución se pudiera aplicar a un nivel real del problema, se necesitaba una gran capacidad de almacenamiento. Los datos deberían almacenarse periódicamente y además, potencialmente podrían provenir de multitud de fuentes, en diferentes formatos, con unos tamaños variables y constantes actualizaciones. Muchas fuentes equivalen a muchos datos, y muchos datos equivalen a la necesidad de un sistema de almacenamiento capaz de soportar toda esa carga. \par
-Unido a esto, la elección de dicho sistema de almacenamiento suponía un punto crítico, puesto que no bastaría con cualquier base de datos sino que tendría que cumplir ciertas características como la posibilidad de guardar los datos en sus formatos originales, la necesidad de generar una jerarquía para su almacenamiento, o la posibilidad de integración con los trabajos de transformación y procesado de los datos. \par
+Se puede apreciar que con este desarrollo se conseguiría no solo reducir los plazos de respuesta al agricultor/empresa sino también una mayor transparencia en la consulta de los datos, puesto que al estar integrados en un modelo único, el agricultor/empresa o los interesados podrían tener acceso a toda la información y consultar cualquier aspecto que de otra manera habría sido prácticamente inaccesible. No solo eso, sino que además, al conseguir un modelo potencialmente estandarizado, no haría falta del trabajo manual y tedioso de comprobación de los requisitos por parte de la Subdirección General de Higiene Forestal y Vegetal sino que sería el propio sistema el encargado de comprobar si la petición del solicitante cumple con la \textit{\gls{legisfito}} vigentede cada país. \par
+Uno de los aspectos a tener en cuenta al comienzo del proyecto fue el hecho de que para que la solución se pudiera aplicar a un nivel real del problema, se necesitaba una gran capacidad de almacenamiento. Los datos deberían almacenarse periódicamente y además, potencialmente podrían provenir de multitud de fuentes, en diferentes formatos, con unos tamaños variables y constantes actualizaciones. Muchas fuentes equivalen a muchos datos, y muchos datos equivalen a la necesidad de un sistema de almacenamiento capaz de soportar toda esa carga. 
+\par
+Unido a esto, la elección de dicho sistema de almacenamiento suponía un punto crítico, puesto que no bastaría con cualquier base de datos sino que tendría que cumplir ciertas características como la posibilidad de guardar los datos en sus formatos originales, la necesidad de generar una jerarquía para su almacenamiento, o la posibilidad de integración con los trabajos de transformación y procesado de los datos. 
+\par
 Por ello, el proyecto tuvo como objetivo principal desarrollar una solución prototipo para demostrar la validez de los procesos y herramientas involucradas en la integración de varias fuentes heterogéneas de productos fitosanitarios en un modelo único.
 
-\section{Restricciones}
-Teniendo en cuenta que el proyecto actual es un TFG y no un proyecto comercial, se tienen que tomar en cálculo una serie de restricciones que vienen dadas tanto por la naturaleza del proyecto como por los partícipes del mismo. En primer lugar, siendo un TFG, debe realizarse una cantidad de esfuerzo equivalente a 12 ECTS.. Dado que el desarrollo realizado en este proyecto está enfocado a formar parte de un plan mucho mayor, donde el trabajo realizado se retomará y ampliará en futuros TFG, desde el principio se delimitaron aquellas características que se deseaban incluir en el proyecto y también aquellas que no corresponden a esta iteración.  Siendo una fase temprana de dicho plan maestro, a esta fase le correspondía la parte de validación del modelo, de las tecnologías empleadas y de la viabilidad del producto, no siendo primordial tener un producto final robusto sino demostrar que las tecnologías en su totalidad se complementaban y funcionaban acorde a lo esperado. \par
-Otro factor restrictivo dada la naturaleza del proyecto es el hecho de que existe un director, que puede marcar las pautas de desarrollo, sugerir e imponer metodologías de trabajo o incluso herramientas del stack tecnológico que pueden suponer una ventaja o una desventaja en el desarrollo del proyecto. El alumno debe ser capaz de discutir estas tendencias con el director y razonar las decisiones que se tomen, en conjunto, y exponiendo sus puntos de vista con el objetivo de llegar a un acuerdo común. \par
+\section{Restricciones} \label{phytoscheme.restricciones}
+\par
+Teniendo en cuenta que el proyecto actual es un TFG y no un proyecto comercial, se tienen que tomar en cálculo una serie de restricciones que vienen dadas tanto por la naturaleza del proyecto como por los partícipes del mismo. En primer lugar, siendo un TFG, debe realizarse una cantidad de esfuerzo equivalente a 12 ECTS.. Dado que el desarrollo realizado en este proyecto está enfocado a formar parte de un plan mucho mayor, donde el trabajo realizado se retomará y ampliará en futuros TFG, desde el principio se delimitaron aquellas características que se deseaban incluir en el proyecto y también aquellas que no corresponden a esta iteración.  Siendo una fase temprana de dicho plan maestro, a esta fase le correspondía la parte de validación del modelo, de las tecnologías empleadas y de la viabilidad del producto, no siendo primordial tener un producto final robusto sino demostrar que las tecnologías en su totalidad se complementaban y funcionaban acorde a lo esperado. 
+\par
+Otro factor restrictivo dada la naturaleza del proyecto es el hecho de que existe un director, que puede marcar las pautas de desarrollo, sugerir e imponer metodologías de trabajo o incluso herramientas del stack tecnológico que pueden suponer una ventaja o una desventaja en el desarrollo del proyecto. El alumno debe ser capaz de discutir estas tendencias con el director y razonar las decisiones que se tomen, en conjunto, y exponiendo sus puntos de vista con el objetivo de llegar a un acuerdo común. 
+
+\section{Requisitos - Técnica \textit{\gls{moscow}}} \label{phytoscheme.requisitos}
+\par 
+Por imposición y recomendación del director del proyecto, el análisis y la captura de requisitos han estado desde el principio  regidos por el método \textit{\gls{moscow}}, una técnica de priorización de requisitos usada en la gestión de proyectos, análisis de negocio y desarrollo de software con objetivo de llegar a un acuerdo común con los \textit{stakeholders} (integrantes del proyecto) sobre la importancia que se debería dar a cada requisito. Esta técnica también es conocida bajo los nombres de \textit{priorización \gls{moscow}} o \textit{análisis \gls{moscow}}.
+\par
+La metodología \textit{\gls{moscow}} dicta cuatro categorías mediante las que se pueden priorizar los requisitos de un sistema o proyecto: 
+
+\begin{enumerate}
+\item \textbf{Debe tener:} Son aquellos requisitos críticos para que el trabajo realizado durante un periodo de tiempo determinado (en nuestro caso desde ahora hasta junio 2017) sea considerado un éxito (\textit{TFG} aprobado). Si uno de estos requisitos no se incluye, el proyecto debera ser considerado un fallo (no se puede presentar el \textit{TFG}). \textit{Debe tener} en \textit{\gls{moscow}} se refiere a \textit{MUST}, que puede ser considerado un acrónimo de \textit{Minimum Usable SubseT}. En ese sentido se puede entender como la unión de los requisitos del producto mínimo viable con los requisitos legales (p.ej. documentación en forma de memoria de \textit{TFG}, cumplimiento \textit{LOPD}, etc.) y de seguridad (en el sentido de robustez y calidad de la solución) obligatorios o acordados. Los requisitos del proyecto acordados para esta categoría han sido los siguientes: 
+\begin{itemize}
+\item Recolectar datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo. 
+\item Almacenar la última versión de los datos en formato original y además mantener todas las versiones descargadas. 
+\item Monitorizar y almacenar los procesos de recolección de los datos de entrada así como las rutas de su procesado.
+\item Ofrecer la infraestructura y las herramientas de configuración necesarias para una expansión futura del proyecto. 
+\item Implementar un modelo de aplicación consistente, ejemplificando el ciclo de vida típico de los datos desde su recogida hasta su presentación visual. 
+\item Una memoria extensa y detallada. 
+\end{itemize}
+
+\item \textbf{Debería tener:} Son aquellos que son importantes pero no necesarios para ser realizados durante el periodo de tiempo determinado. Pueden posponerse para ser realizados en el siguiente periodo. Son vitales pero no obligatorios, si no se implementan la solución es viable pero es doloroso no hacerlo. En el caso de nuestro proyecto, dentro de esta categoría se han identificado los siguientes requisitos: 
+\begin{itemize}
+\item Mecanismo de control de esfuerzos.
+\item Mecanismo de control de versiones.
+\item Módulo de trazabilidad de los datos desde las fuentes originales hasta su visualización. 
+\item Mecanismo de detección de errores e inconsistencias en los datos provenientes de diferentes fuentes. 
+\end{itemize}
+
+
+\item \textbf{Podría tener:} Son aquellos que comparados con los anteriores son los menos deseados o tienen menor impacto. Hay que tenerlos controlados ya que sólo se podrán entregar si se dan las mejores condiciones (por ejemplo, el proyecto va más rápido de los esperado). Si hay algún riesgo en la entrega del proyecto estos requisitos serían los primeros en ser descartados. A continuación se pueden ver los requisitos del proyecto que se han ubicados dentro de esta categoría:
+
+\begin{itemize}
+\item Genericidad en cuanto al soporte de integración de los datos de diferentes fuentes basado en un fichero de claves y valores. 
+\item Soporte para la búsqueda de registros (datos) desde la interfaz web. 
+\item Desarrollo dirigido por un paradigma de inversión de independencias para conseguir un control centralizado.
+\end{itemize}
+
+\item \textbf{No tendrá:} Son aquellos que no van a ser entregados durante el periodo considerado. Se mantienen en esta lista de alcance para clarificar el alcance de la solución. Esto evita que informalmente sean introducidos más tarde. El objetivo de esta categoría es ayudar a mantener el foco en una solución estricta. 
+
+
+\begin{itemize}
+\item Rediseño y desarrollo en el lado del \textit{Front-End}.
+\item Desarrollo de tests adicionales en el proyecto de \textit{JHipster}
+\item Integración de más de dos fuentes de datos heterogéneas. 
+\end{itemize}
+
+
+\end{enumerate}
 
 
 
