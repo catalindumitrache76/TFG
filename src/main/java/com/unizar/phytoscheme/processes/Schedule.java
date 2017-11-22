@@ -16,7 +16,7 @@ public class Schedule {
 
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
-    public static void scheduller() {
+    public void scheduller() {
 
         program_Workflow_Fitosanitario_Hadoop_JHipster();
         program_Workflow_SustanciActiva_Hadoop_JHipster();
@@ -49,9 +49,9 @@ public class Schedule {
         String hive_table = "sustancia_activa_europa";
         String mysql_table = "sustancia_activa_europa";
 
-        Talend.launchTalendJobEuropa ();
-
         Hive.createActiveSubstanceEuropeHiveTable();
+
+        Talend.launchTalendJobEuropa ();
 
         Hive.insertIntoHiveTable(hadoop_dir, hive_database, hive_table);
 
@@ -62,6 +62,7 @@ public class Schedule {
     }
 
     public static void program_Join_Fito_SustanciaActiva () {
+
         String hive_database = "tfghivedb";
         String hive_table = "fitosanitario_sustancia_activa_europa";
         String mysql_table= "fitosanitario_sustancia_activa_europa";

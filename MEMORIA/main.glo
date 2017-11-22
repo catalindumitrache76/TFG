@@ -1,5 +1,13 @@
 \glossaryentry{Producto fitosanitario?\glossentry{fito}|setentrycounter[]{page}\glsnumberformat}{3}
 \glossaryentry{Certificado fitosanitario?\glossentry{certificado}|setentrycounter[]{page}\glsnumberformat}{4}
 \glossaryentry{Legislación fitosanitaria?\glossentry{legisfito}|setentrycounter[]{page}\glsnumberformat}{6}
-\glossaryentry{Sustancia, Sustancia activa, Fármaco?\glossentry{sustancia}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Tratamiento fitosanitario?\glossentry{tratamiento}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{MongoDB?\glossentry{mongodb}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Cassandra?\glossentry{cassandra}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{H2?\glossentry{h2}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{MySQL?\glossentry{mysql}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{MariaDB?\glossentry{mariadb}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{PostgreSQL?\glossentry{postgresql}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{MSSQL?\glossentry{mssql}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Oracle?\glossentry{oracle}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Sustancia, Sustancia activa, Fármaco?\glossentry{sustancia}|setentrycounter[]{page}\glsnumberformat}{37}
+\glossaryentry{Tratamiento fitosanitario?\glossentry{tratamiento}|setentrycounter[]{page}\glsnumberformat}{42}

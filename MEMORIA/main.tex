@@ -22,13 +22,17 @@
 \usepackage{adjustbox}
 
 % My imports
+\usepackage{seqsplit}
+\usepackage[breaklinks]{hyperref}
 \usepackage{longtable}
 \usepackage{url}
+\usepackage{breakurl}
 \usepackage{dirtree}
 \usepackage{float}
 \usepackage[toc,nonumberlist]{glossaries}
 \makeglossaries
 \input{Mis_capitulos/D_Glosary}
+
 
 %	CONFIGURACIÓN DE PÁGINA
 
@@ -45,6 +49,7 @@
 \makeindex
 \index{key}
 \newcommand{\myref}[1]{\color{red}\bf(\ref{#1})}
+
 
 \begin{document}
 

@@ -1,93 +1,225 @@
 \begin{thebibliography}{10}
 
 \bibitem{mapama}
-{\em Página web del ministerio de agricultura y pesca, alimentación y medio
-  ambiente de España}.
+Página web del ministerio de agricultura y pesca, alimentación y medio
+  ambiente de españa.
+\newblock
+  \seqsplit{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/menu.asp}.
 
 \bibitem{directiva128}
-{\em Directiva 2009/128/CE}.
+Directiva 2009/128/ce.
+\newblock
+  \seqsplit{http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:309:0071:0086:es:PDF}.
 
 \bibitem{cuadernoexplotacion}
 Cuaderno de explotación.
 \newblock
-  http://www.mapama.gob.es/es/prensa/noticias/el-ministerio-de-agricultura-alimentación-y-medio-ambiente-aprueba-un-modelo-armonizado-de-cuaderno-de-explotación-de-los-productos-fitosanitarios--/tcm7-311275-16.
+  \seqsplit{http://www.mapama.gob.es/es/prensa/noticias/el-ministerio-de-agricultura-alimentacion-y-medio-ambiente-aprueba-un-modelo-armonizado-de-cuaderno-de-explotacion-de-los-productos-fitosanitarios/tcm7-311275-16}.
 \newblock Online; Último acceso: 22 - October - 2017.
 
 \bibitem{agroslab}
-{\em Cuaderno de Explotación Agrícola Campo aGROSLab}.
+Cuaderno de explotación agrícola campo agroslab.
+\newblock http://www.cuadernoexplotacion.es.
 
 \bibitem{agricolum}
-{\em Cuaderno de campo agrícola Agricolum}.
+Cuaderno de campo agrícola agricolum.
+\newblock https://agricolum.com.
 
 \bibitem{agronev}
-{\em Cuaderno de campo Agronev}.
+Cuaderno de campo agronev.
+\newblock http://jnevado.com/CUADERNOCAMPO/.
 
 \bibitem{pesticidesdb}
-{\em Base de datos de pesticidas a nivel Europeo}.
+Base de datos de pesticidas a nivel europeo.
+\newblock
+  \seqsplit{http://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/public/?event=homepage\&language=EN}.
 
 \bibitem{reglamento}
-{\em Reglamento (CE) nº 1107/2009 del Parlamento Europeo y del Consejo, de 21
-  de octubre de 2009, relativo a la comercialización de productos
-  fitosanitarios y por el que se derogan las Directivas 79/117/CEE y 91/414/CEE
-  del Consejo.}
+Reglamento (ce) nº 1107/2009 del parlamento europeo y del consejo, de 21 de
+  octubre de 2009, relativo a la comercialización de productos fitosanitarios
+  y por el que se derogan las directivas 79/117/cee y 91/414/cee del consejo.
+\newblock https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82202.
 
 \bibitem{solicitud}
-{\em Formulario para solicitudes relativas al registro oficial de productos y
-  material fitosanitario}.
+Formulario para solicitudes relativas al registro oficial de productos y
+  material fitosanitario.
+\newblock
+  http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/Modelo%20solicitud%20Registro.pdf.
 
 \bibitem{faqmapama}
-{\em Preguntas y respuestas frecuentes sobre el registro de productos
-  fitosanitarios del Ministerio de Agricultura, Alimentación y Medio
-  Ambiente}.
+Preguntas y respuestas frecuentes sobre el registro de productos fitosanitarios
+  del ministerio de agricultura, alimentación y medio ambiente.
+\newblock
+  http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/FAQ.pdf.
 
 \bibitem{hadoop}
-{\em Apache\textsuperscript{TM} Hadoop\textregistered}.
+Apache\textsuperscript{TM} hadoop\textregistered.
+\newblock http://hadoop.apache.org.
 \newblock Version XXXXXX.
 
 \bibitem{hive}
-{\em Apache Hive\textsuperscript{TM}}.
+Apache hive\textsuperscript{TM}.
+\newblock https://hive.apache.org.
 \newblock Version XXXXXX.
 
 \bibitem{sqoop}
-{\em Apache Sqoop\textsuperscript{TM}}.
+Apache sqoop\textsuperscript{TM}.
+\newblock http://sqoop.apache.org.
 
 \bibitem{jhipster}
-{\em JHipster}.
+Jhipster.
+\newblock http://www.jhipster.tech.
 \newblock Version XXXXXX.
 
 \bibitem{springframework}
-{\em Spring Framework}.
+Spring framework.
+\newblock https://projects.spring.io/spring-framework/.
 
 \bibitem{springboot}
-{\em Spring Boot}.
+Spring boot.
+\newblock https://projects.spring.io/spring-boot/.
 
 \bibitem{angularjs}
-{\em AngularJS}.
+Angularjs.
+\newblock https://angularjs.org.
 
 \bibitem{talend}
-{\em Talend}.
+Talend.
+\newblock https://www.talend.com.
+
+\bibitem{hadoop_installation_bad}
+Tutorial de instalación de hadoop incorrecto para la versión ubuntu (16.04)
+  del alumno.
+\newblock
+  \seqsplit{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}.
+
+\bibitem{hadoop_installation}
+Tutorial de instalación de hadoop de digital ocean para ubuntu 16-04.
+\newblock
+  \seqsplit{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}.
+
+\bibitem{hivetutorialspoint}
+Tutorial de tutorial's point para la instalación de hive.
+\newblock https://www.tutorialspoint.com/hive/index.htm.
+
+\bibitem{hive_installation}
+Página de hive - sección de instalación.
+\newblock
+  \seqsplit{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}.
+
+\bibitem{nodejs}
+Node.js \textregistered.
+\newblock https://nodejs.org/en/.
+
+\bibitem{yarninstall}
+Página oficial de yarn - instalación en linux ubuntu.
+\newblock https://yarnpkg.com/en/docs/install.
+
+\bibitem{intellij}
+Intellij idea.
+\newblock https://www.jetbrains.com/idea/.
+
+\bibitem{kettle}
+Pentaho data integration.
+\newblock http://www.pentaho.com/product/data-integration.
+
+\bibitem{pentaho}
+Pentaho.
+\newblock http://www.pentaho.com.
+
+\bibitem{hitachi}
+Hitachi.
+\newblock http://www.hitachi.com.
+
+\bibitem{hitachivantara}
+Hitachi vantara.
+\newblock hitachivantara.
+
+\bibitem{knime}
+Knime.
+\newblock https://www.knime.com.
 
 \bibitem{cloudera}
-{\em Repositorio de cloudera}.
+Repositorio de cloudera.
+\newblock
+  \seqsplit{https://repository.cloudera.com/content/repositories/releases/}.
 
 \bibitem{spring_scheduling}
-https://spring.io/guides/gs/scheduling-tasks/.
+Spring scheduling module.
+\newblock https://spring.io/guides/gs/scheduling-tasks/.
 \newblock Online; Ultimo acceso: asiqwjf.
 
+\bibitem{pesticides_eu}
+Base de datos europea sobre pesticidas.
+\newblock
+  \seqsplit{https://data.europa.eu/euodp/es/data/dataset/s8QJJ4blyMdeI2AM1TtmXA/resource/ce5c6843-eb27-4168-9c28-b0f13b4ccbb8}.
+
 \bibitem{cricyt}
-{\em Centro Científico Tecnológico (CCT) Mendoza}.
+Centro científico tecnológico (cct) mendoza.
+\newblock
+  \seqsplit{http://www.cricyt.edu.ar/enciclopedia/terminos/ProducFito.htm}.
 
 \bibitem{farmacowiki}
-{\em Fármaco, Wikipedia}.
+Wikipedia - fármaco.
+\newblock https://es.wikipedia.org/wiki/Fármaco.
 
 \bibitem{glosarioterminosfito}
-{\em Glosario de términos fitosanitarios}.
+Glosario de términos fitosanitarios.
+\newblock
+  \seqsplit{https://www.ippc.int/static/media/files/publication/es/2016/06/ISPM\_05\_2016\_Es\_2016-06-23\_FullReviewLRG-CPAM.pdf}.
 
 \bibitem{glosarioterminosmapama}
-{\em Glosario de términos del Mapama}.
+Glosario de términos del mapama.
+\newblock
+  \seqsplit{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/glosario-de-terminos-f-a-o/}.
+
+\bibitem{gnuglp}
+Gnu general public license.
+\newblock https://www.gnu.org/licenses/gpl.html.
+
+\bibitem{java}
+Java \textsuperscript{TM}.
+\newblock https://java.com/es/.
 
 \bibitem{mysql}
-{\em MySQL}.
+Mysql.
+\newblock https://www.mysql.com.
 \newblock Version XXXXXX.
+
+\bibitem{oraclecorporation}
+Oracle corporation.
+\newblock https://www.oracle.com/index.html.
+
+\bibitem{wikicassandra}
+Wikipedia - apache cassandra.
+\newblock https://en.wikipedia.org/wiki/Apache\_Cassandra.
+
+\bibitem{wikih2}
+Wikipedia - h2 (dbms).
+\newblock https://en.wikipedia.org/wiki/H2\_(DBMS).
+
+\bibitem{wikimariadb}
+Wikipedia - mariadb.
+\newblock https://en.wikipedia.org/wiki/MariaDB.
+
+\bibitem{wikimongodb}
+Wikipedia - mongodb.
+\newblock https://en.wikipedia.org/wiki/MongoDB.
+
+\bibitem{wikimssql}
+Wikipedia - microsoft sql server.
+\newblock \seqsplit{https://en.wikipedia.org/wiki/Microsoft\_SQL\_Server}.
+
+\bibitem{wikimysql}
+Wikipedia - mysql.
+\newblock https://en.wikipedia.org/wiki/MySQL.
+
+\bibitem{wikioracle}
+Oracle database.
+\newblock https://en.wikipedia.org/wiki/Oracle\_Database.
+
+\bibitem{wikipostgresql}
+Wikipedia - postgresql.
+\newblock https://es.wikipedia.org/wiki/PostgreSQL.
 
 \end{thebibliography}

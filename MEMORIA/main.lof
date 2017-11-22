@@ -1,19 +1,19 @@
 \select@language {spanish}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de flujo del proceso actual de importaci\IeC {\'o}n de un producto fitosanitario\relax }}{5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagrama de flujo del potencial proceso de importaci\IeC {\'o}n de un producto fitosanitario\relax }}{6}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagrama de flujo del proceso actual de importaci\IeC {\'o}n de un producto fitosanitario\relax }}{5}{figure.caption.3}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagrama de flujo del potencial proceso de importaci\IeC {\'o}n de un producto fitosanitario\relax }}{6}{figure.caption.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de clases y paquetes para soportar la automatizaci\IeC {\'o}n del \textit {workflow}\relax }}{20}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de secuencia del \textit {workflow} implementado\relax }}{21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de clases y paquetes para soportar la automatizaci\IeC {\'o}n del \textit {workflow}\relax }}{25}{figure.caption.8}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de secuencia del \textit {workflow} implementado\relax }}{26}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{43}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{44}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{45}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{52}{figure.caption.15}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{53}{figure.caption.16}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{54}{figure.caption.17}

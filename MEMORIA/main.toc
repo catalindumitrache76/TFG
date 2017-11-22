@@ -1,42 +1,42 @@
 \select@language {spanish}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}
-\contentsline {section}{\numberline {1.1}Estructura del documento}{2}
-\contentsline {chapter}{\numberline {2}Phytoscheme}{3}
-\contentsline {section}{\numberline {2.1}Contexto y necesidades reales}{3}
-\contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n y objetivos}{5}
-\contentsline {section}{\numberline {2.3}Restricciones}{7}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{8}
-\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{8}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis del marco conceptual}{8}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de riesgos}{10}
-\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{11}
-\contentsline {section}{\numberline {3.5}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{13}
-\contentsline {section}{\numberline {3.6}Captura de requisitos}{15}
-\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{17}
-\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o conceptual}{17}
-\contentsline {section}{\numberline {4.2}Arquitectura final del sistema}{17}
-\contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{18}
-\contentsline {section}{\numberline {5.1}Prueba de concepto}{18}
-\contentsline {section}{\numberline {5.2}Prototipo real}{18}
-\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{23}
-\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{24}
-\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{24}
-\contentsline {section}{\numberline {6.2}Control de versiones}{24}
-\contentsline {section}{\numberline {6.3}Pautas e imposiciones}{24}
-\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{24}
-\contentsline {chapter}{\numberline {7}Conclusiones}{25}
-\contentsline {section}{\numberline {7.1}Resultados y objetivos}{25}
-\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{25}
-\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{26}
-\contentsline {chapter}{Glosario}{28}
-\contentsline {chapter}{Lista de Figuras}{29}
-\contentsline {chapter}{Lista de Tablas}{30}
-\contentsline {chapter}{Anexos}{31}
-\contentsline {chapter}{\numberline {A}Datos}{32}
-\contentsline {section}{\numberline {A.1}Modelo de datos}{32}
-\contentsline {section}{\numberline {A.2}Flujo de datos}{32}
-\contentsline {chapter}{\numberline {B}Clientes}{33}
-\contentsline {section}{\numberline {B.1}Clientes potenciales}{33}
-\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{36}
-\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{36}
-\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{43}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Estructura del documento}{2}{section.1.1}
+\contentsline {chapter}{\numberline {2}Phytoscheme}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Contexto y necesidades reales}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n y objetivos}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Restricciones}{7}{section.2.3}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis del marco conceptual}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de riesgos}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{11}{section.3.4}
+\contentsline {section}{\numberline {3.5}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{13}{section.3.5}
+\contentsline {section}{\numberline {3.6}Captura de requisitos}{15}{section.3.6}
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o conceptual}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Arquitectura final del sistema}{17}{section.4.2}
+\contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Prueba de concepto}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Prototipo real}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{29}{section.5.3}
+\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{30}{chapter.6}
+\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{30}{section.6.1}
+\contentsline {section}{\numberline {6.2}Control de versiones}{30}{section.6.2}
+\contentsline {section}{\numberline {6.3}Pautas e imposiciones}{30}{section.6.3}
+\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{30}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusiones}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}Resultados y objetivos}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{31}{section.7.2}
+\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{32}{chapter.8}
+\contentsline {chapter}{Glosario}{36}{section*.10}
+\contentsline {chapter}{Lista de Figuras}{38}{chapter*.12}
+\contentsline {chapter}{Lista de Tablas}{39}{chapter*.13}
+\contentsline {chapter}{Anexos}{40}{section*.14}
+\contentsline {chapter}{\numberline {A}Datos}{41}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Modelo de datos}{41}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Flujo de datos}{41}{section.Alph1.2}
+\contentsline {chapter}{\numberline {B}Clientes}{42}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Clientes potenciales}{42}{section.Alph2.1}
+\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{45}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{45}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{52}{section.Alph3.2}
