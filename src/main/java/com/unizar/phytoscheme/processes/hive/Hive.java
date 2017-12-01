@@ -9,6 +9,16 @@ import static com.unizar.phytoscheme.processes.common_methods.Common.getProperty
  */
 public class Hive {
 
+    // Realiza la operación SELECT * FROM hive_db.hive_table
+    public static void select (String hive_db, String hive_table){
+        System.out.println("SELECT * from TABLE " + hive_table);
+        executeExternalProcess(getProperty("hive_executable_23") +
+            " -hiveconf HIVE_DB=" + hive_db +
+            " -hiveconf HIVE_TABLE=" + hive_table +
+            " -f Scripts/Hive_Scripts/select_hive.hql");
+    }
+
+
     // Actualiza la base de datos Hive
     public static void insertIntoHiveTable(String hadoop_dir, String hive_database, String hive_table) {
         System.out.println("Insertando datos de " + hadoop_dir + " a la tabla de Hive " + hive_table + ".");

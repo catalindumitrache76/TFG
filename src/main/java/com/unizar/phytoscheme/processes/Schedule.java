@@ -1,6 +1,7 @@
 package com.unizar.phytoscheme.processes;
 
 import com.unizar.phytoscheme.processes.hive.Hive;
+import com.unizar.phytoscheme.processes.hive.Hive_Errors;
 import com.unizar.phytoscheme.processes.talend.Talend;
 import com.unizar.phytoscheme.processes.mysql.MySQL;
 import com.unizar.phytoscheme.processes.sqoop.Sqoop;
@@ -17,10 +18,25 @@ public class Schedule {
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
     public void scheduller() {
+        String hive_database = "tfghivedb";
+        String hive_error_table_1 = "mismatch_fitosanitario_fito_sustancia";
+        String hive_error_table_2 = "mismatch_sustancia_fito_sustancia";
 
-        program_Workflow_Fitosanitario_Hadoop_JHipster();
-        program_Workflow_SustanciActiva_Hadoop_JHipster();
-        program_Join_Fito_SustanciaActiva();
+        /**
+         * Registra los errores encontrados (mismatch del join) en unas tablas que crea dinámicamente en HIVE
+         */
+        Hive_Errors.mismatch_fitosanitario();
+        Hive_Errors.mismatch_sustancia_activa();
+
+        /**
+         * Muestra dichos mismatch por pantalla
+         */
+        Hive.select(hive_database, hive_error_table_1);
+        Hive.select(hive_database, hive_error_table_2);
+
+//        program_Workflow_Fitosanitario_Hadoop_JHipster();
+//        program_Workflow_SustanciActiva_Hadoop_JHipster();
+//        program_Join_Fito_SustanciaActiva();
     }
 
     public static void program_Workflow_Fitosanitario_Hadoop_JHipster() {
@@ -66,6 +82,8 @@ public class Schedule {
         String hive_database = "tfghivedb";
         String hive_table = "fitosanitario_sustancia_activa_europa";
         String mysql_table= "fitosanitario_sustancia_activa_europa";
+        String hive_error_table_1 = "mismatch_fitosanitario_fito-sustancia";
+        String hive_error_table_2 = "mismatch_sustancia_fito-sustancia";
 
         Hive.createFitosanitarioSustanciaActivaEuropaHiveTable();
 
@@ -76,6 +94,18 @@ public class Schedule {
         MySQL.truncateMySQLTable(mysql_table);
 
         Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
+
+        /**
+         * Registra los errores encontrados (mismatch del join) en unas tablas que crea dinámicamente en HIVE
+         */
+        Hive_Errors.mismatch_fitosanitario();
+        Hive_Errors.mismatch_sustancia_activa();
+
+        /**
+         * Muestra dichos mismatch por pantalla
+         */
+        Hive.select(hive_database, hive_error_table_1);
+        Hive.select(hive_database, hive_error_table_2);
 
     }
 
