@@ -1,21 +1,22 @@
 \select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Estructura del documento}{2}{section.1.1}
-\contentsline {chapter}{\numberline {2}Phytoscheme}{3}{chapter.2}
+\contentsline {chapter}{\numberline {2}Contexto, motivaci\IeC {\'o}n y restricciones}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Contexto y necesidades reales}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Motivaci\IeC {\'o}n y objetivos}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Restricciones}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Requisitos - T\IeC {\'e}cnica \textit {\gls {moscow}}}{8}{section.2.4}
-\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}An\IeC {\'a}lisis del marco conceptual}{10}{section.3.2}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de riesgos}{12}{section.3.3}
-\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{13}{section.3.4}
-\contentsline {section}{\numberline {3.5}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{15}{section.3.5}
-\contentsline {section}{\numberline {3.6}Captura de requisitos finales}{17}{section.3.6}
+\contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Propuesta de valor e intermediarios}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Requisitos - T\IeC {\'e}cnica \textit {\gls {moscow}}}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis de riesgos}{12}{section.3.4}
+\contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{13}{section.3.5}
+\contentsline {section}{\numberline {3.6}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{15}{section.3.6}
+\contentsline {section}{\numberline {3.7}Captura de requisitos final}{16}{section.3.7}
 \contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o conceptual}{19}{section.4.1}
-\contentsline {section}{\numberline {4.2}Arquitectura del sistema}{19}{section.4.2}
+\contentsline {section}{\numberline {4.2}Estrategia de integraci\IeC {\'o}n}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Arquitectura del sistema}{19}{section.4.3}
 \contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{20}{chapter.5}
 \contentsline {section}{\numberline {5.1}Prueba de concepto}{20}{section.5.1}
 \contentsline {section}{\numberline {5.2}Prototipo real}{24}{section.5.2}

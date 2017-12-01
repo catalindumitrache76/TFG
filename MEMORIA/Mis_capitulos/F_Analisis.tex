@@ -2,7 +2,7 @@
 \section{Análisis del problema} \label{analisis.problema}
 Como ya se ha aclarado varias veces a lo largo de este documento, actualmente hay una necesidad real en el mundo agrícola; la de disponer de la información sobre productos fitosanitarios de una manera centralizada, actualizada y de fácil acceso. Hoy en día esta necesidad se ha intentado abordar de varias maneras, y por ello hay disponibles varias aplicaciones que intentan apoyar al consumidor en las tareas agrícolas que involucran productos fitosanitarios. Algunos ejemplos son los productos que ofrecen empresas como aGROSLab, Cuaderno de Campo Agronev, o Agricolum. No obstante, estas aplicaciones se enfrentan al mismo problema; la inexistencia de una base de datos estandarizada cuya información sea congruente a través de los diferentes países de la Unión Europea. Por eso mismo, estas aplicaciones tienen que implementar, desarrollar y mantener ellas mismas las bases de datos que permitan acceder a la información deseada. Nuestra solución ofrecería un sistema dotado de una base de datos estandarizada, congruente en su información y completa, de código abierto y altamente escalable, por lo tanto todas las aplicaciones mencionadas arriba podrían convertirse en potenciales clientes consumidores de nuestro sistema, sustituyendo sus bases de datos por nuestra solución, con costes de integración mínimos.
 
-\section{Análisis del marco conceptual} \label{analisis.marco}
+\section{Propuesta de valor e intermediarios} \label{analisis.marco}
 En este apartado se van a presentar los diferentes factores que van a intermediar en el proyecto: los proveedores de los datos, los recursos de los que se dispone, la propuesta de valor, los diferentes clientes del proyecto y los costes del mismo. \par
 \begin{itemize}
 \item \textbf{Proveedores:} Terceros de los que el proyecto se nutre para obtener los datos a emplear en la aplicación: \par Cada fuente de datos proviene de algún portal web (nacional o internacional). En el proyecto se monta una infraestructura alrededor de dichos portales y por lo tanto la desaparición de alguno de estos sitios web significaría el cese de aprovisionamiento de los datos provenientes de dicha fuente. Actualmente, el proyecto se nutre de dos fuentes distintas: los productos autorizados recogidos del portal del \textit{Mapama} \cite{mapama} y los datos provenientes de la \textit{base de datos de pesticidas a nivel Europeo} \cite{pesticidesdb}.
@@ -22,17 +22,57 @@ En este apartado se van a presentar los diferentes factores que van a intermedia
 \item \textbf{Segmentos de clientes:} Los diferentes tipos de clientes objetivos a los que está dirigida la aplicación final: \par Por una parte están los  agricultores que comercializan sus productos, las instituciones encargadas de validar y certificar la importación / exportación  de productos agrícolas o las empresas importadoras / exportadoras de productos agrícolas. Este segmento se beneficiaría diréctamente de los resultados del proyecto puesto que el proceso de comprobación de los requisitos fitosanitarios sobre los productos agrícolas / pesqueros / alimentarios se conseguiría de manera mucho más sencilla. Por otro lado también se podrían beneficiar de la infraestructura conseguida en este proyecto empresas que ya implementan sus propias aplicaciones fitosanitarias, pero carezcan de ese esquema y datos estandarizados que este proyecto propone.
 
 
-\item \textbf{Costes del proyecto:} Costes económicos o temporales que el alumno ha invertido en el proyecto:
+
+\end{itemize}
+
+
+\section{Requisitos - Técnica \textit{\gls{moscow}}} \label{phytoscheme.requisitos}
+\par 
+Por recomendación del director del proyecto, el análisis y la captura de requisitos han estado desde el principio  regidos por el método \textit{\gls{moscow}}, una técnica de priorización de requisitos usada en la gestión de proyectos, análisis de negocio y desarrollo de software con objetivo de llegar a un acuerdo común con los \textit{stakeholders} (integrantes del proyecto) sobre la importancia que se debería dar a cada requisito. Esta técnica también es conocida bajo los nombres de \textit{priorización \gls{moscow}} o \textit{análisis \gls{moscow}}.
+\par
+La metodología \textit{\gls{moscow}} dicta cuatro categorías mediante las que se pueden priorizar los requisitos de un sistema o proyecto: 
+
+\begin{enumerate}
+\item \textbf{Debe tener:} Son aquellos requisitos críticos para que el trabajo realizado durante un periodo de tiempo determinado (en nuestro caso desde ahora hasta junio 2017) sea considerado un éxito (\textit{TFG} aprobado). Si uno de estos requisitos no se incluye, el proyecto debera ser considerado un fallo (no se puede presentar el \textit{TFG}). \textit{Debe tener} en \textit{\gls{moscow}} se refiere a \textit{MUST}, que puede ser considerado un acrónimo de \textit{Minimum Usable SubseT}. En ese sentido se puede entender como la unión de los requisitos del producto mínimo viable con los requisitos legales (p.ej. documentación en forma de memoria de \textit{TFG}, cumplimiento \textit{LOPD}, etc.) y de seguridad (en el sentido de robustez y calidad de la solución) obligatorios o acordados. Los requisitos del proyecto acordados para esta categoría han sido los siguientes: 
 \begin{itemize}
-\item Primera matrícula del proyecto: 259,92
-\item Segunda matrícula del proyecto: 408,96
-\item Transporte mediante bus: Bono bus 90 días x 3 = 104,90 x 3 = 314,70
-\item 300 horas invertidas en el trabajo
+\item Recolectar datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo. 
+\item Almacenar la última versión de los datos en formato original y además mantener todas las versiones descargadas. 
+\item Monitorizar y almacenar los procesos de recolección de los datos de entrada así como las rutas de su procesado.
+\item Ofrecer la infraestructura y las herramientas de configuración necesarias para una expansión futura del proyecto. 
+\item Implementar un modelo de aplicación consistente, ejemplificando el ciclo de vida típico de los datos desde su recogida hasta su presentación visual. 
+\item Una memoria extensa y detallada. 
+\end{itemize}
+
+\item \textbf{Debería tener:} Son aquellos que son importantes pero no necesarios para ser realizados durante el periodo de tiempo determinado. Pueden posponerse para ser realizados en el siguiente periodo. Son vitales pero no obligatorios, si no se implementan la solución es viable pero es doloroso no hacerlo. En el caso de nuestro proyecto, dentro de esta categoría se han identificado los siguientes requisitos: 
 \begin{itemize}
-\item TOTAL: 983,58 más las 300h de trabajo
+\item Mecanismo de control de esfuerzos.
+\item Mecanismo de control de versiones.
+\item Módulo de trazabilidad de los datos desde las fuentes originales hasta su visualización. 
+\item Mecanismo de detección de errores e inconsistencias en los datos provenientes de diferentes fuentes. 
 \end{itemize}
+
+
+\item \textbf{Podría tener:} Son aquellos que comparados con los anteriores son los menos deseados o tienen menor impacto. Hay que tenerlos controlados ya que sólo se podrán entregar si se dan las mejores condiciones (por ejemplo, el proyecto va más rápido de los esperado). Si hay algún riesgo en la entrega del proyecto estos requisitos serían los primeros en ser descartados. A continuación se pueden ver los requisitos del proyecto que se han ubicados dentro de esta categoría:
+
+\begin{itemize}
+\item Genericidad en cuanto al soporte de integración de los datos de diferentes fuentes basado en un fichero de claves y valores. 
+\item Soporte para la búsqueda de registros (datos) desde la interfaz web. 
+\item Desarrollo dirigido por un paradigma de inversión de independencias para conseguir un control centralizado.
 \end{itemize}
+
+\item \textbf{No tendrá:} Son aquellos que no van a ser entregados durante el periodo considerado. Se mantienen en esta lista de alcance para clarificar el alcance de la solución. Esto evita que informalmente sean introducidos más tarde. El objetivo de esta categoría es ayudar a mantener el foco en una solución estricta. 
+
+
+\begin{itemize}
+\item Rediseño y desarrollo en el lado del \textit{Front-End}.
+\item Desarrollo de tests adicionales en el proyecto de \textit{JHipster}
+\item Integración de más de dos fuentes de datos heterogéneas. 
 \end{itemize}
+
+
+\end{enumerate}
+
+
 
 \section{Análisis de riesgos}  \label{analisis.riesgos}
 En la fase inicial del proyecto se abordó el proceso de gestión de riesgos, para determinar los diferentes factores que podrían afectar a un proyecto de esta envergadura. Dicho proceso consta de varios pasos que en conjunto permiten tener una visión clara de aquello que puede entorpecer, frenar o incluso imposibilitar la finalización del proyecto. A continuación se listan dichos pasos y se presentan las conclusiones principales extraídas de cada una de ellas, dejando para los anexos la versión completa: 
@@ -87,7 +127,7 @@ No obstante, Hadoop por sí mismo no era capaz de solucionar todos los problemas
 El otro reto planteado fue la presentación de los datos integrados mediante una interfaz web, lo que vendría siendo el lado del cliente de la solución. Indudablemente hay casi infinidad de posibilidades para el desarrollo de esta parte. No obstante, realmente la parte de visualización no fue una parte crítica del proyecto, ni el objetivo del mismo. Es por ello que se adoptó una postura de desarrollo rápido del lado del cliente. JHipster (generador de aplicaciones sobre Spring) resultó la herramienta indicada, puesto que facilmente, en unos cuantos pasos era capaz de generar una aplicación sobre un esquema de base de datos (en este caso MySQL) y con una interfaz gráfica cuidada que satisfacía las necesidades del proyecto. No obstante, para poder conectar la base de datos de Hadoop con la base de datos MySQL necesaria para JHipster, el paso intermedio fue conectar Hadoop con Hive y realizar operaciones ETL de Hive a JHipster mediante Sqoop, una herramienta de transformación y carga de datos entre distintas bases de datos.\par
 Teniendo en cuenta que los anteriores puntos constituyen el core tecnológico del proyecto, conforme se avanzaba se veía que no eran suficientes para conseguir los resultados deseados. Se tuvieron que emplear otras herramientas adicionales para diferentes tareas como el procesado de los datos previo a su exposición en Hive pero posterior a su almacenamiento en Hadoop, o la traducción de los datos y estructuras de Hive a la base de datos que emplea JHipster. Las elegidas fueron Talend Big Data (herramienta de procesado de ficheros capaz de conectarse a Hadoop,  extraer la información contenida en sus nodos, procesarla y volver a guardarla con los cambios efectuados, tal como se le indique) y Sqoop (herramienta diseñada para transferir bloques de datos entre Apache Hadoop o Hive y almacenes de datos estructurados como las bases de datos relacionales). 
 
-\section{Captura de requisitos finales}  \label{analisis.requisitos}
+\section{Captura de requisitos final}  \label{analisis.requisitos}
 Una vez realizado un análisis detallado tanto del problema como del marco conceptual y los riesgos en las fases previas al arranque del proyecto, lo  siguiente que se determinaron fueron los requisitos del sistema. Gracias al análisis previo realizado mediante la técnica \textit{\gls{moscow}} plasmado en la sección \ref{phytoscheme.requisitos} y a las conclusiones obtenidas de los apartados anteriores, la tarea de captura de requisitos \textit{funcionales} tanto del sistema como del proyecto resultó en una sencilla selección y categorización de los mismos. Además, como se puede observar, algunos de los requisitos priorizados en las categorias inferiores de \textit{\gls{moscow}} en la sección \ref{phytoscheme.requisitos} han sido descartados. Los requisitos no funcionales surgieron tanto de recomendaciones del director del proyecto como del anális previo. A continuación se recogen en tablas tanto los requisitos funcionales como los no funcionales, divididos en sistema y proyecto, siendo los de sistema los referentes al propio producto tecnológico en sí, y los de proyecto los referentes a la gestión del mismo: \par
 \begin{table}[!h]
 \centering

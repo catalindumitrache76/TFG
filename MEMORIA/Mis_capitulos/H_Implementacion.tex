@@ -146,8 +146,8 @@ Teniendo ya el proceso de \textit{Talend} integrado en la aplicación de \textit
 
 \begin{landscape}
 
-\begin{figure}[H]
-    \centering
+\begin{figure}[p!]
+    
     \includegraphics[width=\linewidth]{Imagenes/processes_sequence}
     \caption{Diagrama de secuencia del \textit{workflow} implementado}
     \label{fig:diag_clases}
@@ -204,7 +204,7 @@ Tal como se ha explicado a lo largo del desarrollo de esta memoria, tanto en la 
 \begin{itemize}
 \item \textbf{Sistema operativo} 
 \par
-Si bien es cierto que el sistema operativo donde se desarrollase el proyecto no era un requisito, se contempló desde los inicios del proyecto como un pre-requisito recomendado por el director del proyecto. Se propuso un sistema operativo \textit{LINUX} \cite{wikilinux} sobre el que llevar a cabo la implementación de la solución debido a las restricciones presupuestarias mencionadas en la fase de análisis. 
+Si bien es cierto que el sistema operativo donde se desarrollase el proyecto no era un requisito, apareció desde el principio del proyecto como un derivado de las herramientas a utilizar. Se propuso un sistema operativo \textit{LINUX} \cite{wikilinux} sobre el que llevar a cabo la implementación de la solución debido a las restricciones presupuestarias mencionadas en la fase de análisis. 
 La propia instalación del sistema resultó inicialmente problemática en el portátil del alumno debido a la inexistencia de los drivers de \textit{LINUX} necesarios para la tarjeta gráfica \textit{Nvidia} \cite{wikinvidia} presente en el equipo, que resultaba en el no arranque del sistema. Tras unos días de consultas y búsquedas en páginas y foros de Internet, la solución al problema fue añadir la línea \textit{nouveau.modeset=0} que desactiva los drivers libres de \textit{Nvidia} en el menú \textit{GRUB} \cite{grub} durante el arranque del sistema.
 \item \textbf{Hadoop} 
 \par
