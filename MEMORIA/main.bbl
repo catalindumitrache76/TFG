@@ -87,6 +87,10 @@ Angularjs.
 Talend.
 \newblock https://www.talend.com.
 
+\bibitem{kettle}
+Pentaho data integration.
+\newblock http://www.pentaho.com/product/data-integration.
+
 \bibitem{pesticides_eu}
 Base de datos europea sobre pesticidas.
 \newblock
@@ -127,10 +131,6 @@ Página oficial de yarn - instalación en linux ubuntu.
 \bibitem{intellij}
 Intellij idea.
 \newblock https://www.jetbrains.com/idea/.
-
-\bibitem{kettle}
-Pentaho data integration.
-\newblock http://www.pentaho.com/product/data-integration.
 
 \bibitem{pentaho}
 Pentaho.
@@ -206,13 +206,25 @@ Mysql.
 Oracle corporation.
 \newblock https://www.oracle.com/index.html.
 
+\bibitem{wikibigdata}
+Wikipedia - big data.
+\newblock https://es.wikipedia.org/wiki/Big\_data.
+
 \bibitem{wikicassandra}
 Wikipedia - apache cassandra.
 \newblock https://en.wikipedia.org/wiki/Apache\_Cassandra.
 
+\bibitem{wikietl}
+Wikipedia - operaciones etl.
+\newblock https://es.wikipedia.org/wiki/Extract,\_transform\_and\_load.
+
 \bibitem{wikih2}
 Wikipedia - h2 (dbms).
 \newblock https://en.wikipedia.org/wiki/H2\_(DBMS).
+
+\bibitem{wikimapreduce}
+Wikipedia - mapreduce.
+\newblock https://es.wikipedia.org/wiki/MapReduce.
 
 \bibitem{wikimariadb}
 Wikipedia - mariadb.

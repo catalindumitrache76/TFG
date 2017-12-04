@@ -8,11 +8,11 @@
 \contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{8}{section.3.1}
 \contentsline {section}{\numberline {3.2}Propuesta de valor e intermediarios}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Requisitos - T\IeC {\'e}cnica \textit {\gls {moscow}}}{10}{section.3.3}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de requisitos - T\IeC {\'e}cnica \textit {\gls {moscow}}}{10}{section.3.3}
 \contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis de riesgos}{12}{section.3.4}
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{13}{section.3.5}
 \contentsline {section}{\numberline {3.6}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{15}{section.3.6}
-\contentsline {section}{\numberline {3.7}Captura de requisitos final}{16}{section.3.7}
+\contentsline {section}{\numberline {3.7}Captura de requisitos final}{17}{section.3.7}
 \contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Dise\IeC {\~n}o conceptual}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Estrategia de integraci\IeC {\'o}n}{19}{section.4.2}
@@ -31,14 +31,14 @@
 \contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{34}{section.7.2}
 \contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{35}{chapter.8}
 \contentsline {chapter}{Glosario}{39}{section*.10}
-\contentsline {chapter}{Lista de Figuras}{41}{chapter*.12}
-\contentsline {chapter}{Lista de Tablas}{42}{chapter*.13}
-\contentsline {chapter}{Anexos}{43}{section*.14}
-\contentsline {chapter}{\numberline {A}Datos}{44}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Modelo de datos}{44}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Flujo de datos}{44}{section.Alph1.2}
-\contentsline {chapter}{\numberline {B}Clientes}{45}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Clientes potenciales}{45}{section.Alph2.1}
-\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{48}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{48}{section.Alph3.1}
-\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{55}{section.Alph3.2}
+\contentsline {chapter}{Lista de Figuras}{42}{chapter*.12}
+\contentsline {chapter}{Lista de Tablas}{43}{chapter*.13}
+\contentsline {chapter}{Anexos}{44}{section*.14}
+\contentsline {chapter}{\numberline {A}Datos}{45}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Modelo de datos}{45}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Flujo de datos}{45}{section.Alph1.2}
+\contentsline {chapter}{\numberline {B}Clientes}{46}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Clientes potenciales}{46}{section.Alph2.1}
+\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{49}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de riesgos completos}{49}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{56}{section.Alph3.2}

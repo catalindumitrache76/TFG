@@ -1,23 +1,25 @@
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{V}
-\glossaryentry{Producto fitosanitario?\glossentry{fito}|setentrycounter[]{page}\glsnumberformat}{3}
-\glossaryentry{Certificado fitosanitario?\glossentry{certificado}|setentrycounter[]{page}\glsnumberformat}{4}
-\glossaryentry{Legislación fitosanitaria?\glossentry{legisfito}|setentrycounter[]{page}\glsnumberformat}{6}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{16}
-\glossaryentry{MongoDB?\glossentry{mongodb}|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{Cassandra?\glossentry{cassandra}|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{H2?\glossentry{h2}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{V}
+\glossaryentry{Producto fitosanitario.?\glossentry{fito}|setentrycounter[]{page}\glsnumberformat}{3}
+\glossaryentry{Certificado fitosanitario.?\glossentry{certificado}|setentrycounter[]{page}\glsnumberformat}{4}
+\glossaryentry{Legislación fitosanitaria.?\glossentry{legisfito}|setentrycounter[]{page}\glsnumberformat}{6}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{Big Data.?\glossentry{bigdata}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{MapReduce.?\glossentry{mapreduce}|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{MongoDB.?\glossentry{mongodb}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{Apache Cassandra.?\glossentry{cassandra}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{H2 Database Engine.?\glossentry{h2}|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MySQL?\glossentry{mysql}|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{MariaDB?\glossentry{mariadb}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{MariaDB.?\glossentry{mariadb}|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{PostgreSQL?\glossentry{postgresql}|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{MSSQL?\glossentry{mssql}|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{Oracle?\glossentry{oracle}|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{Método MoSCoW?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{38}
-\glossaryentry{Sustancia, Sustancia activa, Fármaco?\glossentry{sustancia}|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{Tratamiento fitosanitario?\glossentry{tratamiento}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{Microsoft SQL Server.?\glossentry{mssql}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{Oracle Database.?\glossentry{oracle}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{Método MoSCoW.?\glossentry{moscow}|setentrycounter[]{page}\glsnumberformat}{38}
+\glossaryentry{Sustancia, Sustancia activa, Fármaco.?\glossentry{sustancia}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{Tratamiento fitosanitario.?\glossentry{tratamiento}|setentrycounter[]{page}\glsnumberformat}{46}

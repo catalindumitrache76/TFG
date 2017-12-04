@@ -377,6 +377,15 @@
   Url                      = {https://www.talend.com}
 }
 
+@Misc{wikibigdata,
+  Title                    = {Wikipedia - Big Data},
+  HowPublished             = {https://es.wikipedia.org/wiki/Big\_data},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.04},
+  Url                      = {https://es.wikipedia.org/wiki/Big\_data}
+}
+
 @Misc{wikicassandra,
   Title                    = {Wikipedia - Apache Cassandra},
   HowPublished             = {https://en.wikipedia.org/wiki/Apache\_Cassandra},
@@ -395,6 +404,15 @@
   Url                      = {https://en.wikipedia.org/wiki/Web\_crawler}
 }
 
+@Misc{wikietl,
+  Title                    = {Wikipedia - Operaciones ETL},
+  HowPublished             = {https://es.wikipedia.org/wiki/Extract,\_transform\_and\_load},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.04},
+  Url                      = {https://es.wikipedia.org/wiki/Extract,\_transform\_and\_load}
+}
+
 @Misc{wikih2,
   Title                    = {Wikipedia - H2 (DBMS)},
   HowPublished             = {https://en.wikipedia.org/wiki/H2\_(DBMS)},
@@ -411,6 +429,15 @@
   Owner                    = {catalin},
   Timestamp                = {2017.11.22},
   Url                      = {https://en.wikipedia.org/wiki/Linux}
+}
+
+@Misc{wikimapreduce,
+  Title                    = {Wikipedia - MapReduce},
+  HowPublished             = {https://es.wikipedia.org/wiki/MapReduce},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.04},
+  Url                      = {https://es.wikipedia.org/wiki/MapReduce}
 }
 
 @Misc{wikimariadb,
