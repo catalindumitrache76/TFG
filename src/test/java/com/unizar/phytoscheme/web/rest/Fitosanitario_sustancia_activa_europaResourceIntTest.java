@@ -206,6 +206,8 @@ public class Fitosanitario_sustancia_activa_europaResourceIntTest {
 
         // Update the fitosanitario_sustancia_activa_europa
         Fitosanitario_sustancia_activa_europa updatedFitosanitario_sustancia_activa_europa = fitosanitario_sustancia_activa_europaRepository.findOne(fitosanitario_sustancia_activa_europa.getId());
+        // Disconnect from session so that the updates on updatedFitosanitario_sustancia_activa_europa are not directly saved in db
+        em.detach(updatedFitosanitario_sustancia_activa_europa);
         updatedFitosanitario_sustancia_activa_europa
             .numregistro(UPDATED_NUMREGISTRO)
             .nombrecomercial(UPDATED_NOMBRECOMERCIAL)

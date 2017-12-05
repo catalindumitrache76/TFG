@@ -41,7 +41,7 @@ function merge(dst) {
 }
 
 /**
- * Finds the com.unizar.phytoscheme.processes.common_methods ancestor path between two states.
+ * Finds the common ancestor path between two states.
  *
  * @param {Object} first The first state.
  * @param {Object} second The second state.
@@ -98,7 +98,7 @@ function indexOf(array, value) {
 }
 
 /**
- * Merges a set of parameters with all parameters inherited between the com.unizar.phytoscheme.processes.common_methods parents of the
+ * Merges a set of parameters with all parameters inherited between the common parents of the
  * current state and a given destination state.
  *
  * @param {Object} currentParams The value of the current state parameters ($stateParams).
@@ -252,7 +252,6 @@ angular.module('ui.router.router', ['ui.router.util']);
 /**
  * @ngdoc overview
  * @name ui.router.state
- *
  * @requires ui.router.router
  * @requires ui.router.util
  *
@@ -261,7 +260,6 @@ angular.module('ui.router.router', ['ui.router.util']);
  *
  * This module is a dependency of the main ui.router module. Do not include this module as a dependency
  * in your angular app (use {@link ui.router} module instead).
- *
  */
 angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
 
@@ -317,14 +315,12 @@ angular.module('ui.router.compat', ['ui.router']);
  */
 $Resolve.$inject = ['$q', '$injector'];
 function $Resolve(  $q,    $injector) {
-
   var VISIT_IN_PROGRESS = 1,
       VISIT_DONE = 2,
       NOTHING = {},
       NO_DEPENDENCIES = [],
       NO_LOCALS = NOTHING,
       NO_PARENT = extend($q.when(NOTHING), { $$promises: NOTHING, $$values: NOTHING });
-
 
   /**
    * @ngdoc function
@@ -349,19 +345,16 @@ function $Resolve(  $q,    $injector) {
   this.study = function (invocables) {
     if (!isObject(invocables)) throw new Error("'invocables' must be an object");
     var invocableKeys = objectKeys(invocables || {});
-
     // Perform a topological sort of invocables to build an ordered plan
     var plan = [], cycle = [], visited = {};
     function visit(value, key) {
       if (visited[key] === VISIT_DONE) return;
-
       cycle.push(key);
       if (visited[key] === VISIT_IN_PROGRESS) {
         cycle.splice(0, indexOf(cycle, key));
         throw new Error("Cyclic dependency: " + cycle.join(" -> "));
       }
       visited[key] = VISIT_IN_PROGRESS;
-
       if (isString(value)) {
         plan.push(key, [ function() { return $injector.get(value); }], NO_DEPENDENCIES);
       } else {
@@ -371,7 +364,6 @@ function $Resolve(  $q,    $injector) {
         });
         plan.push(key, value, params);
       }
-
       cycle.pop();
       visited[key] = VISIT_DONE;
     }
@@ -394,7 +386,6 @@ function $Resolve(  $q,    $injector) {
       else if (!isResolve(parent)) {
         throw new Error("'parent' must be a promise returned by $resolve.resolve()");
       }
-
       // To complete the overall resolution, we have to wait for the parent
       // promise and for the promise for each invokable in our plan.
       var resolution = $q.defer(),
@@ -414,7 +405,6 @@ function $Resolve(  $q,    $injector) {
           resolution.resolve(values);
         }
       }
-
       function fail(reason) {
         result.$$failure = reason;
         resolution.reject(reason);
@@ -425,7 +415,6 @@ function $Resolve(  $q,    $injector) {
         fail(parent.$$failure);
         return result;
       }
-
       if (parent.$$inheritedValues) {
         merge(values, omit(parent.$$inheritedValues, invocableKeys));
       }
@@ -449,7 +438,6 @@ function $Resolve(  $q,    $injector) {
         if (locals.hasOwnProperty(plan[i])) done();
         else invoke(plan[i], plan[i+1], plan[i+2]);
       }
-
       function invoke(key, invocable, params) {
         // Create a deferred for this invocation. Failures will propagate to the resolution as well.
         var invocation = $q.defer(), waitParams = 0;
@@ -2153,7 +2141,6 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
         }
 
         isHtml5 = isHtml5 && $sniffer.history;
-
         var url = urlMatcher.format(params);
         options = options || {};
 
@@ -2198,7 +2185,7 @@ angular.module('ui.router.router').provider('$urlRouter', $UrlRouterProvider);
  * navigation. A state describes (via the controller / template / view properties) what
  * the UI looks like and does at that place.
  *
- * States often have things in com.unizar.phytoscheme.processes.common_methods, and the primary way of factoring out these
+ * States often have things in common, and the primary way of factoring out these
  * commonalities in this model is via the state hierarchy, i.e. parent/child states aka
  * nested states.
  *
@@ -2309,7 +2296,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     if (path) {
       if (!base) throw new Error("No reference point given for path '"  + name + "'");
       base = findState(base);
-
       var rel = name.split("."), i = 0, pathLength = rel.length, current = base;
 
       for (; i < pathLength; i++) {
@@ -2719,7 +2705,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * @param {boolean=} [stateConfig.abstract=false]
    * <a id='abstract'></a>
    * An abstract state will never be directly activated,
-   *   but can provide inherited properties to its com.unizar.phytoscheme.processes.common_methods children states.
+   *   but can provide inherited properties to its common children states.
    * <pre>abstract: true</pre>
    *
    * @param {function=} stateConfig.onEnter
@@ -3072,7 +3058,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * will populate $stateParams. Any parameters that are not specified will be inherited from currently
      * defined parameters. Only parameters specified in the state definition can be overridden, new
      * parameters will be ignored. This allows, for example, going to a sibling state that shares parameters
-     * specified in a parent state. Parameter inheritance only works between com.unizar.phytoscheme.processes.common_methods ancestor states, I.e.
+     * specified in a parent state. Parameter inheritance only works between common ancestor states, I.e.
      * transitioning to a sibling will get you the parameters for all parents, transitioning to a child
      * will get you all current parameters, etc.
      * @param {object=} options Options object. The options are:
@@ -3202,7 +3188,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         if (isObject(options.reload) && !options.reload.name) {
           throw new Error('Invalid reload state object');
         }
-
         var reloadState = options.reload === true ? fromPath[0] : findState(options.reload);
         if (options.reload && !reloadState) {
           throw new Error("No such reload state '" + (isString(options.reload) ? options.reload : options.reload.name) + "'");
@@ -3538,7 +3523,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
       if (!isDefined(state)) return null;
       if (options.inherit) params = inheritParams($stateParams, params || {}, $state.$current, state);
-
       var nav = (state && options.lossy) ? state.navigable : state;
 
       if (!nav || nav.url === undefined || nav.url === null) {

@@ -5,7 +5,6 @@ import com.unizar.phytoscheme.domain.Fitosanitario;
 import com.unizar.phytoscheme.service.FitosanitarioService;
 import com.unizar.phytoscheme.web.rest.util.HeaderUtil;
 import com.unizar.phytoscheme.web.rest.util.PaginationUtil;
-import io.swagger.annotations.ApiParam;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -92,7 +91,7 @@ public class FitosanitarioResource {
      */
     @GetMapping("/fitosanitarios")
     @Timed
-    public ResponseEntity<List<Fitosanitario>> getAllFitosanitarios(@ApiParam Pageable pageable) {
+    public ResponseEntity<List<Fitosanitario>> getAllFitosanitarios(Pageable pageable) {
         log.debug("REST request to get a page of Fitosanitarios");
         Page<Fitosanitario> page = fitosanitarioService.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/fitosanitarios");
@@ -137,7 +136,7 @@ public class FitosanitarioResource {
      */
     @GetMapping("/_search/fitosanitarios")
     @Timed
-    public ResponseEntity<List<Fitosanitario>> searchFitosanitarios(@RequestParam String query, @ApiParam Pageable pageable) {
+    public ResponseEntity<List<Fitosanitario>> searchFitosanitarios(@RequestParam String query, Pageable pageable) {
         log.debug("REST request to search for a page of Fitosanitarios for query {}", query);
         Page<Fitosanitario> page = fitosanitarioService.search(query, pageable);
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/fitosanitarios");

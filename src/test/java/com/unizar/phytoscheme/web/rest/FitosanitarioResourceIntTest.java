@@ -203,6 +203,8 @@ public class FitosanitarioResourceIntTest {
 
         // Update the fitosanitario
         Fitosanitario updatedFitosanitario = fitosanitarioRepository.findOne(fitosanitario.getId());
+        // Disconnect from session so that the updates on updatedFitosanitario are not directly saved in db
+        em.detach(updatedFitosanitario);
         updatedFitosanitario
             .num_registro(UPDATED_NUM_REGISTRO)
             .nombre_comercial(UPDATED_NOMBRE_COMERCIAL)

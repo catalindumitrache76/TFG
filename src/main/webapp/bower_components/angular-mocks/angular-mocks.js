@@ -946,7 +946,7 @@ angular.mock.animate = angular.module('ngAnimateMock', ['ng'])
  *
  * *NOTE*: This is not an injectable instance, just a globally available function.
  *
- * Method for serializing com.unizar.phytoscheme.processes.common_methods angular objects (scope, elements, etc..) into strings.
+ * Method for serializing common angular objects (scope, elements, etc..) into strings.
  * It is useful for logging objects to the console when debugging.
  *
  * @param {*} object - any object to turn into string.
@@ -1151,7 +1151,7 @@ angular.mock.dump = function(object) {
        beforeEach(inject(function($injector) {
          // Set up the mock http service responses
          $httpBackend = $injector.get('$httpBackend');
-         // backend definition com.unizar.phytoscheme.processes.common_methods for all tests
+         // backend definition common for all tests
          authRequestHandler = $httpBackend.when('GET', '/auth.py')
                                 .respond({userId: 'userX'}, {'A-Token': 'xxx'});
 

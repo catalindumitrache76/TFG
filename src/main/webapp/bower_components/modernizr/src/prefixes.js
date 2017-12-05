@@ -14,7 +14,7 @@ define(['ModernizrProto'], function(ModernizrProto) {
    * inside of things like [prefixed](#modernizr-prefixed) and [prefixedCSS](#-code-modernizr-prefixedcss). It is simply
    * an array of kebab-case vendor prefixes you can use within your code.
    *
-   * Some com.unizar.phytoscheme.processes.common_methods use cases include
+   * Some common use cases include
    *
    * Generating all possible prefixed version of a CSS property
    * ```js

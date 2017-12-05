@@ -97,7 +97,7 @@ define(['ModernizrProto', 'Modernizr', 'hasOwnProp', 'setClasses'], function(Mod
    * false if not. Otherwise a boolean representing the results of a feature detection
    * @example
    *
-   * The most com.unizar.phytoscheme.processes.common_methods way of creating your own feature detects is by calling
+   * The most common way of creating your own feature detects is by calling
    * `Modernizr.addTest` with a string (preferably just lowercase, without any
    * punctuation), and a function you want executed that will return a boolean result
    *

@@ -5,6 +5,7 @@
 /src/test/javascript/coverage/
 fitosanitario.java
 fitosanitario_sustancia_activa_europa.java
+/src/test/javascript/PhantomJS*/
 
 ######################
 # Node
@@ -13,6 +14,7 @@ fitosanitario_sustancia_activa_europa.java
 node_tmp/
 node_modules/
 npm-debug.log.*
+/.awcache/*
 
 ######################
 # SASS

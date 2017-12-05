@@ -638,7 +638,8 @@
                     }
                     charCode = source.charCodeAt(Index);
                     begin = Index;
-                    // Optimize for the com.unizar.phytoscheme.processes.common_methods case where a string is valid.
+
+                    // Optimize for the common case where a string is valid.
                     while (charCode >= 32 && charCode != 92 && charCode != 34) {
                       charCode = source.charCodeAt(++Index);
                     }

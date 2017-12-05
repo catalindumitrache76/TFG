@@ -7,7 +7,6 @@ import com.unizar.phytoscheme.repository.Sustancia_activa_europaRepository;
 import com.unizar.phytoscheme.repository.search.Sustancia_activa_europaSearchRepository;
 import com.unizar.phytoscheme.web.rest.util.HeaderUtil;
 import com.unizar.phytoscheme.web.rest.util.PaginationUtil;
-import io.swagger.annotations.ApiParam;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -100,7 +99,7 @@ public class Sustancia_activa_europaResource {
      */
     @GetMapping("/sustancia-activa-europas")
     @Timed
-    public ResponseEntity<List<Sustancia_activa_europa>> getAllSustancia_activa_europas(@ApiParam Pageable pageable) {
+    public ResponseEntity<List<Sustancia_activa_europa>> getAllSustancia_activa_europas(Pageable pageable) {
         log.debug("REST request to get a page of Sustancia_activa_europas");
         Page<Sustancia_activa_europa> page = sustancia_activa_europaRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/sustancia-activa-europas");
@@ -146,7 +145,7 @@ public class Sustancia_activa_europaResource {
      */
     @GetMapping("/_search/sustancia-activa-europas")
     @Timed
-    public ResponseEntity<List<Sustancia_activa_europa>> searchSustancia_activa_europas(@RequestParam String query, @ApiParam Pageable pageable) {
+    public ResponseEntity<List<Sustancia_activa_europa>> searchSustancia_activa_europas(@RequestParam String query, Pageable pageable) {
         log.debug("REST request to search for a page of Sustancia_activa_europas for query {}", query);
         Page<Sustancia_activa_europa> page = sustancia_activa_europaSearchRepository.search(queryStringQuery(query), pageable);
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/sustancia-activa-europas");

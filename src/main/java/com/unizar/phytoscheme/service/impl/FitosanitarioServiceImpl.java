@@ -47,10 +47,10 @@ public class FitosanitarioServiceImpl implements FitosanitarioService{
     }
 
     /**
-     *  Get all the fitosanitarios.
+     * Get all the fitosanitarios.
      *
-     *  @param pageable the pagination information
-     *  @return the list of entities
+     * @param pageable the pagination information
+     * @return the list of entities
      */
     @Override
     @Transactional(readOnly = true)
@@ -60,10 +60,10 @@ public class FitosanitarioServiceImpl implements FitosanitarioService{
     }
 
     /**
-     *  Get one fitosanitario by id.
+     * Get one fitosanitario by id.
      *
-     *  @param id the id of the entity
-     *  @return the entity
+     * @param id the id of the entity
+     * @return the entity
      */
     @Override
     @Transactional(readOnly = true)
@@ -73,9 +73,9 @@ public class FitosanitarioServiceImpl implements FitosanitarioService{
     }
 
     /**
-     *  Delete the  fitosanitario by id.
+     * Delete the fitosanitario by id.
      *
-     *  @param id the id of the entity
+     * @param id the id of the entity
      */
     @Override
     public void delete(Long id) {
@@ -87,9 +87,9 @@ public class FitosanitarioServiceImpl implements FitosanitarioService{
     /**
      * Search for the fitosanitario corresponding to the query.
      *
-     *  @param query the query of the search
-     *  @param pageable the pagination information
-     *  @return the list of entities
+     * @param query the query of the search
+     * @param pageable the pagination information
+     * @return the list of entities
      */
     @Override
     @Transactional(readOnly = true)

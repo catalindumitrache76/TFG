@@ -13,7 +13,7 @@
  * navigation. A state describes (via the controller / template / view properties) what
  * the UI looks like and does at that place.
  *
- * States often have things in com.unizar.phytoscheme.processes.common, and the primary way of factoring out these
+ * States often have things in common, and the primary way of factoring out these
  * commonalities in this model is via the state hierarchy, i.e. parent/child states aka
  * nested states.
  *
@@ -124,7 +124,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
     if (path) {
       if (!base) throw new Error("No reference point given for path '"  + name + "'");
       base = findState(base);
-
       var rel = name.split("."), i = 0, pathLength = rel.length, current = base;
 
       for (; i < pathLength; i++) {
@@ -534,7 +533,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
    * @param {boolean=} [stateConfig.abstract=false]
    * <a id='abstract'></a>
    * An abstract state will never be directly activated,
-   *   but can provide inherited properties to its com.unizar.phytoscheme.processes.common_methods children states.
+   *   but can provide inherited properties to its common children states.
    * <pre>abstract: true</pre>
    *
    * @param {function=} stateConfig.onEnter
@@ -887,7 +886,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      * will populate $stateParams. Any parameters that are not specified will be inherited from currently
      * defined parameters. Only parameters specified in the state definition can be overridden, new
      * parameters will be ignored. This allows, for example, going to a sibling state that shares parameters
-     * specified in a parent state. Parameter inheritance only works between com.unizar.phytoscheme.processes.common_methods ancestor states, I.e.
+     * specified in a parent state. Parameter inheritance only works between common ancestor states, I.e.
      * transitioning to a sibling will get you the parameters for all parents, transitioning to a child
      * will get you all current parameters, etc.
      * @param {object=} options Options object. The options are:
@@ -1017,7 +1016,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
         if (isObject(options.reload) && !options.reload.name) {
           throw new Error('Invalid reload state object');
         }
-
         var reloadState = options.reload === true ? fromPath[0] : findState(options.reload);
         if (options.reload && !reloadState) {
           throw new Error("No such reload state '" + (isString(options.reload) ? options.reload : options.reload.name) + "'");
@@ -1055,7 +1053,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
       // Re-add the saved hash before we start returning things or broadcasting $stateChangeStart
       if (hash) toParams['#'] = hash;
-
       // Broadcast start event and cancel the transition if requested
       if (options.notify) {
         /**
@@ -1353,7 +1350,6 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
 
       if (!isDefined(state)) return null;
       if (options.inherit) params = inheritParams($stateParams, params || {}, $state.$current, state);
-
       var nav = (state && options.lossy) ? state.navigable : state;
 
       if (!nav || nav.url === undefined || nav.url === null) {

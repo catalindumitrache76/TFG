@@ -7,7 +7,6 @@ import com.unizar.phytoscheme.repository.Fitosanitario_sustancia_activa_europaRe
 import com.unizar.phytoscheme.repository.search.Fitosanitario_sustancia_activa_europaSearchRepository;
 import com.unizar.phytoscheme.web.rest.util.HeaderUtil;
 import com.unizar.phytoscheme.web.rest.util.PaginationUtil;
-import io.swagger.annotations.ApiParam;
 import io.github.jhipster.web.util.ResponseUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -100,7 +99,7 @@ public class Fitosanitario_sustancia_activa_europaResource {
      */
     @GetMapping("/fitosanitario-sustancia-activa-europas")
     @Timed
-    public ResponseEntity<List<Fitosanitario_sustancia_activa_europa>> getAllFitosanitario_sustancia_activa_europas(@ApiParam Pageable pageable) {
+    public ResponseEntity<List<Fitosanitario_sustancia_activa_europa>> getAllFitosanitario_sustancia_activa_europas(Pageable pageable) {
         log.debug("REST request to get a page of Fitosanitario_sustancia_activa_europas");
         Page<Fitosanitario_sustancia_activa_europa> page = fitosanitario_sustancia_activa_europaRepository.findAll(pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/fitosanitario-sustancia-activa-europas");
@@ -146,7 +145,7 @@ public class Fitosanitario_sustancia_activa_europaResource {
      */
     @GetMapping("/_search/fitosanitario-sustancia-activa-europas")
     @Timed
-    public ResponseEntity<List<Fitosanitario_sustancia_activa_europa>> searchFitosanitario_sustancia_activa_europas(@RequestParam String query, @ApiParam Pageable pageable) {
+    public ResponseEntity<List<Fitosanitario_sustancia_activa_europa>> searchFitosanitario_sustancia_activa_europas(@RequestParam String query, Pageable pageable) {
         log.debug("REST request to search for a page of Fitosanitario_sustancia_activa_europas for query {}", query);
         Page<Fitosanitario_sustancia_activa_europa> page = fitosanitario_sustancia_activa_europaSearchRepository.search(queryStringQuery(query), pageable);
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/fitosanitario-sustancia-activa-europas");

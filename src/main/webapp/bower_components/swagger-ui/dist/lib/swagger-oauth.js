@@ -199,7 +199,7 @@ function initOAuth(opts) {
   var errors = [];
 
   appName = (o.appName||errors.push('missing appName'));
-  popupMask = (o.popupMask||$('#api-com.unizar.phytoscheme.processes.common_methods-mask'));
+  popupMask = (o.popupMask||$('#api-common-mask'));
   popupDialog = (o.popupDialog||$('.api-popup-dialog'));
   clientId = (o.clientId||errors.push('missing client id'));
   clientSecret = (o.clientSecret||null);
@@ -245,7 +245,6 @@ function clientCredentialsFlow(scopes, tokenUrl, OAuthSchemeKey) {
         onOAuthComplete("");
       }
     });
-
   }
 
 window.processOAuthCode = function processOAuthCode(data) {

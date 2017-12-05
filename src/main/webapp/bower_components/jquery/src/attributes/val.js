@@ -30,7 +30,8 @@ jQuery.fn.extend( {
 
 				return typeof ret === "string" ?
 
-					// Handle most com.unizar.phytoscheme.processes.common_methods string cases
+
+					// Handle most common string cases
 					ret.replace( rreturn, "" ) :
 
 					// Handle cases where value is null/undef or number

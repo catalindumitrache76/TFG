@@ -49,7 +49,7 @@ define(['ModernizrProto', 'testPropsAll', 'cssToDOM', 'atRule'], function(Modern
    * rafProp === 'WebkitRequestAnimationFrame' // in older webkit
    * ```
    *
-   * One com.unizar.phytoscheme.processes.common_methods use case for prefixed is if you're trying to determine which transition
+   * One common use case for prefixed is if you're trying to determine which transition
    * end event to bind to, you might do something like...
    * ```js
    * var transEndEventNames = {
