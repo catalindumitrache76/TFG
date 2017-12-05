@@ -18,35 +18,35 @@ public interface FitosanitarioService {
     Fitosanitario save(Fitosanitario fitosanitario);
 
     /**
-     *  Get all the fitosanitarios.
+     * Get all the fitosanitarios.
      *
-     *  @param pageable the pagination information
-     *  @return the list of entities
+     * @param pageable the pagination information
+     * @return the list of entities
      */
     Page<Fitosanitario> findAll(Pageable pageable);
 
     /**
-     *  Get the "id" fitosanitario.
+     * Get the "id" fitosanitario.
      *
-     *  @param id the id of the entity
-     *  @return the entity
+     * @param id the id of the entity
+     * @return the entity
      */
     Fitosanitario findOne(Long id);
 
     /**
-     *  Delete the "id" fitosanitario.
+     * Delete the "id" fitosanitario.
      *
-     *  @param id the id of the entity
+     * @param id the id of the entity
      */
     void delete(Long id);
 
     /**
      * Search for the fitosanitario corresponding to the query.
      *
-     *  @param query the query of the search
-     *  
-     *  @param pageable the pagination information
-     *  @return the list of entities
+     * @param query the query of the search
+     * 
+     * @param pageable the pagination information
+     * @return the list of entities
      */
     Page<Fitosanitario> search(String query, Pageable pageable);
 }

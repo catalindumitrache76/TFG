@@ -201,6 +201,8 @@ public class Sustancia_activa_europaResourceIntTest {
 
         // Update the sustancia_activa_europa
         Sustancia_activa_europa updatedSustancia_activa_europa = sustancia_activa_europaRepository.findOne(sustancia_activa_europa.getId());
+        // Disconnect from session so that the updates on updatedSustancia_activa_europa are not directly saved in db
+        em.detach(updatedSustancia_activa_europa);
         updatedSustancia_activa_europa
             .real_id(UPDATED_REAL_ID)
             .tipo(UPDATED_TIPO)
