@@ -1,0 +1,56 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myFitosanitario_sustancia_activa_europaLabel">Create or edit a Fitosanitario Sustancia Activa Europa</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.fitosanitario_sustancia_activa_europa.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.fitosanitario_sustancia_activa_europa.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_numregistro">Numregistro</label>
+            <input type="text" class="form-control" name="numregistro" id="field_numregistro"
+                    ng-model="vm.fitosanitario_sustancia_activa_europa.numregistro"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_nombrecomercial">Nombrecomercial</label>
+            <input type="text" class="form-control" name="nombrecomercial" id="field_nombrecomercial"
+                    ng-model="vm.fitosanitario_sustancia_activa_europa.nombrecomercial"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_titular">Titular</label>
+            <input type="text" class="form-control" name="titular" id="field_titular"
+                    ng-model="vm.fitosanitario_sustancia_activa_europa.titular"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_formulado">Formulado</label>
+            <input type="text" class="form-control" name="formulado" id="field_formulado"
+                    ng-model="vm.fitosanitario_sustancia_activa_europa.formulado"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_activeSubstanceID">Active Substance ID</label>
+            <input type="text" class="form-control" name="activeSubstanceID" id="field_activeSubstanceID"
+                    ng-model="vm.fitosanitario_sustancia_activa_europa.activeSubstanceID"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>
