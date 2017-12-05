@@ -229,30 +229,22 @@ Para simplificar el acceso a los recursos se ha hecho uso de un fichero de confi
 \bigskip
 
 
-\section{Problemas técnicos detectados} \label{implementacion.problemas}
+\section{Problemas encontrados} \label{implementacion.problemas}
 \par
 Tal como se ha explicado a lo largo del desarrollo de esta memoria, tanto en la fase de la prueba de concepto como en la fase de desarrollo del prototipo se han encontrado diversos problemas de naturaleza técnica o tecnológica:
 
 \begin{itemize}
-\item \textbf{Sistema operativo} 
+\item \textbf{Sistema operativo.} Si bien es cierto que el sistema operativo donde se desarrollase el proyecto no era un requisito, apareció desde el principio como un derivado de las herramientas a utilizar. Se propuso un sistema operativo \textit{Linux} \cite{wikilinux} sobre el que llevar a cabo la implementación de la solución. 
+La propia instalación del sistema resultó inicialmente problemática en el portátil del alumno debido a la inexistencia de los \textit{drivers} de \textit{Linux} necesarios para la tarjeta gráfica \textit{Nvidia} \cite{wikinvidia} presente en el equipo, que resultaba en el no arranque del sistema. Tras unos días de consultas y búsquedas en páginas y foros de Internet, la solución al problema fue añadir la instrucción \textit{nouveau.modeset=0}, que desactiva los drivers libres de \textit{Nvidia} en el menú \textit{GRUB} \cite{grub} durante el arranque del sistema permitiendo que la gráfica que se ejecuta sea la otra presente en el equipo, la de \textit{Intel}.
+\item \textbf{Hadoop.} Como previamente se ha mencionado durante la prueba de concepto, la instalación de \textit{Hadoop} no fue la óptima desde el principio puesto que el alumno instaló una versión correspondiente a \textit{Ubuntu 14.04}, mientras que el sistema operativo instalado en el equipo era \textit{Ubuntu 16.04}. Debido a eso inicialmente \textit{Hadoop} dió problemas y en una fase posterior se tuvo que eliminar esta versión del equipo e instalar la correcta. Una vez solucionado ese problema, otro de los retos a los que se tuvo que enfrentar fue el entendimiento conceptual del sistema en sí. Se tuvieron que invertir horas en aprender a utilizar el sistema de ficheros \textit{HDFS}, algo necesario para el almacén de los datos de entrada de las diferentes fuentes. 
 \par
-Si bien es cierto que el sistema operativo donde se desarrollase el proyecto no era un requisito, apareció desde el principio del proyecto como un derivado de las herramientas a utilizar. Se propuso un sistema operativo \textit{LINUX} \cite{wikilinux} sobre el que llevar a cabo la implementación de la solución debido a las restricciones presupuestarias mencionadas en la fase de análisis. 
-La propia instalación del sistema resultó inicialmente problemática en el portátil del alumno debido a la inexistencia de los drivers de \textit{LINUX} necesarios para la tarjeta gráfica \textit{Nvidia} \cite{wikinvidia} presente en el equipo, que resultaba en el no arranque del sistema. Tras unos días de consultas y búsquedas en páginas y foros de Internet, la solución al problema fue añadir la línea \textit{nouveau.modeset=0} que desactiva los drivers libres de \textit{Nvidia} en el menú \textit{GRUB} \cite{grub} durante el arranque del sistema.
-\item \textbf{Hadoop} 
-\par
-Algo
-\item \textbf{Hive} 
-\par
-Algo
-\item \textbf{Hive y JHipster} 
-\par
-Algo
-\item \textbf{Kettle} 
-\par
-Algo
-\item \textbf{Talend y JHipster} 
-\par
-Algo
+Otro problema que surgió con \textit{Hadoop} fue debido a la falta de espacio en disco. Llegó un punto a lo largo de la duración del \textit{TFG} donde el disco duro del equipo del alumno se llenó y debido a eso las operaciones \gls{mapreduce} de \textit{Hadoop} se encolaban, se enmarcaban dentro de un estado de \textit{Pendiente} y nunca se ejecutaban. Pasaron varios días hasta que se llegó a la raíz del problema y, una vez liberada algo de memoria del disco duro, las operaciones \gls{mapreduce} de \textit{Hadoop} ya se podían realizar corréctamente. 
+\item \textbf{Hive.} Como ya se comentó, la instalación de \textit{Hive} en sí no presentó problemas. No obstante, el hecho de tratarse de un lenguaje \textit{SQL} nuevo, a pesar de su similitud con la sintáxis de \textit{MySQL} junto con las peculiaridades del sistema de archivos de \textit{Hadoop}, \textit{HDFS} sobre el que \textit{Hive} trabaja dificultaron un avance fluido del proyecto. En muchas ocasiones los datos de entrada daban problemas a la hora de importarlos en \textit{Hive}, por diferentes razones: inclusión de una cabecera que no debería aparecer en los datos de entrada, formateo incorrecto de los datos e incluso, por falta de experiencia, el uso incorrecto del delimitador en el lado de \textit{Hive}. Aparte de estas dificultades, \textit{Hive} también presentó problemas a la hora de intentar conectarlo diréctamente con \textit{JHipster}, tal como se verá en los siguientes apartados.
+\item \textbf{Sqoop.} Al igual que \textit{Hive}, la instalación y configuración de \textit{Sqoop} no supuso un problema. No obstante, su manejo es lo que más dificultades presentó, puesto que al igual que los demás componentes, se trataba de una herramienta nueva para el alumno. Las tablas tanto de orígen (base de datos \textit{Hive} presente en \textit{HDFS}) como de destino (base de datos \textit{MySQL} de \textit{JHipster}) tenían que coincidir en estructura y tomó varios intentos hasta tener la configuración adecuada. 	
+\item \textbf{JHipster.} Con \textit{JHipster} se tuvo varios problemas, empezando por su importación como proyecto dentro de \textit{IntelliJ}. \textit{Graddle} inicialmente no estaba corréctamente configurado en el equipo y por ello el proyecto era incapaz de descargar y configurar sus dependencias. Una vez instalado \textit{Graddle} e importado el proyecto corréctamente, otro de los problemas encontrados apareció a la hora de importar un esquema de datos sobre \textit{JHipster} mediante \textit{JDL-Studio} \cite{jdlstudio}, el editor gráfico para creación de modelos de datos de \textit{JHipster}. Si bien la creación del propio modelo y su descarga en un fichero  \textit{.jh} no presentó problemas, la importación del esquema dentro del proyecto mediante el comando \textit{jhipster import-jdl fichero.jh} provoca el fallo del proyecto y el error . Gracias al control de versiones implementado mediante \textit{GIT} \cite{git} se pudo volver a la versión previa y desechar los cambios provocados por el comando anterior. 
+\item \textbf{Hive y JHipster.} Algo
+\item \textbf{Kettle.} Algo
+\item \textbf{Talend y JHipster.} Algo
 \end{itemize}
 
 

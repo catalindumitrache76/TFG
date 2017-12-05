@@ -93,6 +93,15 @@
   Url                      = {https://es.wikipedia.org/wiki/Fármaco}
 }
 
+@Misc{git,
+  Title                    = {Git},
+  HowPublished             = {https://git-scm.com},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.05},
+  Url                      = {https://git-scm.com}
+}
+
 @Misc{glosarioterminosfito,
   Title                    = {Glosario de términos fitosanitarios},
   HowPublished             = {\seqsplit{https://www.ippc.int/static/media/files/publication/es/2016/06/ISPM\_05\_2016\_Es\_2016-06-23\_FullReviewLRG-CPAM.pdf}},
@@ -219,6 +228,15 @@
   Owner                    = {catalin},
   Timestamp                = {2017.11.20},
   Url                      = {https://java.com/es/}
+}
+
+@Misc{jdlstudio,
+  Title                    = {JDL-Studio},
+  HowPublished             = {https://start.jhipster.tech/jdl-studio/},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.05},
+  Url                      = {https://start.jhipster.tech/jdl-studio/}
 }
 
 @Misc{jhipster,

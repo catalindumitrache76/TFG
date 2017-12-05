@@ -20,7 +20,7 @@
 \contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{20}{chapter.5}
 \contentsline {section}{\numberline {5.1}Prueba de concepto}{20}{section.5.1}
 \contentsline {section}{\numberline {5.2}Prototipo real}{27}{section.5.2}
-\contentsline {section}{\numberline {5.3}Problemas t\IeC {\'e}cnicos detectados}{33}{section.5.3}
+\contentsline {section}{\numberline {5.3}Problemas encontrados}{33}{section.5.3}
 \contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{35}{chapter.6}
 \contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{35}{section.6.1}
 \contentsline {section}{\numberline {6.2}Control de versiones}{35}{section.6.2}
