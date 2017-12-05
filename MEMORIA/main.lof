@@ -13,9 +13,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Diagrama de clases y paquetes para soportar la automatizaci\IeC {\'o}n del \textit {workflow}\relax }}{47}{figure.caption.16}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Esquema de datos importados en \textit {Hive}\relax }}{51}{figure.caption.16}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Esquema de datos importados en \textit {MySQL} y \textit {JHipster}\relax }}{52}{figure.caption.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{58}{figure.caption.17}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{59}{figure.caption.18}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{60}{figure.caption.19}
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{64}{figure.caption.18}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{65}{figure.caption.19}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{66}{figure.caption.20}
