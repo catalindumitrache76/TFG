@@ -178,6 +178,10 @@ Jdl-studio.
 Git.
 \newblock https://git-scm.com.
 
+\bibitem{trello}
+Trello.
+\newblock https://trello.com.
+
 \bibitem{cricyt}
 Centro científico tecnológico (cct) mendoza.
 \newblock
@@ -229,6 +233,10 @@ Wikipedia - operaciones etl.
 \bibitem{wikih2}
 Wikipedia - h2 (dbms).
 \newblock https://en.wikipedia.org/wiki/H2\_(DBMS).
+
+\bibitem{wikikanban}
+Wikipedia - kanban.
+\newblock https://es.wikipedia.org/wiki/Kanban\_(desarrollo).
 
 \bibitem{wikimapreduce}
 Wikipedia - mapreduce.
