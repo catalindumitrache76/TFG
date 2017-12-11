@@ -45,8 +45,145 @@ En la primera fase del proyecto el alumno desconocía el panorama global del des
 \item \textbf{Prueba de concepto. } Al igual que las fases anteriores, gran parte de esta se ha desarrollado cuando aún no se tenía constancia precisa de las horas invertidas. No obstante, se pueden deducir alrededor de 80 horas totales que incluyen la instalación y configuración de las diferentes herramientas probadas junto con sus alternativas, las diferentes pruebas realizadas para conseguir un flujo de los datos desde su descarga hasta su transformación y presentación y la solventación de los diferentes errores que iban apareciéndo por el camino. 
 \item \textbf{Implementación del prototipo real. } La implementación del prototipo real reune todos sus esfuerzos en la hoja de cálculo de \textit{Drive}, con un total de 63.5 \textbf{CAMBIAR SI NECESARIO} horas de dedicación. En ellas están incluidos los diferentes procesos desarrollados en \textit{Talend}, los diferentes mecanismos para su integración en \textit{Java}, los \textit{crawlers} implementados en lenguaje \textit{bash} así como los  componentes software desarrollados en \textit{Java}. 
 \item \textbf{Reuniones con el director del proyecto. } Se pueden deducir unas 18 horas de reuniones con el director del proyecto aunque este apartado se puede entender como algo más flexible que los anteriores, ya que, si bien es cierto que no han habido muchas reuniones planificadas con el profesor, este iba pasando por el laboratorio en el que el alumno desarrollaba el trabajo para revisar con él los avances conseguidos y apoyarle en la consecución de los objetivos. 
-\item \textbf{Redacción de la memoria. } Las horas invertidas en la redacción de la memoria, al igual que en el bloque anterior, se recogen en su totalidad en la hoja de cálculo de \textit{Drive}. Han resultado un total de 89.5 \textbf{CAMBIAR} horas.
+\item \textbf{Redacción de la memoria. } Las horas invertidas en la redacción de la memoria, al igual que en el bloque anterior, se recogen en su totalidad en la hoja de cálculo de \textit{Drive}. Han resultado un total de 93.5 \textbf{CAMBIAR} horas.
 \end{itemize}
 
 \section{Estimación del coste} \label{gestion.estimacion}
-¿Cuanto cuesta en dinero tu TFG? - Revisar el trabajo de Cabrera.
+
+En este apartado se van a recoger los cálculos que se han llevado a cabo para calcular tanto el coste económico del \textit{TFG} como de la hora de trabajo de una persona que desarrollaría de manera comercial un proyecto como este. Para ello se ha hecho uso de la página web \textit{Calculadora Freelance} \cite{calculadorafreelance} y los resultados se pueden ver en los párrafos siguientes. 
+\par 
+Para calcular el coste económico del proyecto, se deben conocer a priori tanto las horas totales invertidas en el proyecto como el precio de la hora de trabajo del alumno; el resultado de la multiplicación de estos factores, sumado a otros elementos (como la gestión del proyecto, la gestión de configuraciones o el aseguramiento de la calidad), se corresponde al coste total del proyecto. Las horas invertidas en el proyecto han sido recogidas en el apartado anterior, mientras que la hora de trabajo del alumno se ha calculado a partir de los siguientes parámetros: 
+
+\begin{itemize}
+\item \textbf{Sueldo esperado.} 1500€ mensuales. 
+\item \textbf{Días de vacaciones.} 21 días anuales. 
+\item \textbf{Días festivos.} 14 días anuales en España.
+\item \textbf{Días de inactividad.} 7 días anuales. 
+\item \textbf{Porcentaje reuniones, presupuestos, ventas, etc.} 50\%.
+\item \textbf{Gastos alquiler.} 100€ mensuales. 
+\item \textbf{Gastos en servicios (luz, móvil, etc.).} 50€ mensuales.
+\item \textbf{Impuesto autónomos.} 260€ mensuales. 
+\item \textbf{Otros gastos.} 50€ mensuales.
+\item \textbf{Porcentaje beneficios.} 20\%.
+\end{itemize}
+
+Con los datos anteriores, el coste mínimo de la hora de trabajo del alumno sería de \textbf{28.70€}.
+
+El desglose detallado de los cálculos realizados para llegar al resultado anterior se pueden observar en la sección \ref{d.gestion.estimacion} de los Anexos.
+
+A continuación, en la tabla \ref{tab:costeproyecto} se recogen los diferentes componentes y tareas realizadas por el alumno junto con las horas dedicadas y el coste calculado, para conseguir el coste total del proyecto: 
+
+
+\begin{table}[H]
+\centering
+\bgroup
+\def\arraystretch{1.3}
+\begin{tabular}{l p{120pt} r}
+\toprule
+\textbf{Tarea/Componente} & \textbf{Horas} & \textbf{Coste (€)} \\
+ \midrule
+ Investigación
+& 
+10 horas
+& 
+287.00€
+ \\
+ Análisis
+& 
+20 horas
+& 
+574.00€
+ \\
+ Diseño
+& 
+10 horas
+& 
+287.00€
+ \\
+ Prueba de concepto
+& 
+80 horas
+& 
+2,296.00€
+ \\
+ Implementación prototipo
+& 
+63.5 horas
+&
+1,822.45€
+ \\
+ Reuniones
+& 
+18 horas
+& 
+516.60€
+ \\
+ Redacción Memoria
+& 
+93.5 horas
+& 
+2,683.45€
+ \\
+ \textbf{TOTAL Tareas/Componentes}
+& 
+\textbf{295 horas}
+& 
+\textbf{8,466.50€}
+ \\
+ \hline
+ Gestión (G)
+& 
+295 h x 0.15
+& 
+1,269.97€
+ \\
+ Gestión de configuraciones (GC)
+& 
+295 h x 0.05
+& 
+423.32€
+ \\
+ Aseguramiento de la calidad (AC)
+& 
+295 h x 0.07
+& 
+592.65€
+ \\
+ \textbf{TOTAL GESTIÓN Y CALIDAD}
+& 
+\textbf{80 horas}
+& 
+\textbf{2,296.00€}
+ \\
+ \hline
+ Transporte (T)
+& 
+60 viajes x 2.70€
+& 
+162.00€
+ \\
+ \textbf{TOTAL MACROS}
+& 
+\textit{G+GC+AC+T}
+& 
+\textbf{2,458.00€}
+ \\
+ \hline
+ Amortización estaciones de trabajo
+& 
+(295h + 80h) x \( \frac{800}{295 h} \)
+& 
+1,016.95€
+ \\
+ \textbf{TOTAL}
+& 
+& 
+\textbf{11,941.45€}
+ \\
+\bottomrule
+\end{tabular}
+\egroup
+\caption{Costes económicos del proyecto}
+\label{tab:costeproyecto}
+\end{table}
+ 

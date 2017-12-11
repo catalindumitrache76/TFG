@@ -14,31 +14,34 @@
 \BOOKMARK [1][-]{section.3.7}{Captura de requisitos final}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 15
 \BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Estrategia de integraci\363n}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{Dise\361o final}{chapter.4}% 17
 \BOOKMARK [1][-]{section.4.3}{Arquitectura del sistema}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Prototipo real}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.3}{Problemas encontrados}{chapter.5}% 22
-\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 23
-\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 24
-\BOOKMARK [1][-]{section.6.2}{Pautas e imposiciones}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.3}{Organizaci\363n y control de versiones}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.4}{Control de esfuerzos}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.5}{Estimaci\363n del coste}{chapter.6}% 28
-\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 29
-\BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 30
-\BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 31
-\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 32
-\BOOKMARK [0][-]{section*.12}{Glosario}{}% 33
-\BOOKMARK [0][-]{chapter*.14}{Lista de Figuras}{}% 34
-\BOOKMARK [0][-]{chapter*.15}{Lista de Tablas}{}% 35
-\BOOKMARK [0][-]{section*.16}{Anexos}{}% 36
-\BOOKMARK [0][-]{appendix.Alph1}{Datos}{}% 37
-\BOOKMARK [1][-]{section.Alph1.1}{Esquema de datos}{appendix.Alph1}% 38
-\BOOKMARK [1][-]{section.Alph1.2}{Flujo de datos}{appendix.Alph1}% 39
-\BOOKMARK [0][-]{appendix.Alph2}{Clientes}{}% 40
-\BOOKMARK [1][-]{section.Alph2.1}{Clientes potenciales}{appendix.Alph2}% 41
-\BOOKMARK [0][-]{appendix.Alph3}{An\341lisis}{}% 42
-\BOOKMARK [1][-]{section.Alph3.1}{An\341lisis de riesgos completos}{appendix.Alph3}% 43
-\BOOKMARK [1][-]{section.Alph3.2}{An\341lisis de dise\361os alternativos}{appendix.Alph3}% 44
+\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 20
+\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.2}{Prototipo real}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.3}{Problemas encontrados}{chapter.5}% 23
+\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 24
+\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 25
+\BOOKMARK [1][-]{section.6.2}{Pautas e imposiciones}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.3}{Organizaci\363n y control de versiones}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.4}{Control de esfuerzos}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.5}{Estimaci\363n del coste}{chapter.6}% 29
+\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 30
+\BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 31
+\BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 32
+\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 33
+\BOOKMARK [0][-]{section*.16}{Glosario}{}% 34
+\BOOKMARK [0][-]{chapter*.18}{Lista de Figuras}{}% 35
+\BOOKMARK [0][-]{chapter*.19}{Lista de Tablas}{}% 36
+\BOOKMARK [0][-]{section*.20}{Anexos}{}% 37
+\BOOKMARK [0][-]{appendix.Alph1}{Datos}{}% 38
+\BOOKMARK [1][-]{section.Alph1.1}{Esquema de datos}{appendix.Alph1}% 39
+\BOOKMARK [1][-]{section.Alph1.2}{Flujo de datos}{appendix.Alph1}% 40
+\BOOKMARK [0][-]{appendix.Alph2}{Clientes}{}% 41
+\BOOKMARK [1][-]{section.Alph2.1}{Clientes potenciales}{appendix.Alph2}% 42
+\BOOKMARK [0][-]{appendix.Alph3}{An\341lisis}{}% 43
+\BOOKMARK [1][-]{section.Alph3.1}{An\341lisis de riesgos completos}{appendix.Alph3}% 44
+\BOOKMARK [1][-]{section.Alph3.2}{An\341lisis de dise\361os alternativos}{appendix.Alph3}% 45
+\BOOKMARK [0][-]{appendix.Alph4}{Gesti\363n}{}% 46
+\BOOKMARK [1][-]{section.Alph4.1}{C\341lculo del coste de la hora de trabajo del alumno}{appendix.Alph4}% 47

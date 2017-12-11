@@ -75,7 +75,7 @@ Como se puede observar, \textit{JHipster} no ofrece soporte oficial para una bas
 \bigskip
 \par
 \paragraph*{Sqoop.}
-
+textheight
 \par
 Visto el resultado de la prueba anterior y por lo tanto el abandono de ese camino, el paso más lógico que se debía tomar a continuación era añadir un componente intermedio capaz de transferir datos de \textit{Hadoop/Hive} a \textit{MySQL}. Afortunadamente, ese componente existe y se trata de la herramienta \textit{Sqoop}, que permite transferir datos de una tabla de \textit{Hive} a otra tabla de una base de datos relacional, con un formato parecido o igual a la de \textit{Hive}. Así pues, gracias a \textit{Sqoop} conseguíamos disponer del mecanismo mediante el que los datos importados en \textit{Hadoop} podían ser visualizados casi diréctamente (con su previa carga en \textit{Hive}) en el \textit{Front-End} provisto por \textit{JHipster}. 
 
@@ -234,7 +234,8 @@ Para simplificar el acceso a los recursos se ha hecho uso de un fichero de confi
 Tal como se ha explicado a lo largo del desarrollo de esta memoria, tanto en la fase de la prueba de concepto como en la fase de desarrollo del prototipo se han encontrado diversos problemas de naturaleza técnica o tecnológica:
 
 \begin{itemize}
-\item \textbf{Hablar de una incertidumbre inicial y que por eso no se han pdido llevar bien muchas de las cosas ... gestión de esfuerzos, gestión de tareas, planificación completa del proyecto, etc.} 
+\item \textbf{Incertidumbre inicial.} El primero de los problemas que se detectaron tienen que ver con el arranque del proyecto. Debido a una incertidumbre inicial en cuanto a la estructura de su desarollo, en el arranque del proyecto no se pudo realizar una planificación inicial para dejar definida una visión global de toda su duración. Por ello surgieron problemas como que el alumno entendió que todo el trabajo de instalación y configuración de las herramientas sería una fase previa al desarrollo del proyecto en sí, lo cuál no fue asi, puesto que más tarde se establecería que dicho trabajo formaría parte de una primera fase del proyecto: la prueba de concepto. Además, dicha incertidumbre dificultó la gestión del proyecto: la definición de las tareas, el control de los esfuerzos y un análisis adecuado desde el principio.
+
 \item \textbf{Sistema operativo.} Si bien es cierto que el sistema operativo donde se desarrollase el proyecto no era un requisito, apareció desde el principio como un derivado de las herramientas a utilizar. Se propuso un sistema operativo \textit{Linux} \cite{wikilinux} sobre el que llevar a cabo la implementación de la solución. 
 La propia instalación del sistema resultó inicialmente problemática en el portátil del alumno debido a la inexistencia de los \textit{drivers} de \textit{Linux} necesarios para la tarjeta gráfica \textit{Nvidia} \cite{wikinvidia} presente en el equipo, que resultaba en el no arranque del sistema. Tras unos días de consultas y búsquedas en páginas y foros de Internet, la solución al problema fue añadir la instrucción \textit{nouveau.modeset=0}, que desactiva los drivers libres de \textit{Nvidia} en el menú \textit{GRUB} \cite{grub} durante el arranque del sistema permitiendo que la gráfica que se ejecuta sea la otra presente en el equipo, la de \textit{Intel}.
 

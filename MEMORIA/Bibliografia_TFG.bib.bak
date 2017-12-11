@@ -38,6 +38,15 @@
   Url                      = {https://angularjs.org}
 }
 
+@Misc{calculadorafreelance,
+  Title                    = {Página web Calculadora FrePágina},
+  HowPublished             = {http://www.calculadorafreelance.com},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.11},
+  Url                      = {http://www.calculadorafreelance.com}
+}
+
 @Misc{cloudera,
   Title                    = {Repositorio de cloudera},
   HowPublished             = {\seqsplit{https://repository.cloudera.com/content/repositories/releases/}},

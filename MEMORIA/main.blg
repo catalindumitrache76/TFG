@@ -3,9 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: Bibliografia_TFG.bib
+Warning--I didn't find a database entry for "calculadorafreelance"
 You've used 61 entries,
             1791 wiz_defined-function locations,
-            630 strings with 9304 characters,
+            631 strings with 9324 characters,
 and the built_in function-call counts, 6176 in all, are:
 = -- 500
 > -- 61
@@ -44,3 +45,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 63
 write$ -- 441
+(There was 1 warning)
