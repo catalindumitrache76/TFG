@@ -27,10 +27,10 @@ En el diagrama de la figura \ref{fig:disenyofinal} se puede observar un mapeo ca
 
 
 \section{Arquitectura del sistema} \label{disenyo.arquitectura}
-Diagramas arquitecturales, explicar los diferentes componentes y la manera en la que interaccionan y se comunican desde el momento de la recolección de los datos hasta su presentación en la aplicación final. Incluir aparte del diagrama de herramientas algun diagrama de componente y conector, e incluso algún trocito con un diagrama de flujo y a ser posible un diagrama de clases de JHipster y la manera en la que interaccionan con el sistema.
-\begin{itemize}
-\item \textbf{Diagrama de despliegue.}
+\par Este apartado tratará de dar una visión arquitectural del sistema, pasando por diferentes diagramas para representar el proyecto de manera gráfica y completa. Esta sección abarcará los siguientes diagramas: diagrama de despliegue, diagrama de componente y conector, diagrama de clases y paquetes, diagrama de secuencia y diagrama de datos. 
 
+\subsection{Diagrama de despliegue.} \label{disenyo.arquitectura.despliegue}
+\par Como se puede observar, el despliegue de la aplicación consta de un nodo principal, el Servidor. Este almacena tanto la aplicación de \textit{JHipster} como la base de datos \textit{MySQL} y \textit{Sqoop}. La aplicación de \textit{JHipster}, al tratarse de una aplicación \textit{Spring} se representa como un artefacto dentro de un contenedor \textit{Spring}, el \textit{Spring Container}. Además, allí se define el módulo de \textit{schedulling} implementado por el alumno como un artefacto separado del de la aplicación, aunque a nivel práctico realmente su implementación está ubicada dentro del propio módulo de la aplicación. \textit{Hadoop} aparece en el diagrama como una \textit{base de datos} aparte, por varias razones: en primer lugar, \textit{Hadoop} se puede desplegar en un nodo separado del Servidor. En segundo lugar, se pueden crear varias instancias en diferentes nodos del mismo para conseguir almacenar una cantidad mayor de datos, y proporcionar la aplicación de un componente de almacenamiento escalable.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth,height=15cm,keepaspectratio]{Imagenes/despliegue}
@@ -38,12 +38,62 @@ Diagramas arquitecturales, explicar los diferentes componentes y la manera en la
     \label{fig:despliegue}
 \end{figure}
 
+\subsection{Diagrama de componente y conector.} \label{disenyo.arquitectura.cyc}
+\par El próximo diagrama muestra la visión arquitectural del sistema a nivel de componentes y conectores. En él se representan todos los elementos del sistema junto con las interfaces que ofrecen y utilizan cada uno de ellos. Se observan todas las conexiones que hay entre los distintos componentes y se puede interpretar como una expansión, o una visión de más bajo nivel del diagrama de despliegue. Se entiende el componente \textit{Talend} como los distintos procesos desarrollados con esta herramienta, más que una conexión con el propio programa ya que en ningún momento se requiere de \textit{Talend} más allá que para la construcción de dichos procesos. 
 
-\item \textbf{Diagrama de componente y conector.}
-\item \textbf{Diagrama de clases.}
-\item \textbf{Diagrama de datos.}
-\item \textbf{Diagrama de secuencia.}
-\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Imagenes/cyc}
+    \caption{Diagrama de componente y conector}
+    \label{fig:diag_clases}
+\end{figure}
+
+
+\subsection{Diagrama de clases y paquetes.} \label{disenyo.arquitectura.clases}
+ En el diagrama de la figura \ref{fig:diag_clases} se adjunta el modelo de clases y paquetes correspondiente a la infraestructura que se construyó para soportar el comportamiento mencionado en la sección Implementación del prototipo real (Sección  \ref{implementacion.prototipo}). Dicho diagrama no incluye aquellas partes del código que se generan durante la instanciación de la aplicación con \textit{JHipster} sino únicamente las que el alumno ha desarrollado. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Imagenes/clases}
+    \caption{Diagrama de clases y paquetes para soportar la automatización del \textit{workflow}}
+    \label{fig:diag_clases}
+\end{figure}
+
+\subsection{Diagrama de secuencia.} \label{disenyo.arquitectura.secuencia}
+\par Una vez vista la estructura del diagrama anterior, a continuación se presenta un diagrama de secuencia de ejemplo para ilustrar la interacción de los diferentes componentes y el rol que juegan en el \textit{workflow} desde que los datos se descargan hasta que pasan a visualizarse mediante \textit{JHipster} Para ello se ha hecho uso de un ejemplo \textit{vertical} para los datos de los productos fitosanitarios autorizados de España. Periódicamente, los datos se descargan desde la web del \textit{Magrama} \cite{mapama}, son procesados y almacenados en \textit{Hadoop}, se exponen en \textit{Hive}, se transfieren con \textit{Sqoop} a \textit{MySQL} y \textit{JHipster} es capaz de visualizarlos.
+
+\begin{landscape}
+\begin{figure}[p!]
+    \includegraphics[width=\linewidth]{Imagenes/secuencia}
+    \caption{Diagrama de secuencia del \textit{workflow} implementado}
+    \label{fig:diag_secuencia_workflow}
+\end{figure}
+\end{landscape}
+\bigskip
+
+
+\subsection{Diagrama de datos.} \label{disenyo.arquitectura.datos}
+\par A continuación se muestra el diagrama de datos tal como están almacenados en \textit{Hive}. A pesar de que también se almacenan datos en la base de datos \textit{MySQL}, la estructura presente allí es relativamente sencilla en comparación con la de \textit{Hive} y por lo tanto se ha decidido almacenarla en los anexos, en la sección \ref{a.datos.modelo}. 
+\par 
+Como se puede observar, en la figura \ref{fig:datoshive} aparecen, mediante una estructura de diagrama entidad-relación las entidades que han sido creadas en \textit{Hive}. Por una parte tenemos las entidades \textit{fitosanitario\_con\_id} y \textit{sustancia\_activa\_europa}, que son las entidades principales de la solución. La primera se crea a partir de los datos obtenidos de la primera fuente integrada en el proyecto, proveniente del listado de productos fitosanitarios autorizados en España disponibles en la página web del \textit{Magrama} \cite{mapama}. La segunda son los datos de las sustancias activas provenientes de la base de datos abierta sobre pesticidas a nivel europeo. El resto de entidades presentes en el modelo son el resultado de diferentes operaciones sobre estas dos tablas. A continuación se explica cómo se han conseguido dichas entidades y qué representan. 
+\begin{enumerate}
+\item En primer lugar, la relación marcada con un \textit{1} en el diagrama representa una cierta similitud en el campo \textit{formulado} de la primera tabla y el campo \textit{name} de segunda: El \textit{formulado} incluye el \textit{name} de la segunda tabla. No obstante, los datos no son perfectos: por una parte está el problema del idioma; muchos de los fitosanitarios aparecen en español mientras que las sustancias activas están en inglés, por lo que un mapeo dirécto no daría el 100\% de los \textit{matches}. Otro problema es el de los \textit{campos múltiples}, esto es, en la primera tabla, algunos registros del campo \textit{formulado} incluyen no solo uno, sino varios nombres de sustancias activas. Por lo tanto, haría falta una búsqueda para poder hacer el matching con todas las sustancias activas encontradas.
+\item La relación marcada con un \textit{2} representa la tabla \textit{fito\_active\_substance}, que es el resultado de hacer un mapeo casi directo de la relación mencionada en el punto anterior: Primero, del campo \textit{formulado} nos quedamos únicamente con el nombre de la sustancia activa. Después se hace una operación de \textit{JOIN} para conseguir el \textit{real\_id} (id real de la sustancia activa) de la segunda tabla.
+\item Las relaciones marcadas con un \textit{3} y un \textit{4} surgen de la necesidad de registrar los errores; las tablas \textit{mismatch\_fitosanitario\_fito\_sustancia} y \textit{mismatch\_sustancia\_fito\_sustancia} recogen aquellos fitosanitarios de la primera tabla que no aparecen en la tabla \textit{integrada} (\textit{fito\_active\_substance}) y aquellas sustancias activas de la segunda tabla que tampoco aparecen, respectívamente.
+\end{enumerate}
+
+\begin{landscape}
+\begin{figure}[p!]
+    \centering
+    \includegraphics[width=\linewidth]{Imagenes/datoshive}
+    \caption{Esquema de datos importados en \textit{Hive}}
+    \label{fig:datoshive}
+\end{figure}
+\end{landscape}
+
+
+
 
 
 \section{Estrategia de integración} \label{disenyo.estrategia}

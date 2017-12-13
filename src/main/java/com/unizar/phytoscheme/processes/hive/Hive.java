@@ -29,10 +29,10 @@ public class Hive {
     }
 
     // Hace un drop a la tabla table de Hive
-    public static void dropHiveTable(String hive_database, String hive_table) {
+    public static void dropHiveTable(String hive_db, String hive_table) {
         System.out.println("Borrando la tabla " + hive_table + " de Hive");
         executeExternalProcess(getProperty("hive_executable_23") +
-            " -hiveconf HIVE_TABLE=" + hive_database + "."+ hive_table +
+            " -hiveconf HIVE_TABLE=" + hive_db + "."+ hive_table +
             " -f Scripts/Hive_Scripts/dropHiveTable.hql");
     }
 

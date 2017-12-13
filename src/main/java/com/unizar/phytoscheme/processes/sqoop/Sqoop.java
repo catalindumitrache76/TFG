@@ -8,16 +8,16 @@ import static com.unizar.phytoscheme.processes.common_methods.Common.getProperty
  */
 public class Sqoop {
 
-    public static void exportFromHiveToMySQL(String HiveTable, String MySQLTable){
+    public static void exportFromHiveToMySQL(String hiveTable, String mySQLTable){
         String command = getProperty("sqoop_executable_20") + " export --connect " +
             getProperty("database_connection_url_simple_21") + " --username " +
             getProperty("database_user_17") + " --password " +
             getProperty("database_password_18") + " --table " +
-            MySQLTable + " --export-dir " +
+            mySQLTable + " --export-dir " +
             getProperty("hive_database_22") +
-            HiveTable + "/ -m 1 --fields-terminated-by \";\" --direct \n";
-        System.out.println("Lanzando comando de Sqoop para importar la tabla "+HiveTable +" desde " +
-            "Hive a la tabla "+MySQLTable + " de MySQL.");
+            hiveTable + "/ -m 1 --fields-terminated-by \";\" --direct \n";
+        System.out.println("Lanzando comando de Sqoop para importar la tabla "+hiveTable +" desde " +
+            "Hive a la tabla "+mySQLTable + " de MySQL.");
         System.out.println("Comando: " + command);
 
         executeExternalProcess(command);

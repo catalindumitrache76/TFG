@@ -75,7 +75,6 @@ Como se puede observar, \textit{JHipster} no ofrece soporte oficial para una bas
 \bigskip
 \par
 \paragraph*{Sqoop.}
-textheight
 \par
 Visto el resultado de la prueba anterior y por lo tanto el abandono de ese camino, el paso más lógico que se debía tomar a continuación era añadir un componente intermedio capaz de transferir datos de \textit{Hadoop/Hive} a \textit{MySQL}. Afortunadamente, ese componente existe y se trata de la herramienta \textit{Sqoop}, que permite transferir datos de una tabla de \textit{Hive} a otra tabla de una base de datos relacional, con un formato parecido o igual a la de \textit{Hive}. Así pues, gracias a \textit{Sqoop} conseguíamos disponer del mecanismo mediante el que los datos importados en \textit{Hadoop} podían ser visualizados casi diréctamente (con su previa carga en \textit{Hive}) en el \textit{Front-End} provisto por \textit{JHipster}. 
 
@@ -164,30 +163,7 @@ Teniendo ya el proceso de \textit{Talend} integrado en la aplicación de \textit
 \item A continuación, se debería implementar otro módulo encargado de la carga de dichos datos procesados a una tabla de \textit{Hive}.
 \item Después de eso, se deberían transferir los datos de \textit{Hive} a la base de datos \textit{MySQL} que emplea \textit{JHipster}.
 \end{itemize}
-  \par Así pues, para cada uno de los módulos mencionados se creó un paquete con una clase que contenía los métodos necesarios para lograr sus tareas particulares. A continuación se adjunta un diagrama de clases para ilustrar de una mejor forma la infraestructura que se construyó para soportar el comportamiento mencionado en los puntos anteriores.
-
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Imagenes/Paquete_processes}
-    \caption{Diagrama de clases y paquetes para soportar la automatización del \textit{workflow}}
-    \label{fig:diag_clases}
-\end{figure}
-
-\par Una vez vista la estructura del diagrama anterior, a continuación se presenta un diagrama de secuencia para ilustrar la interacción de los diferentes componentes y el rol que juegan en el \textit{workflow} desde que los datos se descargan hasta que pasan a visualizarse mediante \textit{JHipster}.
-
-\begin{landscape}
-
-\begin{figure}[p!]
-    
-    \includegraphics[width=\linewidth]{Imagenes/processes_sequence}
-    \caption{Diagrama de secuencia del \textit{workflow} implementado}
-    \label{fig:diag_secuencia_workflow}
-\end{figure}
-
-\end{landscape}
-\bigskip
-
+  \par Así pues, para cada uno de los módulos mencionados se creó un paquete con una clase que contenía los métodos necesarios para lograr sus tareas particulares.
 
 
 \par 

@@ -13,11 +13,19 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class Schedule {
+public class Scheduller {
 
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
-    public void scheduller() {
+    private void schedule() {
+
+          show_mismatches();
+//        program_Workflow_Fitosanitario_Hadoop_JHipster();
+//        program_Workflow_SustanciActiva_Hadoop_JHipster();
+//        program_Join_Fito_SustanciaActiva();
+    }
+
+    private void show_mismatches() {
         String hive_database = "tfghivedb";
         String hive_error_table_1 = "mismatch_fitosanitario_fito_sustancia";
         String hive_error_table_2 = "mismatch_sustancia_fito_sustancia";
@@ -33,16 +41,12 @@ public class Schedule {
          */
         Hive.select(hive_database, hive_error_table_1);
         Hive.select(hive_database, hive_error_table_2);
-
-//        program_Workflow_Fitosanitario_Hadoop_JHipster();
-//        program_Workflow_SustanciActiva_Hadoop_JHipster();
-//        program_Join_Fito_SustanciaActiva();
     }
 
-    public static void program_Workflow_Fitosanitario_Hadoop_JHipster() {
+    private static void program_Workflow_Fitosanitario_Hadoop_JHipster() {
 
         String hadoop_dir = "'/user/TFG/Datos_procesados/Espanya/Productos_autorizados'";
-        String hive_database = "tfghivedb";
+        String hive_db = "tfghivedb";
         String hive_table = "fitosanitario_con_id";
         String mysql_table = "fitosanitario";
 
@@ -50,7 +54,7 @@ public class Schedule {
 
         Talend.launchTalendJobEspanya ();
 
-        Hive.insertIntoHiveTable (hadoop_dir, hive_database, hive_table);
+        Hive.insertIntoHiveTable (hadoop_dir, hive_db, hive_table);
 
         MySQL.truncateMySQLTable(mysql_table);
 
@@ -58,7 +62,7 @@ public class Schedule {
     }
 
 
-    public static void program_Workflow_SustanciActiva_Hadoop_JHipster () {
+    private static void program_Workflow_SustanciActiva_Hadoop_JHipster () {
 
         String hadoop_dir = "'/user/TFG/Datos_procesados/Europa/ActiveSubstances'";
         String hive_database = "tfghivedb";
@@ -77,7 +81,7 @@ public class Schedule {
 
     }
 
-    public static void program_Join_Fito_SustanciaActiva () {
+    private static void program_Join_Fito_SustanciaActiva () {
 
         String hive_database = "tfghivedb";
         String hive_table = "fitosanitario_sustancia_activa_europa";

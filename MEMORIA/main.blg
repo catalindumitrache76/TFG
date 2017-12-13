@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: Bibliografia_TFG.bib
-Warning--I didn't find a database entry for "calculadorafreelance"
-You've used 61 entries,
+You've used 62 entries,
             1791 wiz_defined-function locations,
-            631 strings with 9324 characters,
-and the built_in function-call counts, 6176 in all, are:
-= -- 500
-> -- 61
+            633 strings with 9393 characters,
+and the built_in function-call counts, 6276 in all, are:
+= -- 508
+> -- 62
 < -- 0
-+ -- 61
++ -- 62
 - -- 0
 * -- 2
-:= -- 572
-add.period$ -- 128
-call.type$ -- 61
-change.case$ -- 61
+:= -- 581
+add.period$ -- 130
+call.type$ -- 62
+change.case$ -- 62
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 305
-empty$ -- 1099
+cite$ -- 62
+duplicate$ -- 310
+empty$ -- 1117
 format.name$ -- 0
-if$ -- 1660
+if$ -- 1687
 int.to.chr$ -- 0
-int.to.str$ -- 61
+int.to.str$ -- 62
 missing$ -- 0
-newline$ -- 253
+newline$ -- 257
 num.names$ -- 0
-pop$ -- 378
+pop$ -- 384
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 347
+skip$ -- 353
 stack$ -- 0
 substring$ -- 0
-swap$ -- 61
+swap$ -- 62
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 0
-width$ -- 63
-write$ -- 441
-(There was 1 warning)
+width$ -- 64
+write$ -- 448
