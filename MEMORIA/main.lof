@@ -12,17 +12,18 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Diagrama de clases y paquetes para soportar la automatizaci\IeC {\'o}n del \textit {workflow}\relax }}{24}{figure.caption.12}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Diagrama de secuencia del \textit {workflow} implementado\relax }}{25}{figure.caption.13}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema de datos importados en \textit {Hive}\relax }}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Diagrama de clases y paquetes para soportar la automatizaci\IeC {\'o}n del \textit {workflow}\relax }}{28}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de las etapas de la prueba de concepto.\relax }}{30}{figure.caption.15}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de las etapas de la prueba de concepto.\relax }}{31}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Tablero \textit {Trello} para la gesti\IeC {\'o}n de las tareas del proyecto.\relax }}{49}{figure.caption.16}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Esquema de datos importados en \textit {MySQL} y \textit {JHipster}\relax }}{66}{figure.caption.23}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Tablero \textit {Trello} para la gesti\IeC {\'o}n de las tareas del proyecto.\relax }}{50}{figure.caption.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{78}{figure.caption.24}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{79}{figure.caption.25}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{80}{figure.caption.26}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Esquema de datos importados en \textit {MySQL} y \textit {JHipster}\relax }}{70}{figure.caption.24}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{82}{figure.caption.25}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{83}{figure.caption.26}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{84}{figure.caption.27}
 \addvspace {10\p@ }

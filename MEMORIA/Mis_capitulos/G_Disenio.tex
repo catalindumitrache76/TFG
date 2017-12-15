@@ -96,4 +96,29 @@ Como se puede observar, en la figura \ref{fig:datoshive} aparecen, mediante una 
 
 
 
-\section{Estrategia de integración} \label{disenyo.estrategia}
+\section{Estrategia de integración y expansión}
+\label{disenyo.estrategia}
+
+Una vez visto el diseño del sistema, en esta sección se hablará de la estrategia de integración y expansión que gobernará los futuros desarrollos a partir de la infraestructura montada en la realización de este proyecto. 
+
+Como se observará en el desarrollo del prototipo real de la sección \ref{implementacion.prototipo}, realmente gracias a la infraestructura conseguida y a la arquitectura que se ha montado, realizar nuevas funcionalidades y expandir el proyecto no debería suponer un reto y debería ser bastante asequible. En este apartado caben destacar varias líneas posibles de expansión en el proyecto: 
+
+\paragraph*{Aumento de la capacidad de almacenamiento.} Este apartado es bastante trivial, puesto que gracias a \textit{Hadoop}, esto se puede conseguir fácilmente. Tal como se ha comentado, \textit{Hadoop} tiene el potencial de crecimiento mediante nodos adicionales, desplegados en la misma o en diferentes máquinas, con capacidad de almacenamiento extra. Así pues, para que el sistema escalase en cuanto a capacidad de almacenamiento, lo único que se tendría que hacer es desplegar más nodos de \textit{Hadoop} para tener la información repartida en más espacio de almacenamiento. 
+
+\paragraph*{Integración de datos nuevos.} Para integrar nuevos datos en el sistema de nuevas fuentes, la estrategia a seguir debería ser la que se observa en el diagrama de la figura \ref{fig:expansion}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Imagenes/expansion}
+    \caption{Diagrama de clases y paquetes para soportar la automatización del \textit{workflow}}
+    \label{fig:expansion}
+\end{figure}
+
+\paragraph*{Funcionalidades extra.} Aunque realmente este proyecto se ha desarrollado pensando en una expansión futura únicamente en cuanto a la integración de nuevos datos y la esacalabilidad de almacenamiento, gracias a la estructura de la aplicación de \textit{JHipster} es posible dotar al sistema de tantas funcionalidades extra como se desee. 
+
+
+
+
+
+
+

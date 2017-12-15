@@ -21,7 +21,7 @@
 \BOOKMARK [2][-]{subsection.4.3.3}{Diagrama de clases y paquetes.}{section.4.3}% 21
 \BOOKMARK [2][-]{subsection.4.3.4}{Diagrama de secuencia.}{section.4.3}% 22
 \BOOKMARK [2][-]{subsection.4.3.5}{Diagrama de datos.}{section.4.3}% 23
-\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 24
 \BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 25
 \BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 26
 \BOOKMARK [1][-]{section.5.2}{Prototipo real}{chapter.5}% 27
@@ -36,10 +36,10 @@
 \BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 36
 \BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 37
 \BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 38
-\BOOKMARK [0][-]{section*.18}{Glosario}{}% 39
-\BOOKMARK [0][-]{chapter*.20}{Lista de Figuras}{}% 40
-\BOOKMARK [0][-]{chapter*.21}{Lista de Tablas}{}% 41
-\BOOKMARK [0][-]{section*.22}{Anexos}{}% 42
+\BOOKMARK [0][-]{section*.19}{Glosario}{}% 39
+\BOOKMARK [0][-]{chapter*.21}{Lista de Figuras}{}% 40
+\BOOKMARK [0][-]{chapter*.22}{Lista de Tablas}{}% 41
+\BOOKMARK [0][-]{section*.23}{Anexos}{}% 42
 \BOOKMARK [0][-]{appendix.Alph1}{Datos}{}% 43
 \BOOKMARK [1][-]{section.Alph1.1}{Esquema de datos}{appendix.Alph1}% 44
 \BOOKMARK [1][-]{section.Alph1.2}{Flujo de datos}{appendix.Alph1}% 45

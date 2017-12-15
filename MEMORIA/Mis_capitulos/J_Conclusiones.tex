@@ -1,9 +1,60 @@
 \chapter{Conclusiones}  \label{conclusiones}
+
+En este capítulo se hablará de las conclusiones sacadas tras finalizar el proyecto. ¿Se han conseguido los objetivos propuestos? ¿Están todos los requisitos cubiertos? ¿Está bien documentada la solución? ¿Es escalable? Se intentará responder a estas preguntas de la manera más concisa y sincera posible. 
+
 \section{Resultados y objetivos} \label{conclusiones.resultados}
-Se han conseguido los objetivos propuestos ? Están todos los requisitos cubiertos? Está bien documentada la solución? Es escalable ? …
+
+(\textbf{HAY QUE HACER EL DE LA TRAZABILIDAD!!!})
+
+ Haciendo una retrospectiva global de los avances conseguidos en este proyecto se puede llegar a la conclusión de que se han conseguido todos los objetivos propuestos en el inicio del mismo. A continuación se van a exponer los requisitos funcionales que han sido establecidos durante la fase de análisis (recogidos en la sección \ref{analisis.requisitos}) y se va a razonar el porqué de la consecución y finalización de cada uno de ellos. 
+ \begin{itemize}
+ \item \textbf{RFS\_1. } \textit{El sistema deberá recolectar los datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo.} - Este requisito está cumplido puesto que, como se puede observar tanto en el capítulo del Diseño (\ref{disenyo}) como en el de la Implementación (\ref{implementacion}), tanto los datos sobre productos fitosanitarios autorizados de España como las sustancias activas a nivel europeo forman parte de las fuentes que se han integrado en el sistema.
+ \item \textbf{RFS\_2. } \textit{El sistema deberá almacenar la última versión de los datos recolectados en el RFS\_1 en su formato original y además mantener todas las versiones descargadas de las mismas.} - Este requisito también se cumple puesto que los datos originales descargados periódicamente se almacenan en \textit{Hadoop} en una carpeta llamada \textit{Datos\_en\_crudo} con la fecha y hora exacta de su descarga y además dichos datos nunca son borrados. 
+ \item \textbf{RFS\_3. } \textit{El sistema deberá monitorizar y almacenar los procesos de recolección de los datos de entrada, así como las rutas de su procesado.} - Otro requisito cumplido, puesto que la aplicación de \textit{JHipster} es la que se encarga tanto de almacenar los procesos de \textit{Talend} en su formato \textit{JAR} como de programar su ejecución de manera periódica y asegurarse de un funcionamiento correcto del mismo.  
+ \item \textbf{RFS\_4. } \textit{El sistema deberá ofrecer la infraestructura y herramientas de configuración necesarias para que futuros desarrolladores puedan integrar otras fuentes de datos de manera rápida y eficiente.} - Como se puede ver en la sección \ref{disenyo.estrategia} del capítulo del Diseño, se ha creado una infraestructura capaz de ofrecer un mecanismo sencillo para futuros desarrollos. Tanto integrar nuevos datos como expandir el proyecto en otros ámbitos funcionales no debería ser un problema para los siguientes programadores que retomen este trabajo; por lo tanto se puede dar por cumplido este requisito. 
+ \item \textbf{RFS\_5. } \textit{El sistema deberá implementar un modelo de aplicación consistente, ejemplificando un ciclo de vida típico de los datos, desde su recogida, su procesamiento, su posterior integración en un modelo más completo y su presentación en un \textit{Front-End} de ejemplo.} - El requisito RFS\_5 también se puede considerar como conseguido dado que, tanto para los datos sobre productos fitosanitarios autorizados de España como para las sustancias activas a nivel europeo dicho ciclo de vida típico ha sido implementado; los datos se descargan, se procesan, se almacenan en \textit{Hadoop}, se transfieren de \textit{Hive} a \textit{MySQL} y se visualizan con \textit{JHipster}.
+ \item \textbf{RFS\_6. } \textit{El sistema deberá implementar un mecanismo de detección de errores e inconsistencias en los datos provenientes de fuentes heterogéneas.} - Como se ha observado en el capítulo de la Implementación del prototipo real (\ref{implementacion.prototipo}), se ha implementado un módulo que se encarga de mostrar los datos inconsistentes resultantes de la integración de las dos fuentes principales de este proyecto. Así pues, este requisito también se da por válido. 
+ \end{itemize}
+ 
+ En cuanto a los requisitos funcionales del proyecto como desarrollo global, aparecían los siguientes en la captura de requisitos: 
+\begin{itemize}
+\item \textbf{RFP\_1. }
+\textit{El proyecto deberá incluir una memoria en la que se documentan todos los pasos y procesos involucrados en su construcción.} - Requisito validado puesto que esta es dicha memoria. 
+\item \textbf{RFP\_2. }
+\textit{Se deberá mantener constancia del esfuerzo dedicado durante el proyecto.} - Requisito cumplido puesto que los esfuerzos se han ido manteniendo mediante la hoja de cálculo de \textit{Drive}.
+\item \textbf{RFP\_3. }
+\textit{El proyecto deberá mantener un control de versiones actualizado en todo momento. } - Requisito cumplido puesto que el proyecto se ha subido a \textit{GitHub} y a través de su sistema de commits se ha mantenido un riguroso control de versiones.
+\end{itemize}
+ 
+ A pesar de haber comprobado que todos y cada uno de los requisitos funcionales han sido cumplidos al 100\%, hay que mencionar y tener en cuenta las siguientes consideraciones:
+\begin{itemize}
+\item El módulo de gestión de errores está en una versión primitiva, esto es, no se ha profundizado en su desarrollo, y al momento de la finalización de este \textit{TFG} el módulo de gestión de errores únicamente recoge aquellos registros que no han podidos ser integrados, sin hacer ningún análisis posterior. A efectos de este \textit{TFG} no es un problema puesto que no era un aspecto que se perseguía. 
+\item El módulo de la integración de varias fuentes en un esquema único tambResumir los conocimientos tanto a nivel personal como a nivel de tecnologías adquiridos.
+ién aparece dentro de un desarrollo primitivo; A pesar de una transformación previa de los datos de ambas tablas con el objetivo de conseguir un \textit{match} razonable, únicamente se consigue un porcentaje de coincidencias del 30\% y por tanto tan sólo esa cantidad de los datos resulta integrada. A pesar de ello, es casi trivial la manera en la que un futuro desarrollador pueda mejorar esta funcionalidad. Además, conseguir una integración perfecta no formaba parte de los objetivos del \textit{TFG} y por lo tanto no supone un problema ni un inconveniente en esta iteración.
+\end{itemize}
 
 \section{Conocimientos adquiridos} \label{conclusiones.conocimientos}
 Resumir los conocimientos tanto a nivel personal como a nivel de tecnologías adquiridos.
- 
 
+En cuanto a herramientas y tecnologías: 
+\begin{itemize}
+ \item Hadoop - BigData
+ \item Hive
+ \item Talend
+ \item Kettle
+ \item JHipster
+ \item Spring
+ \item Ficheros de configuracion
+ \item Maven
+ \item Sqoop
+ \item Latex (texmaker)
+ \end{itemize} 
+
+En cuanto a nivel personal:
+\begin{itemize}
+ \item Perseverancia
+ \item Aceptar el cambio (Kettle - Talend) 
+ \item Buscar alternativas
+ \item Confiar más en mi mismo y darme cuenta de que soy capaz de tomar decisiones por mi cuenta?????
+ \end{itemize} 
  
