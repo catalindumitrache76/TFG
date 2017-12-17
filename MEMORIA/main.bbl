@@ -1,5 +1,21 @@
 \begin{thebibliography}{10}
 
+\bibitem{manualseguridad}
+Manual de seguridad y salud durante la exposición a productos fitosanitarios.
+\newblock
+  http://prevencion.fremap.es/Buenas\%20prcticas/MAN.008\%20(castellano)\%20-\%20M.S.S.\%20Exp.\%20Productos\%20Fi.pdf.
+
+\bibitem{aplicacionfitosanitarios}
+Aplicación de productos fitosanitarios nivel cualificado.
+\newblock
+  http://www.juntadeandalucia.es/export/drupaljda/publicacion/17/03/PLAGUICIDAS\_baja.pdf.
+
+\bibitem{buenaspracticas}
+Manual de buenas prácticas en lafitosanitarios de los productos
+  fitosanitarios.
+\newblock
+  http://www.mapama.gob.es/es/ministerio/servicios/informacion/Buenas-practicas-fitosanitarios\_tcm7-330044.pdf.
+
 \bibitem{mapama}
 Página web del ministerio de agricultura y pesca, alimentación y medio
   ambiente de españa.
@@ -185,6 +201,10 @@ Trello.
 \bibitem{calculadorafreelance}
 Página web calculadora frepágina.
 \newblock http://www.calculadorafreelance.com.
+
+\bibitem{latex}
+Latex.
+\newblock https://www.latex-project.org.
 
 \bibitem{cricyt}
 Centro científico tecnológico (cct) mendoza.
