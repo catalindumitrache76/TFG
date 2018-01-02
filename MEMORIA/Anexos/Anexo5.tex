@@ -1,0 +1,73 @@
+\chapter{Diseño} 
+\label{e.disenyo}
+\section{Prueba de concepto en detalle} 
+\label{e.disenyo.pruebaconcepto}
+A continuación se van a presentar detalladamente las herramientas usadas y las pruebas realizadas durante el desarrollo de la prueba de concepto. Además, se van a exponer algunos de los retos enfrentados durante la duración de la misma y la manera en la que se han ido solucionando. Una visión gráfica y temporal del desarrollo de la prueba de concepto se puede observar en la figura \ref{fig:pruebaconceptoglobal}. 
+
+\par
+\paragraph*{Hadoop.}
+
+\par
+Inicialmente la instalación de \textit{Hadoop} supuso algunos problemas puesto que el alumno no había tenido contacto con la herramienta previamente, y la \textit{información} \cite{hadoop_installation_bad} que el alumno seleccionó como base para la instalación estaba desafortunadamente incorrecta (la instalación disponible en dicha web había sido probada con \textit{Ubuntu Linux 10.04}, pero no con la versión del alumno, la \textit{16.04}). Por lo tanto, se tuvo que empezar de cero, eliminando cualquier rastro de la primera instalación de \textit{Hadoop} del sistema. Después de ello, en un segundo intento, y gracias al \textit{tutorial de instalación de Hadoop de Digital Ocean} \cite{hadoop_installation} el programa funcionó correctamente y se procedió a instalar el siguiente bloque software necesario para el funcionamiento del sistema: \textit{Hive}.
+
+
+\par
+\paragraph*{Hive.}
+
+\par
+Para la instalación de \textit{Hive} ocurrió un problema similar al de \textit{Hadoop}. La fuente elegida para su instalación no fue la adecuada en un principio; el alumno eligió el tutorial expuesto en la web \textit{Tutorial's Point} \cite{hivetutorialspoint}, que provee información no solo excesiva sino en ocasiones confusa. Como en el caso anterior, se tuvo que erradicar \textit{Hive} del sistema para proceder con una instalación más limpia, esta vez desde la \textit{página web oficial de Hive} \cite{hive_installation}, puesto que lo único requerido para su instalación fue su descarga y la declaración de las variables de entorno necesarias para su ejecución. De esta manera, se consiguió instalar la versión 2.2.1 de \textit{Hive} sin dificultades. 
+
+
+\par
+\paragraph*{JHipster: Instalación.}
+
+\par
+Lo siguiente que se probó fue a instalar \textit{JHipster}. Como \textit{Java} y \textit{Node.js} \cite{nodejs}, dos de los componentes necesarios para su instalación ya estaban configurados en el equipo, lo único que se tuvo que configurar fue \textit{Yarn}, que se hizo siguiendo los pasos recomendados para \textit{Linux} en la \textit{página oficial de Yarn} \cite{yarninstall} para poder instalar \textit{JHipster} con el comando \textit{yarn global add generator-jhipster}, tal como indica la página oficial de \textit{JHipster}. Esto en sí fue facil, y no supuso mayor problema; No obstante, el desconocimiento de \textit{Yarn} junto con las actualizaciones periódicas que se introducían en \textit{JHipster} hicieron que más de una vez se tuviese que borrar \textit{JHipster} del equipo y volver a instalarlo en su última versión.  
+
+
+\par
+\paragraph*{JHipster: Aplicación de prueba.}
+
+\par
+Con \textit{JHipster} instalado y configurado en el sistema, el siguiente paso obvio fue crear una aplicación y verla en funcionamiento. Para ello se siguió el tutorial del que se provee en la \textit{página oficial} \cite{jhipster}. La creación de la aplicación con JHipster resultó bastante sencillo puesto que se trata de pasos secuenciales. No obstante, dado que en la web no existe mucha información acerca de la integración de un proyecto  \textit{JHipster} con \textit{IntelliJ} \cite{intellij} (entorno de desarrollo usado por el alumno), el arranque resultó bastante frustrante. El poco dominio que el alumno tenía tanto de \textit{Gradle} como del propio entorno supuso un reto en las fases tempranas del proyecto, que se superó a base de leer documentación y realizar diversos intentos hasta que por fin se consiguió una versión de la aplicación corriendo en local, en el puerto 8080. 
+
+
+\par
+\paragraph*{Integración Hadoop - Hive - JHipster.}
+
+\par
+Si bien es cierto que la integración entre \textit{Hive} y \textit{Hadoop} resulta casi trivial, la integración entre \textit{Hive} y \textit{JHipster} es todo lo contrario. En primer lugar, se quería conectar \textit{Hive} con \textit{Hadoop} para disponer de una ayuda relacional para poder hacer consultas sobre datos en formatos no relacionales. Su configuración se realizó modificando los ficheros de configuración dentro del directorio de instalación de \textit{Hive}, para permitir una conexión entre los servicios de \textit{Hive} y los nodos de \textit{Hadoop}. En segundo lugar, la conexión entre \textit{Hive} y \textit{JHipster} se quería realizar para tener un flujo directo entre la información que se muestra en pantalla desde \textit{JHipster} y los datos que son importados en \textit{Hadoop} desde las diferentes fuentes. Para ello hay que tener en cuenta que cuando se crea una aplicación con \textit{JHipster}, este pregunta por la base de datos que se quiera usar tanto en producción como en desarrollo. Actualmente \textit{JHipster} ofrece soporte para las siguientes bases de datos: \textit{\gls{mongodb}}, \textit{\gls{cassandra}}, o una base de datos SQL (\textit{\gls{h2}}, \textit{\gls{mysql}}, \textit{\gls{mariadb}}, \textit{\gls{postgresql}}, \textit{\gls{mssql}}, \textit{\gls{oracle}}).
+Como se puede observar, \textit{JHipster} no ofrece soporte oficial para una base de datos correspondiente ni a \textit{Hive}, ni a \textit{Hadoop}. Por eso, inicialmente la aplicación de \textit{JHipster} se creó con una base de datos relacional \textit{MySQL} puesto que su sintáxis es la más parecida a la de \textit{Hive} (aunque no es igual). El objetivo en este caso fue conectar \textit{JHipster} con \textit{Hive} diréctamente, sustituyendo de alguna manera la base de datos \textit{MySQL} y cambiando cualquier interacción que se tuviera con ella. No obstante, las tablas que se crean durante la creación de la aplicación se crean con una sintáxis propia de \textit{MySQL}, en la base de datos \textit{MySQL} y con un esquema a priori no visible. Tras muchas horas invertidas, muchos portales consultados, muchas preguntas en diversos foros de Internet, esta tarea se marcó como inalcanzable y se procedió a buscar otras soluciones con una viabilidad más alta. 
+
+
+\par
+\paragraph*{Sqoop.}
+\par
+Visto el resultado de la prueba anterior y por lo tanto el abandono de ese camino, el paso más lógico que se debía tomar a continuación era añadir un componente intermedio capaz de transferir datos de \textit{Hadoop/Hive} a \textit{MySQL}. Afortunadamente, ese componente existe y se trata de la herramienta \textit{Sqoop}, que permite transferir datos de una tabla de \textit{Hive} a otra tabla de una base de datos relacional, con un formato parecido o igual a la de \textit{Hive}. Así pues, gracias a \textit{Sqoop} conseguíamos disponer del mecanismo mediante el que los datos importados en \textit{Hadoop} podían ser visualizados casi diréctamente (con su previa carga en \textit{Hive}) en el \textit{Front-End} provisto por \textit{JHipster}. 
+
+
+\par
+\paragraph*{Estado de la prueba de concepto.}
+
+\par
+Con \textit{Hive} conectado a \textit{Hadoop}, \textit{Sqoop} en marcha y una aplicación \textit{JHipster} de prueba para ver un primer resultado de la integración de los datos, el sistema funcionaba acorde a las espectativas del \textit{workflow} de la información: Almacen de los datos en \textit{Hadoop} tanto en su versión ``en crudo'' como en una versión procesada, recuperación de los datos procesados desde \textit{Hive}, transferencia de los mismos a la base de datos \textit{MySQL} mediante \textit{Sqoop} y visualización por pantalla mediante la aplicación de \textit{JHipster}. No obstante, analizando el estado de la prueba de concepto, se podía observar que en el anterior proceso faltaban tres cosas: 
+\begin{itemize}
+\item \textbf{Automatización} de las tareas involucradas: Hasta este punto, cualquier parte del proceso requería de la intervención manual de un usuario, esto es, descarga de los datos desde sus fuentes, procesado de los mismos, carga de la información en \textit{Hadoop}, creación de una tabla en \textit{Hive} correspondiente a los datos de dicha fuente particular, carga de los datos desde \textit{Hadoop} a \textit{Hive} y la transferencia de los mismos mediante \textit{Sqoop} hacia la base de datos de \textit{JHipster}, \textit{MySQL}. Viene siendo evidente la necesidad de un mecanismo que permita la automatización de todas estas tareas, con una intervención mínima por parte de un usuario. Esto permitiría aparte de un incremento considerable en el tiempo de resolución del \textit{workflow}, un desarrollo futuro más ágil y sencillo. 
+\item \textbf{Procesado de los datos} de manera eficaz: El \textit{TFG} requería de un módulo de procesado de datos puesto que, como ya se ha explicado en ocasiones durante esta memoria, los datos pueden provenir de diferentes fuentes en formatos heterogéneos. Así pues, una carencia en este punto era esa herramienta o módulo que permitiera trabajar con datos en distintos formatos de una manera rapida y eficaz. Previamente los datos se habían ``procesado'' manualmente, con un sencillo editor de texto. 
+\item \textbf{Actualización periódica} de la ejecución de todas las tareas: Teniendo en mente una visión futura y acabada del proyecto, otro aspecto que se echaba en falta en este punto era la posibilidad de que todo el \textit{workflow} se ejecutase de manera periódica, obteniendo con esto una gran ventaja: la de proveer al consumidor de unos datos actualizados en todo momento. 
+\end{itemize}
+
+
+\par
+\paragraph*{Kettle.}
+
+\par
+Dejándo de lado la \textit{automatización de las tareas involucradas} y \textit{la actualización periódica de la ejecución de todas las tareas}, lo siguiente que se abordó durante la prueba de concepto fue el problema del \textit{procesado de los datos}. Para ello se requería del uso de alguna herramienta capaz de conectarse con \textit{Hive} o con \textit{Hadoop}, cuya especialidad sean las operaciones \textit{ETL}. El director del proyecto impuso para esto la herramienta \textit{Pentaho - Kettle} \cite{kettle} dada su previa experiencia con este tipo de programas, sobretodo en el área \textit{``GEO''}. Así pues, dentro del abanico de los diferentes productos de \textit{Pentaho} \cite{pentaho} se encontraba \textit{Pentaho Data Integration}, también conocida como \textit{Kettle}, herramienta libre y gratuita con un diseñador gráfico para realizar operaciones \textit{ETL} que, según mencionaba, permitía una integración sencilla con diferentes tecnologías como \textit{Hive} y \textit{Hadoop}, e incluso ofrecía soporte para una integración con proyectos \textit{Java}. Según las especificaciones del producto, parecía que encajaba perfectamente con las necesidades del proyecto. No obstante, resultó en un dolor de cabeza constante desde el momento de su instalación. No solo la interfaz del programa presentaba fallos, mezclando módulos en español con módulos en inglés o duplicando algunas funcionalidades, sino que además, el intento de migrar los procesos construidos en \textit{Pentaho Data Integration} a la aplicación de \textit{JHipster} resultaron en muchas horas de frustración, errores y hasta largas tutorías con el director del proyecto para intentar portar el código. Tras muchos días o incluso semanas de intentos y diversas formas de abordar el problema, lo que realmente acabó por apartar \textit{Kettle} del \textit{Stack Tecnológico} fue la adquisición de \textit{Pentaho} por parte de \textit{Hitachi} \cite{hitachi}, privatizando el producto bajo el nombre de \textit{Hitachi Vantara} \cite{hitachivantara} y ofreciéndo sólamente una versión de prueba del mismo. 
+
+
+\par
+\paragraph*{Talend.}
+
+\par
+Tras la privatización de \textit{Kettle} y las tantas horas dedicadas a su integración dentro del proyecto de \textit{JHipster}, se descartó \textit{Pentaho} como parte del \textit{Stack Tecnológico} y se empezó a buscar otras alternativas. La primera herramienta explorada fue \textit{KNIME} \cite{knime} por recomendación de un compañero. Tras hacer algunas pruebas rápidas, se descubrió que realmente, aunque se ofertase como herramienta libre y gratuita, que lo era, algunas de sus funcionalidades eran de pago. La siguiente opción explorada fue \textit{Talend} \cite{talend}, que resultó ser la pieza clave para el funcionamiento del proyecto gracias a la sencillez de sus componentes, a la efectividad de su editor gráfico y gracias a una documentación extensa y bien organizada. A diferencia de las otras opciones para el procesado de los ficheros, con \textit{Talend} se consiguió realizar una demostración de su funcionamiento mediante un sencillo proceso integrado en un proyecto \textit{Java} nuevo, totalmente funcional. Ese proyecto posteriormente se empaquetó en un \textit{.jar} y se exportó al proyecto de \textit{JHipster} desde el que se pudo ejecutar con éxito, sin ningún problema de compatibilidad con el código ya existente.  
+	

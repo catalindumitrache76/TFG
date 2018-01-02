@@ -68,6 +68,10 @@ Preguntas y respuestas frecuentes sobre el registro de productos fitosanitarios
 \newblock
   http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/FAQ.pdf.
 
+\bibitem{kettle}
+Pentaho data integration.
+\newblock http://www.pentaho.com/product/data-integration.
+
 \bibitem{hadoop}
 Apache\textsuperscript{TM} hadoop\textregistered.
 \newblock http://hadoop.apache.org.
@@ -103,10 +107,6 @@ Angularjs.
 Talend.
 \newblock https://www.talend.com.
 
-\bibitem{kettle}
-Pentaho data integration.
-\newblock http://www.pentaho.com/product/data-integration.
-
 \bibitem{pesticides_eu}
 Base de datos europea sobre pesticidas.
 \newblock
@@ -115,54 +115,6 @@ Base de datos europea sobre pesticidas.
 \bibitem{wikicrawler}
 Wikipedia - crawler web.
 \newblock https://en.wikipedia.org/wiki/Web\_crawler.
-
-\bibitem{hadoop_installation_bad}
-Tutorial de instalación de hadoop incorrecto para la versión ubuntu (16.04)
-  del alumno.
-\newblock
-  \seqsplit{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}.
-
-\bibitem{hadoop_installation}
-Tutorial de instalación de hadoop de digital ocean para ubuntu 16-04.
-\newblock
-  \seqsplit{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}.
-
-\bibitem{hivetutorialspoint}
-Tutorial de tutorial's point para la instalación de hive.
-\newblock https://www.tutorialspoint.com/hive/index.htm.
-
-\bibitem{hive_installation}
-Página de hive - sección de instalación.
-\newblock
-  \seqsplit{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}.
-
-\bibitem{nodejs}
-Node.js \textregistered.
-\newblock https://nodejs.org/en/.
-
-\bibitem{yarninstall}
-Página oficial de yarn - instalación en linux ubuntu.
-\newblock https://yarnpkg.com/en/docs/install.
-
-\bibitem{intellij}
-Intellij idea.
-\newblock https://www.jetbrains.com/idea/.
-
-\bibitem{pentaho}
-Pentaho.
-\newblock http://www.pentaho.com.
-
-\bibitem{hitachi}
-Hitachi.
-\newblock http://www.hitachi.com.
-
-\bibitem{hitachivantara}
-Hitachi vantara.
-\newblock http://www.pentaho.com/product/data-integration.
-
-\bibitem{knime}
-Knime.
-\newblock https://www.knime.com.
 
 \bibitem{cloudera}
 Repositorio de cloudera.
@@ -229,18 +181,62 @@ Glosario de términos del mapama.
 Gnu general public license.
 \newblock https://www.gnu.org/licenses/gpl.html.
 
+\bibitem{hadoop_installation}
+Tutorial de instalación de hadoop de digital ocean para ubuntu 16-04.
+\newblock
+  \seqsplit{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}.
+
+\bibitem{hadoop_installation_bad}
+Tutorial de instalación de hadoop incorrecto para la versión ubuntu (16.04)
+  del alumno.
+\newblock
+  \seqsplit{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}.
+
+\bibitem{hitachi}
+Hitachi.
+\newblock http://www.hitachi.com.
+
+\bibitem{hitachivantara}
+Hitachi vantara.
+\newblock http://www.pentaho.com/product/data-integration.
+
+\bibitem{hive_installation}
+Página de hive - sección de instalación.
+\newblock
+  \seqsplit{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}.
+
+\bibitem{hivetutorialspoint}
+Tutorial de tutorial's point para la instalación de hive.
+\newblock https://www.tutorialspoint.com/hive/index.htm.
+
+\bibitem{intellij}
+Intellij idea.
+\newblock https://www.jetbrains.com/idea/.
+
 \bibitem{java}
 Java \textsuperscript{TM}.
 \newblock https://java.com/es/.
+
+\bibitem{knime}
+Knime.
+\newblock https://www.knime.com.
 
 \bibitem{mysql}
 Mysql.
 \newblock https://www.mysql.com.
 \newblock Version XXXXXX.
 
+\bibitem{nodejs}
+Node.js \textregistered.
+\newblock https://nodejs.org/en/.
+
 \bibitem{oraclecorporation}
 Oracle corporation.
 \newblock https://www.oracle.com/index.html.
+
+\bibitem{pentaho}
+Pentaho.
+\newblock http://www.pentaho.com.
 
 \bibitem{wikibigdata}
 Wikipedia - big data.
@@ -293,5 +289,9 @@ Oracle database.
 \bibitem{wikipostgresql}
 Wikipedia - postgresql.
 \newblock https://es.wikipedia.org/wiki/PostgreSQL.
+
+\bibitem{yarninstall}
+Página oficial de yarn - instalación en linux ubuntu.
+\newblock https://yarnpkg.com/en/docs/install.
 
 \end{thebibliography}

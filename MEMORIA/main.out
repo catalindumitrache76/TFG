@@ -7,46 +7,51 @@
 \BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 7
 \BOOKMARK [1][-]{section.3.1}{An\341lisis del problema}{chapter.3}% 8
 \BOOKMARK [1][-]{section.3.2}{Propuesta de valor e intermediarios}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.3}{An\341lisis de requisitos - T\351cnica moscow}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.3}{An\341lisis de requisitos. Priorizaci\363n moscow}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.4}{An\341lisis de riesgos}{chapter.3}% 11
 \BOOKMARK [1][-]{section.3.5}{An\341lisis del contexto tecnol\363gico}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.6}{Elecci\363n del Stack Tecnol\363gico}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.7}{Captura de requisitos final}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Dise\361o final}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{Arquitectura del sistema}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.3.1}{Diagrama de despliegue.}{section.4.3}% 19
-\BOOKMARK [2][-]{subsection.4.3.2}{Diagrama de componente y conector.}{section.4.3}% 20
-\BOOKMARK [2][-]{subsection.4.3.3}{Diagrama de clases y paquetes.}{section.4.3}% 21
-\BOOKMARK [2][-]{subsection.4.3.4}{Diagrama de secuencia.}{section.4.3}% 22
-\BOOKMARK [2][-]{subsection.4.3.5}{Diagrama de datos.}{section.4.3}% 23
-\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 24
-\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 26
-\BOOKMARK [1][-]{section.5.2}{Prototipo real}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.3}{Problemas encontrados}{chapter.5}% 28
-\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 29
-\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 30
-\BOOKMARK [1][-]{section.6.2}{Pautas e imposiciones}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.3}{Organizaci\363n y control de versiones}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.4}{Control de esfuerzos}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.5}{Estimaci\363n del coste}{chapter.6}% 34
+\BOOKMARK [1][-]{section.4.1}{Restricciones al dise\361o}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.2}{Dise\361o conceptual}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.3}{Dise\361o final}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.4}{Arquitectura del sistema}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.4.1}{Diagrama de despliegue.}{section.4.4}% 20
+\BOOKMARK [2][-]{subsection.4.4.2}{Diagrama de componente y conector.}{section.4.4}% 21
+\BOOKMARK [2][-]{subsection.4.4.3}{Diagrama de clases y paquetes.}{section.4.4}% 22
+\BOOKMARK [2][-]{subsection.4.4.4}{Diagrama de secuencia.}{section.4.4}% 23
+\BOOKMARK [2][-]{subsection.4.4.5}{Diagrama de datos.}{section.4.4}% 24
+\BOOKMARK [1][-]{section.4.5}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 25
+\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 26
+\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.2}{Prototipo}{chapter.5}% 28
+\BOOKMARK [1][-]{section.5.3}{Problemas encontrados}{chapter.5}% 29
+\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.2}{Organizaci\363n y control de versiones}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.3}{Control de esfuerzos}{chapter.6}% 33
+\BOOKMARK [1][-]{section.6.4}{Estimaci\363n del coste}{chapter.6}% 34
 \BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 35
 \BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 36
 \BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 37
 \BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 38
-\BOOKMARK [0][-]{section*.19}{Glosario}{}% 39
-\BOOKMARK [0][-]{chapter*.21}{Lista de Figuras}{}% 40
-\BOOKMARK [0][-]{chapter*.22}{Lista de Tablas}{}% 41
-\BOOKMARK [0][-]{section*.23}{Anexos}{}% 42
+\BOOKMARK [0][-]{section*.21}{Glosario}{}% 39
+\BOOKMARK [0][-]{chapter*.23}{Lista de Figuras}{}% 40
+\BOOKMARK [0][-]{chapter*.24}{Lista de Tablas}{}% 41
+\BOOKMARK [0][-]{section*.25}{Anexos}{}% 42
 \BOOKMARK [0][-]{appendix.Alph1}{Datos}{}% 43
 \BOOKMARK [1][-]{section.Alph1.1}{Esquema de datos}{appendix.Alph1}% 44
 \BOOKMARK [1][-]{section.Alph1.2}{Flujo de datos}{appendix.Alph1}% 45
 \BOOKMARK [0][-]{appendix.Alph2}{Clientes}{}% 46
 \BOOKMARK [1][-]{section.Alph2.1}{Clientes potenciales}{appendix.Alph2}% 47
 \BOOKMARK [0][-]{appendix.Alph3}{An\341lisis}{}% 48
-\BOOKMARK [1][-]{section.Alph3.1}{An\341lisis de riesgos completos}{appendix.Alph3}% 49
-\BOOKMARK [1][-]{section.Alph3.2}{An\341lisis de dise\361os alternativos}{appendix.Alph3}% 50
-\BOOKMARK [0][-]{appendix.Alph4}{Gesti\363n}{}% 51
-\BOOKMARK [1][-]{section.Alph4.1}{C\341lculo del coste de la hora de trabajo del alumno}{appendix.Alph4}% 52
+\BOOKMARK [1][-]{section.Alph3.1}{An\341lisis de requisitos}{appendix.Alph3}% 49
+\BOOKMARK [2][-]{subsection.Alph3.1.1}{Captura inicial de requisitos}{section.Alph3.1}% 50
+\BOOKMARK [2][-]{subsection.Alph3.1.2}{T\351cnica moscow}{section.Alph3.1}% 51
+\BOOKMARK [1][-]{section.Alph3.2}{An\341lisis de riesgos completos}{appendix.Alph3}% 52
+\BOOKMARK [1][-]{section.Alph3.3}{An\341lisis de dise\361os alternativos}{appendix.Alph3}% 53
+\BOOKMARK [0][-]{appendix.Alph4}{Gesti\363n}{}% 54
+\BOOKMARK [1][-]{section.Alph4.1}{C\341lculo del coste de la hora de trabajo del alumno}{appendix.Alph4}% 55
+\BOOKMARK [0][-]{appendix.Alph5}{Dise\361o}{}% 56
+\BOOKMARK [1][-]{section.Alph5.1}{Prueba de concepto en detalle}{appendix.Alph5}% 57

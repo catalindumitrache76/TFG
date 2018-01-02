@@ -1,4 +1,51 @@
 \chapter{Análisis} \label{c.analisis}
+
+
+
+\section{Análisis de requisitos} 
+\label{c.analisis.requisitos}
+
+\subsection{Captura inicial de requisitos} 
+\label{c.analisis.requisitos.iniciales}
+\par El listado que se provee a continuación supone el resultado de la captura inicial de los requisitos sin filtrar ni categorizar. En la sección principal de la memoria correspondiente a este anexo (sección \ref{phytoscheme.requisitos}) se puede observar este listado tras haber sido priorizado mediante la \textit{Técnica \gls{moscow}}.
+
+\begin{itemize}
+\item Módulo de trazabilidad de los datos desde las fuentes originales hasta su visualización. 
+\item Integración de más de dos fuentes de datos heterogéneas. 
+\item Una memoria extensa y detallada.  
+\item Mecanismo de control de versiones.
+\item Desarrollo de tests adicionales en el proyecto de \textit{JHipster}
+\item Desarrollo dirigido por un paradigma de inversión de independencias para conseguir un control centralizado.
+\item Mecanismo de control de esfuerzos.
+\item Genericidad en cuanto al soporte de integración de los datos de diferentes fuentes basado en un fichero de claves y valores. 
+\item Ofrecer la infraestructura y las herramientas de configuración necesarias para una expansión futura del proyecto. 
+\item Monitorizar y almacenar los procesos de recolección de los datos de entrada así como las rutas de su procesado.
+\item Recolectar datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo. 
+\item Rediseño y desarrollo en el lado del \textit{Front-End}.
+\item Mecanismo de detección de errores e inconsistencias en los datos provenientes de diferentes fuentes.
+\item Soporte para la búsqueda de registros (datos) desde la interfaz web. 
+\item Almacenar la última versión de los datos en formato original y además mantener todas las versiones descargadas. 
+\item Implementar un modelo de aplicación consistente, ejemplificando el ciclo de vida típico de los datos desde su recogida hasta su presentación visual. 
+\end{itemize}
+
+\subsection{Técnica \gls{moscow}} 
+\label{c.analisis.requisitos.moscow}
+Tal como se menciona en la sección \ref{phytoscheme.requisitos}, la técnica \textit{\gls{moscow}} es una técnica de priorización de requisitos usada en la gestión de proyectos, análisis de negocio y desarrollo de software con objetivo de llegar a un acuerdo común con los \textit{stakeholders} (integrantes del proyecto) sobre la importancia que se debería dar a cada requisito.
+\par
+
+\gls{moscow} dicta cuatro categorías mediante las que se pueden priorizar los requisitos de un sistema o proyecto: 
+
+\begin{enumerate}
+\item \textbf{Debe tener:} Son aquellos requisitos críticos para que el trabajo realizado durante un periodo de tiempo determinado (en nuestro caso desde ahora hasta junio 2017) sea considerado un éxito (\textit{TFG} aprobado). Si uno de estos requisitos no se incluye, el proyecto debera ser considerado un fallo (no se puede presentar el \textit{TFG}). \textit{Debe tener} en \textit{\gls{moscow}} se refiere a \textit{MUST}, que puede ser considerado un acrónimo de \textit{Minimum Usable SubseT}. En ese sentido se puede entender como la unión de los requisitos del producto mínimo viable con los requisitos legales (p.ej. documentación en forma de memoria de \textit{TFG}, cumplimiento \textit{LOPD}, etc.) y de seguridad (en el sentido de robustez y calidad de la solución) obligatorios o acordados.
+
+\item \textbf{Debería tener:} Son aquellos que son importantes pero no necesarios para ser realizados durante el periodo de tiempo determinado. Pueden posponerse para ser realizados en el siguiente periodo. Son vitales pero no obligatorios, si no se implementan la solución es viable pero es doloroso no hacerlo.
+
+\item \textbf{Podría tener:} Son aquellos que comparados con los anteriores son los menos deseados o tienen menor impacto. Hay que tenerlos controlados ya que sólo se podrán entregar si se dan las mejores condiciones (por ejemplo, el proyecto va más rápido de los esperado). Si hay algún riesgo en la entrega del proyecto estos requisitos serían los primeros en ser descartados.
+
+\item \textbf{No tendrá:} Son aquellos que no van a ser entregados durante el periodo considerado. Se mantienen en esta lista de alcance para clarificar el alcance de la solución. Esto evita que informalmente sean introducidos más tarde. El objetivo de esta categoría es ayudar a mantener el foco en una solución estricta. 
+
+\end{enumerate}
+
 \section{Análisis de riesgos completos} \label{c.analisis.riesgos}
 A continuación se exponen las diferentes fases del análisis de riesgos de manera detallada: 
 
