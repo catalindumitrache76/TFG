@@ -2,604 +2,488 @@
 % Encoding: UTF-8
 
 
-@Misc{agricolum,
-  Title                    = {Cuaderno de campo agrícola Agricolum},
-  HowPublished             = {https://agricolum.com},
+@Manual{aplicacionfitosanitarios,
+  Title                    = {Manual sobre la aplicación de productos fitosanitarios nivel cualificado},
+  Author                   = {Milagros Fernández Fernández et al.},
+  Note                     = {\url{http://www.juntadeandalucia.es/export/drupaljda/publicacion/17/03/PLAGUICIDAS_baja.pdf}. [Online] Último acceso: 2018.01.03},
+  Organization             = {Instituto de Investigación y Formación Agraria y Pesquera},
+  Year                     = {2017},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://agricolum.com}
-}
-
-@Misc{agronev,
-  Title                    = {Cuaderno de campo Agronev},
-  HowPublished             = {http://jnevado.com/CUADERNOCAMPO/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {http://jnevado.com/CUADERNOCAMPO/}
-}
-
-@Misc{agroslab,
-  Title                    = {Cuaderno de Explotación Agrícola Campo aGROSLab},
-  HowPublished             = {http://www.cuadernoexplotacion.es},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {http://www.cuadernoexplotacion.es}
-}
-
-@Misc{angularjs,
-  Title                    = {AngularJS},
-  HowPublished             = {https://angularjs.org},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {https://angularjs.org}
-}
-
-@Misc{aplicacionfitosanitarios,
-  Title                    = {Aplicación de productos fitosanitarios nivel cualificado},
-  HowPublished             = {http://www.juntadeandalucia.es/export/drupaljda/publicacion/17/03/PLAGUICIDAS\_baja.pdf},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.17},
-  Url                      = {http://www.juntadeandalucia.es/export/drupaljda/publicacion/17/03/PLAGUICIDAS\_baja.pdf}
-}
-
-@Misc{buenaspracticas,
-  Title                    = {Manual de buenas prácticas en lafitosanitarios de los productos fitosanitarios},
-  HowPublished             = {http://www.mapama.gob.es/es/ministerio/servicios/informacion/Buenas-practicas-fitosanitarios\_tcm7-330044.pdf},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.17},
-  Url                      = {http://www.mapama.gob.es/es/ministerio/servicios/informacion/Buenas-practicas-fitosanitarios\_tcm7-330044.pdf}
-}
-
-@Misc{calculadorafreelance,
-  Title                    = {Página web Calculadora FrePágina},
-  HowPublished             = {http://www.calculadorafreelance.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.11},
-  Url                      = {http://www.calculadorafreelance.com}
-}
-
-@Misc{cloudera,
-  Title                    = {Repositorio de cloudera},
-  HowPublished             = {\seqsplit{https://repository.cloudera.com/content/repositories/releases/}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{https://repository.cloudera.com/content/repositories/releases/}}
-}
-
-@Misc{cricyt,
-  Title                    = {Centro Científico Tecnológico (CCT) Mendoza},
-  HowPublished             = {\seqsplit{http://www.cricyt.edu.ar/enciclopedia/terminos/ProducFito.htm}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{http://www.cricyt.edu.ar/enciclopedia/terminos/ProducFito.htm}}
-}
-
-@Misc{cuadernoexplotacion,
-  Title                    = {Cuaderno de explotación},
-  HowPublished             = {\seqsplit{http://www.mapama.gob.es/es/prensa/noticias/el-ministerio-de-agricultura-alimentacion-y-medio-ambiente-aprueba-un-modelo-armonizado-de-cuaderno-de-explotacion-de-los-productos-fitosanitarios/tcm7-311275-16}},
-  Note                     = {Online; Último acceso: 22 - October - 2017},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{http://www.mapama.gob.es/es/prensa/noticias/el-ministerio-de-agricultura-alimentacion-y-medio-ambiente-aprueba-un-modelo-armonizado-de-cuaderno-de-explotacion-de-los-productos-fitosanitarios/tcm7-311275-16}}
-}
-
-@Misc{directiva128,
-  Title                    = {Directiva 2009/128/CE},
-  HowPublished             = {\seqsplit{http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:309:0071:0086:es:PDF}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:309:0071:0086:es:PDF}
-}
-
-@Misc{faqmapama,
-  Title                    = {Preguntas y respuestas frecuentes sobre el registro de productos fitosanitarios del Ministerio de Agricultura, Alimentación y Medio Ambiente},
-  HowPublished             = {http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/FAQ.pdf},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/FAQ.pdf}
-}
-
-@Misc{farmacowiki,
-  Title                    = {Wikipedia - Fármaco},
-  HowPublished             = {https://es.wikipedia.org/wiki/Fármaco},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://es.wikipedia.org/wiki/Fármaco}
-}
-
-@Misc{git,
-  Title                    = {Git},
-  HowPublished             = {https://git-scm.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.05},
-  Url                      = {https://git-scm.com}
-}
-
-@Misc{glosarioterminosfito,
-  Title                    = {Glosario de términos fitosanitarios},
-  HowPublished             = {\seqsplit{https://www.ippc.int/static/media/files/publication/es/2016/06/ISPM\_05\_2016\_Es\_2016-06-23\_FullReviewLRG-CPAM.pdf}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{https://www.ippc.int/static/media/files/publication/es/2016/06/ISPM\_05\_2016\_Es\_2016-06-23\_FullReviewLRG-CPAM.pdf}}
-}
-
-@Misc{glosarioterminosmapama,
-  Title                    = {Glosario de términos del Mapama},
-  HowPublished             = {\seqsplit{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/glosario-de-terminos-f-a-o/}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/glosario-de-terminos-f-a-o/}}
-}
-
-@Misc{gnuglp,
-  Title                    = {GNU General Public License},
-  HowPublished             = {https://www.gnu.org/licenses/gpl.html},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://www.gnu.org/licenses/gpl.html}
-}
-
-@Misc{grub,
-  Title                    = {GRUB},
-  HowPublished             = {https://www.gnu.org/software/grub/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.22},
-  Url                      = {https://www.gnu.org/software/grub/}
-}
-
-@Misc{hadoop,
-  Title                    = {Apache\textsuperscript{TM} Hadoop\textregistered},
-  HowPublished             = {http://hadoop.apache.org},
-  Note                     = {Version XXXXXX.},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {http://hadoop.apache.org}
-}
-
-@Misc{hadoop_installation,
-  Title                    = {Tutorial de instalación de Hadoop de Digital Ocean para Ubuntu 16-04},
-  HowPublished             = {\seqsplit{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}}
-}
-
-@Misc{hadoop_installation_bad,
-  Title                    = {Tutorial de instalación de Hadoop incorrecto para la versión Ubuntu (16.04) del alumno},
-  HowPublished             = {\seqsplit{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}}
-}
-
-@Misc{hitachi,
-  Title                    = {Hitachi},
-  HowPublished             = {http://www.hitachi.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.21},
-  Url                      = {http://www.hitachi.com}
-}
-
-@Misc{hitachivantara,
-  Title                    = {Hitachi Vantara},
-  HowPublished             = {http://www.pentaho.com/product/data-integration},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.21},
-  Url                      = {http://www.pentaho.com/product/data-integration}
-}
-
-@Misc{hive,
-  Title                    = {Apache Hive\textsuperscript{TM}},
-  HowPublished             = {https://hive.apache.org},
-  Note                     = {Version XXXXXX.},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://hive.apache.org}
-}
-
-@Misc{hive_installation,
-  Title                    = {Página de Hive - Sección de instalación},
-  HowPublished             = {\seqsplit{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}}
-}
-
-@Misc{hivetutorialspoint,
-  Title                    = {Tutorial de Tutorial's Point para la instalación de Hive},
-  HowPublished             = {https://www.tutorialspoint.com/hive/index.htm},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://www.tutorialspoint.com/hive/index.htm}
-}
-
-@Misc{intellij,
-  Title                    = {IntelliJ IDEA},
-  HowPublished             = {https://www.jetbrains.com/idea/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://www.jetbrains.com/idea/}
-}
-
-@Misc{java,
-  Title                    = {Java \textsuperscript{TM}},
-  HowPublished             = {https://java.com/es/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://java.com/es/}
-}
-
-@Misc{jdlstudio,
-  Title                    = {JDL-Studio},
-  HowPublished             = {https://start.jhipster.tech/jdl-studio/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.05},
-  Url                      = {https://start.jhipster.tech/jdl-studio/}
-}
-
-@Misc{jhipster,
-  Title                    = {JHipster},
-  HowPublished             = {http://www.jhipster.tech},
-  Note                     = {Version XXXXXX.},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {http://www.jhipster.tech}
-}
-
-@Misc{kettle,
-  Title                    = {Pentaho Data Integration},
-  HowPublished             = {http://www.pentaho.com/product/data-integration},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.21},
-  Url                      = {http://www.pentaho.com/product/data-integration}
-}
-
-@Misc{knime,
-  Title                    = {KNIME},
-  HowPublished             = {https://www.knime.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.21},
-  Url                      = {https://www.knime.com}
-}
-
-@Misc{latex,
-  Title                    = {LaTex},
-  HowPublished             = {https://www.latex-project.org},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.17},
-  Url                      = {https://www.latex-project.org}
-}
-
-@Misc{manualseguridad,
-  Title                    = {Manual de seguridad y salud durante la exposición a productos fitosanitarios},
-  HowPublished             = {http://prevencion.fremap.es/Buenas\%20prcticas/MAN.008\%20(castellano)\%20-\%20M.S.S.\%20Exp.\%20Productos\%20Fi.pdf},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.17},
-  Url                      = {http://prevencion.fremap.es/Buenas\%20prcticas/MAN.008\%20(castellano)\%20-\%20M.S.S.\%20Exp.\%20Productos\%20Fi.pdf}
-}
-
-@Misc{mapama,
-  Title                    = {Página web del ministerio de agricultura y pesca, alimentación y medio ambiente de España},
-  HowPublished             = {\seqsplit{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/menu.asp}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/menu.asp}}
-}
-
-@Misc{mysql,
-  Title                    = {MySQL},
-  HowPublished             = {https://www.mysql.com},
-  Note                     = {Version XXXXXX.},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://www.mysql.com}
-}
-
-@Misc{nodejs,
-  Title                    = {Node.js \textregistered},
-  HowPublished             = {https://nodejs.org/en/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://nodejs.org/en/}
-}
-
-@Misc{oraclecorporation,
-  Title                    = {Oracle Corporation},
-  HowPublished             = {https://www.oracle.com/index.html},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://www.oracle.com/index.html}
-}
-
-@Misc{pentaho,
-  Title                    = {Pentaho},
-  HowPublished             = {http://www.pentaho.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.21},
-  Url                      = {http://www.pentaho.com}
-}
-
-@Misc{pesticides_eu,
-  Title                    = {Base de datos europea sobre pesticidas},
-  HowPublished             = {\seqsplit{https://data.europa.eu/euodp/es/data/dataset/s8QJJ4blyMdeI2AM1TtmXA/resource/ce5c6843-eb27-4168-9c28-b0f13b4ccbb8}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.15},
-  Url                      = {\seqsplit{https://data.europa.eu/euodp/es/data/dataset/s8QJJ4blyMdeI2AM1TtmXA/resource/ce5c6843-eb27-4168-9c28-b0f13b4ccbb8}}
-}
-
-@Misc{pesticidesdb,
-  Title                    = {Base de datos de pesticidas a nivel Europeo},
-  HowPublished             = {\seqsplit{http://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/public/?event=homepage\&language=EN}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{http://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/public/?event=homepage&language=EN}}
-}
-
-@Misc{reglamento,
-  Title                    = {Reglamento (CE) nº 1107/2009 del Parlamento Europeo y del Consejo, de 21 de octubre de 2009, relativo a la comercialización de productos fitosanitarios y por el que se derogan las Directivas 79/117/CEE y 91/414/CEE del Consejo.},
-  HowPublished             = {https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82202},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82202}
-}
-
-@Misc{solicitud,
-  Title                    = {Formulario para solicitudes relativas al registro oficial de productos y material fitosanitario},
-  HowPublished             = {http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/Modelo%20solicitud%20Registro.pdf},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/Modelo%20solicitud%20Registro.pdf}
-}
-
-@Misc{spring_scheduling,
-  Title                    = {Spring Scheduling Module},
-  HowPublished             = {https://spring.io/guides/gs/scheduling-tasks/},
-  Note                     = {Online; Ultimo acceso: asiqwjf},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://spring.io/guides/gs/scheduling-tasks/}
-}
-
-@Misc{springboot,
-  Title                    = {Spring Boot},
-  HowPublished             = {https://projects.spring.io/spring-boot/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {https://projects.spring.io/spring-boot/}
-}
-
-@Misc{springframework,
-  Title                    = {Spring Framework},
-  HowPublished             = {https://projects.spring.io/spring-framework/},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {https://projects.spring.io/spring-framework/}
-}
-
-@Misc{sqoop,
-  Title                    = {Apache Sqoop\textsuperscript{TM}},
-  HowPublished             = {http://sqoop.apache.org},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {http://sqoop.apache.org}
-}
-
-@Misc{talend,
-  Title                    = {Talend},
-  HowPublished             = {https://www.talend.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.10.31},
-  Url                      = {https://www.talend.com}
-}
-
-@Misc{trello,
-  Title                    = {Trello},
-  HowPublished             = {https://trello.com},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.10},
-  Url                      = {https://trello.com}
-}
-
-@Misc{wikibigdata,
-  Title                    = {Wikipedia - Big Data},
-  HowPublished             = {https://es.wikipedia.org/wiki/Big\_data},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.04},
-  Url                      = {https://es.wikipedia.org/wiki/Big\_data}
-}
-
-@Misc{wikicassandra,
-  Title                    = {Wikipedia - Apache Cassandra},
-  HowPublished             = {https://en.wikipedia.org/wiki/Apache\_Cassandra},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://en.wikipedia.org/wiki/Apache\_Cassandra}
-}
-
-@Misc{wikicrawler,
-  Title                    = {Wikipedia - Crawler web},
-  HowPublished             = {https://en.wikipedia.org/wiki/Web\_crawler},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.22},
-  Url                      = {https://en.wikipedia.org/wiki/Web\_crawler}
-}
-
-@Misc{wikietl,
-  Title                    = {Wikipedia - Operaciones ETL},
-  HowPublished             = {https://es.wikipedia.org/wiki/Extract,\_transform\_and\_load},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.04},
-  Url                      = {https://es.wikipedia.org/wiki/Extract,\_transform\_and\_load}
-}
-
-@Misc{wikih2,
-  Title                    = {Wikipedia - H2 (DBMS)},
-  HowPublished             = {https://en.wikipedia.org/wiki/H2\_(DBMS)},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://en.wikipedia.org/wiki/H2\_(DBMS)}
-}
-
-@Misc{wikikanban,
-  Title                    = {Wikipedia - Kanban},
-  HowPublished             = {https://es.wikipedia.org/wiki/Kanban\_(desarrollo)},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.12.10},
-  Url                      = {https://es.wikipedia.org/wiki/Kanban\_(desarrollo)}
+  Timestamp                = {2017.12.17}
 }
 
 @Misc{wikilinux,
-  Title                    = {Wikipedia - Linux},
-  HowPublished             = {https://en.wikipedia.org/wiki/Linux},
+  Title                    = {{Linux - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/Linux}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2018},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.11.22},
-  Url                      = {https://en.wikipedia.org/wiki/Linux}
+  Timestamp                = {2017.11.22}
 }
 
 @Misc{wikimapreduce,
-  Title                    = {Wikipedia - MapReduce},
-  HowPublished             = {https://es.wikipedia.org/wiki/MapReduce},
+  Title                    = {{MapReduce - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://es.wikipedia.org/wiki/MapReduce}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2018},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.12.04},
-  Url                      = {https://es.wikipedia.org/wiki/MapReduce}
-}
-
-@Misc{wikimariadb,
-  Title                    = {Wikipedia - MariaDB},
-  HowPublished             = {https://en.wikipedia.org/wiki/MariaDB},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://en.wikipedia.org/wiki/MariaDB}
-}
-
-@Misc{wikimongodb,
-  Title                    = {Wikipedia - MongoDB},
-  HowPublished             = {https://en.wikipedia.org/wiki/MongoDB},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://en.wikipedia.org/wiki/MongoDB}
-}
-
-@Misc{wikimoscow,
-  Title                    = {Método \gls{moscow}},
-  HowPublished             = {https://en.wikipedia.org/wiki/MoSCoW\_method},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.22},
-  Url                      = {https://en.wikipedia.org/wiki/MoSCoW\_method}
-}
-
-@Misc{wikimssql,
-  Title                    = {Wikipedia - Microsoft SQL Server},
-  HowPublished             = {\seqsplit{https://en.wikipedia.org/wiki/Microsoft\_SQL\_Server}},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {\seqsplit{https://en.wikipedia.org/wiki/Microsoft\_SQL\_Server}}
+  Timestamp                = {2017.12.04}
 }
 
 @Misc{wikimysql,
-  Title                    = {Wikipedia - MySQL},
-  HowPublished             = {https://en.wikipedia.org/wiki/MySQL},
+  Title                    = {{MySQL - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/MySQL}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2018},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://en.wikipedia.org/wiki/MySQL}
-}
-
-@Misc{wikinvidia,
-  Title                    = {Wikipedia - Nvidia},
-  HowPublished             = {https://en.wikipedia.org/wiki/Nvidia},
-
-  Owner                    = {catalin},
-  Timestamp                = {2017.11.22},
-  Url                      = {https://en.wikipedia.org/wiki/Nvidia}
+  Timestamp                = {2017.11.20}
 }
 
 @Misc{wikioracle,
-  Title                    = {Oracle Database},
-  HowPublished             = {https://en.wikipedia.org/wiki/Oracle\_Database},
+  Title                    = {{Oracle Database - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/Oracle_Database}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2018},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://en.wikipedia.org/wiki/Oracle\_Database}
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{farmacowiki,
+  Title                    = {{Fármaco - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://es.wikipedia.org/wiki/Farmaco}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{wikibigdata,
+  Title                    = {{Big Data - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://es.wikipedia.org/wiki/Big_data}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.04}
+}
+
+@Misc{wikicassandra,
+  Title                    = {{Apache Cassandra - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/Apache_Cassandra}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{wikicrawler,
+  Title                    = {{Crawler web - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/Web_crawler}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22}
+}
+
+@Misc{wikietl,
+  Title                    = {{Operaciones ETL - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://es.wikipedia.org/wiki/Extract,_transform_and_load}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.04}
+}
+
+@Misc{wikih2,
+  Title                    = {{H2 (DBMS) - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/H2_(DBMS)}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{wikikanban,
+  Title                    = {{Kanban - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://es.wikipedia.org/wiki/Kanban_(desarrollo)}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.10}
+}
+
+@Misc{wikimariadb,
+  Title                    = {{MariaDB - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/MariaDB}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{wikimongodb,
+  Title                    = {{MongoDB - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/MongoDB}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{wikimoscow,
+  Title                    = {{Método \gls{moscow} - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/MoSCoW_method}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22}
+}
+
+@Misc{wikimssql,
+  Title                    = {{Microsoft SQL Server - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/Microsoft_SQL_Server}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{wikinvidia,
+  Title                    = {{Nvidia - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://en.wikipedia.org/wiki/Nvidia}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.22}
 }
 
 @Misc{wikipostgresql,
-  Title                    = {Wikipedia - PostgreSQL},
-  HowPublished             = {https://es.wikipedia.org/wiki/PostgreSQL},
+  Title                    = {{PostgreSQL - Wikipedia, The Free Encyclopedia}},
+
+  Author                   = {Wikipedia contributors},
+  HowPublished             = {\url{https://es.wikipedia.org/wiki/PostgreSQL}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2017},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://es.wikipedia.org/wiki/PostgreSQL}
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{agroslab,
+  Title                    = {{Cuaderno de Explotación Agrícola Campo aGROSLab}},
+
+  Author                   = {7eData},
+  HowPublished             = {\url{http://www.cuadernoexplotacion.es}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{agricolum,
+  Title                    = {{Cuaderno de campo agrícola Agricolum}},
+
+  Author                   = {Agricolum},
+  HowPublished             = {\url{https://agricolum.com}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Manual{glosarioterminosmapama,
+  Title                    = {{Glosario de términos del Mapama}},
+  Author                   = {Agriculture and Consumer Protection},
+  Note                     = {\url{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/glosario-de-terminos-f-a-o/}. [Online] Último acceso: 2018.01.03},
+  Organization             = {Food and Agriculture Organization of the United Nations},
+  Year                     = {1990},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Manual{hadoop_installation,
+  Title                    = {{Manual de instalación de Hadoop de Digital Ocean para Ubuntu 16-04}},
+  Author                   = {Melissa Anderson},
+  Note                     = {\url{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}. [Online] Último acceso: 2018.01.03},
+  Organization             = {Digital Ocean},
+  Year                     = {2016},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{cloudera,
+  Title                    = {{Repositorio de paquetes de Cloudera}},
+
+  Author                   = {Cloudera},
+  HowPublished             = {\url{https://repository.cloudera.com/content/repositories/releases/}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{pesticidesdb,
+  Title                    = {{Base de datos de pesticidas a nivel Europeo}},
+
+  Author                   = {European Comission},
+  HowPublished             = {\url{http://ec.europa.eu/food/plant/pesticides/eu-pesticides-database/public/?event=homepage\&language=EN}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2016},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Manual{directiva128,
+  Title                    = {{Directiva 2009/128/CE}},
+  Author                   = {Parlamento Europeo y el Consejo de la Unión Europea},
+  Note                     = {\url{http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2009:309:0071:0086:es:PDF}. [Online] Último acceso: 2018.01.03},
+  Year                     = {2009},
+
+  Institution              = {Parlamento Europeo y el Consejo de la Unión Europea},
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{reglamento,
+  Title                    = {{Reglamento (CE) nº 1107/2009 del Parlamento Europeo y del Consejo, de 21 de octubre de 2009, relativo a la comercialización de productos fitosanitarios y por el que se derogan las Directivas 79/117/CEE y 91/414/CEE del Consejo.}},
+
+  Author                   = {Parlamento Europeo y el Consejo de la Unión Europea},
+  HowPublished             = {\url{https://www.boe.es/buscar/doc.php?id=DOUE-L-2009-82202}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2009},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.10.31}
+}
+
+@Manual{glosarioterminosfito,
+  Title                    = {{Glosario de términos fitosanitarios}},
+  Author                   = {Secretaría de la Convención Internacional de Protección Fitosanitaria (CIPF)},
+  Note                     = {\url{https://www.ippc.int/static/media/files/publication/es/2016/06/ISPM_05_2016_Es_2016-06-23_FullReviewLRG-CPAM.pdf}. [Online] Último acceso: 2018.01.03},
+  Organization             = {Organización de las Naciones Unidas para la Alimentación y la Agricultura},
+  Year                     = {2016},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Manual{manualseguridad,
+  Title                    = {{Manual de seguridad y salud durante la exposición a productos fitosanitarios}},
+  Author                   = {FREMAP},
+  Note                     = {\url{http://prevencion.fremap.es/Buenas%20prcticas/MAN.008%20(castellano)%20-%20M.S.S.%20Exp.%20Productos%20Fi.pdf} [Online] Último acceso: 2018.01.03},
+  Organization             = {FREMAP},
+  Year                     = {2015},
+
+  Institution              = {FREMAP},
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.17}
+}
+
+@Manual{hive_installation,
+  Title                    = {{Hive - Manual de instalación}},
+  Author                   = {Apache Hive},
+  Note                     = {\url{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}. [Online] Último acceso: 2018.01.03},
+  Organization             = {Apache Hive},
+  Year                     = {2017},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{agronev,
+  Title                    = {{Cuaderno de campo Agronev}},
+
+  Author                   = {JNevado},
+  HowPublished             = {\url{http://jnevado.com/CUADERNOCAMPO/}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{calculadorafreelance,
+  Title                    = {{Calculadora Freelance de sueldo por hora online}},
+
+  Author                   = {Laura López},
+  HowPublished             = {\url{http://www.calculadorafreelance.com}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.11}
+}
+
+@Misc{mapama,
+  Title                    = {{Registro del Ministerio de Agricultura y Pesca, Alimentación y Medio Ambiente de España}},
+
+  Author                   = {MAGRAMA},
+  HowPublished             = {\url{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/registro/menu.asp}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Organization             = {MAPAMA},
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{solicitud,
+  Title                    = {{Formulario para solicitudes relativas al registro oficial de productos y material fitosanitario}},
+
+  Author                   = {MAGRAMA},
+  HowPublished             = {\url{http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/Modelo%20solicitud%20Registro.pdf}},
+  Note                     = {[Online] UltimoÚltimoacceso: 2018.01.03},
+  Year                     = {2013},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.10.31}
+}
+
+@Misc{faqmapama,
+  Title                    = {{Preguntas y respuestas frecuentes sobre el registro de productos fitosanitarios del Ministerio de Agricultura, Alimentación y Medio Ambiente}},
+
+  Author                   = {MAGRAMA},
+  HowPublished             = {\url{http://www.mapama.gob.es/agricultura/pags/fitos/registro/fichas/pdf/FAQ.pdf}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2012},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.10.31}
+}
+
+@Misc{cuadernoexplotacion,
+  Title                    = {{Cuaderno de explotación aprobado por Mapama}},
+
+  Author                   = {MAPAMA},
+  HowPublished             = {\url{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/uso-sostenible-de-productos-fitosanitarios/}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2012},
+
+  Organization             = {Mapama},
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Manual{buenaspracticas,
+  Title                    = {{Manual de buenas prácticas agrícolas en la aplicación de los productos fitosanitarios}},
+  Author                   = {Luis Márquez},
+  Note                     = {\url{http://www.mapama.gob.es/es/ministerio/servicios/informacion/Buenas-practicas-fitosanitarios_tcm7-330044.pdf}. [Online] Último acceso: 2018.01.03},
+  Organization             = {Atasa},
+  Year                     = {2008},
+
+  HowPublished             = {http://www.mapama.gob.es/es/ministerio/servicios/informacion/Buenas-practicas-fitosanitarios\_tcm7-330044.pdf},
+  Owner                    = {catalin},
+  Timestamp                = {2017.12.17}
+}
+
+@Manual{hadoop_installation_bad,
+  Title                    = {{Manual de instalación de Hadoop incorrecto para la versión Ubuntu (16.04) del alumno}},
+  Author                   = {Michael G. Noll},
+  Note                     = {\url{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}. [Online] Último acceso: 2018.01.03},
+  Year                     = {2011},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Manual{hivetutorialspoint,
+  Title                    = {{Manual de Tutorial's Point para la instalación de Hive}},
+  Author                   = {Tutorials Point},
+  Note                     = {\url{https://www.tutorialspoint.com/hive/hive_installation.htm}. [Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{spring_scheduling,
+  Title                    = {{Spring Scheduling Module}},
+
+  Author                   = {Spring},
+  HowPublished             = {\url{https://spring.io/guides/gs/scheduling-tasks/}},
+  Note                     = {[Online] Ultimo acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{cricyt,
+  Title                    = {{Centro Científico Tecnológico (CCT) Mendoza}},
+
+  Author                   = {T.Stadler},
+  HowPublished             = {\url{http://www.cricyt.edu.ar/enciclopedia/terminos/ProducFito.htm}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.20}
+}
+
+@Misc{pesticides_eu,
+  Title                    = {{Base de datos abierta europea sobre pesticidas}},
+
+  Author                   = {Portal de datos abiertos de la UE},
+  HowPublished             = {\url{https://data.europa.eu/euodp/es/data/dataset/s8QJJ4blyMdeI2AM1TtmXA/resource/ce5c6843-eb27-4168-9c28-b0f13b4ccbb8}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
+  Year                     = {2015},
+
+  Owner                    = {catalin},
+  Timestamp                = {2017.11.15}
 }
 
 @Misc{yarninstall,
-  Title                    = {Página oficial de Yarn - Instalación en Linux Ubuntu},
-  HowPublished             = {https://yarnpkg.com/en/docs/install},
+  Title                    = {{Yarn - Instalación en Linux Ubuntu}},
+  HowPublished             = {\url{https://yarnpkg.com/en/docs/install}},
+  Note                     = {[Online] Último acceso: 2018.01.03},
 
   Owner                    = {catalin},
-  Timestamp                = {2017.11.20},
-  Url                      = {https://yarnpkg.com/en/docs/install}
+  Timestamp                = {2017.11.20}
 }
 
 @comment{jabref-meta: databaseType:bibtex;}
