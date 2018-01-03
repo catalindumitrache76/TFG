@@ -9,35 +9,42 @@ La gestión y desarrollo del proyecto, en todas sus fases se ha visto restringid
 
 \section{Diseño conceptual} \label{disenyo.conceptual}
 Con el análisis finalizado, el diseño de la solución prácticamente surgió por sí mismo; teniéndo en cuenta los requisitos, se llegó a la conclusión de que los desarrollos realizados a lo largo de la duración de este proyecto no serían más que el comienzo para algo mucho más grande; se debía ofrecer tanto la infraestructura necesaria como el soporte para que la solución pudiera escalar y ser expandida mediante el trabajo de futuros desarrolladores. 
-\begin{figure}[!t]
+
+
+\par 
+El diseño conceptual del sistema se presenta a continuación a una escala abstracta y de alto nivel. Básicamente, el proyecto hará uso de numerosas fuentes de información, en este caso sobre productos fitosanitarios y sus derivados. Dicha información deberá ser recogida de manera periódica y almacenada en algún sistema de persistencia tal como proviene de sus fuentes, es decir, en una versión \textit{en crudo}. Una vez almacenada en su versión original, los datos pasarán a una siguiente fase en la que serán procesados bien para extraer la información relevante o de interés para el proyecto bien para añadir datos útiles como información de trazabilidad, todo esto con el objetivo en mente de conseguir ese esquema unificado. Una vez procesados, los datos se almacenarán en otro sistema de persistencia, o incluso en el mismo de antes, si es posible. En este punto habría dos opciones; o que los datos ya estuvieran integrados en un único modelo, o que estuvieran individualmente separados en el almacén anterior. En este segundo caso, los datos deberían ser unificados para conseguir ese esquema único y posteriormente poder ser visualizados, ya sea mediante un navegador con una aplicación web, o mediante otro método de visualización. En el diagrama de la figura \ref{fig:disenyoconceptual} se puede observar el diseño conceptual descrito anteriormente de manera gráfica. 
+
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth,height=15cm,keepaspectratio]{Imagenes/disenyoconceptual}
     \caption{Diseño conceptual de la solución}
     \label{fig:disenyoconceptual}
 \end{figure}
-\par 
-El diseño conceptual del sistema se presenta a continuación a una escala abstracta y de alto nivel. Básicamente, el proyecto hará uso de numerosas fuentes de información, en este caso sobre productos fitosanitarios y sus derivados. Dicha información deberá ser recogida de manera periódica y almacenada en algún sistema de persistencia tal como proviene de sus fuentes, es decir, en una versión \textit{en crudo}. Una vez almacenada en su versión original, los datos pasarán a una siguiente fase en la que serán procesados bien para extraer la información relevante o de interés para el proyecto bien para añadir datos útiles como información de trazabilidad, todo esto con el objetivo en mente de conseguir ese esquema unificado. Una vez procesados, los datos se almacenarán en otro sistema de persistencia, o incluso en el mismo de antes, si es posible. En este punto habría dos opciones; o que los datos ya estuvieran integrados en un único modelo, o que estuvieran individualmente separados en el almacén anterior. En este segundo caso, los datos deberían ser unificados para conseguir ese esquema único y posteriormente poder ser visualizados, ya sea mediante un navegador con una aplicación web, o mediante otro método de visualización. En el diagrama de la figura \ref{fig:disenyoconceptual} se puede observar el diseño conceptual descrito anteriormente de manera gráfica. 
 
 
 
 
 \section{Diseño final} \label{disenyo.final}
+
+
+
 En el apartado anterior se ofreció una visión de alto nivel del diseño de la solución, sin hablar de herramientas ni de tecnologías concretas. En este apartado se va a profundizar en el diseño y se va a explicar en detalle la manera en que los datos pasan a través de las diferentes herramientas dentro del sistema, desde la descarga de los datos desde sus fuentes hasta su visualización en pantalla, pasándo por las diferentes etapas de procesado y almacenamiento. 
 \par
+
+
 En el diagrama de la figura \ref{fig:disenyofinal} se puede observar un mapeo casi dirécto entre los elementos del diseño final y los del diseño conceptual de la figura \ref{fig:disenyoconceptual}. Se puede observar que el diseño final incluye a \textit{Talend} como responsable tanto de los procesos que descargan y almacenan los \textit{datos en crudo} como de los que posteriormente procesan y almacenan los datos como \textit{datos procesados}. En cuanto al sistema de almacenamiento, que guardará tanto los datos originales como los modificados se utilizará \textit{Hadoop} para los \textit{datos en crudo} y \textit{Hive} dentro de \textit{Hadoop} para los \textit{datos procesados}. Una vez los datos estén transformados y almacenados corréctamente, se usará \textit{Sqoop} para transferirlos a ese esquema único que se persigue como objetivo, y que estará almacenado dentro de una base de datos \textit{MySQL}. Para que este último paso sea posible, debe ser el propio \textit{Talend} quien prepare los datos para ser integrados diréctamente en el esquema unificado. \textit{JHipster} tendrá una conexión directa a la base de datos \textit{MySQL} y gracias a ello será capaz de leer los datos y mostrarlos en pantalla con su propia interfaz web. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth,height=15cm,keepaspectratio]{Imagenes/disenyofinal}
-    \caption{Diseño final de la solución}
+    \caption{Diseño final de la solución - De los datos a su explotación}
     \label{fig:disenyofinal}
 \end{figure}
-
 
 \section{Arquitectura del sistema} \label{disenyo.arquitectura}
 \par Este apartado tratará de dar una visión arquitectural del sistema, pasando por diferentes diagramas para representar el proyecto de manera gráfica y completa. Esta sección abarcará los siguientes diagramas: diagrama de despliegue, diagrama de componente y conector, diagrama de clases y paquetes, diagrama de secuencia y diagrama de datos. 
 
 \subsection{Diagrama de despliegue.} \label{disenyo.arquitectura.despliegue}
-\par Como se puede observar, el despliegue de la aplicación consta de un nodo principal, el Servidor. Este almacena tanto la aplicación de \textit{JHipster} como la base de datos \textit{MySQL} y \textit{Sqoop}. La aplicación de \textit{JHipster}, al tratarse de una aplicación \textit{Spring} se representa como un artefacto dentro de un contenedor \textit{Spring}, el \textit{Spring Container}. Además, allí se define el módulo de \textit{schedulling} implementado por el alumno como un artefacto separado del de la aplicación, aunque a nivel práctico realmente su implementación está ubicada dentro del propio módulo de la aplicación. \textit{Hadoop} aparece en el diagrama como una \textit{base de datos} aparte, por varias razones: en primer lugar, \textit{Hadoop} se puede desplegar en un nodo separado del Servidor. En segundo lugar, se pueden crear varias instancias en diferentes nodos del mismo para conseguir almacenar una cantidad mayor de datos, y proporcionar la aplicación de un componente de almacenamiento escalable.
+\par Como se puede observar en la figura \ref{disenyo.arquitectura.despliegue}, el despliegue de la aplicación consta de un nodo principal, el Servidor. Este almacena tanto la aplicación de \textit{JHipster} como la base de datos \textit{MySQL} y \textit{Sqoop}. La aplicación de \textit{JHipster}, al tratarse de una aplicación \textit{Spring} se representa como un artefacto dentro de un contenedor \textit{Spring}, el \textit{Spring Container}. Además, allí se define el módulo de \textit{schedulling} implementado por el alumno como un artefacto separado del de la aplicación, aunque a nivel práctico realmente su implementación está ubicada dentro del propio módulo de la aplicación. \textit{Hadoop} aparece en el diagrama como una \textit{base de datos} aparte, por varias razones: en primer lugar, \textit{Hadoop} se puede desplegar en un nodo separado del Servidor. En segundo lugar, se pueden crear varias instancias en diferentes nodos del mismo para conseguir almacenar una cantidad mayor de datos, y proporcionar la aplicación de un componente de almacenamiento escalable.
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth,height=15cm,keepaspectratio]{Imagenes/despliegue}
@@ -114,7 +121,7 @@ Como se observará en el desarrollo del prototipo real de la sección \ref{imple
 
 \paragraph*{Integración de datos nuevos.} Para integrar nuevos datos en el sistema de nuevas fuentes, la estrategia a seguir debería ser la que se observa en el diagrama de la figura \ref{fig:expansion}.
 
-\begin{figure}[H]
+\begin{figure}[!h]
     \centering
     \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{Imagenes/expansion}
     \caption{Diagrama de clases y paquetes para soportar la automatización del \textit{workflow}}

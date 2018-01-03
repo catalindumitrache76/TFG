@@ -16,11 +16,11 @@
 \contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o}{19}{chapter.4}
 \contentsline {section}{\numberline {4.1}Restricciones al dise\IeC {\~n}o}{19}{section.4.1}
 \contentsline {section}{\numberline {4.2}Dise\IeC {\~n}o conceptual}{19}{section.4.2}
-\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o final}{20}{section.4.3}
-\contentsline {section}{\numberline {4.4}Arquitectura del sistema}{22}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Diagrama de despliegue.}{22}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Diagrama de componente y conector.}{23}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Diagrama de clases y paquetes.}{24}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o final}{21}{section.4.3}
+\contentsline {section}{\numberline {4.4}Arquitectura del sistema}{23}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Diagrama de despliegue.}{23}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Diagrama de componente y conector.}{24}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Diagrama de clases y paquetes.}{25}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Diagrama de secuencia.}{25}{subsection.4.4.4}
 \contentsline {subsection}{\numberline {4.4.5}Diagrama de datos.}{27}{subsection.4.4.5}
 \contentsline {section}{\numberline {4.5}Estrategia de integraci\IeC {\'o}n y expansi\IeC {\'o}n}{29}{section.4.5}
