@@ -13,16 +13,16 @@
 \BOOKMARK [1][-]{section.3.6}{Elecci\363n del Stack Tecnol\363gico}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.7}{Captura de requisitos final}{chapter.3}% 14
 \BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Restricciones al dise\361o}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Dise\361o conceptual}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{Dise\361o final}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.4}{Arquitectura del sistema}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.4.1}{Diagrama de despliegue.}{section.4.4}% 20
-\BOOKMARK [2][-]{subsection.4.4.2}{Diagrama de componente y conector.}{section.4.4}% 21
-\BOOKMARK [2][-]{subsection.4.4.3}{Diagrama de clases y paquetes.}{section.4.4}% 22
-\BOOKMARK [2][-]{subsection.4.4.4}{Diagrama de secuencia.}{section.4.4}% 23
-\BOOKMARK [2][-]{subsection.4.4.5}{Diagrama de datos.}{section.4.4}% 24
-\BOOKMARK [1][-]{section.4.5}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.2}{Dise\361o final}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.3}{Arquitectura del sistema}{chapter.4}% 18
+\BOOKMARK [2][-]{subsection.4.3.1}{Diagrama de despliegue.}{section.4.3}% 19
+\BOOKMARK [2][-]{subsection.4.3.2}{Diagrama de componente y conector.}{section.4.3}% 20
+\BOOKMARK [2][-]{subsection.4.3.3}{Diagrama de clases y paquetes.}{section.4.3}% 21
+\BOOKMARK [2][-]{subsection.4.3.4}{Diagrama de secuencia.}{section.4.3}% 22
+\BOOKMARK [2][-]{subsection.4.3.5}{Diagrama de datos.}{section.4.3}% 23
+\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.5}{Restricciones al dise\361o}{chapter.4}% 25
 \BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 26
 \BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 27
 \BOOKMARK [1][-]{section.5.2}{Prototipo}{chapter.5}% 28
