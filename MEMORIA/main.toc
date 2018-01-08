@@ -7,8 +7,8 @@
 \contentsline {section}{\numberline {2.3}Restricciones}{7}{section.2.3}
 \contentsline {chapter}{\numberline {3}An\IeC {\'a}lisis}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}An\IeC {\'a}lisis del problema}{8}{section.3.1}
-\contentsline {section}{\numberline {3.2}Propuesta de valor e intermediarios}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis de requisitos. Priorizaci\IeC {\'o}n \textit {\gls {moscow}}}{9}{section.3.3}
+\contentsline {section}{\numberline {3.2}Actores b\IeC {\'a}sicos}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Captura y priorizaci\IeC {\'o}n de requisitos}{9}{section.3.3}
 \contentsline {section}{\numberline {3.4}An\IeC {\'a}lisis de riesgos}{11}{section.3.4}
 \contentsline {section}{\numberline {3.5}An\IeC {\'a}lisis del contexto tecnol\IeC {\'o}gico}{12}{section.3.5}
 \contentsline {section}{\numberline {3.6}Elecci\IeC {\'o}n del Stack Tecnol\IeC {\'o}gico}{13}{section.3.6}
