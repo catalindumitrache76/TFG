@@ -37,10 +37,10 @@
 \contentsline {section}{\numberline {7.1}Resultados y objetivos}{51}{section.7.1}
 \contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{53}{section.7.2}
 \contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{55}{chapter.8}
-\contentsline {chapter}{Glosario}{60}{section*.21}
-\contentsline {chapter}{Lista de Figuras}{63}{chapter*.23}
-\contentsline {chapter}{Lista de Tablas}{64}{chapter*.24}
-\contentsline {chapter}{Anexos}{65}{section*.25}
+\contentsline {chapter}{Glosario}{60}{section*.22}
+\contentsline {chapter}{Lista de Figuras}{63}{chapter*.24}
+\contentsline {chapter}{Lista de Tablas}{64}{chapter*.25}
+\contentsline {chapter}{Anexos}{65}{section*.26}
 \contentsline {chapter}{\numberline {A}Datos}{66}{appendix.Alph1}
 \contentsline {section}{\numberline {A.1}Esquema de datos}{66}{section.Alph1.1}
 \contentsline {section}{\numberline {A.2}Flujo de datos}{68}{section.Alph1.2}
@@ -49,8 +49,8 @@
 \contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{72}{appendix.Alph3}
 \contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de requisitos}{72}{section.Alph3.1}
 \contentsline {subsection}{\numberline {C.1.1}Captura inicial de requisitos}{72}{subsection.Alph3.1.1}
-\contentsline {subsection}{\numberline {C.1.2}T\IeC {\'e}cnica \gls {moscow}}{73}{subsection.Alph3.1.2}
-\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de riesgos completos}{74}{section.Alph3.2}
+\contentsline {subsection}{\numberline {C.1.2}La t\IeC {\'e}cnica \gls {moscow}}{73}{subsection.Alph3.1.2}
+\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de riesgos}{74}{section.Alph3.2}
 \contentsline {section}{\numberline {C.3}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{81}{section.Alph3.3}
 \contentsline {chapter}{\numberline {D}Gesti\IeC {\'o}n}{84}{appendix.Alph4}
 \contentsline {section}{\numberline {D.1}C\IeC {\'a}lculo del coste de la hora de trabajo del alumno}{84}{section.Alph4.1}
