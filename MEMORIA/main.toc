@@ -27,32 +27,32 @@
 \contentsline {chapter}{\numberline {5}Implementaci\IeC {\'o}n}{30}{chapter.5}
 \contentsline {section}{\numberline {5.1}Prueba de concepto}{30}{section.5.1}
 \contentsline {section}{\numberline {5.2}Prototipo}{33}{section.5.2}
-\contentsline {section}{\numberline {5.3}Problemas encontrados}{38}{section.5.3}
-\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{43}{chapter.6}
-\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{43}{section.6.1}
-\contentsline {section}{\numberline {6.2}Organizaci\IeC {\'o}n y control de versiones}{44}{section.6.2}
-\contentsline {section}{\numberline {6.3}Control de esfuerzos}{46}{section.6.3}
-\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{48}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusiones}{51}{chapter.7}
-\contentsline {section}{\numberline {7.1}Resultados y objetivos}{51}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{53}{section.7.2}
-\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{55}{chapter.8}
-\contentsline {chapter}{Glosario}{60}{section*.22}
-\contentsline {chapter}{Lista de Figuras}{63}{chapter*.24}
-\contentsline {chapter}{Lista de Tablas}{64}{chapter*.25}
-\contentsline {chapter}{Anexos}{65}{section*.26}
-\contentsline {chapter}{\numberline {A}Datos}{66}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Esquema de datos}{66}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Flujo de datos}{68}{section.Alph1.2}
-\contentsline {chapter}{\numberline {B}Clientes}{69}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Clientes potenciales}{69}{section.Alph2.1}
-\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{72}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de requisitos}{72}{section.Alph3.1}
-\contentsline {subsection}{\numberline {C.1.1}Captura inicial de requisitos}{72}{subsection.Alph3.1.1}
-\contentsline {subsection}{\numberline {C.1.2}La t\IeC {\'e}cnica \gls {moscow}}{73}{subsection.Alph3.1.2}
-\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de riesgos}{74}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{81}{section.Alph3.3}
-\contentsline {chapter}{\numberline {D}Gesti\IeC {\'o}n}{84}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}C\IeC {\'a}lculo del coste de la hora de trabajo del alumno}{84}{section.Alph4.1}
-\contentsline {chapter}{\numberline {E}Dise\IeC {\~n}o}{86}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Prueba de concepto en detalle}{86}{section.Alph5.1}
+\contentsline {section}{\numberline {5.3}Problemas encontrados}{39}{section.5.3}
+\contentsline {chapter}{\numberline {6}Gesti\IeC {\'o}n}{45}{chapter.6}
+\contentsline {section}{\numberline {6.1}Metodolog\IeC {\'\i }a}{45}{section.6.1}
+\contentsline {section}{\numberline {6.2}Organizaci\IeC {\'o}n y control de versiones}{46}{section.6.2}
+\contentsline {section}{\numberline {6.3}Control de esfuerzos}{48}{section.6.3}
+\contentsline {section}{\numberline {6.4}Estimaci\IeC {\'o}n del coste}{50}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusiones}{53}{chapter.7}
+\contentsline {section}{\numberline {7.1}Resultados y objetivos}{53}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conocimientos adquiridos}{55}{section.7.2}
+\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{57}{chapter.8}
+\contentsline {chapter}{Glosario}{62}{section*.25}
+\contentsline {chapter}{Lista de Figuras}{65}{chapter*.27}
+\contentsline {chapter}{Lista de Tablas}{66}{chapter*.28}
+\contentsline {chapter}{Anexos}{67}{section*.29}
+\contentsline {chapter}{\numberline {A}Datos}{68}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Esquema de datos}{68}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Flujo de datos}{70}{section.Alph1.2}
+\contentsline {chapter}{\numberline {B}Clientes}{71}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Clientes potenciales}{71}{section.Alph2.1}
+\contentsline {chapter}{\numberline {C}An\IeC {\'a}lisis}{74}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}An\IeC {\'a}lisis de requisitos}{74}{section.Alph3.1}
+\contentsline {subsection}{\numberline {C.1.1}Captura inicial de requisitos}{74}{subsection.Alph3.1.1}
+\contentsline {subsection}{\numberline {C.1.2}La t\IeC {\'e}cnica \gls {moscow}}{75}{subsection.Alph3.1.2}
+\contentsline {section}{\numberline {C.2}An\IeC {\'a}lisis de riesgos}{76}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}An\IeC {\'a}lisis de dise\IeC {\~n}os alternativos}{83}{section.Alph3.3}
+\contentsline {chapter}{\numberline {D}Gesti\IeC {\'o}n}{86}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}C\IeC {\'a}lculo del coste de la hora de trabajo del alumno}{86}{section.Alph4.1}
+\contentsline {chapter}{\numberline {E}Dise\IeC {\~n}o}{88}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Prueba de concepto en detalle}{88}{section.Alph5.1}
