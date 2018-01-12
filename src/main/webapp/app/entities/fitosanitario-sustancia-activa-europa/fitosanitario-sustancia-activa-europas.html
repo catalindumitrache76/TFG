@@ -1,13 +1,13 @@
 <div>
-    <h2>Fitosanitario Sustancia Activa Europas</h2>
+    <h2>Entity <i>Fitosanitario Sustancia-Activa Europa</i></h2>
     <jhi-alert></jhi-alert>
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-4 no-padding-left">
-                <button class="btn btn-primary" ui-sref="fitosanitario-sustancia-activa-europa.new" >
-                    <span class="glyphicon glyphicon-plus"></span>
+                <button class="btn btn-success" ui-sref="fitosanitario-sustancia-activa-europa.new" >
+                    <span class="glyphicon glyphicon-leaf"></span>
                     <span class="hidden-xs-down" >
-                        Create new Fitosanitario Sustancia Activa Europa
+                        Create new entry
                     </span>
                 </button>
             </div>
@@ -46,12 +46,19 @@
             </thead>
             <tbody>
                 <tr ng-repeat="fitosanitario_sustancia_activa_europa in vm.fitosanitario_sustancia_activa_europas track by fitosanitario_sustancia_activa_europa.id">
-                    <td><a ui-sref="fitosanitario-sustancia-activa-europa-detail({id:fitosanitario_sustancia_activa_europa.id})">{{fitosanitario_sustancia_activa_europa.id}}</a></td>
-                    <td>{{fitosanitario_sustancia_activa_europa.numregistro}}</td>
+                    <td><a ui-sref="fitosanitario-sustancia-activa-europa-detail({id:fitosanitario_sustancia_activa_europa.id})">
+                        {{fitosanitario_sustancia_activa_europa.id}}</a></td>
+                    <td><a ui-sref="fitosanitario-detail({id:fitosanitario_sustancia_activa_europa.id})">
+                        {{fitosanitario_sustancia_activa_europa.numregistro}}</a></td>
                     <td>{{fitosanitario_sustancia_activa_europa.nombrecomercial}}</td>
                     <td>{{fitosanitario_sustancia_activa_europa.titular}}</td>
                     <td>{{fitosanitario_sustancia_activa_europa.formulado}}</td>
-                    <td>{{fitosanitario_sustancia_activa_europa.activeSubstanceID}}</td>
+                    <td>
+                        <div ng-repeat="sustancia_activa_europa in vm.sustancia_activa_europas">
+                            {{sustancia_activa_europa.id}} "HERE"
+                        </div>
+                        <a ui-sref="sustancia-activa-europa-detail({id:fitosanitario_sustancia_activa_europa.id})">
+                        {{fitosanitario_sustancia_activa_europa.activeSubstanceID}} </a> </td>
                     <td class="text-right">
                         <div class="btn-group flex-btn-group-container">
                             <button type="submit"

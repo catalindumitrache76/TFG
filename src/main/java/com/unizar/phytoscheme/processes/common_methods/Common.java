@@ -12,7 +12,9 @@ public class Common {
     public static final String fichero_configuracion = "Scripts/fichero_configuracion.properties";
 
 
-
+    public static void startHadoop(){
+        executeExternalProcess(getProperty("start_hadoop_28"));
+    }
     // Devuelve del fichero de configuración el valor de la propiedad indicada en key.
     public static String getProperty(String key){
         String value = "";

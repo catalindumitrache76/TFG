@@ -1,5 +1,6 @@
 package com.unizar.phytoscheme.processes;
 
+import com.unizar.phytoscheme.processes.common_methods.Common;
 import com.unizar.phytoscheme.processes.hive.Hive;
 import com.unizar.phytoscheme.processes.hive.Hive_Errors;
 import com.unizar.phytoscheme.processes.talend.Talend;
@@ -18,6 +19,7 @@ public class Scheduller {
     // cada 30 min
     @Scheduled(initialDelay=1, fixedRate=1800000)
     private void schedule() {
+          Common.startHadoop();
 
           show_mismatches();
 //        program_Workflow_Fitosanitario_Hadoop_JHipster();

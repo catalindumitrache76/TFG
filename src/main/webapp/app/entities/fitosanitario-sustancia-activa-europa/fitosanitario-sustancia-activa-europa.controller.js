@@ -21,6 +21,7 @@
         vm.loadAll = loadAll;
         vm.searchQuery = pagingParams.search;
         vm.currentSearch = pagingParams.search;
+        vm.sustancia_activa_europas = null;
 
         loadAll();
 
