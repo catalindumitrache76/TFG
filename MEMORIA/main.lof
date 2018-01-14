@@ -17,7 +17,7 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Diagrama de las etapas de la prueba de concepto.\relax }}{31}{figure.caption.16}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Captura de pantalla de la integraci\IeC {\'o}n de los productos fitosanitarios.\relax }}{35}{figure.caption.18}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Captura de pantalla de la integraci\IeC {\'o}n de las sustancias activas.\relax }}{37}{figure.caption.19}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Captura de pantalla de la integraci\IeC {\'o}n de las sustancias activas.\relax }}{38}{figure.caption.20}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Captura de pantalla de la integraci\IeC {\'o}n de los productos fitosanitarios y las sustancias activas.\relax }}{38}{figure.caption.20}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Tablero \textit {Trello} para la gesti\IeC {\'o}n de las tareas del proyecto.\relax }}{47}{figure.caption.21}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Horas de dedicaci\IeC {\'o}n al proyecto.\relax }}{50}{figure.caption.22}
@@ -26,9 +26,13 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Esquema de datos importados en \textit {MySQL} y \textit {JHipster}\relax }}{69}{figure.caption.30}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{81}{figure.caption.31}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{82}{figure.caption.32}
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{83}{figure.caption.33}
+\contentsline {figure}{\numberline {B.4}{\ignorespaces Cuarta iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{83}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Dise\IeC {\~n}o primitivo del sistema.\relax }}{83}{figure.caption.31}
-\contentsline {figure}{\numberline {C.2}{\ignorespaces Segunda iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{84}{figure.caption.32}
-\contentsline {figure}{\numberline {C.3}{\ignorespaces Tercera iteraci\IeC {\'o}n del dise\IeC {\~n}o del sistema.\relax }}{85}{figure.caption.33}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Captura de pantalla de la p\IeC {\'a}gina de inicio de la aplicaci\IeC {\'o}n \textit {Phytoscheme}.\relax }}{89}{figure.caption.35}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Captura de pantalla de la informaci\IeC {\'o}n de un producto fitosanitario.\relax }}{90}{figure.caption.36}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Captura de pantalla de la informaci\IeC {\'o}n de una sustancia activa.\relax }}{90}{figure.caption.37}
 \addvspace {10\p@ }

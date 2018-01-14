@@ -2,7 +2,7 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{cassandra}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{85}}}\glsgroupskip
 \glsgroupheading{B}\relax \glsresetentrylist %
 \glossentry{bigdata}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}}}\glsgroupskip
@@ -11,7 +11,7 @@
 		\setentrycounter[]{page}\glsnumberformat{5}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossentry{h2}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{85}}}\glsgroupskip
 \glsgroupheading{K}\relax \glsresetentrylist %
 \glossentry{kanban}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{46}}}\glsgroupskip
@@ -21,27 +21,27 @@
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossentry{mapreduce}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{40}}}%
+		\setentrycounter[]{page}\glsnumberformat{40\delimN 41}}}%
 \glossentry{mariadb}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}}}%
 \glossentry{mssql}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}}}%
 \glossentry{mongodb}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}}}%
 \glossentry{mysql}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}}}%
 \glossentry{moscow}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{VI}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{9}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{16}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{60}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{74\delimN 75}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{70\delimN 71}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossentry{oracle}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{85}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{postgresql}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{89}}}%
+		\setentrycounter[]{page}\glsnumberformat{85}}}%
 \glossentry{fito}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{3}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
@@ -49,5 +49,5 @@
 		\setentrycounter[]{page}\glsnumberformat{63}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossentry{tratamiento}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{71}}}%
+		\setentrycounter[]{page}\glsnumberformat{79}}}%
 \end{theglossary}\glossarypostamble
