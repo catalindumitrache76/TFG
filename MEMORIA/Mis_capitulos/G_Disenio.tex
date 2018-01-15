@@ -1,6 +1,6 @@
 \chapter{Diseño}  \label{disenyo}
 
-Este capítulo abarca aquellos aspectos considerados durante la fase del diseño de la aplicación, desde sus versiones primitiavas (diseño conceptual) hasta el diseño final de la aplicación, pasándo por los diferentes diagramas arquitecturales que muestran el sistema desde diferentes puntos de vista. Además, al final se hará una retrospectiva sobre aquellas restricciones que han afectado el curso del desarrollo de las diferentes soluciones desde el punto de vista del diseño. 
+Este capítulo abarca aquellos aspectos considerados durante la fase del diseño de la aplicación, desde sus versiones primitivas (diseño conceptual) hasta el diseño final de la aplicación, pasándo por los diferentes diagramas arquitecturales que muestran el sistema desde diferentes puntos de vista. Además, al final se hará una retrospectiva sobre aquellas restricciones que han afectado el curso del desarrollo de las diferentes soluciones desde el punto de vista del diseño. 
 
 
 \section{Diseño conceptual} \label{disenyo.conceptual}
@@ -84,7 +84,7 @@ En el diagrama de la figura \ref{fig:disenyofinal} se puede observar un mapeo ca
 
 
 \subsection{Diagrama de datos.} \label{disenyo.arquitectura.datos}
-\par A continuación se muestra el diagrama de datos tal como están almacenados en \textit{Apache Hive}. A pesar de que también se almacenan datos en la base de datos \textit{MySQL}, la estructura presente allí es relativamente sencilla en comparación con la de \textit{Apache Hive} y por lo tanto se ha decidido almacenarla en los anexos, en la sección \ref{a.datos.modelo}. 
+\par A continuación se muestra el diagrama de datos tal como están almacenados en \textit{Apache Hive}. A pesar de que también se almacenan datos en la base de datos \textit{MySQL}, la estructura presente allí es relativamente sencilla en comparación con la de \textit{Apache Hive} y por lo tanto se ha decidido presentar en los anexos, en la sección \ref{a.datos.modelo}. 
 \par 
 Como se puede observar, en la figura \ref{fig:datosApache Hive} aparecen, mediante una estructura de diagrama entidad-relación las entidades que han sido creadas en \textit{Apache Hive}. Por una parte tenemos las entidades \textit{fitosanitario\_con\_id} y \textit{sustancia\_activa\_europa}, que son las entidades principales de la solución. La primera se crea a partir de los datos obtenidos de la primera fuente integrada en el proyecto, proveniente del listado de productos fitosanitarios autorizados en España disponibles en la página web del \textit{Magrama} \cite{mapama}. La segunda son los datos de las sustancias activas provenientes de la base de datos abierta sobre pesticidas a nivel europeo. El resto de entidades presentes en el modelo son el resultado de diferentes operaciones sobre estas dos tablas. A continuación se explica cómo se han conseguido dichas entidades y qué representan. 
 \begin{enumerate}
@@ -123,7 +123,7 @@ Como se observará en el desarrollo del prototipo real de la sección \ref{imple
     \caption{Estrategia recomendada para la integración de datos nuevos}
     \label{fig:expansion}
 \end{figure}
-\textbf{Funcionalidades extra.} Aunque realmente este proyecto se ha desarrollado pensando en una expansión futura únicamente en cuanto a la integración de nuevos datos y la esacalabilidad de almacenamiento, gracias a la estructura de la aplicación de \textit{JHipster} es posible dotar al sistema de tantas funcionalidades extra como se desee. 
+\textbf{Funcionalidades extra.} Aunque realmente este proyecto se ha desarrollado pensando en una expansión futura únicamente en cuanto a la integración de nuevos datos y la escalabilidad de almacenamiento, gracias a la estructura de la aplicación de \textit{JHipster} es posible dotar al sistema de tantas funcionalidades extra como se desee. 
 
 \section{Restricciones al diseño} \label{disenyo.restricciones}
 La gestión y desarrollo del proyecto, en todas sus fases se ha visto restringida por diferentes pautas y recomendaciones provenientes de terceras partes. Este apartado pretende aclarar algunas de estas cuestiones para reflejar aquellas decisiones que han condicionado, para bien o para mal, el desenvolvimiento del alumno. 
