@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  15 JAN 2018 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.10.26)  16 JAN 2018 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1886,32 +1886,32 @@ Package babel Info: Redefining spanish shorthand "?
 
 [2
 
-] (./Mis_capitulos/A_Agradecimientos.tex)
+] (./Mis_capitulos/A_Agradecimientos.tex
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 20.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 171.
- [3] (./Mis_capitulos/B_Resumen.tex
+(babel)             in language  on input line 20.
+ [3]) (./Mis_capitulos/B_Resumen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
 
  []
@@ -5787,7 +5787,7 @@ blic/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texm
 f/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (99 pages, 4533974 bytes).
+Output written on main.pdf (99 pages, 4533975 bytes).
 PDF statistics:
  1453 PDF objects out of 1728 (max. 8388607)
  1247 compressed objects within 13 object streams
