@@ -1,10 +1,10 @@
 \chapter{Análisis} \label{analisis}
 \section{Análisis del problema} \label{analisis.problema}
-Como ya se ha aclarado varias veces a lo largo de este documento, actualmente hay una necesidad real en el mundo agrícola; la de disponer de la información sobre productos fitosanitarios de una manera centralizada, actualizada y de fácil acceso. Hoy en día esta necesidad se ha intentado abordar de varias maneras, y por ello hay disponibles varias aplicaciones que intentan apoyar al consumidor en las tareas agrícolas que involucran productos fitosanitarios. Algunos ejemplos son los productos que ofrecen empresas como \textit{aGROSLab}, \textit{Cuaderno de Campo Agronev}, o \textit{Agricolum}. No obstante, estas aplicaciones se enfrentan al mismo problema; la inexistencia de una base de datos estandarizada cuya información sea congruente a través de los diferentes países de la Unión Europea. Por eso mismo, estas aplicaciones tienen que implementar, desarrollar y mantener ellas mismas las bases de datos que permitan acceder a la información deseada. Nuestra solución ofrecería un sistema dotado de una base de datos estandarizada, congruente en su información y completa, de código abierto y altamente escalable, por lo tanto todas las aplicaciones mencionadas arriba podrían convertirse en potenciales clientes consumidores de nuestro sistema, sustituyendo sus bases de datos por nuestra solución, con costes de integración mínimos.
+Como ya se ha señalado varias veces a lo largo de este documento, existe la necesidad en el mundo agrícola de disponer de la información sobre productos fitosanitarios de una manera centralizada, actualizada y de fácil acceso. Hoy en día esta necesidad se ha intentado abordar de varias maneras, y por ello hay disponibles varias aplicaciones que intentan apoyar al consumidor en las tareas agrícolas que involucran productos fitosanitarios. Algunos ejemplos son los productos que ofrecen empresas como \textit{aGROSLab}, \textit{Cuaderno de Campo Agronev}, o \textit{Agricolum}. No obstante, estas aplicaciones se enfrentan al mismo problema; la inexistencia de una base de datos estandarizada cuya información sea congruente a través de los diferentes países de la Unión Europea. Por eso mismo, estas aplicaciones tienen que implementar, desarrollar y mantener ellas mismas las bases de datos que permitan acceder a la información deseada. Nuestra solución ofrecería un sistema dotado de una base de datos estandarizada, congruente en su información y completa, de código abierto y altamente escalable, por lo tanto todas las aplicaciones mencionadas arriba podrían convertirse en potenciales clientes consumidores de nuestro sistema, sustituyendo sus bases de datos por nuestra solución, con costes de integración mínimos.
 
 \section{Actores básicos} \label{analisis.marco}
 En este apartado se van a presentar los actores que van a intermediar en el proyecto: los proveedores de los datos y los usuarios del mismo. 
-\paragraph*{Proveedores.} Esto es, toda parte tercera de la que el proyecto se nutre para obtener los datos a emplear en la aplicación. \par Cada fuente de datos proviene de algún portal web (nacional o internacional). En el proyecto se monta una infraestructura alrededor de dichos portales y por lo tanto la desaparición de alguno de estos sitios web significaría el cese de aprovisionamiento de los datos provenientes de dicha fuente. Actualmente, el proyecto se nutre de dos fuentes distintas: los productos autorizados recogidos del portal del \textit{Mapama} \cite{mapama} y los datos provenientes de la \textit{base de datos de pesticidas a nivel Europeo} \cite{pesticidesdb}.
+\paragraph*{Proveedores.} Esto es, toda parte tercera de la que el proyecto se nutre para obtener los datos a emplear en la aplicación. Cada fuente de datos proviene de algún portal web (nacional o internacional). En el proyecto se monta una infraestructura alrededor de dichos portales y por lo tanto la desaparición de alguno de estos sitios web significaría el cese de aprovisionamiento de los datos provenientes de dicha fuente. Actualmente, el proyecto se nutre de dos fuentes distintas: los productos autorizados recogidos del portal del Ministerio de Agricultura y Pesca, Alimentación y Medioambiente (\textit{MAPAMA}) \cite{mapama} y los datos provenientes de la \textit{base de datos de pesticidas a nivel Europeo} \cite{pesticidesdb}.
 
 \paragraph*{Potenciales usuarios.} Los diferentes tipos de usuarios a los que está dirigida la aplicación final. Por una parte serían los  agricultores que comercializan sus productos, las instituciones encargadas de validar y certificar la importación / exportación  de productos agrícolas o las empresas importadoras / exportadoras de productos agrícolas. Este segmento se beneficiaría diréctamente de los resultados del proyecto puesto que el proceso de comprobación de los requisitos fitosanitarios sobre los productos agrícolas / pesqueros / alimentarios se conseguiría de manera mucho más sencilla. Por otro lado también se podrían beneficiar de la infraestructura conseguida en este proyecto empresas que ya implementan sus propias aplicaciones fitosanitarias, pero carezcan de ese esquema y datos estandarizados que este proyecto propone.
 
@@ -15,7 +15,7 @@ En este apartado se van a presentar los actores que van a intermediar en el proy
 \par 
 Por recomendación del director del proyecto, el análisis y la captura de requisitos han estado desde el principio  regidos por el método \textit{\gls{moscow}}, una técnica de priorización de requisitos usada en la gestión de proyectos, análisis de negocio y desarrollo de software con objetivo de llegar a un acuerdo común con los \textit{stakeholders} (integrantes del proyecto) sobre la importancia que se debería dar a cada requisito. Esta técnica también es conocida bajo los nombres de \textit{priorización \gls{moscow}} o \textit{análisis \gls{moscow}}. En la sección \ref{c.analisis.requisitos} de los anexos se puede observar una explicación más detallada de esta técnica.
 
-\par Inicialmente se propuso una visión de \textit{brainstorming} para la captura de requisitos. Dicha primera versión supuso la recogida de todos aquellos requisitos susceptibles de ser desarrollados para este proyecto, previa a su categorización, clasificación y priorización. Se encontraron un total de 16 requisitos que gracias a la técnica \gls{moscow} se categorizarían y priorizarían para determinar cuáles serían imprescindibles y cuales menos importantes. En la sección \ref{c.analisis.requisitos} de los anexos se refleja este listado en su formato inicial, previo a la aplicación de la técnica \gls{moscow}.
+\par Inicialmente se propuso una visión de \textit{brainstorming} para la captura de requisitos. Dicha primera versión supuso la recogida de todos aquellos requisitos susceptibles de ser desarrollados para este proyecto, previa a su categorización, clasificación y priorización. Se encontraron un total de 16 requisitos que gracias a la técnica \gls{moscow} se categorizarían y priorizarían para determinar cuáles serían imprescindibles y cuales menos importantes. Una distinción a mencionar es que hay requisitos de implementación marcados con (\textit{I}) y requisitos del \textit{TFG} como conjunto marcados con (\textit{TFG}). En la sección \ref{c.analisis.requisitos} de los anexos se refleja este listado en su formato inicial, previo a la aplicación de la técnica \gls{moscow}.
 
 
 
@@ -23,34 +23,34 @@ Tal como indica \textit{\gls{moscow}}, los requisitos capturados en la fase prev
 
 \paragraph*{Debe tener:} 
 \begin{itemize}
-\item Recolectar datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo. 
-\item Almacenar la última versión de los datos en formato original y además mantener todas las versiones descargadas. 
-\item Monitorizar y almacenar los procesos de recolección de los datos de entrada así como las rutas de su procesado.
-\item Ofrecer la infraestructura y las herramientas de configuración necesarias para una expansión futura del proyecto. 
-\item Implementar un modelo de aplicación consistente, ejemplificando el ciclo de vida típico de los datos desde su recogida hasta su presentación visual. 
-\item Una memoria extensa y detallada. 
+\item (\textit{I}) Recolectar datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo. 
+\item (\textit{I}) Almacenar la última versión de los datos en formato original y además mantener todas las versiones descargadas. 
+\item (\textit{I}) Monitorizar y almacenar los procesos de recolección de los datos de entrada así como las rutas de su procesado.
+\item (\textit{I}) Ofrecer la infraestructura y las herramientas de configuración necesarias para una expansión futura del proyecto. 
+\item (\textit{I}) Implementar un modelo de aplicación consistente, ejemplificando el ciclo de vida típico de los datos desde su recogida hasta su presentación visual. 
+\item (\textit{TFG}) Una memoria extensa y detallada. 
 \end{itemize}
 
 \paragraph*{Debería tener:} 
 \begin{itemize}
-\item Mecanismo de control de esfuerzos.
+\item (\textit{TFG}) Mecanismo de control de esfuerzos.
 \item Mecanismo de control de versiones.
-\item Módulo de trazabilidad de los datos desde las fuentes originales hasta su visualización. 
-\item Mecanismo de detección de errores e inconsistencias en los datos provenientes de diferentes fuentes. 
+\item (\textit{TFG}) Módulo de trazabilidad de los datos desde las fuentes originales hasta su visualización. 
+\item (\textit{I}) Mecanismo de detección de errores e inconsistencias en los datos provenientes de diferentes fuentes. 
 \end{itemize}
 
 
 \paragraph*{Podría tener:} 
 \begin{itemize}
-\item Genericidad en cuanto al soporte de integración de los datos de diferentes fuentes basado en un fichero de claves y valores. 
-\item Soporte para la búsqueda de registros (datos) desde la interfaz web. 
-\item Desarrollo dirigido por un paradigma de inversión de independencias para conseguir un control centralizado.
+\item (\textit{I}) Genericidad en cuanto al soporte de integración de los datos de diferentes fuentes basado en un fichero de claves y valores. 
+\item (\textit{I}) Soporte para la búsqueda de registros (datos) desde la interfaz web. 
+\item (\textit{I}) Desarrollo dirigido por un paradigma de inversión de independencias para conseguir un control centralizado.
 \end{itemize}
 
 \paragraph*{No tendrá:} 
 \begin{itemize}
-\item Rediseño y desarrollo en el lado del \textit{Front-End}.
-\item Integración de más de dos fuentes de datos heterogéneas. 
+\item (\textit{I}) Desarrollo en el lado del \textit{Front-End}.
+\item (\textit{I}) Integración de más de dos fuentes de datos heterogéneas. 
 \end{itemize}
 
 
@@ -67,13 +67,13 @@ En la fase inicial del proyecto se abordó el proceso de gestión de riesgos, pa
 \end{itemize}
 \par El \textbf{análisis del riesgo} ofrece una medición de la probabilidad y el impacto de cada riesgo. Maneja tres valores que determinan la gravedad de un riesgo: la probabilidad con la que se puede dar un riesgo, el impacto que tendría en el resultado final un riesgo y la aceptación del riesgo, una medida delimitadora que define aquellos riesgos que son considerados aceptables y aquellos ante los que se deben tomar medidas. En esta fase se detectaron un total de 6 riesgos reseñables, que se presentan en el siguiente punto.
 \par La \textbf{priorización de riesgos}, fase donde se puede ver la lista de todos los riesgos anteriores ordenados por su gravedad. A continuación se mencionan aquellos que han tenido un factor de gravedad superior a 4, límite del criterio de aceptación. Todos los riesgos que aparecen aquí han obtenido una puntuación de 6/6: 
-\begin{enumerate}
-\item RG\_1. Riesgo global “Plazos”. Riesgo de que el proyecto no se acabe en la fecha prevista. 
-\item RT\_2. Riesgo de tecnologías “Software no probado”. Riesgo de tener que interactuar con software no probado. 
-\item RA\_1. Riesgo de alcance “Tamaño estimado”.  El tamaño estimado del proyecto es inferior al tamaño real resultante tras su finalización. 
-\item RA\_6. Riesgo de alcance “Número de cambios”.  El número de cambios en los requisitos es demasiado elevado y no permite un avance en el desarrollo. 
-\item RE\_9. Riesgo de entorno de desarrollo “Formación”. El equipo de desarrollo no ha recibido la formación necesaria para llevar a cabo el proyecto.
-\end{enumerate}
+\begin{itemize}
+\item \textbf{RG\_1}. Riesgo global “Plazos”. Riesgo de que el proyecto no se acabe en la fecha prevista. 
+\item \textbf{RT\_2}. Riesgo de tecnologías “Software no probado”. Riesgo de tener que interactuar con software no probado. 
+\item \textbf{RA\_1}. Riesgo de alcance “Tamaño estimado”.  El tamaño estimado del proyecto es inferior al tamaño real resultante tras su finalización. 
+\item \textbf{RA\_6}. Riesgo de alcance “Número de cambios”.  El número de cambios en los requisitos es demasiado elevado y no permite un avance en el desarrollo. 
+\item \textbf{RE\_9}. Riesgo de entorno de desarrollo “Formación”. El equipo de desarrollo no ha recibido la formación necesaria para llevar a cabo el proyecto.
+\end{itemize}
 \par Finalmente, la \textbf{planificación de la gestión de riesgos}, fase relativa al plan para tratar cada riesgo significativo. En este apartado la estrategia a seguir fue recoger los seis riesgos anteriores y proponer para cada uno una solución mitigadora. Los resultados de esta fase se pueden observar en el apartado \textit{Análisis de riesgos} de los \textit{Anexos}.
 
 \section{Análisis del contexto tecnológico}  \label{analisis.contexto}
@@ -91,15 +91,15 @@ Dado que se trata de un escenario caracterizado por la heterogeneidad en conteni
 
 \section{Elección del Stack Tecnológico}  \label{analisis.stack}
 Debido a los factores mencionados en el apartado anterior, el \textit{Stack Tecnológico} se vio restringido a las herramientas mencionadas anteriormente; tal como se ha dicho, la solución necesitaba almacenar la información en crudo hasta el momento de su procesamiento y es por ello que una aproximación relacional habría sido inviable. Por lo tanto, viendo las diferentes opciones \textit{noSQL} disponibles (\textit{MongoDB}, \textit{Cassandra}, \textit{DynamoDB}, \textit{HBase}, etc) y por recomendación del director del proyecto, la elección más clara fue elegir \textit{Apache Hadoop} como sistema de almacenamiento. \textit{Apache Hadoop} es una gran herramienta para el escalado de aplicaciones y lo utilizan grandes empresas para \textit{\gls{bigdata}}. Se adapta perfectamente a las necesidades de este proyecto y el software es gratuito. Además, hay una gran comunidad de personas capaces de ayudar con cualquier proyecto y la documentación disponible es lo suficientemente extensa como para salir de cualquier situación problemática. Sin embargo, la instalación y configuración del sistema supuso un reto para el alumno debido a las diferentes fuentes de información disponibles \textit{ad hoc}. Se necesitaron varios intentos hasta dejarlo completamente funcional y dar por finalizada su instalación en el equipo. \par
-\textit{Apache Hadoop} por sí mismo no era capaz de solucionar todos los problemas del proyecto; este sirve para almacenar los datos y, si bien es cierto que las operaciones de \textit{\gls{mapreduce}} permiten transformar dichos datos, dada la necesidad del desarrollo ágil del proyecto, lo mejor fue disponer de algún mecanismo más sencillo para el procesado de los mismos. Por ello, se decidió emplear \textit{Apache Hive} como herramienta de traducción de los datos almacenados en \textit{Apache Hadoop}, tanto en crudo como procesados, a una estructura relacional, sobre la que se podían hacer preguntas \textit{SQL}. La propia instalación de \textit{Apache Hive} no supuso un gran problema, y, a pesar de que comparte  nociones con \textit{MySQL}, gran parte de su sintáxis es diferente. Por ello, el alumno tuvo que aprender a usar el lenguaje para poder trabajar con las estructuras de \textit{Apache Hive}.\par
-El otro reto planteado fue la presentación de los datos integrados mediante una interfaz web, lo que vendría siendo el lado del cliente de la solución. Indudablemente hay casi infinidad de posibilidades para el desarrollo de esta parte. No obstante, realmente la parte de visualización no fue una parte crítica del proyecto, ni el objetivo del mismo. Es por ello que se adoptó una postura de desarrollo rápido del lado del cliente. \textit{JHipster} (generador de aplicaciones sobre \textit{Spring}) resultó la herramienta indicada, puesto que facilmente, en unos cuantos pasos era capaz de generar una aplicación sobre un esquema de base de datos (en este caso \textit{MySQL}) con una interfaz gráfica cuidada que satisfacía las necesidades del proyecto. 
+\textit{Apache Hadoop} por sí mismo no era capaz de solucionar todos los problemas del proyecto; este sirve para almacenar los datos y, si bien es cierto que las operaciones de \textit{\gls{mapreduce}} permiten transformar dichos datos, dada la necesidad del desarrollo ágil del proyecto, lo mejor fue disponer de algún mecanismo más sencillo para el procesado de los mismos. Por ello, se decidió emplear \textit{Apache Hive} como herramienta de traducción de los datos almacenados en \textit{Apache Hadoop}, tanto en crudo como procesados, a una estructura relacional, sobre la que se podían hacer preguntas \textit{SQL}. La propia instalación de \textit{Apache Hive} no supuso un gran problema, y, a pesar de que comparte  nociones con \textit{MySQL}, gran parte de su sintáxis es diferente. Por ello se tuvo que aprender a usar el lenguaje para poder trabajar con las estructuras de \textit{Apache Hive}.\par
+El otro reto planteado fue la presentación de los datos integrados mediante una interfaz web, lo que vendría siendo el lado del cliente de la solución. Indudablemente hay infinidad de posibilidades para el desarrollo de esta parte. No obstante, realmente la parte de visualización no es una parte crítica del proyecto, ni el objetivo del mismo. Es por ello que se adoptó una postura de desarrollo rápido del lado del cliente. \textit{JHipster} (generador de aplicaciones sobre \textit{Spring}) resultó la herramienta indicada, puesto que facilmente, en unos cuantos pasos es capaz de generar una aplicación sobre un esquema de base de datos (en este caso \textit{MySQL}) con una interfaz gráfica cuidada que satisfacía las necesidades del proyecto. 
 	\par
 	Teniendo en cuenta que los anteriores puntos constituyen el core tecnológico del proyecto, conforme se avanzaba se veía que no eran suficientes para conseguir los resultados deseados. Se hicieron múltiples pruebas para intentar conectar \textit{JHipster} diréctamente a \textit{Apache Hive} sustituyendo la base de datos de \textit{JHipster} (\textit{MySQL}) por \textit{Apache Hive}, aunque todas con resultados negativos que se recogen en detalle en la sección \ref{implementacion.problemas}. Se llegó a la conclusión de la necesidad de emplear otras herramientas adicionales para diferentes tareas como el procesado de los datos previo a su exposición en \textit{Apache Hive}, o la traducción de los datos y estructuras de \textit{Apache Hive} a la base de datos que emplea \textit{JHipster}. Las elegidas fueron \textit{Talend Big Data} y \textit{Apache Sqoop}. \textit{Talend Big Data} es una herramienta de procesado de ficheros capaz de conectarse a \textit{Apache Hadoop},  extraer la información contenida en sus nodos, procesarla y volver a guardarla con los cambios efectuados, tal como se le indique. \textit{Apache Sqoop} es una herramienta diseñada para transferir bloques de datos entre \textit{Apache Hadoop} o \textit{Apache Hive} y almacenes de datos estructurados como las bases de datos relacionales. No obstante, antes de dar con la solución de \textit{Talend Big Data} se probó durante el período del verano el programa \textit{Kettle} y se intentó integrar de numerosas maneras con el proyecto de \textit{JHipster}, todas resultando en conclusiones negativas.
 	\par	
 	Para poder conectar la base de datos de \textit{Apache Hadoop} con la base de datos \textit{MySQL} de \textit{JHipster}, el paso previo necesario fue conectar \textit{Apache Hadoop} con \textit{Apache Hive} y realizar la exportación de los datos de \textit{Apache Hive} a \textit{MySQL} mediante \textit{Apache Sqoop}. La dificultad en este apartado fue no sólo aprender la sintáxis de \textit{Apache Sqoop} sino también ser capaz de preparar los datos en el lado de \textit{Apache Hive} para que encajen perféctamente todos los registros, filas y columnas con los correspondientes en la parte de \textit{MySQL}, puesto que \textit{Apache Sqoop} falla a no ser que ambas partes sean idénticas en cuanto a estructura. \par
-	A continuación se presentan las tecnologías a las que se hace referencia en este apartado con el objetivo de familiarizar al lector con las herramientas utilizadas y dar una explicación más detallada de las mismas:
-\paragraph*{\textit{Apache Hadoop}.} La librería software \textit{Apache Hadoop}\footnote{Apache\textsuperscript{TM} Apache Hadoop\textregistered - \url{http://hadoop.apache.org}} es un framework que permite el procesamiento distribuido de múltiples conjuntos de datos a través de clusters de ordenadores mediante modelos de programación sencillos. Está diseñado para escalar desde servidores únicos hasta miles de máquinas y para detectar y gestionar fallos en la capa de aplicación y así permitir una alta disponibilidad a pesar de que los equipos individuales fallen. 
-\paragraph*{\textit{Apache Hive}.} El software de data warehouse \textit{Apache Hive}\footnote{Apache\textsuperscript{TM} Apache Hive\textregistered - \url{https://hive.apache.org}} facilita la lectura, escritura y gestión de grandes conjuntos de datos residentes en almacenes distribuidos de datos mediante \textit{SQL}. La estructura de datos puede ser proyectada sobre los datos que ya existen en almacenamiento. \textit{Apache Hive} provee una herramienta de línea de comandos y un driver \textit{JDBC} para que los usuarios se puedan conectar a Apache Hive. 
+	A continuación se presentan las tecnologías a las que se hace referencia en este apartado con el objetivo de familiarizar al lector con las herramientas utilizadas y dar una explicación más detallada de las mismas. Se presentan siguiendo una enumeración en función del papel que interpreta cada una en el flujo de los datos, desde el almacenamiento hasta su visualización: 
+\paragraph*{\textit{Apache Hadoop}.} \textit{Apache Hadoop}\footnote{Apache\textsuperscript{TM} Apache Hadoop\textregistered - \url{http://hadoop.apache.org}} es un framework que permite el procesamiento distribuido de múltiples conjuntos de datos a través de clusters de ordenadores mediante modelos de programación sencillos. Está diseñado para escalar desde servidores únicos hasta miles de máquinas y para detectar y gestionar fallos en la capa de aplicación y así permitir una alta disponibilidad a pesar de que los equipos individuales fallen. 
+\paragraph*{\textit{Apache Hive}.} \textit{Apache Hive}\footnote{Apache\textsuperscript{TM} Apache Hive\textregistered - \url{https://hive.apache.org}} facilita la lectura, escritura y gestión de grandes conjuntos de datos residentes en almacenes distribuidos de datos mediante \textit{SQL}. La estructura de datos puede ser proyectada sobre los datos que ya existen en almacenamiento. \textit{Apache Hive} provee una herramienta de línea de comandos y un driver \textit{JDBC} para que los usuarios se puedan conectar a Apache Hive. 
 \paragraph*{ \textit{Apache Sqoop}.} \textit{Apache Sqoop}\footnote{Apache\textsuperscript{TM} Apache Sqoop\textregistered - \url{https://sqoop.apache.org}} es una herramienta diseñada para transferir bloques de datos entre \textit{Apache Hadoop} y almacenes de datos estructurados como las bases de datos relacionales. Se puede usar para transformar los datos de \textit{HDFS} mediante \textit{MapReduce} a un formato relacional para después exportarlos a un sistema gestor de bases de datos como \textit{MySQL} u \textit{Oracle}. 
 \paragraph*{\textit{JHipster}.} \textit{JHipster}\footnote{JHipster - \url{http://www.jhipster.tech}} es una plataforma de desarrollo para generar, desarrollar y lanzar aplicaciones con tecnología \textit{Spring Boot}, \textit{Angular.js} y \textit{Spring microservices}. Es capaz de generar aplicaciones totalmente configuradas con un \textit{Back-End} \textit{Java}, un \textit{Front-End} \textit{Angular.js} y un conjunto de herramientas pre-configuradas como \textit{Yeoman}, \textit{Gradle}, \textit{Grunt}, \textit{Gulp.js} y \textit{Bower}.
 \paragraph*{\textit{Spring Framework}.} El framework \textit{Spring}\footnote{Spring Framework - \url{https://projects.spring.io/spring-framework/}} provee un modelo de programación y configuración sencillo para aplicaciones \textit{Java}. Un punto clave de \textit{Spring} es el soporte infraestructural a nivel de aplicación. Uno de sus módulos más conocido es \textit{Spring Boot}, un framework ligero que tiene la intención de simplificar el proceso de configuración de una aplicación hecha con \textit{Spring}. 
@@ -109,7 +109,7 @@ El otro reto planteado fue la presentación de los datos integrados mediante una
 \section{Captura de requisitos final}  \label{analisis.requisitos}
 Una vez realizado un análisis detallado tanto del problema como del marco conceptual y los riesgos en las fases previas al arranque del proyecto, lo  siguiente que se determinaron fueron los requisitos del sistema. Gracias al análisis previo realizado mediante la técnica \textit{\gls{moscow}} plasmado en la sección \ref{phytoscheme.requisitos} y a las conclusiones obtenidas de los apartados anteriores, la tarea de captura de requisitos \textit{funcionales} tanto del sistema como del proyecto resultó en una sencilla selección y categorización de los mismos. Además, como se puede observar, algunos de los requisitos priorizados en las categorías inferiores de \textit{\gls{moscow}} en la sección \ref{phytoscheme.requisitos} han sido descartados. Los requisitos no funcionales surgieron tanto de recomendaciones del director del proyecto como del anális previo. En las tablas \ref{tab:req_func_sist}, \ref{tab:req_func_sist} y \ref{tab:req_no_func_sist} se recogen tanto los requisitos funcionales como los no funcionales, divididos en sistema y proyecto, siendo los de sistema los referentes al propio producto tecnológico en sí, y los de proyecto los referentes a la gestión del mismo. 
 \par
-\begin{table}[!t]
+\begin{table}[!h]
 \centering
 \bgroup
 \def\arraystretch{1.3}
@@ -117,22 +117,22 @@ Una vez realizado un análisis detallado tanto del problema como del marco conce
 \toprule
 \textbf{Nombre} & \textbf{Descripción} \\
  \midrule
-RFS\_1 & 
+\textbf{RFS\_1} & 
 El sistema deberá recolectar los datos oficiales tanto de productos fitosanitarios autorizados de España como de las sustancias activas a nivel europeo.
  \\
-RFS\_2 & 
+\textbf{RFS\_2} & 
 El sistema deberá almacenar la última versión de los datos recolectados en el RFS\_1 en su formato original y además mantener todas las versiones descargadas de las mismas. 
  \\
-RFS\_3 & 
+\textbf{RFS\_3} & 
 El sistema deberá monitorizar y almacenar los procesos de recolección de los datos de entrada, así como las rutas de su procesado. 
  \\
-RFS\_4 & 
+\textbf{RFS\_4} & 
 El sistema deberá ofrecer la infraestructura y herramientas de configuración necesarias para que futuros desarrolladores puedan integrar otras fuentes de datos de manera rápida y eficiente. 
  \\
-RFS\_5 & 
+\textbf{RFS\_5} & 
 El sistema deberá implementar un modelo de aplicación consistente, ejemplificando un ciclo de vida típico de los datos, desde su recogida, su procesamiento, su posterior integración en un modelo más completo y su presentación en un \textit{Front-End} de ejemplo.
  \\
-RFS\_6 & 
+\textbf{RFS\_6} & 
 El sistema deberá implementar un mecanismo de detección de errores e inconsistencias en los datos provenientes de fuentes heterogéneas.
  \\
 \bottomrule
@@ -142,8 +142,7 @@ El sistema deberá implementar un mecanismo de detección de errores e inconsist
 \label{tab:req_func_sist}
 \end{table}
 
-
-\begin{table}[!b]
+\begin{table}[!h]
 \centering
 \bgroup
 \def\arraystretch{1.3}
@@ -151,22 +150,22 @@ El sistema deberá implementar un mecanismo de detección de errores e inconsist
 \toprule
 \textbf{Nombre} & \textbf{Descripción} \\
  \midrule
-RNFS\_1 & 
+\textbf{RNFS\_1} & 
 Los información de los productos fitosanitarios deberá ser recogida de portales como \textit{Mapama} \cite{mapama} y los datos sobre los pesticidas de la \textit{Base de datos europea} \cite{pesticides_eu}.
  \\
-RNFS\_2 & 
+\textbf{RNFS\_2} & 
 Se hará uso de algún tipo de \textit{Crawler web} \cite{wikicrawler} para la descarga periódica de los datos sobre productos fitosanitarios y pesticidas.
  \\
-RNFS\_3 & 
+\textbf{RNFS\_3} & 
 Como sistema de almacenamiento de los datos recogidos sobre productos fitosanitarios autorizados y sustancias activas se usará \textit{Apache Hadoop}.
  \\
-RNFS\_4 & 
+\textbf{RNFS\_4} & 
 Para monitorizar, almacenar y mostrar los procesos de recolección de los datos de entrada se usará \textit{Talend Big Data}. 
  \\
-RNFS\_5 & 
+\textbf{RNFS\_5} & 
 Para conseguir unos desarrollos posteriores más ágiles se hará uso de la herramienta \textit{Apache Hive}, que permite una aproximación relacional directamente sobre \textit{Apache Hadoop}.
  \\
-RNFS\_6 & 
+\textbf{RNFS\_6} & 
 La presentación de los datos en su formato final se hará mediante una aplicación con \textit{GUI}, desarrollada mediante la herramienta \textit{JHipster}.
  \\
 \bottomrule
@@ -175,7 +174,10 @@ La presentación de los datos en su formato final se hará mediante una aplicaci
 \caption{Requisitos No Funcionales del Sistema}
 \label{tab:req_no_func_sist}
 \end{table}
-\begin{table}[!t]
+
+\pagebreak
+\newpage
+\begin{table}[!h]
 \centering
 \bgroup
 \def\arraystretch{1.3}
@@ -183,13 +185,13 @@ La presentación de los datos en su formato final se hará mediante una aplicaci
 \toprule
 \textbf{Nombre} & \textbf{Descripción} \\
  \midrule
-RFP\_1 & 
+\textbf{RFP\_1} & 
 El proyecto deberá incluir una memoria en la que se documentan todos los pasos y procesos involucrados en su construcción.
  \\
-RFP\_2 & 
+\textbf{RFP\_2} & 
 Se deberá mantener constancia del esfuerzo dedicado durante el proyecto.
  \\
-RFP\_3 &
+\textbf{RFP\_3} &
 El proyecto deberá mantener un control de versiones actualizado en todo momento. 
  \\
 \bottomrule
