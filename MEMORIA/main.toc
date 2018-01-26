@@ -50,7 +50,8 @@
 \contentsline {chapter}{\numberline {B}Dise\IeC {\~n}o}{83}{appendix.Alph2}
 \contentsline {section}{\numberline {B.1}Prueba de concepto en detalle}{83}{section.Alph2.1}
 \contentsline {chapter}{\numberline {C}Datos}{88}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}Esquema de datos en la base de datos MySQL}{89}{section.Alph3.1}
+\contentsline {section}{\numberline {C.1}Esquema relacional de la base de datos \textit {JHipster}}{88}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}Esquema de datos en la base de datos MySQL}{89}{section.Alph3.2}
 \contentsline {chapter}{\numberline {D}Implementaci\IeC {\'o}n}{90}{appendix.Alph4}
 \contentsline {section}{\numberline {D.1}Capturas de pantalla}{90}{section.Alph4.1}
 \contentsline {chapter}{\numberline {E}Gesti\IeC {\'o}n}{92}{appendix.Alph5}

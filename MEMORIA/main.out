@@ -1,56 +1,56 @@
 \BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Estructura del documento}{chapter.1}% 2
-\BOOKMARK [0][-]{chapter.2}{Contexto, motivaci\363n y restricciones}{}% 3
-\BOOKMARK [1][-]{section.2.1}{Contexto y necesidades reales}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.2}{Motivaci\363n y objetivos}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.3}{Restricciones}{chapter.2}% 6
-\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 7
-\BOOKMARK [1][-]{section.3.1}{An\341lisis del problema}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Actores b\341sicos}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.3}{Captura y priorizaci\363n de requisitos}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.4}{An\341lisis de riesgos}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.5}{An\341lisis del contexto tecnol\363gico}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.6}{Elecci\363n del Stack Tecnol\363gico}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.7}{Captura de requisitos final}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 15
-\BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{Dise\361o final}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{Arquitectura del sistema}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.3.1}{Diagrama de despliegue.}{section.4.3}% 19
-\BOOKMARK [2][-]{subsection.4.3.2}{Diagrama de componente y conector.}{section.4.3}% 20
-\BOOKMARK [2][-]{subsection.4.3.3}{Diagrama de clases y paquetes.}{section.4.3}% 21
-\BOOKMARK [2][-]{subsection.4.3.4}{Diagrama de secuencia.}{section.4.3}% 22
-\BOOKMARK [2][-]{subsection.4.3.5}{Diagrama de datos.}{section.4.3}% 23
-\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.5}{Restricciones al dise\361o}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 26
-\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 27
-\BOOKMARK [1][-]{section.5.2}{Prototipo}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.3}{Problemas encontrados}{chapter.5}% 29
-\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 30
-\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 31
-\BOOKMARK [1][-]{section.6.2}{Organizaci\363n y control de versiones}{chapter.6}% 32
-\BOOKMARK [1][-]{section.6.3}{Control de esfuerzos}{chapter.6}% 33
-\BOOKMARK [1][-]{section.6.4}{Estimaci\363n del coste}{chapter.6}% 34
-\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 35
-\BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 36
-\BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 37
-\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 38
-\BOOKMARK [0][-]{section*.25}{Glosario}{}% 39
-\BOOKMARK [0][-]{chapter*.27}{Lista de Figuras}{}% 40
-\BOOKMARK [0][-]{chapter*.28}{Lista de Tablas}{}% 41
-\BOOKMARK [0][-]{section*.29}{Anexos}{}% 42
-\BOOKMARK [0][-]{appendix.Alph1}{An\341lisis}{}% 43
-\BOOKMARK [1][-]{section.Alph1.1}{An\341lisis de requisitos}{appendix.Alph1}% 44
-\BOOKMARK [2][-]{subsection.Alph1.1.1}{Captura inicial de requisitos}{section.Alph1.1}% 45
-\BOOKMARK [2][-]{subsection.Alph1.1.2}{La t\351cnica moscow}{section.Alph1.1}% 46
-\BOOKMARK [1][-]{section.Alph1.2}{An\341lisis de riesgos}{appendix.Alph1}% 47
-\BOOKMARK [1][-]{section.Alph1.3}{Clientes potenciales}{appendix.Alph1}% 48
-\BOOKMARK [1][-]{section.Alph1.4}{An\341lisis de dise\361os alternativos}{appendix.Alph1}% 49
-\BOOKMARK [0][-]{appendix.Alph2}{Dise\361o}{}% 50
-\BOOKMARK [1][-]{section.Alph2.1}{Prueba de concepto en detalle}{appendix.Alph2}% 51
-\BOOKMARK [0][-]{appendix.Alph3}{Datos}{}% 52
-\BOOKMARK [1][-]{section.Alph3.1}{Esquema de datos en la base de datos MySQL}{appendix.Alph3}% 53
+\BOOKMARK [0][-]{chapter.2}{Contexto, motivaci\363n y restricciones}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Contexto y necesidades reales}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Motivaci\363n y objetivos}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.3}{Restricciones}{chapter.2}% 5
+\BOOKMARK [0][-]{chapter.3}{An\341lisis}{}% 6
+\BOOKMARK [1][-]{section.3.1}{An\341lisis del problema}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{Actores b\341sicos}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{Captura y priorizaci\363n de requisitos}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.4}{An\341lisis de riesgos}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.5}{An\341lisis del contexto tecnol\363gico}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.6}{Elecci\363n del Stack Tecnol\363gico}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.7}{Captura de requisitos final}{chapter.3}% 13
+\BOOKMARK [0][-]{chapter.4}{Dise\361o}{}% 14
+\BOOKMARK [1][-]{section.4.1}{Dise\361o conceptual}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.2}{Dise\361o final}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.3}{Arquitectura del sistema}{chapter.4}% 17
+\BOOKMARK [2][-]{subsection.4.3.1}{Diagrama de despliegue.}{section.4.3}% 18
+\BOOKMARK [2][-]{subsection.4.3.2}{Diagrama de componente y conector.}{section.4.3}% 19
+\BOOKMARK [2][-]{subsection.4.3.3}{Diagrama de clases y paquetes.}{section.4.3}% 20
+\BOOKMARK [2][-]{subsection.4.3.4}{Diagrama de secuencia.}{section.4.3}% 21
+\BOOKMARK [2][-]{subsection.4.3.5}{Diagrama de datos.}{section.4.3}% 22
+\BOOKMARK [1][-]{section.4.4}{Estrategia de integraci\363n y expansi\363n}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.5}{Restricciones al dise\361o}{chapter.4}% 24
+\BOOKMARK [0][-]{chapter.5}{Implementaci\363n}{}% 25
+\BOOKMARK [1][-]{section.5.1}{Prueba de concepto}{chapter.5}% 26
+\BOOKMARK [1][-]{section.5.2}{Prototipo}{chapter.5}% 27
+\BOOKMARK [1][-]{section.5.3}{Problemas encontrados}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter.6}{Gesti\363n}{}% 29
+\BOOKMARK [1][-]{section.6.1}{Metodolog\355a}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.2}{Organizaci\363n y control de versiones}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.3}{Control de esfuerzos}{chapter.6}% 32
+\BOOKMARK [1][-]{section.6.4}{Estimaci\363n del coste}{chapter.6}% 33
+\BOOKMARK [0][-]{chapter.7}{Conclusiones}{}% 34
+\BOOKMARK [1][-]{section.7.1}{Resultados y objetivos}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.2}{Conocimientos adquiridos}{chapter.7}% 36
+\BOOKMARK [0][-]{chapter.8}{Bibliograf\355a}{}% 37
+\BOOKMARK [0][-]{section*.25}{Glosario}{}% 38
+\BOOKMARK [0][-]{chapter*.27}{Lista de Figuras}{}% 39
+\BOOKMARK [0][-]{chapter*.28}{Lista de Tablas}{}% 40
+\BOOKMARK [0][-]{section*.29}{Anexos}{}% 41
+\BOOKMARK [0][-]{appendix.Alph1}{An\341lisis}{}% 42
+\BOOKMARK [1][-]{section.Alph1.1}{An\341lisis de requisitos}{appendix.Alph1}% 43
+\BOOKMARK [2][-]{subsection.Alph1.1.1}{Captura inicial de requisitos}{section.Alph1.1}% 44
+\BOOKMARK [2][-]{subsection.Alph1.1.2}{La t\351cnica moscow}{section.Alph1.1}% 45
+\BOOKMARK [1][-]{section.Alph1.2}{An\341lisis de riesgos}{appendix.Alph1}% 46
+\BOOKMARK [1][-]{section.Alph1.3}{Clientes potenciales}{appendix.Alph1}% 47
+\BOOKMARK [1][-]{section.Alph1.4}{An\341lisis de dise\361os alternativos}{appendix.Alph1}% 48
+\BOOKMARK [0][-]{appendix.Alph2}{Dise\361o}{}% 49
+\BOOKMARK [1][-]{section.Alph2.1}{Prueba de concepto en detalle}{appendix.Alph2}% 50
+\BOOKMARK [0][-]{appendix.Alph3}{Datos}{}% 51
+\BOOKMARK [1][-]{section.Alph3.1}{Esquema relacional de la base de datos JHipster}{appendix.Alph3}% 52
+\BOOKMARK [1][-]{section.Alph3.2}{Esquema de datos en la base de datos MySQL}{appendix.Alph3}% 53
 \BOOKMARK [0][-]{appendix.Alph4}{Implementaci\363n}{}% 54
 \BOOKMARK [1][-]{section.Alph4.1}{Capturas de pantalla}{appendix.Alph4}% 55
 \BOOKMARK [0][-]{appendix.Alph5}{Gesti\363n}{}% 56
