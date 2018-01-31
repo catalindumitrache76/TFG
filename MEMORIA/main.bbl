@@ -44,7 +44,7 @@ Parlamento~Europeo y~el Consejo de~la Unión~Europea.
 
 \bibitem{cuadernoexplotacion}
 MAPAMA.
-\newblock {Cuaderno de explotación aprobado por Mapama}.
+\newblock {Cuaderno de explotación aprobado por MAPAMA}.
 \newblock
   \url{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/productos-fitosanitarios/uso-sostenible-de-productos-fitosanitarios/},
   2012.
@@ -235,7 +235,7 @@ Wikipedia contributors.
 
 \bibitem{glosarioterminosmapama}
 Agriculture and Consumer Protection.
-\newblock {\em {Glosario de términos del Mapama}}.
+\newblock {\em {Glosario de términos del MAPAMA}}.
 \newblock Food and Agriculture Organization of the United Nations, 1990.
 \newblock
   \url{http://www.mapama.gob.es/es/agricultura/temas/sanidad-vegetal/glosario-de-terminos-f-a-o/}.
@@ -243,8 +243,8 @@ Agriculture and Consumer Protection.
 
 \bibitem{hadoop_installation}
 Melissa Anderson.
-\newblock {\em {Manual de instalación de Hadoop de Digital Ocean para Ubuntu
-  16-04}}.
+\newblock {\em {Manual de instalación de Apache Hadoop de Digital Ocean para
+  Ubuntu 16-04}}.
 \newblock Digital Ocean, 2016.
 \newblock
   \url{https://www.digitalocean.com/community/tutorials/how-to-install-hadoop-in-stand-alone-mode-on-ubuntu-16-04}.
@@ -262,7 +262,7 @@ Secretaría de~la Convención Internacional~de Protección
 
 \bibitem{hive_installation}
 Apache Hive.
-\newblock {\em {Hive - Manual de instalación}}.
+\newblock {\em {Apache Hive - Manual de instalación}}.
 \newblock Apache Hive, 2017.
 \newblock
   \url{https://cwiki.apache.org/confluence/display/Hive/GettingStarted}.
@@ -270,15 +270,16 @@ Apache Hive.
 
 \bibitem{hadoop_installation_bad}
 Michael~G. Noll.
-\newblock {\em {Manual de instalación de Hadoop incorrecto para la versión
-  Ubuntu (16.04) del alumno}}, 2011.
+\newblock {\em {Manual de instalación de Apache Hadoop incorrecto para la
+  versión Ubuntu (16.04) del alumno}}, 2011.
 \newblock
   \url{http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/}.
   [Online] Último acceso: 2018.01.03.
 
 \bibitem{hivetutorialspoint}
 Tutorials Point.
-\newblock {\em {Manual de Tutorial's Point para la instalación de Hive}}.
+\newblock {\em {Manual de Tutorial's Point para la instalación de Apache
+  Hive}}.
 \newblock \url{https://www.tutorialspoint.com/hive/hive_installation.htm}.
   [Online] Último acceso: 2018.01.03.
 
