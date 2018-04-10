@@ -14,7 +14,7 @@ public class Talend {
 
     // Lanza el trabajo de Talend para los datos de los productos autorizados de España
     public static void launchTalendJobEspanya() {
-        System.out.println("Lanzando TalendCrawlerEspanya.");
+        System.out.println("------------------------------->>>>>>Lanzando TalendCrawlerEspanya.");
         executeExternalProcess("java -jar Talend_Jars/" +
             "TalendCrawlerEspanya.one-jar.jar " + fichero_configuracion);
         executeExternalProcess("rm " + getProperty("crudo_espanya_autorizados_5") + "*");

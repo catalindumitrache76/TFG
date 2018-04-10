@@ -12,8 +12,14 @@ public class Common {
     public static final String fichero_configuracion = "Scripts/fichero_configuracion.properties";
 
 
-    public static void startHadoop(){
-        executeExternalProcess(getProperty("start_hadoop_28"));
+    public static Process startHadoop(){
+        Process proc = executeExternalProcess(getProperty("start_hadoop_28"));
+        return proc;
+    }
+
+    public static Process stopHadoop(){
+        Process proc = executeExternalProcess(getProperty("stop_hadoop_29"));
+        return proc;
     }
     // Devuelve del fichero de configuración el valor de la propiedad indicada en key.
     public static String getProperty(String key){
@@ -60,7 +66,7 @@ public class Common {
 
 
     // Ejecuta un comando de shell y devuelve el resultado en forma de proceso.
-    public static void executeExternalProcess(String command){
+    public static Process executeExternalProcess(String command){
         Process proc = null;
         try {
             proc = Runtime.getRuntime().exec(command);
@@ -84,6 +90,7 @@ public class Common {
         } catch (final Exception e) {
             e.printStackTrace();
         }
+        return proc;
     }
 
 

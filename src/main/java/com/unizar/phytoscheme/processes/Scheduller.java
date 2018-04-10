@@ -9,6 +9,8 @@ import com.unizar.phytoscheme.processes.sqoop.Sqoop;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
+
 /**
  * Created by catalin on 8/11/17.
  */
@@ -16,35 +18,53 @@ import org.springframework.stereotype.Component;
 @Component
 public class Scheduller {
 
-    // cada 30 min
+    private Process hadoop = null;
+
+    /**
+     * Método que se lanza cada 30 minutos y:
+     * 1º Lanza el workflow que recoge los fitosanitarios desde la fuente y los importa en JHipster,
+     *    pasándo su almacenamiento por Hadoop
+     * 2º Lanza el workflow que recoge las sustancias activas desde la fuente y realiza la misma importación anterior
+     * 3º Lanza el proceso que integra ambos datos en un único esquema
+     * 4º Lanza el proceso que muestra las incongruencias encontradas.
+     */
     @Scheduled(initialDelay=1, fixedRate=1800000)
     private void schedule() {
-          Common.startHadoop();
-
-          show_mismatches();
-//        program_Workflow_Fitosanitario_Hadoop_JHipster();
-//        program_Workflow_SustanciActiva_Hadoop_JHipster();
-//        program_Join_Fito_SustanciaActiva();
+        hadoop = Common.startHadoop();
+        program_Workflow_Fitosanitario_Hadoop_JHipster();
+        program_Workflow_SustanciActiva_Hadoop_JHipster();
+        program_Join_Fito_SustanciaActiva();
+        show_mismatches();
+        terminarProcesoHadoopListener();
     }
 
-    private void show_mismatches() {
-        String hive_database = "tfghivedb";
-        String hive_error_table_1 = "mismatch_fitosanitario_fito_sustancia";
-        String hive_error_table_2 = "mismatch_sustancia_fito_sustancia";
-
-        /**
-         * Registra los errores encontrados (mismatch del join) en unas tablas que crea dinámicamente en HIVE
-         */
-        Hive_Errors.mismatch_fitosanitario();
-        Hive_Errors.mismatch_sustancia_activa();
-
-        /**
-         * Muestra dichos mismatch por pantalla
-         */
-        Hive.select(hive_database, hive_error_table_1);
-        Hive.select(hive_database, hive_error_table_2);
+    /**
+     * Cierra los procesos Hadoop al finalizar el programa.
+     */
+    private void terminarProcesoHadoopListener(){
+        Process hadoop = this.hadoop;
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void run() {
+                if (hadoop!=null) {
+                    try {
+                        Common.stopHadoop();
+                        System.out.println("Hadoop Cerrado");
+                        System.exit(0);
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                        System.exit(0);
+                    }
+                } else {
+                    System.out.println("Hadoop estaba cerrado");
+                    System.exit(0);
+                }
+            }
+        });
     }
-
+    /**
+     * Lanza el workflow que recoge los fitosanitarios desde la fuente y los importa en JHipster,
+     * pasándo su almacenamiento por Hadoop
+     */
     private static void program_Workflow_Fitosanitario_Hadoop_JHipster() {
 
         String hadoop_dir = "'/user/TFG/Datos_procesados/Espanya/Productos_autorizados'";
@@ -63,7 +83,9 @@ public class Scheduller {
         Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
     }
 
-
+    /**
+     * Lanza el workflow que recoge las sustancias activas desde la fuente y realiza la misma importación anterior
+     */
     private static void program_Workflow_SustanciActiva_Hadoop_JHipster () {
 
         String hadoop_dir = "'/user/TFG/Datos_procesados/Europa/ActiveSubstances'";
@@ -83,6 +105,10 @@ public class Scheduller {
 
     }
 
+    /**
+     * Lanza el proceso que integra los datos sobre productos fitosanitarios y
+     * las sustancias activas en un único esquema
+     */
     private static void program_Join_Fito_SustanciaActiva () {
 
         String hive_database = "tfghivedb";
@@ -115,6 +141,26 @@ public class Scheduller {
 
     }
 
+    /**
+     * Lanza el proceso que muestra las incongruencias encontradas durante la integración de los datos de ambas fuentes.
+     */
+    private void show_mismatches() {
+        String hive_database = "tfghivedb";
+        String hive_error_table_1 = "mismatch_fitosanitario_fito_sustancia";
+        String hive_error_table_2 = "mismatch_sustancia_fito_sustancia";
+
+        /**
+         * Registra los errores encontrados (mismatch del join) en unas tablas que crea dinámicamente en HIVE
+         */
+        Hive_Errors.mismatch_fitosanitario();
+        Hive_Errors.mismatch_sustancia_activa();
+
+        /**
+         * Muestra dichos mismatch por pantalla
+         */
+        Hive.select(hive_database, hive_error_table_1);
+        Hive.select(hive_database, hive_error_table_2);
+    }
 
 
 }
