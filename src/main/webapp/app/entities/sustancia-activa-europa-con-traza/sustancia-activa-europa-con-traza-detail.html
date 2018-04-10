@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span>Sustancia Activa Europa Con Traza</span> {{vm.sustancia_activa_europa_con_traza.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span>Real Id</span></dt>
+        <dd>
+            <span>{{vm.sustancia_activa_europa_con_traza.real_id}}</span>
+        </dd>
+        <dt><span>Tipo</span></dt>
+        <dd>
+            <span>{{vm.sustancia_activa_europa_con_traza.tipo}}</span>
+        </dd>
+        <dt><span>Language</span></dt>
+        <dd>
+            <span>{{vm.sustancia_activa_europa_con_traza.language}}</span>
+        </dd>
+        <dt><span>Name</span></dt>
+        <dd>
+            <span>{{vm.sustancia_activa_europa_con_traza.name}}</span>
+        </dd>
+        <dt><span>Source</span></dt>
+        <dd>
+            <span>{{vm.sustancia_activa_europa_con_traza.source}}</span>
+        </dd>
+        <dt><span>Date</span></dt>
+        <dd>
+            <span>{{vm.sustancia_activa_europa_con_traza.date}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="sustancia-activa-europa-con-traza-detail.edit({id:vm.sustancia_activa_europa_con_traza.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

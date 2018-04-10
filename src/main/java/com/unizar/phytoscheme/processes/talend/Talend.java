@@ -27,4 +27,11 @@ public class Talend {
             "TalendActiveSubstancesEuropaCrawler-1.0.one-jar.jar " + fichero_configuracion);
     }
 
+    // Lanza el trabajo de Talend para los datos de las sustancias activas de Europa
+    public static void launchTalendJobEuropaWithTrace() {
+        System.out.println("Lanzando TalendActiveSubstancesEuropaCrawler.");
+        executeExternalProcess("java -jar Talend_Jars/" +
+            "TalendActiveSubstancesEuropaCrawlerWithTrace-1.0.one-jar.jar " + fichero_configuracion);
+    }
+
 }

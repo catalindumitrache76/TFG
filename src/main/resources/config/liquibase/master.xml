@@ -8,6 +8,7 @@
     <include file="classpath:config/liquibase/changelog/20171108181814_added_entity_Fitosanitario.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20171114172715_added_entity_Sustancia_activa_europa.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20171120124956_added_entity_Fitosanitario_sustancia_activa_europa.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180410131124_added_entity_Sustancia_activa_europa_con_traza.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

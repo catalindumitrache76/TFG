@@ -43,6 +43,14 @@ public class Hive {
             " -f Scripts/Hive_Scripts/createSustanciaActivaEuropa.hql");
     }
 
+    // Crea la tabla de Hive sustancia_activa_europa
+    public static void createActiveSubstanceEuropeWithTraceHiveTable() {
+        System.out.println("Creando la tabla sustancia_activa_europa_con_traza en Hive");
+        executeExternalProcess(getProperty("hive_executable_23") +
+            " -f Scripts/Hive_Scripts/createSustanciaActivaEuropaConTraza.hql");
+    }
+
+
     // Crea la tabla de Hive fitosanitario_con_id
     public static void createFitosanitarioSpainHiveTable() {
         System.out.println("Creando la tabla fitosanitario_con_id en Hive");

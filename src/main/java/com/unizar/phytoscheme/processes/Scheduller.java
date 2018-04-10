@@ -27,40 +27,19 @@ public class Scheduller {
      * 2º Lanza el workflow que recoge las sustancias activas desde la fuente y realiza la misma importación anterior
      * 3º Lanza el proceso que integra ambos datos en un único esquema
      * 4º Lanza el proceso que muestra las incongruencias encontradas.
+     * 5º Está pendiente de finalizar Hadoop cuando el programa termine.
      */
     @Scheduled(initialDelay=1, fixedRate=1800000)
     private void schedule() {
         hadoop = Common.startHadoop();
-        program_Workflow_Fitosanitario_Hadoop_JHipster();
-        program_Workflow_SustanciActiva_Hadoop_JHipster();
-        program_Join_Fito_SustanciaActiva();
-        show_mismatches();
+        program_Workflow_SustanciActivaConTraza_Hadoop_JHipster();
+//        program_Workflow_Fitosanitario_Hadoop_JHipster();
+//        program_Workflow_SustanciActiva_Hadoop_JHipster();
+//        program_Join_Fito_SustanciaActiva();
+//        show_mismatches();
         terminarProcesoHadoopListener();
     }
 
-    /**
-     * Cierra los procesos Hadoop al finalizar el programa.
-     */
-    private void terminarProcesoHadoopListener(){
-        Process hadoop = this.hadoop;
-        Runtime.getRuntime().addShutdownHook(new Thread() {
-            public void run() {
-                if (hadoop!=null) {
-                    try {
-                        Common.stopHadoop();
-                        System.out.println("Hadoop Cerrado");
-                        System.exit(0);
-                    } catch (Exception e) {
-                        System.out.println(e.getMessage());
-                        System.exit(0);
-                    }
-                } else {
-                    System.out.println("Hadoop estaba cerrado");
-                    System.exit(0);
-                }
-            }
-        });
-    }
     /**
      * Lanza el workflow que recoge los fitosanitarios desde la fuente y los importa en JHipster,
      * pasándo su almacenamiento por Hadoop
@@ -104,6 +83,29 @@ public class Scheduller {
         Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
 
     }
+
+    /**
+     * Lanza el workflow que recoge las sustancias activas desde la fuente y realiza la misma importación anterior
+     */
+    private static void program_Workflow_SustanciActivaConTraza_Hadoop_JHipster () {
+
+        String hadoop_dir = "'/user/TFG/Datos_procesados/Europa/ActiveSubstancesWithTrace'";
+        String hive_database = "tfghivedb";
+        String hive_table = "sustancia_activa_europa_con_traza";
+        String mysql_table = "sustancia_activa_europa_con_traza";
+
+        Hive.createActiveSubstanceEuropeWithTraceHiveTable();
+
+        Talend.launchTalendJobEuropaWithTrace ();
+
+        Hive.insertIntoHiveTable(hadoop_dir, hive_database, hive_table);
+
+        MySQL.truncateMySQLTable(mysql_table);
+
+        Sqoop.exportFromHiveToMySQL(hive_table,mysql_table);
+
+    }
+
 
     /**
      * Lanza el proceso que integra los datos sobre productos fitosanitarios y
@@ -160,6 +162,30 @@ public class Scheduller {
          */
         Hive.select(hive_database, hive_error_table_1);
         Hive.select(hive_database, hive_error_table_2);
+    }
+
+    /**
+     * Cierra los procesos Hadoop al finalizar el programa.
+     */
+    private void terminarProcesoHadoopListener(){
+        Process hadoop = this.hadoop;
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+            public void run() {
+                if (hadoop!=null) {
+                    try {
+                        Common.stopHadoop();
+                        System.out.println("Hadoop Cerrado");
+                        System.exit(0);
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                        System.exit(0);
+                    }
+                } else {
+                    System.out.println("Hadoop estaba cerrado");
+                    System.exit(0);
+                }
+            }
+        });
     }
 
 
